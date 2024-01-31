@@ -20,27 +20,6 @@ export const register = createAsyncThunk(
   }
 );
 
-export const signIn = createAsyncThunk(
-  "user/login",
-  async ({ email, password }, thunkAPI) => {
-    try {
-      const response = await publicRequest.post("/auth/login", {
-        email,
-        password,
-      });
-      return response.data;
-    } catch (error) {
-      let message;
-      if (error.response && error.response.data.message) {
-        message = error.response.data.message;
-      } else {
-        message = error.message || "Failed to sign in";
-      }
-      return thunkAPI.rejectWithValue(message);
-    }
-  }
-);
-
 // Initial state for the slice
 const initialState = {
   currentUser: null,
@@ -68,7 +47,6 @@ export const userSlice = createSlice({
       state.isError = true;
       state.errorMessage = action.payload;
     },
-
     signOut: (state) => {
       state.currentUser = null;
       state.isFetching = false;
@@ -84,47 +62,34 @@ export const userSlice = createSlice({
     },
     // Other reducers can be added here if needed
   },
-  extraReducers: {
-    // Handle registration
-    [register.pending]: (state) => {
-      state.isFetching = true;
-      state.isError = false;
-      state.isSuccess = false;
-    },
-    [register.fulfilled]: (state, action) => {
-      state.isFetching = false;
-      state.isSuccess = true;
-      state.currentUser = action.payload;
-      state.isError = false;
-      state.errorMessage = "";
-    },
-    [register.rejected]: (state, action) => {
-      state.isFetching = false;
-      state.isError = true;
-      state.errorMessage = action.payload;
-    },
-    [signIn.pending]: (state) => {
-      state.isFetching = true;
-      state.isError = false;
-    },
-    [signIn.fulfilled]: (state, action) => {
-      state.isFetching = false;
-      state.isSuccess = true;
-      state.currentUser = action.payload;
-      state.isError = false;
-      state.errorMessage = "";
-    },
-    [signIn.rejected]: (state, action) => {
-      state.isFetching = false;
-      state.isError = true;
-      state.errorMessage = action.payload;
-    },
+  extraReducers: (builder) => {
+    builder
+      .addCase(register.pending, (state) => {
+        state.isFetching = true;
+        state.isError = false;
+        state.isSuccess = false;
+      })
+      .addCase(register.fulfilled, (state, action) => {
+        state.isFetching = false;
+        state.isSuccess = true;
+        state.currentUser = action.payload;
+        state.isError = false;
+        state.errorMessage = "";
+      })
+      .addCase(register.rejected, (state, action) => {
+        state.isFetching = false;
+        state.isError = true;
+        state.errorMessage = action.payload;
+      });
   },
 });
 
+// Export the actions
 export const { clearState, loginStart, loginSuccess, loginFailure, signOut } =
   userSlice.actions;
 
+// Export the selector (if you need to access the state in your component)
 export const userSelector = (state) => state.user;
 
+// Export the reducer
 export default userSlice.reducer;

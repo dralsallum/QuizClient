@@ -16,11 +16,12 @@ import {
 import GlobalStyle from "./globalStyles";
 import { useSelector } from "react-redux";
 import LessonProvider from "./LessonContext";
-import Login from "./pages/Login";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
-  const lessons = useSelector((state) => state.lessons.lessonsCompleted);
+  const lessonsCompleted = useSelector(
+    (state) => state.lessons.lessonsCompleted
+  );
   const basketCount = useSelector((state) => state.basket.basketCount); // Access basket count from Redux
 
   return (
@@ -38,7 +39,7 @@ const App = () => {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/test/:chapterName" element={<Test />} />
           <Route path="/items" element={<Items />} />
-          <Route path="/login" element={<Login />} />
+
           <Route path="/payment" element={<Payment />} />
           <Route path="/product/:name" element={<Products />} />
         </Routes>

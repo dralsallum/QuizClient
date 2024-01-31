@@ -41,7 +41,7 @@ const SignForm = () => {
     e.preventDefault();
     try {
       await dispatch(register(inputs)).unwrap();
-      navigate("/outcome"); // Redirect on successful registration
+      navigate("/train"); // Redirect on successful registration
     } catch (error) {
       setErrorMessage(
         getArabicErrorMessage(error.message || "Registration failed.")
@@ -69,6 +69,12 @@ const SignForm = () => {
         <LoginSignHeader>تسجيل دخول</LoginSignHeader>
         {errorMessage && <div style={{ color: "red" }}>{errorMessage}</div>}
         <SignUpForm onSubmit={handleSubmit}>
+          <LoginSignSubHeader>اسم مستخدم</LoginSignSubHeader>
+          <LoginSignInput
+            name="username"
+            placeholder="الايميل"
+            onChange={handleChange}
+          />
           <LoginSignSubHeader>ايميل</LoginSignSubHeader>
           <LoginSignInput
             name="email"
