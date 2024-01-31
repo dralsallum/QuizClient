@@ -17,7 +17,6 @@ import GlobalStyle from "./globalStyles";
 import { useSelector } from "react-redux";
 import LessonProvider from "./LessonContext";
 import Login from "./pages/Login";
-import Personal from "./pages/personal";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
