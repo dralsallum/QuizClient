@@ -7,6 +7,7 @@ export const SignContainer = styled.div`
   flex-direction: column;
   align-items: center;
   direction: rtl;
+  margin-top: 2rem;
 `;
 
 export const LoginContainer = styled.div`
@@ -63,18 +64,7 @@ export const RegistarButton = styled.button`
   border: 1px solid;
   margin-top: 10px;
   border-color: darkgray;
-
-  :hover {
-    cursor: pointer;
-  }
-`;
-export const RedirectButton = styled.a`
-  border-radius: 4px;
-  width: 100%;
-  height: 30px;
-  border: 1px solid;
-  margin-top: 10px;
-  border-color: darkgray;
+  cursor: pointer;
 
   :hover {
     cursor: pointer;
