@@ -1,0 +1,163 @@
+[
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "We read a newspaper",
+    "answerExplain": "",
+    "questionSubText": "We read a newspaper",
+    "correctSequence": [4, 6, 5],
+    "avatar": "../../assets/indian.png",
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "حليب" },
+      { "answerText": "الاولاد" },
+      { "answerText": "الفتيات" },
+      { "answerText": "يشربون" },
+      { "answerText": "نحن" },
+      { "answerText": "جريدة" },
+      { "answerText": "نقرأ" }
+    ]
+  },
+  {
+    "questionText": "أي واحدة من هذه هو الخبز",
+    "questionExplain": "bread",
+    "answerExplain": " ",
+    "avatar": "../../assets/indian.png",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "Milk",
+        "isCorrect": true,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/645fa42dcea02c7e2970a1285e321562"
+      },
+      {
+        "answerText": "Sandwich",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/d56b5cfc3455ffcdac9b1207d34cdeaa"
+      },
+      {
+        "answerText": "Rice",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/80a169600a14918bad9d6c451596c6d7"
+      }
+    ]
+  },
+
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "I drink milk",
+    "questionExplain": "I drink milk",
+    "answerExplain": "",
+    "correctSequence": [0, 4, 1],
+    "avatar": "../../assets/indian.png",
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "أنا" },
+      { "answerText": "ماء" },
+      { "answerText": "حليباً" },
+      { "answerText": "إنه" },
+      { "answerText": "أشرب" },
+      { "answerText": "بنات" },
+      { "answerText": "نحن" }
+    ]
+  },
+  {
+    "questionText": "اي واحدة من هذه بنت",
+    "questionExplain": "واحدة من هذه 'شطيرة",
+    "answerExplain": " ",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "Rice",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/80a169600a14918bad9d6c451596c6d7"
+      },
+      {
+        "answerText": "Sandwich",
+        "isCorrect": true,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/d56b5cfc3455ffcdac9b1207d34cdeaa"
+      },
+      {
+        "answerText": "Milk",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/645fa42dcea02c7e2970a1285e321562"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "شطيرة",
+    "questionExplain": "Sandwich",
+    "answerExplain": "",
+    "questionType": "type3",
+    "avatar": "../../assets/indian.png",
+    "correctSequence": [2],
+    "answerOptions": [
+      { "answerText": "Men" },
+      { "answerText": "Girl" },
+      { "answerText": "Sandwich" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "انا ذهبت للمدرسة",
+    "questionExplain": "I went to school",
+    "answerExplain": "",
+    "correctSequence": [2, 0, 3, 1],
+    "questionType": "type3",
+    "avatar": "../../assets/indian.png",
+    "answerOptions": [
+      { "answerText": "went" },
+      { "answerText": "school" },
+      { "answerText": "I" },
+      { "answerText": "to" },
+      { "answerText": "by" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionSubText": "Tree",
+    "questionExplain": "Tree",
+    "answerExplain": " الكلمة الإنجليزية 'Tree' تترجم إلى 'شجرة' بالعربية",
+    "correctSequence": [4],
+    "avatar": "../../assets/indian.png",
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "رجل" },
+      { "answerText": "ماء" },
+      { "answerText": "بنت" },
+      { "answerText": "مفتاح" },
+      { "answerText": "شجرة" }
+    ]
+  },
+  {
+    "questionText": "أي واحدة من هذه هو أرز",
+    "questionType": "type2",
+    "questionExplain": "Rice",
+    "answerExplain": "",
+    "answerOptions": [
+      {
+        "answerText": "Rice",
+        "isCorrect": true,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/80a169600a14918bad9d6c451596c6d7"
+      },
+      {
+        "answerText": "Sandwich",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/d56b5cfc3455ffcdac9b1207d34cdeaa"
+      },
+      {
+        "answerText": "Milk",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/645fa42dcea02c7e2970a1285e321562"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "Milk",
+    "questionExplain": "Milk",
+    "answerExplain": " الكلمة الإنجليزية 'Boy' تترجم إلى 'ولد' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "Milk"
+  }
+]

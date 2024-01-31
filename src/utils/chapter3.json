@@ -1,0 +1,164 @@
+[
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "man",
+    "answerExplain": " الكلمة الإنجليزية 'water' تترجم إلى 'ماء' بالعربية",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "man",
+    "correctSequence": [0],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "رجل" },
+      { "answerText": "ماء" },
+      { "answerText": "بنت" },
+      { "answerText": "مفتاح" },
+      { "answerText": "شجرة" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "?what's your name",
+    "answerExplain": " الكلمة الإنجليزية 'What's' تترجم إلى 'ما هو' بالعربية وتستخدم في سؤال الاسم.",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "?your name ___",
+    "correctSequence": [0],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "What's" },
+      { "answerText": "Nice" },
+      { "answerText": "Who are" },
+      { "answerText": "Hello" }
+    ]
+  },
+  {
+    "questionText": "اي واحدة من هذه بنت",
+    "questionExplain": "Girl",
+    "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "girl",
+        "isCorrect": true,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/825628e696b71adc00a63df24de6a681"
+      },
+      {
+        "answerText": "man",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/3d50c3b5122f79e5dc5f1254ce2f5695"
+      },
+      {
+        "answerText": "boy",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/31ca4ce376000442b1237964904daab3"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Where are ___ from",
+    "answerExplain": " الكلمة الإنجليزية 'you' تترجم إلى 'أنت' بالعربية وتستخدم في سؤال المنشأ.",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "?Where are ___ from",
+    "correctSequence": [1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "he" },
+      { "answerText": "you" },
+      { "answerText": "they" },
+      { "answerText": "we" }
+    ]
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the English words with their Arabic translations.",
+    "avatar": "../../assets/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "He",
+        "arabic": "هو"
+      },
+      {
+        "english": "she",
+        "arabic": "هي"
+      },
+      {
+        "english": "they",
+        "arabic": "هم"
+      },
+      {
+        "english": "woman",
+        "arabic": "امراة"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "How ___ you",
+    "answerExplain": " الكلمة الإنجليزية 'are' تترجم إلى 'هل' بالعربية وتستخدم في سؤال الحالة.",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "?How ___ you",
+    "correctSequence": [2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "is" },
+      { "answerText": "do" },
+      { "answerText": "are" },
+      { "answerText": "have" }
+    ]
+  },
+  {
+    "questionText": "كيف تقول ... بالإنجليزية؟",
+    "questionExplain": "___  old are you?",
+    "answerExplain": " الكلمة الإنجليزية 'How old are you' تترجم إلى 'كم عمرك' بالعربية.",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "?old are you ___",
+    "correctSequence": [1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "What's" },
+      { "answerText": "How " },
+      { "answerText": "Who are" },
+      { "answerText": "Hello" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Hobby",
+    "answerExplain": " الكلمة الإنجليزية 'Hobby' تترجم إلى 'هواية' بالعربية",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "hobby",
+    "correctSequence": [3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "كتاب" },
+      { "answerText": "شجرة" },
+      { "answerText": "مدينة" },
+      { "answerText": "هواية" },
+      { "answerText": "بحر" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "City",
+    "answerExplain": " الكلمة الإنجليزية 'City' تترجم إلى 'مدينة' بالعربية",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "مدينة",
+    "correctSequence": [2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Country" },
+      { "answerText": "River" },
+      { "answerText": "City" },
+      { "answerText": "Mountain" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "صديق",
+    "questionExplain": "Friend",
+    "answerExplain": " الكلمة الإنجليزية 'Friend' تترجم إلى 'صديق' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "friend"
+  }
+]

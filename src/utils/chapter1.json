@@ -1,0 +1,166 @@
+[
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "hello",
+    "answerExplain": " الكلمة الإنجليزية 'hello' تترجم إلى 'مرحبا' بالعربية",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "hello",
+    "correctSequence": [1],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "صباح الخير" },
+      { "answerText": "مرحبا" },
+      { "answerText": "وداعا" },
+      { "answerText": "شكرا" },
+      { "answerText": "نعم" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Hello",
+    "answerExplain": " الكلمة الإنجليزية 'Hello' تترجم إلى 'مرحبا' بالعربية",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "مرحبا",
+    "correctSequence": [0],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Hello" },
+      { "answerText": "Goodbye" },
+      { "answerText": "Thank you" },
+      { "answerText": "Yes" }
+    ]
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the English greetings with their Arabic translations.",
+    "avatar": "../../assets/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "Hello",
+        "arabic": "مرحبا"
+      },
+      {
+        "english": "Good morning",
+        "arabic": "صباح الخير"
+      },
+      {
+        "english": "Good evening",
+        "arabic": "مساء الخير"
+      },
+      {
+        "english": "Good night",
+        "arabic": "تصبح على خير"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "greeting",
+    "answerExplain": " الكلمة الإنجليزية 'greeting' تترجم إلى 'تحية' بالعربية",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "greeting",
+    "correctSequence": [2],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "هدية" },
+      { "answerText": "مرحبا" },
+      { "answerText": "تحية" },
+      { "answerText": "صديق" },
+      { "answerText": "درس" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "تحية",
+    "questionExplain": "Greeting",
+    "answerExplain": " الكلمة الإنجليزية 'Greeting' تترجم إلى 'تحية' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "greeting"
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "good evening",
+    "answerExplain": " الكلمة الإنجليزية 'good evening' تترجم إلى 'مساء الخير' بالعربية",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "good evening",
+    "correctSequence": [0],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "مساء الخير" },
+      { "answerText": "صباح الخير" },
+      { "answerText": "وداعا" },
+      { "answerText": "شكرا" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Good evening",
+    "answerExplain": " الكلمة الإنجليزية 'Good evening' تترجم إلى 'مساء الخير' بالعربية",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "مساء الخير",
+    "correctSequence": [1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Hello" },
+      { "answerText": "Good evening" },
+      { "answerText": "Goodbye" },
+      { "answerText": "Thank you" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "welcome",
+    "answerExplain": " الكلمة الإنجليزية 'welcome' تترجم إلى 'أهلاً وسهلاً' بالعربية",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "welcome",
+    "correctSequence": [4],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "صباح الخير" },
+      { "answerText": "مساء الخير" },
+      { "answerText": "وداعا" },
+      { "answerText": "شكرا" },
+      { "answerText": "أهلاً وسهلاً" }
+    ]
+  },
+  {
+    "questionText": "ما هو معنى الرد على 'مرحبًا'؟",
+    "questionExplain": "Reply to 'Hello'",
+    "avatar": "../../assets/indian.png",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "Hello!",
+        "isCorrect": true,
+        "imgPath": "https://example.com/images/hello_reply.png"
+      },
+      {
+        "answerText": "Bye!",
+        "isCorrect": false,
+        "imgPath": "https://example.com/images/bye.png"
+      },
+      {
+        "answerText": "Thanks!",
+        "isCorrect": false,
+        "imgPath": "https://example.com/images/thanks.png"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Welcome",
+    "answerExplain": " الكلمة الإنجليزية 'Welcome' تترجم إلى 'أهلاً وسهلاً' بالعربية",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "اهلاً وسهلاً",
+    "correctSequence": [4],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "صباح الخير" },
+      { "answerText": "مساء الخير" },
+      { "answerText": "وداعا" },
+      { "answerText": "شكرا" },
+      { "answerText": "أهلاً وسهلاً" }
+    ]
+  }
+]

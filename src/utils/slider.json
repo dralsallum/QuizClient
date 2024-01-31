@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Whispers in the Rails",
+    "price": "49",
+    "image": "../../assets/Whispers in the Rails.jpg"
+  },
+
+  {
+    "name": "Friends Forever",
+    "price": "49",
+    "image": "./r3.png"
+  },
+
+  {
+    "name": "Behind Grey Eyes",
+    "price": "49",
+    "image": "./r2.png"
+  },
+  {
+    "name": "Beyond the clock",
+    "price": "49",
+    "image": "./r3.png"
+  }
+]

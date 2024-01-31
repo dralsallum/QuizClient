@@ -1,0 +1,174 @@
+[
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "He has",
+    "answerExplain": "",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "He has",
+    "correctSequence": [2, 4],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "البنات" },
+      { "answerText": "التفاحة" },
+      { "answerText": "إنه" },
+      { "answerText": "ماء" },
+      { "answerText": "لديه" },
+      { "answerText": "تقرأ" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "The man has the book",
+    "answerExplain": "",
+    "avatar": "../../assets/bear.png",
+    "questionSubText": "The man has the book",
+    "correctSequence": [0, 2, 4],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "الرجل" },
+      { "answerText": "ورجال" },
+      { "answerText": "لديه" },
+      { "answerText": "أطفال" },
+      { "answerText": "الكتاب" },
+      { "answerText": "الارز" }
+    ]
+  },
+  {
+    "questionText": "اي واحدة من هذه بنت",
+    "questionExplain": "Girl",
+    "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "girl",
+        "isCorrect": true,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/825628e696b71adc00a63df24de6a681"
+      },
+      {
+        "answerText": "man",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/3d50c3b5122f79e5dc5f1254ce2f5695"
+      },
+      {
+        "answerText": "boy",
+        "isCorrect": false,
+        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/31ca4ce376000442b1237964904daab3"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "He has bread",
+    "answerExplain": " ",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "He has bread",
+    "correctSequence": [4, 3, 1],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "ارز" },
+      { "answerText": "خبز" },
+      { "answerText": "حليب" },
+      { "answerText": "لديه" },
+      { "answerText": "هو" },
+      { "answerText": "المراة" }
+    ]
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the English words with their Arabic translations.",
+    "avatar": "../../assets/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "He",
+        "arabic": "هو"
+      },
+      {
+        "english": "she",
+        "arabic": "هي"
+      },
+      {
+        "english": "they",
+        "arabic": "هم"
+      },
+      {
+        "english": "woman",
+        "arabic": "امراة"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "He reads a book",
+    "answerExplain": "",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "He reads a book",
+    "correctSequence": [1, 2, 5],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "الرجل" },
+      { "answerText": "هو" },
+      { "answerText": "يقرأ" },
+      { "answerText": "والبنت" },
+      { "answerText": "التفاحة" },
+      { "answerText": "كتاباً" }
+    ]
+  },
+  {
+    "questionText": "كيف تقول ... بالإنجليزية؟",
+    "questionExplain": "I have boys",
+    "answerExplain": " الكلمة الإنجليزية 'How old are you' تترجم إلى 'كم عمرك' بالعربية.",
+    "avatar": "../../assets/cool.png",
+    "questionSubText": "I have boys",
+    "correctSequence": [3, 4],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "خبز" },
+      { "answerText": "الماء" },
+      { "answerText": "الارز" },
+      { "answerText": "لدي" },
+      { "answerText": "اولاد" },
+      { "answerText": "هل" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "You have a book",
+    "answerExplain": " ",
+    "avatar": "../../assets/dude.png",
+    "questionSubText": "You have a book",
+    "correctSequence": [0, 2],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "لديك" },
+      { "answerText": "الحليب" },
+      { "answerText": "كتاب" },
+      { "answerText": "اولاد" },
+      { "answerText": "رجل" },
+      { "answerText": "و" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "City",
+    "answerExplain": " الكلمة الإنجليزية 'City' تترجم إلى 'مدينة' بالعربية",
+    "avatar": "../../assets/indian.png",
+    "questionSubText": "مدينة",
+    "correctSequence": [2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Country" },
+      { "answerText": "River" },
+      { "answerText": "City" },
+      { "answerText": "Mountain" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "من انت",
+    "questionExplain": "Who are you",
+    "answerExplain": "",
+    "questionType": "type4",
+    "correctAnswer": "Who are you"
+  }
+]
