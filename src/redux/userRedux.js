@@ -20,6 +20,20 @@ export const register = createAsyncThunk(
   }
 );
 
+// Async thunk for login
+export const login = createAsyncThunk(
+  "user/login",
+  async (credentials, thunkAPI) => {
+    try {
+      const response = await publicRequest.post("/auth/login", credentials);
+      return response.data;
+    } catch (error) {
+      let message = error.response?.data?.message || error.message;
+      return thunkAPI.rejectWithValue(message);
+    }
+  }
+);
+
 // Initial state for the slice
 const initialState = {
   currentUser: null,
@@ -77,6 +91,19 @@ export const userSlice = createSlice({
         state.errorMessage = "";
       })
       .addCase(register.rejected, (state, action) => {
+        state.isFetching = false;
+        state.isError = true;
+        state.errorMessage = action.payload;
+      })
+      .addCase(login.pending, (state) => {
+        state.isFetching = true;
+      })
+      .addCase(login.fulfilled, (state, action) => {
+        state.isFetching = false;
+        state.isSuccess = true;
+        state.currentUser = action.payload;
+      })
+      .addCase(login.rejected, (state, action) => {
         state.isFetching = false;
         state.isError = true;
         state.errorMessage = action.payload;

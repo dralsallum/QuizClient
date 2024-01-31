@@ -6,7 +6,7 @@ import Checkout from "./pages/Checkout";
 import Payment from "./pages/Payment";
 import Train from "./pages/Train";
 import Test from "./pages/Test";
-import { Products } from "./components";
+import { Products, SignLog } from "./components";
 import {
   BrowserRouter as Router,
   Route,
@@ -31,6 +31,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/login" element={<SignLog />} />
           <Route path="/train" element={<Train />} />
           <Route
             path="/signup"

@@ -17,6 +17,7 @@ export { default as Divider } from "./Divider/Divider";
 export { default as Body } from "./Body/Body";
 export { default as Question } from "./Question/Question";
 export { default as SignForm } from "./SignForm/SignForm";
+export { default as SignLog } from "./SignLog/SignLog";
 export { default as Header } from "./Header/Header";
 export { default as Who } from "./Who/Who";
 export { default as Pay } from "./Pay/Pay";
