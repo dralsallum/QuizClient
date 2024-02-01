@@ -4,6 +4,7 @@ import SignUp from "./pages/SignUp";
 import Items from "./pages/Items";
 import Checkout from "./pages/Checkout";
 import Payment from "./pages/Payment";
+import Login from "./pages/Login";
 import Train from "./pages/Train";
 import Test from "./pages/Test";
 import { Products, SignLog } from "./components";
@@ -16,14 +17,9 @@ import {
 import GlobalStyle from "./globalStyles";
 import { useSelector } from "react-redux";
 import LessonProvider from "./LessonContext";
-import { Login } from "@mui/icons-material";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
-  const lessonsCompleted = useSelector(
-    (state) => state.lessons.lessonsCompleted
-  );
-  const basketCount = useSelector((state) => state.basket.basketCount); // Access basket count from Redux
 
   return (
     <LessonProvider>
