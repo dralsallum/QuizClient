@@ -16,6 +16,7 @@ import {
 import GlobalStyle from "./globalStyles";
 import { useSelector } from "react-redux";
 import LessonProvider from "./LessonContext";
+import { Login } from "@mui/icons-material";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -31,7 +32,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/login" element={<SignLog />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/train" element={<Train />} />
           <Route
             path="/signup"
