@@ -72,7 +72,7 @@ const SignForm = () => {
           <LoginSignSubHeader>اسم مستخدم</LoginSignSubHeader>
           <LoginSignInput
             name="username"
-            placeholder="الايميل"
+            placeholder="اسم المستخدم"
             onChange={handleChange}
           />
           <LoginSignSubHeader>ايميل</LoginSignSubHeader>
