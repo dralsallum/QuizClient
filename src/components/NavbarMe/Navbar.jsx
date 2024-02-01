@@ -50,7 +50,7 @@ const NavbarMe = () => {
               تسجيل خروج
             </ButtonMain>
           ) : (
-            <NavBtnLink to="/signup">
+            <NavBtnLink to="/login">
               <ButtonMain primary>تسجيل دخول</ButtonMain>
             </NavBtnLink>
           )}
