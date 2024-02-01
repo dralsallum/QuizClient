@@ -52,10 +52,10 @@ import {
   QuestionWrapper,
   AccessibleContainer,
 } from "./Question.elements";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { incrementLesson } from "../../redux/lessonRedux";
 import chapterItems from "../../chapterItems";
 import { Link } from "react-router-dom";
-import { useLesson } from "../../LessonContext";
 
 const Arrow = () => (
   <svg width="18" height="18" viewBox="0 0 24 24">
@@ -80,6 +80,8 @@ const areAllLessonsCompleted = (lessons) => {
 };
 
 const ChapterItem = ({
+  chapterId,
+  lessonIndex,
   imgSrc,
   mainText,
   subText,
@@ -88,6 +90,10 @@ const ChapterItem = ({
   url,
   isAccessible,
 }) => {
+  const dispatch = useDispatch();
+  const handleCompleteLesson = () => {
+    dispatch(incrementLesson({ chapter: chapterId, lessonIndex }));
+  };
   const content = (
     <QuestionChapterItemElement>
       <QuestionChapterItemPart>
@@ -121,17 +127,26 @@ const ChapterItem = ({
     </QuestionChapterItemElement>
   );
 
-  return (
-    <AccessibleContainer isAccessible={isAccessible}>
-      {isAccessible ? (
-        <Link to={url} style={{ textDecoration: "none", color: "inherit" }}>
-          {content}
-        </Link>
-      ) : (
-        content
-      )}
-    </AccessibleContainer>
-  );
+  if (!completed) {
+    return (
+      <AccessibleContainer isAccessible={isAccessible}>
+        {isAccessible ? (
+          <Link to={url} style={{ textDecoration: "none", color: "inherit" }}>
+            {content}
+            <button onClick={handleCompleteLesson}>Mark as Completed</button>
+          </Link>
+        ) : (
+          content
+        )}
+      </AccessibleContainer>
+    );
+  } else {
+    return (
+      <AccessibleContainer isAccessible={isAccessible}>
+        {/* Your existing JSX here... */}
+      </AccessibleContainer>
+    );
+  }
 };
 
 const Chapter = ({
@@ -140,11 +155,13 @@ const Chapter = ({
   chapterItems,
   isAccessible: isChapterAccessible,
 }) => {
-  const { lessonsCompleted } = useLesson();
+  const lessonsCompleted = useSelector(
+    (state) => state.lessons.lessonsCompleted
+  );
+
+  // Now, you can use lessonsCompleted specific to the chapter
   const lessonsForThisChapter = lessonsCompleted[chapterNumber] || [];
-  const completedLessonsCount = lessonsForThisChapter.filter(
-    (lesson) => lesson === true
-  ).length;
+  const completedLessonsCount = lessonsForThisChapter.filter(Boolean).length;
   const progressWidth = `${(completedLessonsCount / totalLessons) * 100}%`;
 
   return (
@@ -190,9 +207,11 @@ const Chapter = ({
 };
 
 const Question = () => {
+  const dispatch = useDispatch();
   const lessonsCompleted = useSelector(
     (state) => state.lessons.lessonsCompleted
   );
+
   return (
     <QuestionMain>
       <QuestionWrapper>

@@ -146,7 +146,8 @@ import Heart from "../../assets/Heart.svg";
 import { useNavigate, useParams } from "react-router-dom";
 import AvatarComponent from "../../Avatar";
 import End from "../../assets/end.png";
-import { useLesson } from "../../LessonContext";
+import { useDispatch, useSelector } from "react-redux";
+import { incrementLesson } from "../../redux/lessonRedux";
 
 const Project = () => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -172,6 +173,15 @@ const Project = () => {
   const [shuffledEnglish, setShuffledEnglish] = useState([]);
   const [shuffledArabic, setShuffledArabic] = useState([]);
   const [startTime, setStartTime] = useState(null);
+  const dispatch = useDispatch();
+
+  const handleLessonCompletion = (chapterId, lessonId) => {
+    dispatch(incrementLesson({ chapterId, lessonId }));
+  };
+
+  const lessonsCompleted = useSelector(
+    (state) => state.lessons.lessonsCompleted
+  );
 
   let questions = [];
 
@@ -412,6 +422,10 @@ const Project = () => {
   const endQuiz = () => {
     setShowScore(true);
     setProgress(100);
+
+    const chapterId = 1; // This should be dynamically determined based on your app's structure
+    const lessonId = currentQuestion; // or however you determine the lesson's index
+    dispatch(incrementLesson({ chapter: chapterId, lessonIndex: lessonId }));
   };
 
   useEffect(() => {
@@ -440,7 +454,6 @@ const Project = () => {
   }, [score, questions.length]);
 
   const QuizResults = ({ score, scorePercentage, resetQuiz, lessonIndex }) => {
-    const { incrementLesson } = useLesson();
     const navigate = useNavigate();
 
     return (

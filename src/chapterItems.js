@@ -9,7 +9,7 @@ const chapterItems = [
   {
     chapterId: 1,
     lessonId: 1,
-    completed: true,
+    completed: false,
     imgSrc: Monaliza,
     mainText: "تقديم نفسك",
     subText: "تعلم التحية عند مقابلة الأشخاص",

@@ -11,13 +11,14 @@ import {
   SignUpForm,
 } from "./SignLog.elements";
 import { useDispatch } from "react-redux";
-import { login, loginStart } from "../../redux/userRedux";
-import { Link } from "react-router-dom";
+import { login } from "../../redux/userRedux";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignLog = () => {
   const [inputs, setInputs] = useState({});
   const dispatch = useDispatch();
   const [errorMessage, setErrorMessage] = useState("");
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setInputs((prev) => {
@@ -25,40 +26,17 @@ const SignLog = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
+    // Marked as async
     e.preventDefault();
-    dispatch(login(inputs)) // Dispatch login thunk with inputs
-      .unwrap()
-      .catch((rejectedValueOrSerializedError) => {
-        // Handle the error here. `rejectedValueOrSerializedError` will be the error message
-        setErrorMessage(rejectedValueOrSerializedError);
-      });
-  };
-
-  const getArabicErrorMessage = (englishMessage) => {
-    switch (englishMessage) {
-      case "The email address is already in use by another account.":
-        return "عنوان البريد الإلكتروني مستخدم بالفعل من قبل حساب آخر.";
-      case "Invalid password":
-        return "يجب أن تكون كلمة المرور مكونة من 6 عناصر وتحتوي على أحرف وأرقام.";
-      // ... add other translations as needed
-      default:
-        return "حدث خطأ غير معروف. يرجى المحاولة مرة أخرى.";
+    try {
+      await dispatch(login(inputs)).unwrap(); // Await the async operation
+      navigate("/train"); // Redirect on successful login
+    } catch (error) {
+      // Assuming getArabicErrorMessage is a function that converts error messages
+      // If not defined, directly use error.message or a default error string
+      setErrorMessage(error.message || "Login failed.");
     }
-  };
-
-  const isValidPassword = (password) => {
-    const hasNumber = /\d/; // This tests for a number
-    const hasLetter = /[a-zA-Z]/; // This tests for a letter
-    return (
-      password.length >= 6 &&
-      hasNumber.test(password) &&
-      hasLetter.test(password)
-    );
-  };
-
-  const extractEmailPrefix = (email) => {
-    return email.split("@")[0];
   };
 
   return (

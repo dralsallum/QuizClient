@@ -1,78 +1,42 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
-
-// Async thunk example (adjust according to your API)
-export const fetchLessons = createAsyncThunk(
-  "lessons/fetchLessons",
-  async (userId, thunkAPI) => {
-    try {
-      const response = await axios.get(`/api/lessons/${userId}`);
-      return response.data;
-    } catch (error) {
-      console.error("Error fetching lessons:", error);
-      return thunkAPI.rejectWithValue(
-        error.response?.data || "Error fetching lessons"
-      );
-    }
-  }
-);
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  lessonsCompleted: { 1: [true] },
-  isFetching: false,
-  isSuccess: false,
-  isError: false,
-  errorMessage: "",
+  lessonsCompleted: {
+    // Initial state with example chapters and lesson completion statuses
+    1: [true, false, false, false, false],
+    2: [false, false, false, false, false],
+    // Add more chapters as needed
+  },
 };
 
-export const lessonSlice = createSlice({
+export const lessonsSlice = createSlice({
   name: "lessons",
   initialState,
   reducers: {
-    // Define your reducers here
-    setLessons: (state, action) => {
-      state.lessonsCompleted = action.payload;
+    completeLesson: (state, action) => {
+      const { chapter, lessonIndex } = action.payload;
+      if (!state.lessonsCompleted[chapter]) {
+        state.lessonsCompleted[chapter] = [];
+      }
+      state.lessonsCompleted[chapter][lessonIndex] = true;
     },
-
     incrementLesson: (state, action) => {
-      const { chapterId, lessonId } = action.payload;
+      const { chapter } = action.payload;
+      const lessons = state.lessonsCompleted[chapter] || [];
 
-      // Initialize the chapter if it doesn't exist
-      if (!state.lessonsCompleted[chapterId]) {
-        state.lessonsCompleted[chapterId] = [];
+      // Find the first incomplete lesson and mark it as complete
+      const firstIncompleteIndex = lessons.findIndex((completed) => !completed);
+      if (firstIncompleteIndex !== -1) {
+        lessons[firstIncompleteIndex] = true;
       }
 
-      // Calculate the index for the lesson
-      const lessonIndex = lessonId - 1;
-
-      // Fill the array up to the required index if necessary
-      while (state.lessonsCompleted[chapterId].length <= lessonIndex) {
-        state.lessonsCompleted[chapterId].push(false);
-      }
-
-      // Set the lesson as completed
-      state.lessonsCompleted[chapterId][lessonIndex] = true;
+      // Update the state
+      state.lessonsCompleted[chapter] = lessons;
     },
-  },
-
-  extraReducers: {
-    // Handle async thunks
-    [fetchLessons.pending]: (state) => {
-      state.isFetching = true;
-    },
-    [fetchLessons.fulfilled]: (state, action) => {
-      state.isFetching = false;
-      state.isSuccess = true;
-      state.lessonsCompleted = action.payload;
-    },
-    [fetchLessons.rejected]: (state, action) => {
-      state.isFetching = false;
-      state.isError = true;
-      state.errorMessage = action.payload;
-    },
+    // Add more reducers as needed for different actions
   },
 });
 
-export const { setLessons, incrementLesson } = lessonSlice.actions;
-
-export default lessonSlice.reducer;
+// Export actions and reducer
+export const { completeLesson, incrementLesson } = lessonsSlice.actions;
+export default lessonsSlice.reducer;
