@@ -57,27 +57,23 @@ import { incrementLesson } from "../../redux/lessonRedux";
 import chapterItems from "../../chapterItems";
 import { Link } from "react-router-dom";
 
-const Arrow = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24">
+const Arrow = ({
+  width = "18",
+  height = "18",
+  viewBox = "0 0 24 24",
+  fill = "currentColor",
+}) => (
+  <svg width={width} height={height} viewBox={viewBox} fill={fill}>
     <path d="M12 16l4-4h-8z" />
   </svg>
 );
 
-const groupByChapter = (items) => {
-  return items.reduce((acc, item) => {
-    if (!acc[item.chapterId]) {
-      acc[item.chapterId] = [];
-    }
-    acc[item.chapterId].push(item);
-    return acc;
-  }, {});
-};
+const chapters = chapterItems.reduce((acc, item) => {
+  acc[item.chapterId] = [...(acc[item.chapterId] || []), item];
+  return acc;
+}, {});
 
-const chapters = groupByChapter(chapterItems);
-
-const areAllLessonsCompleted = (lessons) => {
-  return lessons.every((lesson) => lesson === true);
-};
+const areAllLessonsCompleted = (lessons) => lessons.every(Boolean);
 
 const ChapterItem = ({
   chapterId,
@@ -205,7 +201,6 @@ const Chapter = ({
 };
 
 const Question = () => {
-  const dispatch = useDispatch();
   const lessonsCompleted = useSelector(
     (state) => state.lessons.lessonsCompleted
   );
