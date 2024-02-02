@@ -110,7 +110,7 @@ const ChapterItem = ({
         <QuestionChapterItemPara>{mainText}</QuestionChapterItemPara>
         <QuestionChapterItemSubPara>{subText}</QuestionChapterItemSubPara>
       </QuestionChapterItemSpan>
-      {type !== "checkpoint" && ( // <-- Check if it's not a checkpoint
+      {type !== "checkpoint" && (
         <QuestionChapterPointContainer>
           <QuestionChapterPoint></QuestionChapterPoint>
         </QuestionChapterPointContainer>
@@ -131,7 +131,6 @@ const ChapterItem = ({
   );
 };
 
-// A simplified version of your Chapter
 const Chapter = ({
   chapterNumber,
   totalLessons,

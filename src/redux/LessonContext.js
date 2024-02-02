@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
+import { useSelector } from "react-redux";
 
 const LessonContext = createContext();
 
@@ -7,11 +8,9 @@ export const useLesson = () => {
 };
 
 export const LessonProvider = ({ children }) => {
-  // Initialize lessonsCompleted state
   const [lessonsCompleted, setLessonsCompleted] = useState({
-    1: [true, false, false, false, false],
+    1: [true, true, false, false, false],
     2: [false, false, false, false, false],
-    // more chapters here
   });
 
   const incrementLesson = (chapterNumber) => {

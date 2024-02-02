@@ -49,7 +49,6 @@ const App = () => {
           </LessonProvider>
         </PersistGate>
       </Provider>
-      ,
     </Router>
   );
 };
