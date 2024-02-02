@@ -147,7 +147,10 @@ import { useNavigate, useParams } from "react-router-dom";
 import AvatarComponent from "../../Avatar";
 import End from "../../assets/end.png";
 import { useDispatch, useSelector } from "react-redux";
-import { incrementLesson } from "../../redux/lessonRedux";
+import {
+  fetchLessonsCompleted,
+  incrementLesson,
+} from "../../redux/lessonRedux";
 
 const Project = () => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -174,14 +177,6 @@ const Project = () => {
   const [shuffledArabic, setShuffledArabic] = useState([]);
   const [startTime, setStartTime] = useState(null);
   const dispatch = useDispatch();
-
-  const handleLessonCompletion = (chapterId, lessonId) => {
-    dispatch(incrementLesson({ chapterId, lessonId }));
-  };
-
-  const lessonsCompleted = useSelector(
-    (state) => state.lessons.lessonsCompleted
-  );
 
   let questions = [];
 

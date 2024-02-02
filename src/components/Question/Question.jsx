@@ -133,7 +133,6 @@ const ChapterItem = ({
         {isAccessible ? (
           <Link to={url} style={{ textDecoration: "none", color: "inherit" }}>
             {content}
-            <button onClick={handleCompleteLesson}>Mark as Completed</button>
           </Link>
         ) : (
           content
@@ -159,7 +158,6 @@ const Chapter = ({
     (state) => state.lessons.lessonsCompleted
   );
 
-  // Now, you can use lessonsCompleted specific to the chapter
   const lessonsForThisChapter = lessonsCompleted[chapterNumber] || [];
   const completedLessonsCount = lessonsForThisChapter.filter(Boolean).length;
   const progressWidth = `${(completedLessonsCount / totalLessons) * 100}%`;

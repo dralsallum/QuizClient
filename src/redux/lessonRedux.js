@@ -1,42 +1,70 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "axios"; // Assuming axios is used for HTTP requests
+
+export const fetchLessonsCompleted = createAsyncThunk(
+  "lessons/fetchLessonsCompleted",
+  async (userId, { rejectWithValue }) => {
+    try {
+      const response = await axios.get(`/api/users/${userId}/lessonsCompleted`);
+      return response.data;
+    } catch (error) {
+      return rejectWithValue(error.response.data);
+    }
+  }
+);
+
+export const updateLessonsCompleted = createAsyncThunk(
+  "lessons/updateLessonsCompleted",
+  async ({ userId, chapter, lessonsCompleted }, { rejectWithValue }) => {
+    try {
+      const response = await axios.post(
+        `/api/users/${userId}/lessonsCompleted`,
+        { chapter, lessonsCompleted }
+      );
+      return response.data.lessonsCompleted;
+    } catch (error) {
+      return rejectWithValue(error.response.data);
+    }
+  }
+);
 
 const initialState = {
-  lessonsCompleted: {
-    // Initial state with example chapters and lesson completion statuses
-    1: [true, false, false, false, false],
-    2: [false, false, false, false, false],
-    // Add more chapters as needed
-  },
+  data: {},
+  loading: false,
+  error: null,
 };
 
 export const lessonsSlice = createSlice({
   name: "lessons",
   initialState,
-  reducers: {
-    completeLesson: (state, action) => {
-      const { chapter, lessonIndex } = action.payload;
-      if (!state.lessonsCompleted[chapter]) {
-        state.lessonsCompleted[chapter] = [];
-      }
-      state.lessonsCompleted[chapter][lessonIndex] = true;
+  reducers: {},
+  extraReducers: {
+    [fetchLessonsCompleted.pending]: (state) => {
+      state.loading = true;
+      state.error = null;
     },
-    incrementLesson: (state, action) => {
-      const { chapter } = action.payload;
-      const lessons = state.lessonsCompleted[chapter] || [];
-
-      // Find the first incomplete lesson and mark it as complete
-      const firstIncompleteIndex = lessons.findIndex((completed) => !completed);
-      if (firstIncompleteIndex !== -1) {
-        lessons[firstIncompleteIndex] = true;
-      }
-
-      // Update the state
-      state.lessonsCompleted[chapter] = lessons;
+    [fetchLessonsCompleted.fulfilled]: (state, action) => {
+      state.data = action.payload;
+      state.loading = false;
     },
-    // Add more reducers as needed for different actions
+    [fetchLessonsCompleted.rejected]: (state, action) => {
+      state.loading = false;
+      state.error = action.payload;
+    },
+    [updateLessonsCompleted.pending]: (state) => {
+      state.loading = true;
+      state.error = null;
+    },
+    [updateLessonsCompleted.fulfilled]: (state, action) => {
+      state.data = { ...state.data, ...action.payload }; // Assuming payload returns the updated lessonsCompleted map
+      state.loading = false;
+    },
+    [updateLessonsCompleted.rejected]: (state, action) => {
+      state.loading = false;
+      state.error = action.payload;
+    },
   },
 });
 
-// Export actions and reducer
 export const { completeLesson, incrementLesson } = lessonsSlice.actions;
 export default lessonsSlice.reducer;
