@@ -31,7 +31,6 @@ const SignForm = () => {
         return "عنوان البريد الإلكتروني مستخدم بالفعل من قبل حساب آخر.";
       case "Invalid password":
         return "يجب أن تكون كلمة المرور مكونة من 6 عناصر وتحتوي على أحرف وأرقام.";
-      // ... add other translations as needed
       default:
         return "حدث خطأ غير معروف. يرجى المحاولة مرة أخرى.";
     }
@@ -47,20 +46,6 @@ const SignForm = () => {
         getArabicErrorMessage(error.message || "Registration failed.")
       );
     }
-  };
-
-  const isValidPassword = (password) => {
-    const hasNumber = /\d/; // This tests for a number
-    const hasLetter = /[a-zA-Z]/; // This tests for a letter
-    return (
-      password.length >= 6 &&
-      hasNumber.test(password) &&
-      hasLetter.test(password)
-    );
-  };
-
-  const extractEmailPrefix = (email) => {
-    return email.split("@")[0];
   };
 
   return (
