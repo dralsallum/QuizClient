@@ -52,8 +52,8 @@ import {
   QuestionWrapper,
   AccessibleContainer,
 } from "./Question.elements";
-import { useSelector, useDispatch } from "react-redux";
-import { incrementLesson } from "../../redux/lessonRedux";
+import { useSelector } from "react-redux";
+
 import chapterItems from "../../chapterItems";
 import { Link } from "react-router-dom";
 
@@ -76,8 +76,6 @@ const chapters = chapterItems.reduce((acc, item) => {
 const areAllLessonsCompleted = (lessons) => lessons.every(Boolean);
 
 const ChapterItem = ({
-  chapterId,
-  lessonIndex,
   imgSrc,
   mainText,
   subText,
@@ -86,10 +84,6 @@ const ChapterItem = ({
   url,
   isAccessible,
 }) => {
-  const dispatch = useDispatch();
-  const handleCompleteLesson = () => {
-    dispatch(incrementLesson({ chapter: chapterId, lessonIndex }));
-  };
   const content = (
     <QuestionChapterItemElement>
       <QuestionChapterItemPart>

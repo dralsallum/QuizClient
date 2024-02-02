@@ -146,11 +146,8 @@ import Heart from "../../assets/Heart.svg";
 import { useNavigate, useParams } from "react-router-dom";
 import AvatarComponent from "../../Avatar";
 import End from "../../assets/end.png";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  fetchLessonsCompleted,
-  incrementLesson,
-} from "../../redux/lessonRedux";
+import { useDispatch } from "react-redux";
+import { incrementLesson } from "../../redux/lessonRedux";
 
 const Project = () => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -538,20 +535,6 @@ const Project = () => {
 
     // The reusable QuestionComponent
     const QuestionComponent = ({ soundSecType }) => {
-      const correctSequence = questions[currentQuestion].correctSequence;
-
-      const checkSequence = () => {
-        // Compare userAnswerSequence with correctSequence
-        if (
-          JSON.stringify(userAnswerSequence) === JSON.stringify(correctSequence)
-        ) {
-          handleAnswerButtonClick(true);
-        } else {
-          handleAnswerButtonClick(false);
-        }
-        setUserAnswerSequence([]);
-      };
-
       return (
         <PSecStart>
           <PSecStartCon>
@@ -703,7 +686,6 @@ const Project = () => {
                       </AImgCon>
                     </ASubOne>
                     <ASubTwo>{answerOption.answerText}</ASubTwo>
-                    {/* Adjacent JSX elements are now wrapped */}
                   </ACon>
                 </AButton>
               )
@@ -842,42 +824,7 @@ const Project = () => {
                   <SlReCon>
                     <SlReSub>
                       <SlReSu>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 200 200"
-                          width="50" // set width to half the original
-                          height="50" // set height to half the original
-                        >
-                          {/* Background Circle */}
-                          <circle cx="100" cy="100" r="90" fill="#E5E5E5" />
-
-                          {/* Gauge Background */}
-                          <path
-                            d="M 100 100 m -90, 0 a 90,90 0 0,1 180,0"
-                            fill="#A9E9D9"
-                          />
-
-                          {/* Gauge Filled */}
-                          <path
-                            d="M 100 100 m -90, 0 a 90,90 0 0,1 90,-90"
-                            fill="#38D48A"
-                          />
-
-                          {/* Gauge Needle */}
-                          <line
-                            x1="100"
-                            y1="100"
-                            x2="100"
-                            y2="20"
-                            stroke="#2F5BA4"
-                            strokeWidth="8"
-                            strokeLinecap="round"
-                            transform="rotate(45,100,100)"
-                          />
-
-                          {/* Center Circle */}
-                          <circle cx="100" cy="100" r="8" fill="#2F5BA4" />
-                        </svg>
+                        <svg></svg>
                       </SlReSu>
                     </SlReSub>
                     <SlReHe>{maybe}</SlReHe>
