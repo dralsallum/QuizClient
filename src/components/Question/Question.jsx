@@ -53,7 +53,6 @@ import {
   AccessibleContainer,
 } from "./Question.elements";
 import { useSelector } from "react-redux";
-
 import chapterItems from "../../chapterItems";
 import { Link } from "react-router-dom";
 

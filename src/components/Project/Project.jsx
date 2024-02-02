@@ -128,15 +128,10 @@ import {
   CroReCon,
   CroSubCon,
   CroTe,
-  CroTeCon,
-  CroTeHe,
-  CroTeSpan,
   CroQa,
   CroQaWrap,
-  CroQaSpan,
   CroQaBut,
   CroQaSp,
-  GearSvg,
 } from "./Project.elements";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeHigh } from "@fortawesome/free-solid-svg-icons";

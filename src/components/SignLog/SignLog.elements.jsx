@@ -35,6 +35,7 @@ export const LoginSignInput = styled.input`
   background-color: white;
   width: 98%;
   border-radius: 2px;
+  font-size: 16px;
 `;
 
 export const LoginSignPara = styled.p`

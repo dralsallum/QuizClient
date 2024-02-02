@@ -5,7 +5,6 @@ import { userSelector } from "./redux/userRedux"; // Import the userSelector fro
 
 export default function useRequireAuth() {
   const navigate = useNavigate();
-  // Use useSelector to access user state from Redux store
   const { currentUser } = useSelector(userSelector);
 
   useEffect(() => {
