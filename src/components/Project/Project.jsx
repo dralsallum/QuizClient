@@ -610,7 +610,6 @@ const Project = () => {
       );
     };
 
-    // Main rendering logic
     if (currentType === "type1") {
       return <QuestionComponent soundSecType="type1" />;
     }
