@@ -9,7 +9,7 @@ const chapterItems = [
   {
     chapterId: 1,
     lessonId: 1,
-    completed: false,
+
     imgSrc: Monaliza,
     mainText: "تقديم نفسك",
     subText: "تعلم التحية عند مقابلة الأشخاص",
@@ -18,7 +18,7 @@ const chapterItems = [
   {
     chapterId: 1,
     lessonId: 2,
-    completed: false,
+
     imgSrc: David,
     mainText: "تقديم نفسك",
     subText: "قل اسمك",
@@ -27,7 +27,7 @@ const chapterItems = [
   {
     chapterId: 1,
     lessonId: 3,
-    completed: false,
+
     imgSrc: Sogreat,
     mainText: "القول كيف أنت",
     subText: "تحدث عن كيف تشعر",
@@ -36,7 +36,7 @@ const chapterItems = [
   {
     chapterId: 1,
     lessonId: 4,
-    completed: false,
+
     imgSrc: Europ,
     mainText: "تطوير الطلاقة",
     subText: "عرِّف عن نفسك",
@@ -45,7 +45,7 @@ const chapterItems = [
   {
     chapterId: 1,
     lessonId: 5,
-    completed: false,
+
     type: "checkpoint",
     imgSrc: Emd,
     mainText: "نقطة التحقق",
@@ -62,7 +62,6 @@ const chapterItems = [
     url: "/test/chapter6",
   },
   {
-    completed: false,
     imgSrc: David,
     mainText: "قول أين تعيش",
     subText: "تحدث عن المكان الذي تعيش فيه",
@@ -71,7 +70,6 @@ const chapterItems = [
     lessonId: 2,
   },
   {
-    completed: false,
     imgSrc: Sogreat,
     mainText: "إعطاء جنسيتك",
     subText: "تعلم كيفية القول من أي دولة أنت",
@@ -89,7 +87,6 @@ const chapterItems = [
     lessonId: 4,
   },
   {
-    completed: false,
     type: "checkpoint",
     imgSrc: Emd,
     mainText: "نقطة التحقق",
@@ -99,7 +96,6 @@ const chapterItems = [
     lessonId: 5,
   },
   {
-    completed: false,
     imgSrc: Jack,
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
@@ -108,7 +104,6 @@ const chapterItems = [
     lessonId: 1,
   },
   {
-    completed: false,
     imgSrc: David,
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
@@ -117,7 +112,6 @@ const chapterItems = [
     lessonId: 2,
   },
   {
-    completed: false,
     imgSrc: Sogreat,
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
@@ -126,7 +120,6 @@ const chapterItems = [
     lessonId: 3,
   },
   {
-    completed: false,
     imgSrc: Europ,
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
@@ -135,7 +128,6 @@ const chapterItems = [
     lessonId: 4,
   },
   {
-    completed: false,
     type: "checkpoint",
     imgSrc: Emd,
     mainText: "نقطة التحقق",
@@ -145,7 +137,6 @@ const chapterItems = [
     lessonId: 5,
   },
   {
-    completed: false,
     imgSrc: Jack,
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
@@ -154,7 +145,6 @@ const chapterItems = [
     lessonId: 1,
   },
   {
-    completed: false,
     imgSrc: David,
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
@@ -163,7 +153,6 @@ const chapterItems = [
     lessonId: 2,
   },
   {
-    completed: false,
     imgSrc: Sogreat,
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
@@ -172,7 +161,6 @@ const chapterItems = [
     lessonId: 3,
   },
   {
-    completed: false,
     imgSrc: Europ,
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
@@ -181,7 +169,6 @@ const chapterItems = [
     lessonId: 4,
   },
   {
-    completed: false,
     type: "checkpoint",
     imgSrc: Emd,
     mainText: "نقطة التحقق",

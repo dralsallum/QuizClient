@@ -52,27 +52,29 @@ import {
   QuestionWrapper,
   AccessibleContainer,
 } from "./Question.elements";
-import { useSelector } from "react-redux";
 import chapterItems from "../../chapterItems";
 import { Link } from "react-router-dom";
-
-const Arrow = ({
-  width = "18",
-  height = "18",
-  viewBox = "0 0 24 24",
-  fill = "currentColor",
-}) => (
-  <svg width={width} height={height} viewBox={viewBox} fill={fill}>
+import { useLesson } from "../../redux/LessonContext";
+const Arrow = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24">
     <path d="M12 16l4-4h-8z" />
   </svg>
 );
+const groupByChapter = (items) => {
+  return items.reduce((acc, item) => {
+    if (!acc[item.chapterId]) {
+      acc[item.chapterId] = [];
+    }
+    acc[item.chapterId].push(item);
+    return acc;
+  }, {});
+};
 
-const chapters = chapterItems.reduce((acc, item) => {
-  acc[item.chapterId] = [...(acc[item.chapterId] || []), item];
-  return acc;
-}, {});
+const chapters = groupByChapter(chapterItems);
 
-const areAllLessonsCompleted = (lessons) => lessons.every(Boolean);
+const areAllLessonsCompleted = (lessons) => {
+  return lessons.every((lesson) => lesson === true);
+};
 
 const ChapterItem = ({
   imgSrc,
@@ -108,7 +110,7 @@ const ChapterItem = ({
         <QuestionChapterItemPara>{mainText}</QuestionChapterItemPara>
         <QuestionChapterItemSubPara>{subText}</QuestionChapterItemSubPara>
       </QuestionChapterItemSpan>
-      {type !== "checkpoint" && (
+      {type !== "checkpoint" && ( // <-- Check if it's not a checkpoint
         <QuestionChapterPointContainer>
           <QuestionChapterPoint></QuestionChapterPoint>
         </QuestionChapterPointContainer>
@@ -116,39 +118,31 @@ const ChapterItem = ({
     </QuestionChapterItemElement>
   );
 
-  if (!completed) {
-    return (
-      <AccessibleContainer isAccessible={isAccessible}>
-        {isAccessible ? (
-          <Link to={url} style={{ textDecoration: "none", color: "inherit" }}>
-            {content}
-          </Link>
-        ) : (
-          content
-        )}
-      </AccessibleContainer>
-    );
-  } else {
-    return (
-      <AccessibleContainer isAccessible={isAccessible}>
-        {/* Your existing JSX here... */}
-      </AccessibleContainer>
-    );
-  }
+  return (
+    <AccessibleContainer isAccessible={isAccessible}>
+      {isAccessible ? (
+        <Link to={url} style={{ textDecoration: "none", color: "inherit" }}>
+          {content}
+        </Link>
+      ) : (
+        content
+      )}
+    </AccessibleContainer>
+  );
 };
 
+// A simplified version of your Chapter
 const Chapter = ({
   chapterNumber,
   totalLessons,
   chapterItems,
   isAccessible: isChapterAccessible,
 }) => {
-  const lessonsCompleted = useSelector(
-    (state) => state.lessons.lessonsCompleted
-  );
-
+  const { lessonsCompleted } = useLesson();
   const lessonsForThisChapter = lessonsCompleted[chapterNumber] || [];
-  const completedLessonsCount = lessonsForThisChapter.filter(Boolean).length;
+  const completedLessonsCount = lessonsForThisChapter.filter(
+    (lesson) => lesson === true
+  ).length;
   const progressWidth = `${(completedLessonsCount / totalLessons) * 100}%`;
 
   return (
@@ -172,16 +166,13 @@ const Chapter = ({
       </QuestionChapterOneHeaderContainer>
       {chapterItems.map((item, index) => {
         const isAccessible =
-          chapterNumber === 1 && index === 0
-            ? true
-            : lessonsForThisChapter[index] || false;
-
+          isChapterAccessible && lessonsForThisChapter[index];
         return (
           <ChapterItem
             key={index}
             isAccessible={isAccessible}
             completed={item.completed}
-            type={item.type}
+            type={item.type} // <-- Pass the type
             imgSrc={item.imgSrc}
             mainText={item.mainText}
             subText={item.subText}
@@ -194,10 +185,7 @@ const Chapter = ({
 };
 
 const Question = () => {
-  const lessonsCompleted = useSelector(
-    (state) => state.lessons.lessonsCompleted
-  );
-
+  const { lessonsCompleted } = useLesson();
   return (
     <QuestionMain>
       <QuestionWrapper>
@@ -260,8 +248,8 @@ const Question = () => {
                   const currentChapterItems = chapters[chapterId];
                   const prevChapterLessons = lessonsCompleted[String(index)];
                   const isAccessible =
-                    index === 0 ||
-                    areAllLessonsCompleted(prevChapterLessons || []);
+                    index === 0 || // the first chapter is always accessible
+                    areAllLessonsCompleted(prevChapterLessons || []); // subsequent chapters are accessible if all lessons in the previous chapter are completed
                   return (
                     <Chapter
                       key={chapterId}

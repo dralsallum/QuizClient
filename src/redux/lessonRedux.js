@@ -5,7 +5,6 @@ const initialState = {
   lessonsCompleted: {
     1: [true, false, false, false, false],
     2: [false, false, false, false, false],
-    // Add more chapters as needed
   },
 };
 
@@ -16,11 +15,11 @@ export const lessonsSlice = createSlice({
     incrementLesson: (state, action) => {
       const chapterNumber = action.payload;
       const chapterLessons = state.lessonsCompleted[chapterNumber] || [
-        false,
-        false,
-        false,
-        false,
-        false,
+        true,
+        true,
+        true,
+        true,
+        true,
       ];
 
       for (let i = 0; i < chapterLessons.length; i++) {
