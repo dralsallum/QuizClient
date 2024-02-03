@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
-import axios from "axios"; // Import axios
+import { useSelector } from "react-redux";
+import { userRequest } from "../requestMethods"; // Adjust the path as needed
 
 const LessonContext = createContext();
 
@@ -13,8 +14,12 @@ export const LessonProvider = ({ children }) => {
     2: [false, false, false, false, false],
   });
 
-  const incrementLesson = (chapterNumber) => {
+  // Use useSelector to get the current user from Redux store
+  const currentUser = useSelector((state) => state.user.currentUser);
+
+  const incrementLesson = async (chapterNumber) => {
     let chapterLessons = lessonsCompleted[chapterNumber];
+    let lessonToUpdate = 0;
     if (!chapterLessons) {
       chapterLessons = [false, false, false, false, false];
     }
@@ -22,28 +27,24 @@ export const LessonProvider = ({ children }) => {
     for (let i = 0; i < chapterLessons.length; i++) {
       if (!chapterLessons[i]) {
         chapterLessons[i] = true;
-
-        // Update lesson completion status on the backend
-        updateLessonCompletion(chapterNumber, i);
-
+        lessonToUpdate = i;
         break;
       }
     }
 
-    // Create a new object to force re-render
     setLessonsCompleted({
       ...lessonsCompleted,
       [chapterNumber]: [...chapterLessons],
     });
-  };
 
-  const updateLessonCompletion = async (chapterNumber, lessonNumber) => {
+    // Use the ID from currentUser
+    const userId = currentUser?.id; // Make sure this matches the property name in your user object
+
     try {
-      // Send a POST request to update lesson completion status
-      await axios.post("/api/users/complete", {
-        userId: "sora", // Replace with the actual user ID
+      await userRequest.post("/lessons/complete", {
+        userId,
         chapterNumber,
-        lessonNumber,
+        lessonNumber: lessonToUpdate,
       });
     } catch (error) {
       console.error("Error updating lesson completion status:", error);
