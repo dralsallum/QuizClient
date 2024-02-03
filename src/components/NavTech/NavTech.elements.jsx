@@ -246,7 +246,7 @@ export const NotWrap = styled.div`
   direction: rtl;
   cursor: default;
   margin-top: 5rem;
-  margin-left: 2rem;
+  margin-right: 2rem;
   width: 31.25rem;
   padding: 0;
   color: #252b2f;
@@ -256,13 +256,13 @@ export const NotWrap = styled.div`
   text-align: right;
   z-index: 998;
   box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.06);
-  left: 0;
+  right: 0;
   pointer-events: auto;
 
   @media screen and (max-width: 50rem) {
-    margin-top: 4.5rem;
-    margin-left: 1rem;
-    width: 21.25rem;
+    margin-top: 4rem;
+    margin-right: 1rem;
+    width: 18.25rem;
   }
 `;
 export const NotCon = styled.div`

@@ -54,7 +54,10 @@ import {
 } from "./Question.elements";
 import chapterItems from "../../chapterItems";
 import { Link } from "react-router-dom";
-import { useLesson } from "../../redux/LessonContext";
+
+import { useDispatch, useSelector } from "react-redux";
+import { incrementLesson } from "../../redux/lessonRedux";
+
 const Arrow = () => (
   <svg width="18" height="18" viewBox="0 0 24 24">
     <path d="M12 16l4-4h-8z" />
@@ -137,7 +140,9 @@ const Chapter = ({
   chapterItems,
   isAccessible: isChapterAccessible,
 }) => {
-  const { lessonsCompleted } = useLesson();
+  const lessonsCompleted = useSelector(
+    (state) => state.lessons.lessonsCompleted
+  );
   const lessonsForThisChapter = lessonsCompleted[chapterNumber] || [];
   const completedLessonsCount = lessonsForThisChapter.filter(
     (lesson) => lesson === true
@@ -184,7 +189,10 @@ const Chapter = ({
 };
 
 const Question = () => {
-  const { lessonsCompleted } = useLesson();
+  const lessonsCompleted = useSelector(
+    (state) => state.lessons.lessonsCompleted
+  );
+
   return (
     <QuestionMain>
       <QuestionWrapper>

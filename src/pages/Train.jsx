@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavTech, QueFooter, Question, Slider, Store } from "../components";
-import { analytics } from "../firebase";
-import { logEvent } from "firebase/analytics";
+
 import useRequireAuth from "../useRequireAuth";
 
 const Train = () => {
@@ -9,10 +8,6 @@ const Train = () => {
   const [showComponent, setShowComponent] = useState("question");
 
   useEffect(() => {
-    // Log the event
-    logEvent(analytics, "home_page_visited");
-
-    // Reset the zoom level
     const viewport = document.querySelector("meta[name=viewport]");
     if (viewport) {
       viewport.parentNode.removeChild(viewport);

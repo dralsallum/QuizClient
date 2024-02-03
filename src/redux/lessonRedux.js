@@ -4,6 +4,7 @@ const initialState = {
   lessonsCompleted: {
     1: [true, false, false, false, false],
     2: [false, false, false, false, false],
+    // Add more chapters as needed
   },
 };
 
@@ -18,26 +19,42 @@ export const lessonsSlice = createSlice({
         chapterLessons = [false, false, false, false, false];
       }
 
-      for (let i = 0; i < chapterLessons.length; i++) {
-        if (!chapterLessons[i]) {
-          chapterLessons[i] = true;
-          break;
-        }
+      const lessonIndex = chapterLessons.findIndex((completed) => !completed);
+      if (lessonIndex !== -1) {
+        // Mark the next incomplete lesson as complete
+        chapterLessons[lessonIndex] = true;
       }
 
+      // Check if all lessons in the chapter are completed
+      const allLessonsCompleted = chapterLessons.every(
+        (completed) => completed
+      );
+
+      if (allLessonsCompleted) {
+        // Automatically unlock the first lesson of the next chapter
+        const nextChapterNumber = chapterNumber + 1;
+        if (!state.lessonsCompleted[nextChapterNumber]) {
+          // Initialize next chapter if it doesn't exist
+          state.lessonsCompleted[nextChapterNumber] = [
+            false,
+            false,
+            false,
+            false,
+            false,
+          ];
+        }
+        state.lessonsCompleted[nextChapterNumber][0] = true; // Unlock the first lesson of the next chapter
+      }
+
+      // Ensure the update is reflected in the state
       state.lessonsCompleted[chapterNumber] = [...chapterLessons];
     },
-    // Add more reducers here as needed
     resetLessons: (state) => {
       state.lessonsCompleted = initialState.lessonsCompleted;
     },
   },
 });
 
-// Action creators are generated for each case reducer function
 export const { incrementLesson, resetLessons } = lessonsSlice.actions;
-
-// Selector to access the lessons state
-export const selectLessons = (state) => state.lessons.lessonsCompleted;
 
 export default lessonsSlice.reducer;

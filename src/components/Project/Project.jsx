@@ -137,9 +137,10 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import { useLesson } from "../../redux/LessonContext";
 import { useNavigate, useParams } from "react-router-dom";
 import AvatarComponent from "../../Avatar";
+import { useDispatch, useSelector } from "react-redux";
+import { incrementLesson } from "../../redux/lessonRedux";
 
 const Project = () => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -441,7 +442,11 @@ const Project = () => {
   }, [score, questions.length]);
 
   const QuizResults = ({ score, scorePercentage, resetQuiz, lessonIndex }) => {
-    const { incrementLesson } = useLesson();
+    const dispatch = useDispatch();
+
+    const handleIncrement = (chapterNumber) => {
+      dispatch(incrementLesson(chapterNumber));
+    };
     const navigate = useNavigate();
 
     return (
@@ -486,7 +491,7 @@ const Project = () => {
         <RButton
           onClick={() => {
             resetQuiz();
-            incrementLesson(1, lessonIndex); // <-- Increment lesson when the quiz is retaken
+            handleIncrement(1, lessonIndex); // <-- Increment lesson when the quiz is retaken
             navigate("/train"); // <-- Add this line to navigate to /train
           }}
         >
