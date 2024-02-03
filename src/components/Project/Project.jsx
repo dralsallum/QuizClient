@@ -413,8 +413,6 @@ const Project = () => {
     setProgress(100);
   };
 
-  const firstUpdate = useRef(true);
-
   useEffect(() => {
     // This block handles speaking the text for the new question
     const textToSpeak = textToSpeakRef.current
@@ -538,7 +536,6 @@ const Project = () => {
       const correctSequence = questions[currentQuestion].correctSequence;
 
       const checkSequence = () => {
-        // Compare userAnswerSequence with correctSequence
         if (
           JSON.stringify(userAnswerSequence) === JSON.stringify(correctSequence)
         ) {
@@ -700,7 +697,6 @@ const Project = () => {
                       </AImgCon>
                     </ASubOne>
                     <ASubTwo>{answerOption.answerText}</ASubTwo>
-                    {/* Adjacent JSX elements are now wrapped */}
                   </ACon>
                 </AButton>
               )
@@ -734,6 +730,7 @@ const Project = () => {
                         <CroQaBut
                           key={word}
                           onClick={() => toggleSelection(word, index)}
+                          checkSequence
                           style={{
                             opacity: selectedPairs.includes(word) ? 0.5 : 1,
                           }}
