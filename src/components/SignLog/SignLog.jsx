@@ -9,6 +9,9 @@ import {
   LoginSignSubHeader,
   SignContainer,
   SignUpForm,
+  ErrorCon,
+  LoaderContainer,
+  Loader,
 } from "./SignLog.elements";
 import { useDispatch } from "react-redux";
 import { login } from "../../redux/userRedux";
@@ -16,8 +19,9 @@ import { Link, useNavigate } from "react-router-dom";
 
 const SignLog = () => {
   const [inputs, setInputs] = useState({});
-  const dispatch = useDispatch();
+  const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -27,15 +31,15 @@ const SignLog = () => {
   };
 
   const handleSubmit = async (e) => {
-    // Marked as async
     e.preventDefault();
+    setIsLoading(true);
     try {
-      await dispatch(login(inputs)).unwrap(); // Await the async operation
-      navigate("/train"); // Redirect on successful login
+      await dispatch(login(inputs)).unwrap();
+      navigate("/train");
     } catch (error) {
-      // Assuming getArabicErrorMessage is a function that converts error messages
-      // If not defined, directly use error.message or a default error string
       setErrorMessage(error.message || "Login failed.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -43,7 +47,7 @@ const SignLog = () => {
     <SignContainer>
       <LoginContainer>
         <LoginSignHeader>تسجيل دخول</LoginSignHeader>
-        {errorMessage && <div style={{ color: "red" }}>{errorMessage}</div>}
+        {errorMessage && <ErrorCon>{errorMessage}</ErrorCon>}
         <SignUpForm onSubmit={handleSubmit}>
           <LoginSignSubHeader>اسم المستخدم</LoginSignSubHeader>
           <LoginSignInput
@@ -51,7 +55,6 @@ const SignLog = () => {
             placeholder="اسم المستخدم"
             onChange={handleChange}
           />
-
           <LoginSignSubHeader>الرقم السري</LoginSignSubHeader>
           <LoginSignInput
             type="password"
@@ -59,8 +62,15 @@ const SignLog = () => {
             placeholder="الباسورد"
             onChange={handleChange}
           />
-
-          <SignButton>تسجيل الدخول</SignButton>
+          <SignButton disabled={isLoading}>
+            {isLoading ? (
+              <LoaderContainer>
+                <Loader />
+              </LoaderContainer>
+            ) : (
+              "تسجيل الدخول"
+            )}
+          </SignButton>
         </SignUpForm>
         <LoginSignPara>
           بتسجيل الدخول، أنت توافق على شروط استخدام ١٢انجليش. يُرجى الاطلاع على
@@ -68,7 +78,7 @@ const SignLog = () => {
           إلى الاهتمامات.
         </LoginSignPara>
         <Link to={"/signup"}>
-          <RegistarButton type="submit">تسجيل حساب جديد</RegistarButton>
+          <RegistarButton>تسجيل حساب جديد</RegistarButton>
         </Link>
       </LoginContainer>
     </SignContainer>

@@ -8,6 +8,8 @@ import {
   LoginSignSubHeader,
   SignContainer,
   SignUpForm,
+  LoaderContainer,
+  Loader,
 } from "./SignForm.elements";
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/userRedux";
@@ -15,9 +17,10 @@ import { useNavigate } from "react-router-dom";
 
 const SignForm = () => {
   const [inputs, setInputs] = useState({});
-  const dispatch = useDispatch();
+  const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleChange = (e) => {
     setInputs((prev) => {
@@ -38,13 +41,18 @@ const SignForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isLoading) return;
+
+    setIsLoading(true);
     try {
       await dispatch(register(inputs)).unwrap();
-      navigate("/train"); // Redirect on successful registration
+      navigate("/train");
     } catch (error) {
       setErrorMessage(
         getArabicErrorMessage(error.message || "Registration failed.")
       );
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -73,7 +81,15 @@ const SignForm = () => {
             placeholder="الباسورد"
             onChange={handleChange}
           />
-          <SignButton>تسجيل حساب جديد</SignButton>
+          <SignButton disabled={isLoading}>
+            {isLoading ? (
+              <LoaderContainer>
+                <Loader />
+              </LoaderContainer>
+            ) : (
+              "تسجيل حساب جديد "
+            )}
+          </SignButton>
         </SignUpForm>
         <LoginSignPara>
           بتسجيل الدخول، أنت توافق على شروط استخدام ١٢انجليش. يُرجى الاطلاع على

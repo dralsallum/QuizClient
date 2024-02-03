@@ -1,5 +1,29 @@
 import styled from "styled-components";
 
+export const LoaderContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Loader = styled.div`
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+`;
+
 export const SignContainer = styled.div`
   background-color: #ffffff;
   height: 100vh;
@@ -36,6 +60,9 @@ export const LoginSignInput = styled.input`
   width: 98%;
   border-radius: 2px;
   font-size: 16px;
+`;
+export const ErrorCon = styled.div`
+  color: red;
 `;
 
 export const LoginSignPara = styled.p`
