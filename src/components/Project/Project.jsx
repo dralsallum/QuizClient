@@ -147,6 +147,7 @@ import { useLesson } from "../../redux/LessonContext";
 import { useNavigate, useParams } from "react-router-dom";
 import AvatarComponent from "../../Avatar";
 import End from "../../assets/end.png";
+import axios from "axios";
 
 const Project = () => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -172,8 +173,7 @@ const Project = () => {
   const [shuffledEnglish, setShuffledEnglish] = useState([]);
   const [shuffledArabic, setShuffledArabic] = useState([]);
   const [startTime, setStartTime] = useState(null);
-
-  let questions = [];
+  const [questions, setQuestions] = useState([]);
 
   const removeAnswerFromSequence = (seqIndex) => {
     const newSequence = [...userAnswerSequence];
@@ -181,12 +181,20 @@ const Project = () => {
     setUserAnswerSequence(newSequence);
   };
 
-  try {
-    questions = require(`../../utils/${chapterName}.json`);
-  } catch (error) {
-    // Handle the error, for example, setting questions to an empty array
-    console.error(`Failed to load questions for ${chapterName}.`, error);
-  }
+  useEffect(() => {
+    const fetchChapter = async () => {
+      try {
+        const response = await axios.get(
+          `https://quizeng-022517ad949b.herokuapp.com/api/chapters/${chapterName}`
+        );
+        setQuestions(response.data.questions);
+      } catch (error) {
+        console.error("Failed to fetch chapter", error);
+      }
+    };
+
+    fetchChapter();
+  }, [chapterName]);
 
   const getDuration = () => {
     if (startTime) {
