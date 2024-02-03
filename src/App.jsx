@@ -27,25 +27,23 @@ const App = () => {
     <Router>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <LessonProvider>
-            <GlobalStyle />
-            <Routes>
-              <Route path="/" element={<Landing />} />
-              <Route path="/home" element={<Home />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/train" element={<Train />} />
-              <Route
-                path="/signup"
-                element={user ? <Navigate to="/" /> : <SignUp />}
-              />
-              <Route path="/checkout" element={<Checkout />} />
-              <Route path="/test/:chapterName" element={<Test />} />
-              <Route path="/items" element={<Items />} />
+          <GlobalStyle />
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/train" element={<Train />} />
+            <Route
+              path="/signup"
+              element={user ? <Navigate to="/" /> : <SignUp />}
+            />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/test/:chapterName" element={<Test />} />
+            <Route path="/items" element={<Items />} />
 
-              <Route path="/payment" element={<Payment />} />
-              <Route path="/product/:name" element={<Products />} />
-            </Routes>
-          </LessonProvider>
+            <Route path="/payment" element={<Payment />} />
+            <Route path="/product/:name" element={<Products />} />
+          </Routes>
         </PersistGate>
       </Provider>
     </Router>

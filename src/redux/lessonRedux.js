@@ -1,3 +1,4 @@
+// features/lessons/lessonsSlice.js
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
@@ -23,32 +24,11 @@ export const lessonsSlice = createSlice({
         chapterLessons[lessonIndex] = true;
       }
 
-      const allLessonsCompleted = chapterLessons.every(
-        (completed) => completed
-      );
-
-      if (allLessonsCompleted) {
-        const nextChapterNumber = chapterNumber + 1;
-        if (!state.lessonsCompleted[nextChapterNumber]) {
-          state.lessonsCompleted[nextChapterNumber] = [
-            false,
-            false,
-            false,
-            false,
-            false,
-          ];
-        }
-        state.lessonsCompleted[nextChapterNumber][0] = true; // Unlock the first lesson of the next chapter
-      }
-
       state.lessonsCompleted[chapterNumber] = [...chapterLessons];
-    },
-    resetLessons: (state) => {
-      state.lessonsCompleted = initialState.lessonsCompleted;
     },
   },
 });
 
-export const { incrementLesson, resetLessons } = lessonsSlice.actions;
+export const { incrementLesson } = lessonsSlice.actions;
 
 export default lessonsSlice.reducer;
