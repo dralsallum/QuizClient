@@ -1,4 +1,3 @@
-// lessonRedux.js
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
@@ -14,13 +13,10 @@ export const lessonsSlice = createSlice({
   reducers: {
     incrementLesson: (state, action) => {
       const chapterNumber = action.payload;
-      const chapterLessons = state.lessonsCompleted[chapterNumber] || [
-        true,
-        true,
-        true,
-        true,
-        true,
-      ];
+      let chapterLessons = state.lessonsCompleted[chapterNumber];
+      if (!chapterLessons) {
+        chapterLessons = [false, false, false, false, false];
+      }
 
       for (let i = 0; i < chapterLessons.length; i++) {
         if (!chapterLessons[i]) {
@@ -31,11 +27,17 @@ export const lessonsSlice = createSlice({
 
       state.lessonsCompleted[chapterNumber] = [...chapterLessons];
     },
+    // Add more reducers here as needed
+    resetLessons: (state) => {
+      state.lessonsCompleted = initialState.lessonsCompleted;
+    },
   },
 });
 
-export const { incrementLesson } = lessonsSlice.actions;
+// Action creators are generated for each case reducer function
+export const { incrementLesson, resetLessons } = lessonsSlice.actions;
 
-export const selectLessonsCompleted = (state) => state.lessons.lessonsCompleted;
+// Selector to access the lessons state
+export const selectLessons = (state) => state.lessons.lessonsCompleted;
 
 export default lessonsSlice.reducer;
