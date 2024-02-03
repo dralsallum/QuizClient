@@ -9,7 +9,6 @@ import {
   ArSubContainerF,
   ArWrapper,
 } from "./Article.elements";
-import Page from "../../assets/page.jpg";
 
 const Article = () => {
   return (
@@ -25,7 +24,9 @@ const Article = () => {
         </ArSubContainerF>
       </ArContainerF>
       <ArContainerS>
-        <ArContainerSImg src={Page} />
+        <ArContainerSImg
+          src={"https://alsallum.s3.eu-north-1.amazonaws.com/page.jpg"}
+        />
       </ArContainerS>
     </ArWrapper>
   );

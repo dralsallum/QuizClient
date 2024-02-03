@@ -31,7 +31,7 @@ import {
   NavrightTenth,
   NavrightThi,
 } from "./Bottom.elements";
-import Logo from "../../assets/12english-logo.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFire } from "@fortawesome/free-solid-svg-icons";
 import { faShield } from "@fortawesome/free-solid-svg-icons";
@@ -47,7 +47,12 @@ const Bottom = () => {
             <NavContanierLogoMain>
               <NavContanierLogoMainSpan>
                 <NavContanierLogoMainSvg>
-                  <NavContanierLogoMainimg src={Logo} alt="" />
+                  <NavContanierLogoMainimg
+                    src={
+                      "https://alsallum.s3.eu-north-1.amazonaws.com/12english-logo.png"
+                    }
+                    alt=""
+                  />
                 </NavContanierLogoMainSvg>
               </NavContanierLogoMainSpan>
             </NavContanierLogoMain>

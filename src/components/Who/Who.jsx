@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "../../assets/n7mrs-5b_400x400.png";
+
 import {
   WhoButton,
   WhoContainer,
@@ -18,7 +18,12 @@ const Who = () => {
       <WhoHeader>قصتي بدأت من هنا!</WhoHeader>
       <WhoMain>
         <WhoImgContainer>
-          <WhoImg src={Profile} alt="" />
+          <WhoImg
+            src={
+              "https://alsallum.s3.eu-north-1.amazonaws.com/n7mrs-5b_400x400.png"
+            }
+            alt=""
+          />
         </WhoImgContainer>
         <WhoContainer>
           <WhoPara>

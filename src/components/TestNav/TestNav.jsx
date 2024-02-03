@@ -16,8 +16,7 @@ import {
   LearnNavProgressWrapper,
   LearnWrapperTop,
 } from "./TestNav.elements";
-import Cross from "../../assets/cross.svg";
-import Heart from "../../assets/Heart.svg";
+
 import { Link } from "react-router-dom";
 
 const TestNav = ({ progress, hearts }) => {
@@ -34,7 +33,9 @@ const TestNav = ({ progress, hearts }) => {
               }}
             >
               <LearnNavButton>
-                <LearnNavButtonImg src={Cross} />
+                <LearnNavButtonImg
+                  src={"https://alsallum.s3.eu-north-1.amazonaws.com/cross.svg"}
+                />
               </LearnNavButton>
             </Link>
             <LearnNavProgressContainer>
@@ -49,7 +50,9 @@ const TestNav = ({ progress, hearts }) => {
               </LearnNavProgressWrapper>
             </LearnNavProgressContainer>
             <LearnNavHeartContainer>
-              <LearnNavHeartImg src={Heart} />
+              <LearnNavHeartImg
+                src={"https://alsallum.s3.eu-north-1.amazonaws.com/Heart.svg"}
+              />
               <LearnNavHeartSpan>{hearts}</LearnNavHeartSpan>
             </LearnNavHeartContainer>
           </LearnNav>

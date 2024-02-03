@@ -1,5 +1,5 @@
 import React from "react";
-import EngImg from "../../assets/header-hello.png";
+
 import {
   HeaderButton,
   HeaderContainer,
@@ -59,7 +59,11 @@ const Header = () => {
           </Link>
         </HeaderContainer>
         <HeaderImgContainer>
-          <HeaderImg src={EngImg} />
+          <HeaderImg
+            src={
+              "https://alsallum.s3.eu-north-1.amazonaws.com/header-hello.png"
+            }
+          />
         </HeaderImgContainer>
       </HeaderWrapper>
     </>

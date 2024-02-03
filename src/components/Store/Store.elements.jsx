@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import SuperHeroSVG from "../../assets/super-hero.svg";
-import Wallet from "../../assets/wallet.jpeg";
 
 export const StoreWtapper = styled.div`
   display: flex;
@@ -20,7 +18,7 @@ export const StoreTimeBoost = styled.div`
 export const StoreTimeKeyContainer = styled.div`
   width: 100%;
   position: relative;
-  background-image:  url(${Wallet})
+  background-image:  url(${"https://alsallum.s3.eu-north-1.amazonaws.com/wallet.jpeg"})
   background-size: cover; // Cover the entire div
   background-repeat: no-repeat; // Prevents the image from repeating
   background-position: center; // Centers the image
@@ -35,7 +33,7 @@ export const StoreBannerArrowContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image:  url(${Wallet})
+  background-image:  url(${"https://alsallum.s3.eu-north-1.amazonaws.com/wallet.jpeg"})
   background-size: cover; // Cover the entire div
   background-repeat: no-repeat; // Prevents the image from repeating
   background-position: center; // Centers the image
@@ -44,7 +42,7 @@ export const StoreBannerArrowContain = styled.div`
   color: white;
 `;
 export const StoreBanner = styled.div`
-  background-image: url(${Wallet});
+  background-image: url(${"https://alsallum.s3.eu-north-1.amazonaws.com/wallet.jpeg"});
   background-size: cover; // Cover the entire div
   background-repeat: no-repeat; // Prevents the image from repeating
   background-position: center; // Centers the image

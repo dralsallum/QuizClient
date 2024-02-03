@@ -1,6 +1,5 @@
 import React from "react";
 import { FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
-
 import { Button } from "../../globalStyles";
 import {
   FooterContainer,
@@ -23,7 +22,7 @@ import {
 } from "./Footer.elements";
 import { FaTiktok } from "react-icons/fa";
 import { NavLogo, NavbarContainerImg } from "../NavbarMe/Navbar.elements";
-import Logo from "../../assets/main-english-logo.png";
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -76,7 +75,11 @@ const Footer = () => {
                 color: "inherit",
               }}
             >
-              <NavbarContainerImg src={Logo} />
+              <NavbarContainerImg
+                src={
+                  "https://alsallum.s3.eu-north-1.amazonaws.com/main-english-logo.png"
+                }
+              />
             </Link>
           </NavLogo>
 

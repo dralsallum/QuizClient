@@ -1,6 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import CorrectSound from "../../assets/correct.mp3";
-import WrongSound from "../../assets/Wrong.mp3";
 import { speakText } from "../../speechSynthesis";
 import {
   AButton,
@@ -32,11 +30,9 @@ import {
   PCon,
   PLangCon,
   PLangSubCon,
-  PLanguageImgCanvas,
   PLangImgCon,
   PLanguageSouFirstDiv,
   PLanguageSouFirstSpan,
-  PLanguageSounSec,
   PLanguageSoundButtonSpan,
   PLanguageSoundButtonSvg,
   PLanguageSoundFirst,
@@ -141,13 +137,9 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import Cross from "../../assets/cross.svg";
-import Heart from "../../assets/Heart.svg";
 import { useLesson } from "../../redux/LessonContext";
 import { useNavigate, useParams } from "react-router-dom";
 import AvatarComponent from "../../Avatar";
-import End from "../../assets/end.png";
-import axios from "axios";
 
 const Project = () => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -173,7 +165,8 @@ const Project = () => {
   const [shuffledEnglish, setShuffledEnglish] = useState([]);
   const [shuffledArabic, setShuffledArabic] = useState([]);
   const [startTime, setStartTime] = useState(null);
-  const [questions, setQuestions] = useState([]);
+
+  let questions = [];
 
   const removeAnswerFromSequence = (seqIndex) => {
     const newSequence = [...userAnswerSequence];
@@ -181,20 +174,12 @@ const Project = () => {
     setUserAnswerSequence(newSequence);
   };
 
-  useEffect(() => {
-    const fetchChapter = async () => {
-      try {
-        const response = await axios.get(
-          `https://quizeng-022517ad949b.herokuapp.com/api/chapters/${chapterName}`
-        );
-        setQuestions(response.data.questions);
-      } catch (error) {
-        console.error("Failed to fetch chapter", error);
-      }
-    };
-
-    fetchChapter();
-  }, [chapterName]);
+  try {
+    questions = require(`../../utils/${chapterName}.json`);
+  } catch (error) {
+    // Handle the error, for example, setting questions to an empty array
+    console.error(`Failed to load questions for ${chapterName}.`, error);
+  }
 
   const getDuration = () => {
     if (startTime) {
@@ -345,12 +330,12 @@ const Project = () => {
       setSureText("صح - متابعة");
       setBackgroundColor("#00ff00");
       setMaybe("رائع");
-      playSound(CorrectSound);
+      playSound("https://alsallum.s3.eu-north-1.amazonaws.com/correct.mp3");
     } else {
       setSureText("غلط - متابعة");
       setBackgroundColor("#ff0000");
       setMaybe("غلط");
-      playSound(WrongSound);
+      playSound("https://alsallum.s3.eu-north-1.amazonaws.com/Wrong.mp3");
     }
   };
 
@@ -464,7 +449,10 @@ const Project = () => {
     return (
       <RWrap>
         <RtTop>
-          <RtTopimg src={End} alt="" />
+          <RtTopimg
+            src={"https://alsallum.s3.eu-north-1.amazonaws.com/end.png"}
+            alt=""
+          />
         </RtTop>
         <RtMiddle>
           <RHeader>خلصت يابطل</RHeader>
@@ -546,7 +534,6 @@ const Project = () => {
       </PTCon>
     );
 
-    // The reusable QuestionComponent
     const QuestionComponent = ({ soundSecType }) => {
       const correctSequence = questions[currentQuestion].correctSequence;
 
@@ -787,7 +774,11 @@ const Project = () => {
                       }}
                     >
                       <TNavButton>
-                        <TNavButtonImg src={Cross} />
+                        <TNavButtonImg
+                          src={
+                            "https://alsallum.s3.eu-north-1.amazonaws.com/cross.svg"
+                          }
+                        />
                       </TNavButton>
                     </Link>
                     <TNavProgressCon>
@@ -802,7 +793,11 @@ const Project = () => {
                       </TNavProgressWrap>
                     </TNavProgressCon>
                     <TNavHeartCon>
-                      <TNavHeartImg src={Heart} />
+                      <TNavHeartImg
+                        src={
+                          "https://alsallum.s3.eu-north-1.amazonaws.com/Heart.svg"
+                        }
+                      />
                       <TNavHeartSpan>{hearts}</TNavHeartSpan>
                     </TNavHeartCon>
                   </TNav>

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import background from "../../assets/gym-with-window-sport-interior-with-barbells-healthy-fitness-room-free-vector.jpg";
 
 export const QuizBody = styled.div`
   margin: 0;
@@ -53,7 +52,7 @@ export const ScoreSectionProgress = styled.div`
   gap: 0.5rem;
 `;
 export const ScoreSectionbackground = styled.div`
-  background-image: url(${background});
+  background-image: url(${"https://alsallum.s3.eu-north-1.amazonaws.com/gym-with-window-sport-interior-with-barbells-healthy-fitness-room-free-vector.jpg"});
   background-size: cover;
   background-position: center;
   width: 90%;

@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../../redux/basketRedux";
-import Friends from "../../assets/friends forever.jpg";
-import Behind from "../../assets/Behind grey eye.jpg";
-import Beyond from "../../assets/Beyond the clock.jpg";
-import Whispers from "../../assets/Whispers in the Rails.jpg";
+
 import { useParams } from "react-router-dom";
 import {
   ProductAdd,
@@ -20,10 +17,14 @@ import data from "../../utils/slider.json";
 import { FooterMe, NavTech } from "..";
 
 const imageMapping = {
-  "Whispers in the Rails": Whispers,
-  "Friends Forever": Friends,
-  "Behind Grey Eyes": Behind,
-  "Beyond the clock": Beyond,
+  "Whispers in the Rails":
+    "https://alsallum.s3.eu-north-1.amazonaws.com/Whispers+in+the+Rails.jpg",
+  "Friends Forever":
+    "https://alsallum.s3.eu-north-1.amazonaws.com/friends+forever.jpg",
+  "Behind Grey Eyes":
+    "https://alsallum.s3.eu-north-1.amazonaws.com/Behind+grey+eye.jpg",
+  "Beyond the clock":
+    "https://alsallum.s3.eu-north-1.amazonaws.com/Beyond+the+clock.jpg",
 };
 
 const Products = () => {

@@ -1,16 +1,9 @@
-import Monaliza from "../src/assets/welcomeimage1661254149_256.jpg";
-import David from "../src/assets/davidcover1661254508_256.jpg";
-import Sogreat from "../src/assets/sogreat1661259325_256.jpg";
-import Europ from "../src/assets/european-man-woman-casual-wear-standing-back-back-with-arms-crossed-isolated-colorful-wall_171337-51292.jpg";
-import Emd from "../src/assets/Diamond.png";
-import Jack from "../src/assets/jack.jpeg";
-
 const chapterItems = [
   {
     chapterId: 1,
     lessonId: 1,
-
-    imgSrc: Monaliza,
+    imgSrc:
+      "https://alsallum.s3.eu-north-1.amazonaws.com/welcomeimage1661254149_256.jpg",
     mainText: "تقديم نفسك",
     subText: "تعلم التحية عند مقابلة الأشخاص",
     url: "/test/chapter1",
@@ -19,7 +12,8 @@ const chapterItems = [
     chapterId: 1,
     lessonId: 2,
 
-    imgSrc: David,
+    imgSrc:
+      "https://alsallum.s3.eu-north-1.amazonaws.com/davidcover1661254508_256.jpg",
     mainText: "تقديم نفسك",
     subText: "قل اسمك",
     url: "/test/chapter2",
@@ -28,7 +22,8 @@ const chapterItems = [
     chapterId: 1,
     lessonId: 3,
 
-    imgSrc: Sogreat,
+    imgSrc:
+      "https://alsallum.s3.eu-north-1.amazonaws.com/sogreat1661259325_256.jpg",
     mainText: "القول كيف أنت",
     subText: "تحدث عن كيف تشعر",
     url: "/test/chapter3",
@@ -37,7 +32,8 @@ const chapterItems = [
     chapterId: 1,
     lessonId: 4,
 
-    imgSrc: Europ,
+    imgSrc:
+      "https://alsallum.s3.eu-north-1.amazonaws.com/european-man-woman-casual-wear-standing-back-back-with-arms-crossed-isolated-colorful-wall_171337-51292.jpg",
     mainText: "تطوير الطلاقة",
     subText: "عرِّف عن نفسك",
     url: "/test/chapter4",
@@ -47,7 +43,7 @@ const chapterItems = [
     lessonId: 5,
 
     type: "checkpoint",
-    imgSrc: Emd,
+    imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/Diamond.png",
     mainText: "نقطة التحقق",
     subText: "اختبر مهاراتك للوصول إلى الفصل التالي",
     url: "/test/chapter5",
@@ -56,13 +52,14 @@ const chapterItems = [
     chapterId: 2,
     lessonId: 1,
     completed: false,
-    imgSrc: Jack,
+    imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/jack.jpeg",
     mainText: "السؤال عن الآخرين",
     subText: "تعلم كيفية السؤال عن مشاعر الأشخاص الآخرين",
     url: "/test/chapter6",
   },
   {
-    imgSrc: David,
+    imgSrc:
+      "https://alsallum.s3.eu-north-1.amazonaws.com/davidcover1661254508_256.jpg",
     mainText: "قول أين تعيش",
     subText: "تحدث عن المكان الذي تعيش فيه",
     url: "/test/chapter7",
@@ -70,7 +67,8 @@ const chapterItems = [
     lessonId: 2,
   },
   {
-    imgSrc: Sogreat,
+    imgSrc:
+      "https://alsallum.s3.eu-north-1.amazonaws.com/sogreat1661259325_256.jpg",
     mainText: "إعطاء جنسيتك",
     subText: "تعلم كيفية القول من أي دولة أنت",
     url: "/test/chapter8",
@@ -79,7 +77,8 @@ const chapterItems = [
   },
   {
     completed: false,
-    imgSrc: Europ,
+    imgSrc:
+      "https://alsallum.s3.eu-north-1.amazonaws.com/european-man-woman-casual-wear-standing-back-back-with-arms-crossed-isolated-colorful-wall_171337-51292.jpg",
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
     url: "/test/chapter9",
@@ -88,7 +87,7 @@ const chapterItems = [
   },
   {
     type: "checkpoint",
-    imgSrc: Emd,
+    imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/Diamond.png",
     mainText: "نقطة التحقق",
     subText: "اختبر مهاراتك للوصول إلى الفصل التالي",
     url: "/test/chapter10",
@@ -96,7 +95,7 @@ const chapterItems = [
     lessonId: 5,
   },
   {
-    imgSrc: Jack,
+    imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/jack.jpeg",
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
     url: "/test/chapter6",
@@ -104,7 +103,8 @@ const chapterItems = [
     lessonId: 1,
   },
   {
-    imgSrc: David,
+    imgSrc:
+      "https://alsallum.s3.eu-north-1.amazonaws.com/davidcover1661254508_256.jpg",
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
     url: "/test/chapter7",
@@ -112,7 +112,8 @@ const chapterItems = [
     lessonId: 2,
   },
   {
-    imgSrc: Sogreat,
+    imgSrc:
+      "https://alsallum.s3.eu-north-1.amazonaws.com/sogreat1661259325_256.jpg",
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
     url: "/test/chapter8",
@@ -120,7 +121,8 @@ const chapterItems = [
     lessonId: 3,
   },
   {
-    imgSrc: Europ,
+    imgSrc:
+      "https://alsallum.s3.eu-north-1.amazonaws.com/european-man-woman-casual-wear-standing-back-back-with-arms-crossed-isolated-colorful-wall_171337-51292.jpg",
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
     url: "/test/chapter9",
@@ -129,7 +131,7 @@ const chapterItems = [
   },
   {
     type: "checkpoint",
-    imgSrc: Emd,
+    imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/Diamond.png",
     mainText: "نقطة التحقق",
     subText: "اختبر مهاراتك للوصول إلى الفصل التالي",
     url: "/test/chapter10",
@@ -137,7 +139,7 @@ const chapterItems = [
     lessonId: 5,
   },
   {
-    imgSrc: Jack,
+    imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/jack.jpeg",
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
     url: "/test/chapter6",
@@ -145,7 +147,8 @@ const chapterItems = [
     lessonId: 1,
   },
   {
-    imgSrc: David,
+    imgSrc:
+      "https://alsallum.s3.eu-north-1.amazonaws.com/davidcover1661254508_256.jpg",
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
     url: "/test/chapter7",
@@ -153,7 +156,8 @@ const chapterItems = [
     lessonId: 2,
   },
   {
-    imgSrc: Sogreat,
+    imgSrc:
+      "https://alsallum.s3.eu-north-1.amazonaws.com/sogreat1661259325_256.jpg",
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
     url: "/test/chapter8",
@@ -161,7 +165,8 @@ const chapterItems = [
     lessonId: 3,
   },
   {
-    imgSrc: Europ,
+    imgSrc:
+      "https://alsallum.s3.eu-north-1.amazonaws.com/european-man-woman-casual-wear-standing-back-back-with-arms-crossed-isolated-colorful-wall_171337-51292.jpg",
     mainText: "إنهاء المحادثة",
     subText: "تعلم كيفية إنهاء المحادثة",
     url: "/test/chapter9",
@@ -170,7 +175,7 @@ const chapterItems = [
   },
   {
     type: "checkpoint",
-    imgSrc: Emd,
+    imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/Diamond.png",
     mainText: "نقطة التحقق",
     subText: "اختبر مهاراتك للوصول إلى الفصل التالي",
     url: "/test/chapter10",

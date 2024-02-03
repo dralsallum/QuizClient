@@ -1,13 +1,17 @@
 import React from "react";
 import { NavbarContainer, NavbarContainerImg } from "./Navbar.elements";
-import Logo from "../../assets/12english-logo.png";
+
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
       <NavbarContainer>
-        <NavbarContainerImg src={Logo} />
+        <NavbarContainerImg
+          src={
+            "https://alsallum.s3.eu-north-1.amazonaws.com/12english-logo.png"
+          }
+        />
       </NavbarContainer>
     </Link>
   );

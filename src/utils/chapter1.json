@@ -133,7 +133,7 @@
       {
         "answerText": "Hello!",
         "isCorrect": true,
-        "imgPath": "https://example.com/images/hello_reply.png"
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/milk.png"
       },
       {
         "answerText": "Bye!",

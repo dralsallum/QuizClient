@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../../assets/main-english-logo.png";
 import {
   Nav,
   NavbarContainer,
@@ -41,7 +40,11 @@ const NavbarMe = () => {
               color: "inherit",
             }}
           >
-            <NavbarContainerImg src={Logo} />
+            <NavbarContainerImg
+              src={
+                "https://alsallum.s3.eu-north-1.amazonaws.com/main-english-logo.png"
+              }
+            />
           </Link>
         </NavLogo>
         <NavMenu>

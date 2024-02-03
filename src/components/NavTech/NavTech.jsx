@@ -35,7 +35,6 @@ import {
   NotWrap,
   Button,
 } from "./NavTech.elements";
-import Logo from "../../assets/main-english-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
 import { faShield } from "@fortawesome/free-solid-svg-icons";
@@ -118,7 +117,12 @@ const NavTech = () => {
                 <NavContanierLogoMainSpan>
                   <NavContanierLogoMainSvg>
                     <Link to="/train">
-                      <NavContanierLogoMainimg src={Logo} alt="" />
+                      <NavContanierLogoMainimg
+                        src={
+                          "https://alsallum.s3.eu-north-1.amazonaws.com/main-english-logo.png"
+                        }
+                        alt=""
+                      />
                     </Link>
                   </NavContanierLogoMainSvg>
                 </NavContanierLogoMainSpan>

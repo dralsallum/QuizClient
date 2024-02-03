@@ -4,10 +4,6 @@ import { addToBasket } from "../../redux/basketRedux";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import data from "../../utils/slider.json";
-import Friends from "../../assets/friends forever.jpg";
-import Behind from "../../assets/Behind grey eye.jpg";
-import Beyond from "../../assets/Beyond the clock.jpg";
-import Whispers from "../../assets/Whispers in the Rails.jpg";
 import { Link } from "react-router-dom";
 import {
   Button,
@@ -31,7 +27,15 @@ import {
 } from "./Slider.elements";
 import { sliderSettings } from "../../utils/common";
 
-const images = [Friends, Behind, Beyond, Whispers];
+const Beyond =
+  "https://alsallum.s3.eu-north-1.amazonaws.com/Beyond+the+clock.jpg";
+const Behind =
+  "https://alsallum.s3.eu-north-1.amazonaws.com/Behind+grey+eye.jpg";
+const Whispers =
+  "https://alsallum.s3.eu-north-1.amazonaws.com/Whispers+in+the+Rails.jpg";
+const Friends =
+  "https://alsallum.s3.eu-north-1.amazonaws.com/friends+forever.jpg";
+
 const imageMapping = {
   "Whispers in the Rails": Whispers,
   "Friends Forever": Friends,

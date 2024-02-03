@@ -9,7 +9,6 @@ import {
   ArSubContainerF,
   ArWrapper,
 } from "./Divider.elements";
-import Pic from "../../assets/Divider.jpeg";
 
 const Divider = () => {
   return (
@@ -26,7 +25,9 @@ const Divider = () => {
         </ArSubContainerF>
       </ArContainerF>
       <ArContainerS>
-        <ArContainerSImg src={Pic} />
+        <ArContainerSImg
+          src={"https://alsallum.s3.eu-north-1.amazonaws.com/Divider.jpeg"}
+        />
       </ArContainerS>
     </ArWrapper>
   );
