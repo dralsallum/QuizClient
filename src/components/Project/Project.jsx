@@ -135,8 +135,6 @@ import { Link } from "react-router-dom";
 import { useLesson } from "../../redux/LessonContext";
 import { useNavigate, useParams } from "react-router-dom";
 import AvatarComponent from "../../Avatar";
-import { useDispatch, useSelector } from "react-redux";
-import { incrementLesson } from "../../redux/lessonRedux";
 
 const Project = () => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -174,6 +172,7 @@ const Project = () => {
   try {
     questions = require(`../../utils/${chapterName}.json`);
   } catch (error) {
+    // Handle the error, for example, setting questions to an empty array
     console.error(`Failed to load questions for ${chapterName}.`, error);
   }
 
@@ -437,14 +436,7 @@ const Project = () => {
   }, [score, questions.length]);
 
   const QuizResults = ({ score, scorePercentage, resetQuiz, lessonIndex }) => {
-    const dispatch = useDispatch();
-    const lessonsCompleted = useSelector(
-      (state) => state.lessons.lessonsCompleted
-    );
-
-    const handleIncrement = (chapterNumber) => {
-      dispatch(incrementLesson(chapterNumber));
-    };
+    const { incrementLesson } = useLesson();
     const navigate = useNavigate();
 
     return (
@@ -489,7 +481,7 @@ const Project = () => {
         <RButton
           onClick={() => {
             resetQuiz();
-            handleIncrement(1, lessonIndex); // <-- Increment lesson when the quiz is retaken
+            incrementLesson(1, lessonIndex); // <-- Increment lesson when the quiz is retaken
             navigate("/train"); // <-- Add this line to navigate to /train
           }}
         >
