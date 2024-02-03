@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
+import axios from "axios"; // Import axios
 
 const LessonContext = createContext();
 
@@ -21,6 +22,10 @@ export const LessonProvider = ({ children }) => {
     for (let i = 0; i < chapterLessons.length; i++) {
       if (!chapterLessons[i]) {
         chapterLessons[i] = true;
+
+        // Update lesson completion status on the backend
+        updateLessonCompletion(chapterNumber, i);
+
         break;
       }
     }
@@ -30,6 +35,19 @@ export const LessonProvider = ({ children }) => {
       ...lessonsCompleted,
       [chapterNumber]: [...chapterLessons],
     });
+  };
+
+  const updateLessonCompletion = async (chapterNumber, lessonNumber) => {
+    try {
+      // Send a POST request to update lesson completion status
+      await axios.post("/api/users/complete", {
+        userId: "sora", // Replace with the actual user ID
+        chapterNumber,
+        lessonNumber,
+      });
+    } catch (error) {
+      console.error("Error updating lesson completion status:", error);
+    }
   };
 
   return (
