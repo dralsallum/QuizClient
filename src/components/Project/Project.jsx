@@ -137,10 +137,9 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { useLesson } from "../../redux/LessonContext";
 import { useNavigate, useParams } from "react-router-dom";
 import AvatarComponent from "../../Avatar";
-import { useDispatch, useSelector } from "react-redux";
-import { incrementLesson } from "../../redux/lessonRedux";
 
 const Project = () => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -442,11 +441,7 @@ const Project = () => {
   }, [score, questions.length]);
 
   const QuizResults = ({ score, scorePercentage, resetQuiz, lessonIndex }) => {
-    const dispatch = useDispatch();
-
-    const handleIncrement = (chapterNumber) => {
-      dispatch(incrementLesson(chapterNumber));
-    };
+    const { incrementLesson } = useLesson();
     const navigate = useNavigate();
 
     return (
@@ -491,7 +486,7 @@ const Project = () => {
         <RButton
           onClick={() => {
             resetQuiz();
-            handleIncrement(1, lessonIndex); // <-- Increment lesson when the quiz is retaken
+            incrementLesson(1, lessonIndex); // <-- Increment lesson when the quiz is retaken
             navigate("/train"); // <-- Add this line to navigate to /train
           }}
         >
@@ -541,6 +536,7 @@ const Project = () => {
       const correctSequence = questions[currentQuestion].correctSequence;
 
       const checkSequence = () => {
+        // Compare userAnswerSequence with correctSequence
         if (
           JSON.stringify(userAnswerSequence) === JSON.stringify(correctSequence)
         ) {
@@ -702,6 +698,7 @@ const Project = () => {
                       </AImgCon>
                     </ASubOne>
                     <ASubTwo>{answerOption.answerText}</ASubTwo>
+                    {/* Adjacent JSX elements are now wrapped */}
                   </ACon>
                 </AButton>
               )
@@ -735,7 +732,6 @@ const Project = () => {
                         <CroQaBut
                           key={word}
                           onClick={() => toggleSelection(word, index)}
-                          checkSequence
                           style={{
                             opacity: selectedPairs.includes(word) ? 0.5 : 1,
                           }}
