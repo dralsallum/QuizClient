@@ -1,17 +1,5 @@
 import styled, { keyframes, css } from "styled-components";
 
-const bounceAnimation = keyframes`
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
-`;
-
 const drawerContentAnim = keyframes`
   0% {
     opacity: 0;
@@ -1077,10 +1065,6 @@ export const SlReSu = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  svg {
-    animation: ${bounceAnimation} 1s infinite;
-  }
 `;
 export const SlReSvg = styled.svg`
   width: 100%;

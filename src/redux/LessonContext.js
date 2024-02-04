@@ -8,7 +8,7 @@ export const useLesson = () => {
 
 export const LessonProvider = ({ children }) => {
   const [lessonsCompleted, setLessonsCompleted] = useState({
-    1: [true, true, true, true, true],
+    1: [true, false, false, false, false],
     2: [false, false, false, false, false],
   });
 
