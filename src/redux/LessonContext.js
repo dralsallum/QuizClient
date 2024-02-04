@@ -8,28 +8,45 @@ export const useLesson = () => {
 
 export const LessonProvider = ({ children }) => {
   const [lessonsCompleted, setLessonsCompleted] = useState({
-    1: [true, false, false, false, false],
+    1: [true, true, true, true, true],
     2: [false, false, false, false, false],
   });
 
   const incrementLesson = (chapterNumber) => {
-    let chapterLessons = lessonsCompleted[chapterNumber];
-    if (!chapterLessons) {
-      chapterLessons = [false, false, false, false, false];
-    }
+    const currentChapterLessons = lessonsCompleted[chapterNumber];
+    const nextChapterNumber = chapterNumber + 1;
 
-    for (let i = 0; i < chapterLessons.length; i++) {
-      if (!chapterLessons[i]) {
-        chapterLessons[i] = true;
-        break;
+    // Update the current chapter lessons
+    const updatedChapterLessons = currentChapterLessons.map((lesson, index) => {
+      // Mark the first false lesson as true and leave the rest unchanged
+      return index === currentChapterLessons.indexOf(false) ? true : lesson;
+    });
+
+    const newState = {
+      ...lessonsCompleted,
+      [chapterNumber]: updatedChapterLessons,
+    };
+
+    // Check if all lessons in the current chapter are completed after update
+    const allLessonsCompleted = updatedChapterLessons.every((lesson) => lesson);
+
+    if (allLessonsCompleted) {
+      // Check if the next chapter exists, if not, initialize it
+      if (!lessonsCompleted[nextChapterNumber]) {
+        newState[nextChapterNumber] = [true, false, false, false, false]; // Open first lesson of the next chapter
+      } else {
+        // If next chapter exists but all lessons are not started or completed, mark the first lesson as true
+        const nextChapterLessons = lessonsCompleted[nextChapterNumber];
+        if (nextChapterLessons.every((lesson) => !lesson)) {
+          newState[nextChapterNumber] = nextChapterLessons.map(
+            (lesson, index) => (index === 0 ? true : lesson)
+          );
+        }
       }
     }
 
-    // Create a new object to force re-render
-    setLessonsCompleted({
-      ...lessonsCompleted,
-      [chapterNumber]: [...chapterLessons],
-    });
+    // Finally, update the state with the new or modified chapters
+    setLessonsCompleted(newState);
   };
 
   return (
