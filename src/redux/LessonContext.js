@@ -18,7 +18,6 @@ export const LessonProvider = ({ children }) => {
 
     // Update the current chapter lessons
     const updatedChapterLessons = currentChapterLessons.map((lesson, index) => {
-      // Mark the first false lesson as true and leave the rest unchanged
       return index === currentChapterLessons.indexOf(false) ? true : lesson;
     });
 
@@ -27,15 +26,12 @@ export const LessonProvider = ({ children }) => {
       [chapterNumber]: updatedChapterLessons,
     };
 
-    // Check if all lessons in the current chapter are completed after update
     const allLessonsCompleted = updatedChapterLessons.every((lesson) => lesson);
 
     if (allLessonsCompleted) {
-      // Check if the next chapter exists, if not, initialize it
       if (!lessonsCompleted[nextChapterNumber]) {
-        newState[nextChapterNumber] = [true, false, false, false, false]; // Open first lesson of the next chapter
+        newState[nextChapterNumber] = [true, false, false, false, false];
       } else {
-        // If next chapter exists but all lessons are not started or completed, mark the first lesson as true
         const nextChapterLessons = lessonsCompleted[nextChapterNumber];
         if (nextChapterLessons.every((lesson) => !lesson)) {
           newState[nextChapterNumber] = nextChapterLessons.map(
@@ -45,7 +41,6 @@ export const LessonProvider = ({ children }) => {
       }
     }
 
-    // Finally, update the state with the new or modified chapters
     setLessonsCompleted(newState);
   };
 
