@@ -63,7 +63,7 @@ export const LoginSignInput = styled.input`
 
 export const LoginSignPara = styled.p`
   margin-top: 15px;
-  font-size: 12px;
+  font-size: 16px;
 `;
 
 export const SignButton = styled.button`
