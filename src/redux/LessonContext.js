@@ -16,7 +16,6 @@ export const LessonProvider = ({ children }) => {
     const currentChapterLessons = lessonsCompleted[chapterNumber];
     const nextChapterNumber = chapterNumber + 1;
 
-    // Update the current chapter lessons
     const updatedChapterLessons = currentChapterLessons.map((lesson, index) => {
       return index === currentChapterLessons.indexOf(false) ? true : lesson;
     });

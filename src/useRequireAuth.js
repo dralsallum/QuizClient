@@ -10,7 +10,7 @@ export default function useRequireAuth() {
   useEffect(() => {
     // If user is not authenticated, redirect to signup
     if (!currentUser) {
-      navigate("/signup");
+      navigate("/login");
     }
   }, [currentUser, navigate]);
 }

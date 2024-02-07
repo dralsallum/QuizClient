@@ -138,15 +138,11 @@ const Chapter = ({
   chapterItems,
   isAccessible: isChapterAccessible,
 }) => {
-  const { lessonsCompleted } = useSelector((state) => state.lessons);
-
-  const lessonsForThisChapter = lessonsCompleted
-    ? lessonsCompleted[chapterNumber] || []
-    : [];
+  const { lessonsCompleted } = useLesson();
+  const lessonsForThisChapter = lessonsCompleted[chapterNumber] || [];
   const completedLessonsCount = lessonsForThisChapter.filter(
     (lesson) => lesson === true
   ).length;
-
   const progressWidth = `${(completedLessonsCount / totalLessons) * 100}%`;
 
   return (
@@ -189,7 +185,7 @@ const Chapter = ({
 };
 
 const Question = () => {
-  const { lessonsCompleted } = useSelector((state) => state.lessons);
+  const { lessonsCompleted } = useLesson();
 
   return (
     <QuestionMain>
