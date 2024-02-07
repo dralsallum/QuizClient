@@ -512,6 +512,7 @@ export const ASubTwo = styled.div`
     justify-content: flex-end;
   }
 `;
+
 export const AButton = styled.button`
   cursor: pointer;
   border: none;
@@ -566,7 +567,7 @@ export const SButton = styled.button`
   cursor: pointer;
   min-width: 150px;
   width: 700px;
-  background-color: #5ac900;
+  background-color: #4c47e8;
   border-radius: 8px;
   border: none;
   color: rgb(255, 255, 255); 
@@ -579,13 +580,13 @@ export const SButton = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 6px 8px #518210;
+  box-shadow: 1px 6px 8px #7775ff;
   margin-top: 1rem;
   margin-bottom: 2rem;
   font-size:  26px;
 
   &:hover {
-    background-color: #76d925;
+    background-color: #615eff;
   }
 
   @media screen and (max-width: 700px) {
@@ -772,7 +773,7 @@ export const TNavProgressLetTop = styled.div`
   );
 `;
 export const TNavProgressBottom = styled.div`
-  background: #5ac900;
+  background: #4c47e8;
   position: absolute;
   bottom: 0;
   left: 0;

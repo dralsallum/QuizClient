@@ -33,7 +33,7 @@
   {
     "questionText": "اختار الأزواج المتطابقة",
     "questionExplain": "Match the English greetings with their Arabic translations.",
-    "avatar": "../../assets/cool.png",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionType": "type5",
     "matchPairs": [
       {
@@ -58,7 +58,7 @@
     "questionText": "اكتب ما يلي بالعربي:",
     "questionExplain": "greeting",
     "answerExplain": " الكلمة الإنجليزية 'greeting' تترجم إلى 'تحية' بالعربية",
-    "avatar": "../../assets/indian.png",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "greeting",
     "correctSequence": [2],
     "questionType": "type1",
@@ -82,7 +82,7 @@
     "questionText": "اكتب ما يلي بالعربي:",
     "questionExplain": "good evening",
     "answerExplain": " الكلمة الإنجليزية 'good evening' تترجم إلى 'مساء الخير' بالعربية",
-    "avatar": "../../assets/cool.png",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "good evening",
     "correctSequence": [0],
     "questionType": "type1",
@@ -97,7 +97,7 @@
     "questionText": "اكتب ما يلي بالانجليزي:",
     "questionExplain": "Good evening",
     "answerExplain": " الكلمة الإنجليزية 'Good evening' تترجم إلى 'مساء الخير' بالعربية",
-    "avatar": "../../assets/dude.png",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "مساء الخير",
     "correctSequence": [1],
     "questionType": "type3",
@@ -112,7 +112,7 @@
     "questionText": "اكتب ما يلي بالعربي:",
     "questionExplain": "welcome",
     "answerExplain": " الكلمة الإنجليزية 'welcome' تترجم إلى 'أهلاً وسهلاً' بالعربية",
-    "avatar": "../../assets/indian.png",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "welcome",
     "correctSequence": [4],
     "questionType": "type1",
@@ -127,7 +127,7 @@
   {
     "questionText": "ما هو معنى الرد على 'مرحبًا'؟",
     "questionExplain": "Reply to 'Hello'",
-    "avatar": "../../assets/indian.png",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionType": "type2",
     "answerOptions": [
       {
@@ -151,7 +151,7 @@
     "questionText": "اكتب ما يلي بالانجليزي:",
     "questionExplain": "Welcome",
     "answerExplain": " الكلمة الإنجليزية 'Welcome' تترجم إلى 'أهلاً وسهلاً' بالعربية",
-    "avatar": "../../assets/dude.png",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "اهلاً وسهلاً",
     "correctSequence": [4],
     "questionType": "type3",
