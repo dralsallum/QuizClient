@@ -75,6 +75,7 @@ export const SignButton = styled.button`
   margin-top: 10px;
   border-color: #1a2d8a;
   color: white;
+  font-size: 18px;
 
   :hover {
     cursor: pointer;
