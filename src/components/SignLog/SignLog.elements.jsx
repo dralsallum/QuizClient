@@ -67,7 +67,7 @@ export const ErrorCon = styled.div`
 
 export const LoginSignPara = styled.p`
   margin-top: 15px;
-  font-size: 12px;
+  font-size: 16px;
 `;
 
 export const SignButton = styled.button`
@@ -79,6 +79,7 @@ export const SignButton = styled.button`
   margin-top: 10px;
   border-color: #1a2d8a;
   color: white;
+  font-size: 16px;
 
   :hover {
     cursor: pointer;
@@ -93,6 +94,7 @@ export const RegistarButton = styled.button`
   margin-top: 10px;
   border-color: darkgray;
   cursor: pointer;
+  font-size: 16px;
 
   :hover {
     cursor: pointer;
