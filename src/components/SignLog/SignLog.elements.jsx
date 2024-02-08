@@ -67,7 +67,7 @@ export const ErrorCon = styled.div`
 
 export const LoginSignPara = styled.p`
   margin-top: 15px;
-  font-size: 16px;
+  font-size: 12px;
 `;
 
 export const SignButton = styled.button`
