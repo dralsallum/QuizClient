@@ -49,17 +49,35 @@ const Products = () => {
         script.src = scriptURL;
         script.async = true;
         document.head.appendChild(script);
-        script.onload = () => {
-          if (window.ShopifyBuy) {
-            initializeShopifyBuyButton();
-          }
-        };
+        script.onload = initializeShopifyBuyButton;
       } else if (window.ShopifyBuy) {
         initializeShopifyBuyButton();
       }
     };
 
     const initializeShopifyBuyButton = () => {
+      if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) {
+          buildShopifyButton();
+        }
+      } else {
+        const scriptURL =
+          "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
+        const script = document.createElement("script");
+        script.src = scriptURL;
+        script.async = true;
+        document.head.appendChild(script);
+        script.onload = () => {
+          if (window.ShopifyBuy) {
+            if (window.ShopifyBuy.UI) {
+              buildShopifyButton();
+            }
+          }
+        };
+      }
+    };
+
+    const buildShopifyButton = () => {
       const client = ShopifyBuy.buildClient({
         domain: "ec56aa-4.myshopify.com",
         storefrontAccessToken: "6e9ee9bb674850fe85217bb059ded6c3",
@@ -97,7 +115,7 @@ const Products = () => {
                   },
                   "border-radius": "5px",
                   ":focus": {
-                    "background-color": "#e65c00",
+                    "background-color": "#2946b6",
                   },
                 },
                 product: {
