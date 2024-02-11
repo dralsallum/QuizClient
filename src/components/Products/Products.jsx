@@ -209,16 +209,6 @@ const Products = () => {
     setProduct(primaryProduct || secondaryProduct);
   }, [name]);
 
-  const handleAddToBasket = () => {
-    const item = {
-      name: product.name,
-      price: product.price * number,
-      image: imageMapping[product.name],
-      quantity: number,
-    };
-    dispatch(addToBasket(item));
-  };
-
   if (!product) {
     return <p>Loading...</p>;
   }
