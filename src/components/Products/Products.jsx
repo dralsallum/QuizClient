@@ -72,7 +72,7 @@ const Products = () => {
           moneyFormat: "%24%7B%7Bamount%7D%7D",
           options: {
             product: {
-              buttonDestination: "modal",
+              buttonDestination: "cart",
               contents: {
                 img: false,
                 title: false,
