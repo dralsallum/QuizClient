@@ -34,14 +34,14 @@ const imageMapping = {
 };
 
 const shopifyProductIds = {
-  "Whispers in the Rails": "9167549366431",
-  "Friends Forever": "9167548842143",
-  "Behind Grey Eyes": "9167548842143",
-  "Beyond the clock": "9167548842143",
+  "Whispers in the Rails": "9167704752287",
+  "Friends Forever": "9167705276575",
+  "Behind Grey Eyes": "9167705931935",
+  "Beyond the clock": "9167706620063",
   "Shadows Over Maplewood": "9167548842143",
-  "Winds of change": "9167548842143",
-  "The Forgotten Realms": "9167548842143",
-  "A Dystopian future": "9167548842143",
+  "Winds of change": "9167549366431",
+  "The Forgotten Realms": "9167707242655",
+  "A Dystopian future": "9167688433823",
 };
 
 const Products = () => {
