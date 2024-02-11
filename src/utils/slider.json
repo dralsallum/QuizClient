@@ -1,24 +1,20 @@
 [
   {
     "name": "Whispers in the Rails",
-    "price": "49",
-    "image": "https://alsallum.s3.eu-north-1.amazonaws.com/Whispers+in+the+Rails.jpg"
+    "price": "49"
   },
 
   {
     "name": "Friends Forever",
-    "price": "49",
-    "image": "./r3.png"
+    "price": "49"
   },
 
   {
     "name": "Behind Grey Eyes",
-    "price": "49",
-    "image": "./r2.png"
+    "price": "49"
   },
   {
     "name": "Beyond the clock",
-    "price": "49",
-    "image": "./r3.png"
+    "price": "49"
   }
 ]

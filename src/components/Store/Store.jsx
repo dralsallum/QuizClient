@@ -17,6 +17,7 @@ import {
   StoreWtapper,
 } from "../Store/Store.elements";
 import Slider from "../Slider/Slider";
+import { SecSlider } from "..";
 
 const Store = () => {
   useEffect(() => {
@@ -52,7 +53,7 @@ const Store = () => {
         </StoreTimeKeyContainer>
       </StoreTimeBoost>
       <Slider />
-      <Slider />
+      <SecSlider />
     </StoreWtapper>
   );
 };

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../../redux/basketRedux";
-
 import { useParams } from "react-router-dom";
 import {
   ProductAdd,
@@ -10,10 +9,10 @@ import {
   ProductContainerRight,
   ProductHeader,
   ProductImg,
-  ProductNumber,
   ProductNumberContainer,
 } from "./Product.elements";
 import data from "../../utils/slider.json";
+import Secdata from "../../utils/SecSlider.json";
 import { FooterMe, NavTech } from "..";
 
 const imageMapping = {
@@ -25,6 +24,13 @@ const imageMapping = {
     "https://alsallum.s3.eu-north-1.amazonaws.com/Behind+grey+eye.jpg",
   "Beyond the clock":
     "https://alsallum.s3.eu-north-1.amazonaws.com/Beyond+the+clock.jpg",
+  "Shadows Over Maplewood":
+    "https://alsallum.s3.eu-north-1.amazonaws.com/shadows.png",
+  "Winds of change": "https://alsallum.s3.eu-north-1.amazonaws.com/Winds.png",
+  "The Forgotten Realms":
+    "https://alsallum.s3.eu-north-1.amazonaws.com/forgetten.png",
+  "A Dystopian future":
+    "https://alsallum.s3.eu-north-1.amazonaws.com/Dystopian.png",
 };
 
 const Products = () => {
@@ -38,6 +44,13 @@ const Products = () => {
     const decodedName = decodeURIComponent(name);
     const foundProduct = data.find((p) => p.name === decodedName);
     setProduct(foundProduct);
+  }, [name]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const decodedName = decodeURIComponent(name);
+    const foundSecProduct = Secdata.find((p) => p.name === decodedName);
+    setProduct(foundSecProduct);
   }, [name]);
 
   const handleAddToBasket = () => {

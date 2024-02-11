@@ -4,6 +4,7 @@ export { default as NavbarMe } from "./NavbarMe/Navbar";
 export { default as NavTech } from "./NavTech/NavTech";
 export { default as QueFooter } from "./QueFooter/QueFooter";
 export { default as Slider } from "./Slider/Slider";
+export { default as SecSlider } from "./SecSlider/SecSlider";
 export { default as Store } from "./Store/Store";
 export { default as Basket } from "./Basket/Basket";
 export { default as Notification } from "./Notification/Notification";
