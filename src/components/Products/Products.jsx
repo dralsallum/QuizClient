@@ -1,7 +1,5 @@
 /* global ShopifyBuy */
 import React, { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { addToBasket } from "../../redux/basketRedux";
 import { useParams } from "react-router-dom";
 import {
   ProductContainer,
@@ -46,8 +44,6 @@ const shopifyProductIds = {
 
 const Products = () => {
   const { name } = useParams();
-  const [number, setNumber] = useState(1);
-  const dispatch = useDispatch();
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
@@ -187,8 +183,10 @@ const Products = () => {
         });
       });
     };
-    loadShopifySDK();
-  }, []);
+    if (product) {
+      loadShopifySDK();
+    }
+  }, [product]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -197,17 +195,7 @@ const Products = () => {
       data.find((p) => p.name === decodedName) ||
       Secdata.find((p) => p.name === decodedName);
     setProduct(foundProduct);
-  }, [name]);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const decodedName = decodeURIComponent(name);
-    const primaryProduct = data.find((p) => p.name === decodedName);
-    const secondaryProduct = !primaryProduct
-      ? Secdata.find((p) => p.name === decodedName)
-      : null;
-    setProduct(primaryProduct || secondaryProduct);
-  }, [name]);
+  }, [product]);
 
   if (!product) {
     return <p>Loading...</p>;

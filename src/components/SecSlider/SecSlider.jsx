@@ -23,10 +23,10 @@ import {
 import { sliderSettings } from "../../utils/common";
 import data from "../../utils/SecSlider.json";
 
-const Dystopian = "https://alsallum.s3.eu-north-1.amazonaws.com/Dystopian.png";
-const Forgotten = "https://alsallum.s3.eu-north-1.amazonaws.com/forgetten.png";
-const Shadows = "https://alsallum.s3.eu-north-1.amazonaws.com/shadows.png";
-const Winds = "https://alsallum.s3.eu-north-1.amazonaws.com/Winds.png";
+const Dystopian = "https://alsallum.s3.eu-north-1.amazonaws.com/Dystopian.jpg";
+const Forgotten = "https://alsallum.s3.eu-north-1.amazonaws.com/forgetten.jpg";
+const Shadows = "https://alsallum.s3.eu-north-1.amazonaws.com/shadows.jpg";
+const Winds = "https://alsallum.s3.eu-north-1.amazonaws.com/winds.jpg";
 
 const imageMapping = {
   "Shadows Over Maplewood": Shadows,
@@ -83,15 +83,9 @@ const Slider = () => {
         </SliderCardContainer>
       </Link>
       <SliderCardSubSpan2>
-        <Button
-          onClick={(e) => {
-            e.stopPropagation();
-            handleAddToBasket(card);
-          }}
-          primary
-        >
-          اضافة للسلة
-        </Button>
+        <Link to={`/product/${encodeURIComponent(card.name)}`}>
+          <Button>اضافة للسلة</Button>
+        </Link>
       </SliderCardSubSpan2>
     </SwiperSlide>
   ));

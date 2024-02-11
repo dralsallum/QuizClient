@@ -87,15 +87,9 @@ const Slider = () => {
         </SliderCardContainer>
       </Link>
       <SliderCardSubSpan2>
-        <Button
-          onClick={(e) => {
-            e.stopPropagation();
-            handleAddToBasket(card);
-          }}
-          primary
-        >
-          اضافة للسلة
-        </Button>
+        <Link to={`/product/${encodeURIComponent(card.name)}`}>
+          <Button>اضافة للسلة</Button>
+        </Link>
       </SliderCardSubSpan2>
     </SwiperSlide>
   ));
