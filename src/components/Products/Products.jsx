@@ -4,7 +4,6 @@ import { useDispatch } from "react-redux";
 import { addToBasket } from "../../redux/basketRedux";
 import { useParams } from "react-router-dom";
 import {
-  ProductAdd,
   ProductContainer,
   ProductContainerLeft,
   ProductContainerRight,
@@ -26,12 +25,23 @@ const imageMapping = {
   "Beyond the clock":
     "https://alsallum.s3.eu-north-1.amazonaws.com/Beyond+the+clock.jpg",
   "Shadows Over Maplewood":
-    "https://alsallum.s3.eu-north-1.amazonaws.com/shadows.png",
-  "Winds of change": "https://alsallum.s3.eu-north-1.amazonaws.com/Winds.png",
+    "https://alsallum.s3.eu-north-1.amazonaws.com/shadows.jpg",
+  "Winds of change": "https://alsallum.s3.eu-north-1.amazonaws.com/winds.jpg",
   "The Forgotten Realms":
-    "https://alsallum.s3.eu-north-1.amazonaws.com/forgetten.png",
+    "https://alsallum.s3.eu-north-1.amazonaws.com/forgetten.jpg",
   "A Dystopian future":
-    "https://alsallum.s3.eu-north-1.amazonaws.com/Dystopian.png",
+    "https://alsallum.s3.eu-north-1.amazonaws.com/Dystopian.jpg",
+};
+
+const shopifyProductIds = {
+  "Whispers in the Rails": "9167549366431",
+  "Friends Forever": "9167548842143",
+  "Behind Grey Eyes": "9167548842143",
+  "Beyond the clock": "9167548842143",
+  "Shadows Over Maplewood": "9167548842143",
+  "Winds of change": "9167548842143",
+  "The Forgotten Realms": "9167548842143",
+  "A Dystopian future": "9167548842143",
 };
 
 const Products = () => {
@@ -84,8 +94,14 @@ const Products = () => {
       });
 
       ShopifyBuy.UI.onReady(client).then((ui) => {
+        // Step 2: Use the mapped Shopify product ID
+        const shopifyId = shopifyProductIds[decodeURIComponent(name)];
+        if (!shopifyId) {
+          console.error("Shopify product ID not found for", name);
+          return;
+        }
         ui.createComponent("product", {
-          id: "9167549366431",
+          id: shopifyId,
           node: document.getElementById("product-component-1707638219372"),
           moneyFormat: "%24%7B%7Bamount%7D%7D",
           options: {
@@ -133,15 +149,15 @@ const Products = () => {
               popup: false,
               styles: {
                 button: {
-                  "background-color": "#ff6700",
+                  "background-color": "#2946b6",
                   color: "#ffffff",
                   ":hover": {
-                    "background-color": "#e65c00",
+                    "background-color": "#2946b6",
                     color: "#ffffff",
                   },
                   "border-radius": "5px",
                   ":focus": {
-                    "background-color": "#e65c00",
+                    "background-color": "#2946b6",
                   },
                 },
               },
@@ -149,14 +165,14 @@ const Products = () => {
             toggle: {
               styles: {
                 toggle: {
-                  "background-color": "#ff6700",
+                  "background-color": "#2946b6",
                   color: "#ffffff",
                   ":hover": {
-                    "background-color": "#e65c00",
+                    "background-color": "#2946b6",
                     color: "#ffffff",
                   },
                   ":focus": {
-                    "background-color": "#e65c00",
+                    "background-color": "#2946b6",
                   },
                 },
                 count: {
@@ -171,7 +187,6 @@ const Products = () => {
         });
       });
     };
-
     loadShopifySDK();
   }, []);
 
