@@ -50,138 +50,122 @@ const Products = () => {
     const loadShopifySDK = () => {
       const scriptURL =
         "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
-      if (!document.querySelector(`script[src="${scriptURL}"]`)) {
+      const existingScript = document.querySelector(
+        `script[src="${scriptURL}"]`
+      );
+
+      if (!existingScript) {
         const script = document.createElement("script");
         script.src = scriptURL;
         script.async = true;
         document.head.appendChild(script);
-        script.onload = initializeShopifyBuyButton;
-      } else if (window.ShopifyBuy) {
-        initializeShopifyBuyButton();
-      }
-    };
-
-    const initializeShopifyBuyButton = () => {
-      if (window.ShopifyBuy) {
-        if (window.ShopifyBuy.UI) {
-          buildShopifyButton();
-        }
+        script.onload = () =>
+          initializeShopifyBuyButton(decodeURIComponent(name));
       } else {
-        const scriptURL =
-          "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
-        const script = document.createElement("script");
-        script.src = scriptURL;
-        script.async = true;
-        document.head.appendChild(script);
-        script.onload = () => {
-          if (window.ShopifyBuy) {
-            if (window.ShopifyBuy.UI) {
-              buildShopifyButton();
-            }
-          }
-        };
+        initializeShopifyBuyButton(decodeURIComponent(name));
       }
     };
 
-    const buildShopifyButton = () => {
-      const client = ShopifyBuy.buildClient({
-        domain: "ec56aa-4.myshopify.com",
-        storefrontAccessToken: "6e9ee9bb674850fe85217bb059ded6c3",
-      });
-
-      ShopifyBuy.UI.onReady(client).then((ui) => {
-        // Step 2: Use the mapped Shopify product ID
-        const shopifyId = shopifyProductIds[decodeURIComponent(name)];
-        if (!shopifyId) {
-          console.error("Shopify product ID not found for", name);
-          return;
-        }
-        ui.createComponent("product", {
-          id: shopifyId,
-          node: document.getElementById("product-component-1707638219372"),
-          moneyFormat: "%24%7B%7Bamount%7D%7D",
-          options: {
-            product: {
-              buttonDestination: "cart",
-              contents: {
-                img: false,
-                title: false,
-                price: false,
-                options: false,
-                quantity: false,
-                button: true,
-              },
-              text: {
-                button: "اضافة للسلة",
-              },
-              styles: {
-                button: {
-                  "background-color": "#2946b6",
-                  padding: "8px 20px",
-                  width: "100%",
-                  "box-shadow": "4px 4px 10px rgba(0, 0, 0, 1)",
-                  color: "#ffffff",
-                  ":hover": {
-                    "background-color": "#2946b6",
-                    color: "#ffffff",
-                  },
-                  "border-radius": "5px",
-                  ":focus": {
-                    "background-color": "#2946b6",
-                  },
-                },
-                product: {
-                  "text-align": "left",
-                  "@media (min-width: 601px)": {
-                    "max-width": "100%",
-                    "margin-left": "0",
-                    "margin-bottom": "0px",
-                  },
-                },
-              },
-            },
-            cart: {
-              startOpen: false,
-              popup: false,
-              styles: {
-                button: {
-                  "background-color": "#2946b6",
-                  color: "#ffffff",
-                  ":hover": {
-                    "background-color": "#2946b6",
-                    color: "#ffffff",
-                  },
-                  "border-radius": "5px",
-                  ":focus": {
-                    "background-color": "#2946b6",
-                  },
-                },
-              },
-            },
-            toggle: {
-              styles: {
-                toggle: {
-                  "background-color": "#2946b6",
-                  color: "#ffffff",
-                  ":hover": {
-                    "background-color": "#2946b6",
-                    color: "#ffffff",
-                  },
-                  ":focus": {
-                    "background-color": "#2946b6",
-                  },
-                },
-                count: {
-                  color: "#ffffff",
-                  ":hover": {
-                    color: "#ffffff",
-                  },
-                },
-              },
-            },
-          },
+    const initializeShopifyBuyButton = (productName) => {
+      if (window.ShopifyBuy && window.ShopifyBuy.UI) {
+        const client = ShopifyBuy.buildClient({
+          domain: "ec56aa-4.myshopify.com",
+          storefrontAccessToken: "6e9ee9bb674850fe85217bb059ded6c3",
         });
-      });
+
+        ShopifyBuy.UI.onReady(client).then((ui) => {
+          const shopifyId = shopifyProductIds[productName];
+          if (!shopifyId) {
+            console.error("Shopify product ID not found for", productName);
+            return;
+          }
+          ui.createComponent("product", {
+            id: shopifyId,
+            node: document.getElementById("product-component-1707638219372"),
+            moneyFormat: "%24%7B%7Bamount%7D%7D",
+            options: {
+              product: {
+                buttonDestination: "cart",
+                contents: {
+                  img: false,
+                  title: false,
+                  price: false,
+                  options: false,
+                  quantity: false,
+                  button: true,
+                },
+                text: {
+                  button: "اضافة للسلة",
+                },
+                styles: {
+                  button: {
+                    "background-color": "#2946b6",
+                    padding: "8px 20px",
+                    width: "100%",
+                    "box-shadow": "4px 4px 10px rgba(0, 0, 0, 1)",
+                    color: "#ffffff",
+                    ":hover": {
+                      "background-color": "#2946b6",
+                      color: "#ffffff",
+                    },
+                    "border-radius": "5px",
+                    ":focus": {
+                      "background-color": "#2946b6",
+                    },
+                  },
+                  product: {
+                    "text-align": "left",
+                    "@media (min-width: 601px)": {
+                      "max-width": "100%",
+                      "margin-left": "0",
+                      "margin-bottom": "0px",
+                    },
+                  },
+                },
+              },
+              cart: {
+                startOpen: false,
+                popup: false,
+                styles: {
+                  button: {
+                    "background-color": "#2946b6",
+                    color: "#ffffff",
+                    ":hover": {
+                      "background-color": "#2946b6",
+                      color: "#ffffff",
+                    },
+                    "border-radius": "5px",
+                    ":focus": {
+                      "background-color": "#2946b6",
+                    },
+                  },
+                },
+              },
+              toggle: {
+                styles: {
+                  toggle: {
+                    "background-color": "#2946b6",
+                    color: "#ffffff",
+                    ":hover": {
+                      "background-color": "#2946b6",
+                      color: "#ffffff",
+                    },
+                    ":focus": {
+                      "background-color": "#2946b6",
+                    },
+                  },
+                  count: {
+                    color: "#ffffff",
+                    ":hover": {
+                      color: "#ffffff",
+                    },
+                  },
+                },
+              },
+            },
+          });
+        });
+      }
     };
     if (product) {
       loadShopifySDK();
@@ -195,7 +179,7 @@ const Products = () => {
       data.find((p) => p.name === decodedName) ||
       Secdata.find((p) => p.name === decodedName);
     setProduct(foundProduct);
-  }, [product]);
+  }, [name]);
 
   if (!product) {
     return <p>Loading...</p>;
