@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { addToBasket } from "../../redux/basketRedux";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
-import data from "../../utils/SecSlider.json";
 import { Link } from "react-router-dom";
 import {
   Button,
@@ -22,6 +21,7 @@ import {
   SliderArrowContainer1,
 } from "./SecSlider.elements";
 import { sliderSettings } from "../../utils/common";
+import data from "../../utils/SecSlider.json";
 
 const Dystopian = "https://alsallum.s3.eu-north-1.amazonaws.com/Dystopian.png";
 const Forgotten = "https://alsallum.s3.eu-north-1.amazonaws.com/forgetten.png";

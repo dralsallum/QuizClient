@@ -1,24 +1,19 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../../redux/basketRedux";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import data from "../../utils/slider.json";
 import { Link } from "react-router-dom";
 import {
   Button,
   SliderWrapper,
   SliderContainer,
-  SliderHeader,
-  SliderHeaderSpan,
-  SliderSubHeaderSpan,
   SliderCardContainer,
   SliderCardImg,
   SliderCardSpan,
   SliderCardSubSpan1,
   SliderCardSubSpan2,
   SliderCardSubSpan3,
-  SliderCardSubSpan4,
   SliderArrowContainer,
   SliderArrowButtonRight,
   SliderArrowButtonLeft,
@@ -26,6 +21,7 @@ import {
   SliderArrowContainer1,
 } from "./Slider.elements";
 import { sliderSettings } from "../../utils/common";
+import data from "../../utils/slider.json";
 
 const Beyond =
   "https://alsallum.s3.eu-north-1.amazonaws.com/Beyond+the+clock.jpg";
@@ -60,7 +56,7 @@ const SliderButton = ({ swiper }) => {
 };
 
 const Slider = () => {
-  const dispatch = useDispatch(); // Use useDispatch hook
+  const dispatch = useDispatch();
   const [swiperInstance, setSwiperInstance] = React.useState(null);
 
   const handleAddToBasket = (item) => {
