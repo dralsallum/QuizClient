@@ -4,7 +4,7 @@ const chapterItems = [
     lessonId: 1,
     imgSrc:
       "https://alsallum.s3.eu-north-1.amazonaws.com/welcomeimage1661254149_256.jpg",
-    mainText: "تقديم نفسك",
+    mainText: "الترحيب بالاخرين",
     subText: "تعلم التحية عند مقابلة الأشخاص",
     url: "/test/chapter1",
   },
@@ -24,8 +24,8 @@ const chapterItems = [
 
     imgSrc:
       "https://alsallum.s3.eu-north-1.amazonaws.com/sogreat1661259325_256.jpg",
-    mainText: "القول كيف أنت",
-    subText: "تحدث عن كيف تشعر",
+    mainText: "توديع الغير",
+    subText: "كيف تودع الاخرين",
     url: "/test/chapter3",
   },
   {
@@ -34,8 +34,8 @@ const chapterItems = [
 
     imgSrc:
       "https://alsallum.s3.eu-north-1.amazonaws.com/european-man-woman-casual-wear-standing-back-back-with-arms-crossed-isolated-colorful-wall_171337-51292.jpg",
-    mainText: "تطوير الطلاقة",
-    subText: "عرِّف عن نفسك",
+    mainText: "طلب القهوة",
+    subText: "اطلب قهوتك ببساطة",
     url: "/test/chapter4",
   },
   {

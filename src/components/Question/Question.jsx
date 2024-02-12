@@ -55,12 +55,8 @@ import {
 import chapterItems from "../../chapterItems";
 import { Link } from "react-router-dom";
 import { useLesson } from "../../redux/LessonContext";
-import { useDispatch, useSelector } from "react-redux";
-const Arrow = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24">
-    <path d="M12 16l4-4h-8z" />
-  </svg>
-);
+import Arrow from "./Arrow";
+
 const groupByChapter = (items) => {
   return items.reduce((acc, item) => {
     if (!acc[item.chapterId]) {

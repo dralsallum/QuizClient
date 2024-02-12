@@ -74,6 +74,7 @@
     "questionText": "اكتب ما يلي بالانجليزي:",
     "questionSubText": "تحية",
     "questionExplain": "Greeting",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "answerExplain": " الكلمة الإنجليزية 'Greeting' تترجم إلى 'تحية' بالعربية",
     "questionType": "type4",
     "correctAnswer": "greeting"
@@ -125,27 +126,13 @@
     ]
   },
   {
-    "questionText": "ما هو معنى الرد على 'مرحبًا'؟",
-    "questionExplain": "Reply to 'Hello'",
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionSubText": "اهلاً",
+    "questionExplain": "Hello",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
-    "questionType": "type2",
-    "answerOptions": [
-      {
-        "answerText": "Hello!",
-        "isCorrect": true,
-        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/milk.png"
-      },
-      {
-        "answerText": "Bye!",
-        "isCorrect": false,
-        "imgPath": "https://example.com/images/bye.png"
-      },
-      {
-        "answerText": "Thanks!",
-        "isCorrect": false,
-        "imgPath": "https://example.com/images/thanks.png"
-      }
-    ]
+    "answerExplain": " الكلمة الإنجليزية 'Hello' تترجم إلى 'تحية' بالعربية",
+    "questionType": "type4",
+    "correctAnswer": "Hello"
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
@@ -156,11 +143,11 @@
     "correctSequence": [4],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "صباح الخير" },
-      { "answerText": "مساء الخير" },
-      { "answerText": "وداعا" },
-      { "answerText": "شكرا" },
-      { "answerText": "أهلاً وسهلاً" }
+      { "answerText": "Good morning" },
+      { "answerText": "Good evening" },
+      { "answerText": "Goodbye" },
+      { "answerText": "Thank you" },
+      { "answerText": "Welcome" }
     ]
   }
 ]

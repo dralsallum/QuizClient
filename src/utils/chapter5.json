@@ -1,124 +1,112 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "I read",
-    "answerExplain": " الكلمة الإنجليزية 'I read' تترجم إلى 'انا اقرا' بالعربية",
-    "questionSubText": "I read",
-    "correctSequence": [4, 5],
-    "avatar": "../../assets/dude.png",
+    "questionExplain": "hello",
+    "answerExplain": " الكلمة الإنجليزية 'hello' تترجم إلى 'مرحبا' بالعربية",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "hello",
+    "correctSequence": [1],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "بنات" },
-      { "answerText": "ياكلون" },
-      { "answerText": "يشربن" },
-      { "answerText": "وفتية" },
-      { "answerText": "انا" },
-      { "answerText": "اقرا" }
+      { "answerText": "صباح الخير" },
+      { "answerText": "مرحبا" },
+      { "answerText": "وداعا" },
+      { "answerText": "شكرا" },
+      { "answerText": "نعم" }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "We read",
-    "questionExplain": "We read",
-    "answerExplain": " الجملة الإنجليزية 'We read' تترجم إلى 'نحن نقرا' بالعربية",
-    "correctSequence": [0, 4],
-    "avatar": "../../assets/indian.png",
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Hello",
+    "answerExplain": " الكلمة الإنجليزية 'Hello' تترجم إلى 'مرحبا' بالعربية",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/dude.png",
+    "questionSubText": "مرحبا",
+    "correctSequence": [0],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "نحن" },
-      { "answerText": "تقرأ" },
-      { "answerText": "جريدة" },
-      { "answerText": "والصبيان" },
-      { "answerText": "نقرأ" },
-      { "answerText": "يشربن" }
+      { "answerText": "Hello" },
+      { "answerText": "Goodbye" },
+      { "answerText": "Thank you" },
+      { "answerText": "Yes" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "Girl",
-    "questionExplain": "Girl",
-    "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
-    "correctSequence": [2],
-    "avatar": "../../assets/bear.png",
+    "questionExplain": "My name is Ahmed",
+    "answerExplain": "'My name is Ahmed' translates to 'اسمي هو احمد'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "My name is Ahmed",
+    "correctSequence": [1, 0, 4],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "ماء" },
-      { "answerText": "فتاة" },
-      { "answerText": "مفتاح" },
-      { "answerText": "شجرة" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "A newspaper",
-    "questionExplain": "A newspaper",
-    "answerExplain": " الجملة الإنجليزية 'A newspaper' تترجم إلى 'صحيفة' بالعربية",
-    "questionType": "type1",
-    "avatar": "../../assets/bear.png",
-    "correctSequence": [2],
-    "answerOptions": [
-      { "answerText": "وفتية" },
-      { "answerText": "كتاب" },
-      { "answerText": "صحيفة" },
-      { "answerText": "أنا" },
-      { "answerText": "و" }
-    ]
-  },
-  {
-    "questionText": "اي واحد من هؤلاء هو الرجل",
-    "questionExplain": "Newspaper",
-    "answerExplain": " الكلمة الإنجليزية 'Newspaper' تترجم إلى 'جريدة' بالعربية",
-    "questionType": "type2",
-    "answerOptions": [
-      {
-        "answerText": "Boy",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/31ca4ce376000442b1237964904daab3"
-      },
-      {
-        "answerText": "Newspaper",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/a2ec73142749b80a6f1c193bf1c3c342"
-      },
-      {
-        "answerText": "girl",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/825628e696b71adc00a63df24de6a681"
-      }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "The woman eats",
-    "questionExplain": "The woman eats",
-    "answerExplain": " الجملة الإنجليزية 'The woman eats' تترجم إلى 'المرأة تأكل' بالعربية",
-    "avatar": "../../assets/bear.png",
-    "questionType": "type1",
-    "correctSequence": [3, 1],
-    "answerOptions": [
-      { "answerText": "الولد" },
-      { "answerText": "تاكل" },
+      { "answerText": "هو" },
+      { "answerText": "اسمي" },
+      { "answerText": "اكل" },
       { "answerText": "مياه" },
-      { "answerText": "المراة" },
-      { "answerText": "الماء" },
-      { "answerText": "ياكل" }
+      { "answerText": "احمد" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "I have three siblings.",
+    "answerExplain": "I have three siblings. تترجم إلى 'لدي ثلاث أخوة'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "لدي ثلاث أخوة.",
+    "correctSequence": [3, 1, 2, 0],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Brothers" },
+      { "answerText": "have" },
+      { "answerText": "three" },
+      { "answerText": "I" },
+      { "answerText": "He" },
+      { "answerText": "sisters" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "انا ذهبت للمدرسة",
-    "questionExplain": "I went to school",
-    "answerExplain": " الجملة الإنجليزية 'I went to school' تترجم إلى 'أنا ذهبت إلى المدرسة' بالعربية",
-    "correctSequence": [2, 0, 3, 1],
-    "avatar": "../../assets/cool.png",
+    "questionExplain": "What is your name",
+    "answerExplain": "'What is your name?  تترجم الى ما هو اسمك",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "?What is your name",
+    "correctSequence": [1, 0, 3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "هو" },
+      { "answerText": "ما" },
+      { "answerText": "منظار" },
+      { "answerText": "اسمك" },
+      { "answerText": "مدينة" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "It was nice talking to you, goodbye.",
+    "answerExplain": "'It was nice talking to you, goodbye.' translates to 'كانت محادثة جميلة معك، وداعاً'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "It was nice talking to you, goodbye.",
+    "correctSequence": [1, 0, 2, 3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "محادثة" },
+      { "answerText": "كانت" },
+      { "answerText": "جميلة" },
+      { "answerText": "وداعاً" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "I'll see you next time.",
+    "answerExplain": "'I'll see you next time.' translates to 'سأراك في المرة القادمة.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "سأراك في المرة القادمة.",
+    "correctSequence": [2, 3, 1, 0],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "went" },
-      { "answerText": "school" },
+      { "answerText": "next time" },
+      { "answerText": "I'll see you" },
       { "answerText": "I" },
-      { "answerText": "to" },
-      { "answerText": "by" }
+      { "answerText": "see" }
     ]
   },
   {
@@ -147,26 +135,30 @@
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "انا ذهبت للمدرسة",
-    "questionExplain": "I went to school",
-    "answerExplain": " الجملة الإنجليزية 'I went to school' تترجم إلى 'أنا ذهبت إلى المدرسة' بالعربية",
-    "correctSequence": [2, 0, 3, 1],
-    "avatar": "../../assets/indian.png",
-    "questionType": "type3",
+    "questionExplain": "A coffee with no sugar, please.",
+    "answerExplain": "'A coffee with no sugar, please.' translates to 'قهوة بدون سكر، من فضلك.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "A coffee with no sugar, please.",
+    "correctSequence": [0, 2, 1],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "went" },
-      { "answerText": "school" },
-      { "answerText": "I" },
-      { "answerText": "to" },
-      { "answerText": "by" }
+      { "answerText": "قهوة" },
+      { "answerText": "من فضلك." },
+      { "answerText": "بدون سكر،" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "المرأة تأكل التفاحة",
-    "questionExplain": "the woman eats the apple",
-    "answerExplain": " ",
-    "questionType": "type4",
-    "correctAnswer": "the woman eats the apple"
+    "questionExplain": "I prefer my coffee black.",
+    "answerExplain": "'I prefer my coffee black.' translates to 'أفضل قهوتي سوداء.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "أفضل قهوتي سوداء.",
+    "correctSequence": [1, 0, 2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "coffee" },
+      { "answerText": "I prefer my" },
+      { "answerText": "black." }
+    ]
   }
 ]

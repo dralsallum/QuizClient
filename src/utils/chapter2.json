@@ -1,166 +1,190 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "A boy and a girl",
-    "answerExplain": "الجملة 'A boy and a girl' تترجم إلى 'ولد و بنت'.",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "A boy and a girl",
-    "correctSequence": [3, 5, 0],
+    "questionExplain": "My name is Ahmed",
+    "answerExplain": "'My name is Ahmed' translates to 'اسمي هو احمد'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "My name is Ahmed",
+    "correctSequence": [1, 0, 4],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "بنت" },
-      { "answerText": "امراة" },
-      { "answerText": "برتقال" },
-      { "answerText": "ولد" },
       { "answerText": "هو" },
-      { "answerText": "و" }
+      { "answerText": "اسمي" },
+      { "answerText": "اكل" },
+      { "answerText": "مياه" },
+      { "answerText": "احمد" }
     ]
   },
   {
-    "questionText": "اختر الكلمة الناقصة:",
-    "questionExplain": "I ____ an apple",
-    "answerExplain": "يُستخدم الزمن الحاضر البسيط لوصف العادات، الحقائق العامة، الأفعال المتكررة، أو الحالات التي لا تتغير. في هذه الجملة، الشكل الصحيح مع الفاعل 'I' هو 'eat'، مما يجعل الجملة الكاملة 'I eat an apple'.",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "I ____ an apple",
-    "correctSequence": [1],
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "I have three siblings.",
+    "answerExplain": "I have three siblings. تترجم إلى 'لدي ثلاث أخوة'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "لدي ثلاث أخوة.",
+    "correctSequence": [3, 1, 2, 0],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "eating" },
-      { "answerText": "eat" },
-      { "answerText": "eats" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "I am a man",
-    "answerExplain": "يُستخدم الزمن الحاضر البسيط لوصف العادات، الحقائق العامة، الأفعال المتكررة، أو الحالات التي لا تتغير. في هذه الجملة، الشكل الصحيح مع الفاعل 'I' هو 'eat'، مما يجعل الجملة الكاملة 'I am a man'.",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "I am a man",
-    "correctSequence": [3, 0],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "ولد" },
-      { "answerText": "امراة" },
-      { "answerText": "انا" },
-      { "answerText": "سقف" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "She is a woman",
-    "answerExplain": "الجملة 'She is a woman' تترجم إلى 'هي امرأة'. 'She' هو ضمير مفرد يُستخدم للإشارة إلى الأنثى في اللغة الإنجليزية.",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "She is a woman",
-    "correctSequence": [0, 2],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "هي" },
-      { "answerText": "ولد" },
-      { "answerText": "امراة" },
-      { "answerText": "انا" },
-      { "answerText": "رجل" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "i am  ______  girl.",
-    "questionExplain": "i am a girl.",
-    "answerExplain": "نستخدم 'a' قبل الأسماء التي تبدأ بحروف صوتية، وفي هذه الجملة نستخدم 'a' قبل 'girl'.",
-    "correctSequence": [1],
-    "avatar": "../../assets/dude.png",
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "-" },
-      { "answerText": "a" },
-      { "answerText": "an" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "she",
-    "questionExplain": "she",
-    "answerExplain": "الضمير 'she' يُترجم إلى 'هي' ويُستخدم للإشارة إلى الأنثى.",
-    "correctSequence": [3],
-    "avatar": "../../assets/dude.png",
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "هذا" },
-      { "answerText": "هو" },
-      { "answerText": "هم" },
-      { "answerText": "هي" },
-      { "answerText": "هؤلاء" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "Eat an orange",
-    "questionExplain": "Eat an orange",
-    "answerExplain": "نستخدم الفعل في المصدر عند إعطاء أمر. 'Eat' هو الأمر و'an orange' هو المكمل.",
-    "correctSequence": [5, 2],
-    "avatar": "../../assets/dude.png",
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "واكل" },
-      { "answerText": "وانا" },
-      { "answerText": "برتقال" },
-      { "answerText": "انا" },
-      { "answerText": "غلام" },
-      { "answerText": "كٌل" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "Ahmed and I eat",
-    "questionExplain": "Ahmed and I eat",
-    "answerExplain": "نستخدم 'and' لربط بين مكونين في الجملة. هنا، نربط بين 'Ahmed' و'I'.",
-    "correctSequence": [1, 4, 3],
-    "avatar": "../../assets/dude.png",
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "احمد" },
-      { "answerText": "وبنت" },
-      { "answerText": "ناكل" },
-      { "answerText": "وانا" },
-      { "answerText": "ماء" },
-      { "answerText": "كل" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "Eat!",
-    "questionExplain": "Eat!",
-    "answerExplain": "نستخدم الفعل في المصدر عند إعطاء أمر، وهنا 'Eat' هو الأمر.",
-    "avatar": "../../assets/dude.png",
-    "correctSequence": [3],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "هي" },
-      { "answerText": "ناكل" },
-      { "answerText": "هي" },
-      { "answerText": "كٌلْ" },
-      { "answerText": "تفاحة" }
-    ]
-  },
-  {
-    "questionText": "اختر الكلمة الناقصة:",
-    "questionSubText": "انا ولد وسعد ياكل تفاحة",
-    "questionExplain": "I am a boy and Sad eats an apple",
-    "answerExplain": "تمثل كل كلمة عربية مكافئة بالإنجليزية. مثلاً، 'انا' تُترجم إلى 'I'، و'ولد' إلى 'boy'، وهكذا.",
-    "correctSequence": [2, 4, 1, 5, 6, 3, 8, 7, 0],
-    "avatar": "../../assets/dude.png",
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "apple" },
-      { "answerText": "a" },
+      { "answerText": "Brothers" },
+      { "answerText": "have" },
+      { "answerText": "three" },
       { "answerText": "I" },
-      { "answerText": "Sad" },
+      { "answerText": "He" },
+      { "answerText": "sisters" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "What is your name",
+    "answerExplain": "'What is your name?  تترجم الى ما هو اسمك",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "?What is your name",
+    "correctSequence": [1, 0, 3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "هو" },
+      { "answerText": "ما" },
+      { "answerText": "منظار" },
+      { "answerText": "اسمك" },
+      { "answerText": "مدينة" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "I am 20 years old.",
+    "answerExplain": "I am 20 years old. تترجم إلى 'أنا عمري ٢٠ سنة'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "أنا عمري ٢٠ سنة.",
+    "correctSequence": [1, 3, 4, 0, 2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Years" },
+      { "answerText": "I" },
+      { "answerText": "old" },
       { "answerText": "am" },
-      { "answerText": "boy" },
-      { "answerText": "and" },
-      { "answerText": "an" },
-      { "answerText": "eats" }
+      { "answerText": "20" }
+    ]
+  },
+
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "I am from Saudi Arabia",
+    "answerExplain": "'I am from Saudi Arabia' تترجم الى انا من السعودية",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "I am from Saudi Arabia",
+    "correctSequence": [1, 0, 4],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "من" },
+      { "answerText": "انا" },
+      { "answerText": "هو" },
+      { "answerText": "باكستان" },
+      { "answerText": "السعودية" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "I work as a Doctor",
+    "answerExplain": "I work as a Doctor تترجم انا اعمل كطبيب",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "انا اعمل كطبيب",
+    "correctSequence": [2, 6, 3, 4, 5],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Enginer" },
+      { "answerText": "He" },
+      { "answerText": "I" },
+      { "answerText": "as" },
+      { "answerText": "a" },
+      { "answerText": "Doctor" },
+      { "answerText": "Work" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "I enjoy playing football",
+    "answerExplain": "I enjoy playing football تترجم انا استمتع بلعب كرة القدم",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "I enjoy playing football",
+    "correctSequence": [1, 0, 2, 4],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "استمتع" },
+      { "answerText": "انا" },
+      { "answerText": "بلعب" },
+      { "answerText": "السلة" },
+      { "answerText": "كرة القدم" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "My hobby is drawing",
+    "answerExplain": "My hobby is drawing تترجم إلى 'هوايتي هي الرسم'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "هوايتي هي الرسم",
+    "correctSequence": [4, 1, 0, 5],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "is" },
+      { "answerText": "Hobby" },
+      { "answerText": "work" },
+      { "answerText": "travel" },
+      { "answerText": "My" },
+      { "answerText": "drawing" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "My favorite color is blue",
+    "answerExplain": "My favorite color is blue' تترجم الى لوني المفضل هو الازرق",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "My favorite color is blue",
+    "correctSequence": [2, 3, 1, 4],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "انا" },
+      { "answerText": "هو" },
+      { "answerText": "لوني " },
+      { "answerText": "المفضل " },
+      { "answerText": "الازرق" }
+    ]
+  },
+  {
+    "questionText": "My favorite color is blue ... choose color blue!",
+    "questionExplain": "My favorite color is blue",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "ازرق!",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/blue.png"
+      },
+      {
+        "answerText": "اخضر!",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/green.png"
+      },
+      {
+        "answerText": "زهري!",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/pink.png"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "I speak arabic",
+    "answerExplain": "I speak arabic' تترجم الى انا اتحدث العربية",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "I speak arabic",
+    "correctSequence": [0, 1, 4],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "انا" },
+      { "answerText": "اتكلم" },
+      { "answerText": "انجليزي" },
+      { "answerText": "فرنسي" },
+      { "answerText": "العربية" }
     ]
   }
 ]

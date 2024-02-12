@@ -1,145 +1,148 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "She eats bread",
-    "answerExplain": "الجملة 'She eats bread' تترجم إلى 'هي تأكل الخبز' بالعربية.",
-    "questionSubText": "She eats bread",
-    "correctSequence": [1, 0, 5],
+    "questionExplain": "A coffee with no sugar, please.",
+    "answerExplain": "'A coffee with no sugar, please.' translates to 'قهوة بدون سكر، من فضلك.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "A coffee with no sugar, please.",
+    "correctSequence": [0, 2, 1],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "تاكل" },
-      { "answerText": "هي" },
-      { "answerText": "اشرب" },
-      { "answerText": "الماء" },
-      { "answerText": "اكل" },
-      { "answerText": "خبزاً" }
+      { "answerText": "قهوة" },
+      { "answerText": "من فضلك." },
+      { "answerText": "بدون سكر،" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "I prefer my coffee black.",
+    "answerExplain": "'I prefer my coffee black.' translates to 'أفضل قهوتي سوداء.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "أفضل قهوتي سوداء.",
+    "correctSequence": [1, 0, 2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "coffee" },
+      { "answerText": "I prefer my" },
+      { "answerText": "black." }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "She eats bread, I drink water",
-    "answerExplain": "الجملة 'She eats bread, I drink water' تترجم إلى 'هي تأكل الخبز، أنا أشرب الماء' بالعربية.",
-    "questionSubText": "She eats bread, I drink water",
-    "correctSequence": [6, 3, 1, 0, 2, 4],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "انا" },
-      { "answerText": "الخبز" },
-      { "answerText": "اشرب" },
-      { "answerText": "تاكل" },
-      { "answerText": "الماء" },
-      { "answerText": "الرجل" },
-      { "answerText": "هي" },
-      { "answerText": "المراة" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "The woman drinks water",
-    "answerExplain": "الجملة 'The woman drinks water' تترجم إلى 'المرأة تشرب الماء' بالعربية.",
-    "questionSubText": "The woman drinks water",
-    "correctSequence": [6, 5, 3],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "انها" },
-      { "answerText": "مياه" },
-      { "answerText": "وانا" },
-      { "answerText": "الماء" },
-      { "answerText": "انا" },
-      { "answerText": "تشرب" },
-      { "answerText": "المراة" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "أنا أشرب",
-    "answerExplain": "الجملة 'أنا أشرب' تترجم إلى 'I drink' بالإنجليزية.",
-    "questionSubText": "أنا أشرب",
+    "questionExplain": "Do you offer soy milk?",
+    "answerExplain": "'Do you offer soy milk?' translates to 'هل تقدمون حليب الصويا؟'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "Do you offer soy milk?",
     "correctSequence": [1, 0],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "drink" },
-      { "answerText": "I" },
-      { "answerText": "apple" },
-      { "answerText": "woman" },
-      { "answerText": "she" },
-      { "answerText": "drink" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "a waman and an apple.",
-    "answerExplain": "الجملة 'امراة وتفاحة' تترجم إلى 'a woman and an apple' بالإنجليزية.",
-    "questionSubText": "امراة وتفاحة",
-    "correctSequence": [3, 0, 2, 1, 4],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "woman" },
-      { "answerText": "an" },
-      { "answerText": "and" },
-      { "answerText": "a" },
-      { "answerText": "apple" },
-      { "answerText": "is" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "The woman eats",
-    "questionExplain": "The woman eats",
-    "answerExplain": "الجملة 'The woman eats' تترجم إلى 'المرأة تأكل' بالعربية.",
     "questionType": "type1",
-    "correctSequence": [3, 1],
     "answerOptions": [
-      { "answerText": "الولد" },
-      { "answerText": "تاكل" },
-      { "answerText": "مياه" },
-      { "answerText": "المراة" },
-      { "answerText": "الماء" },
-      { "answerText": "ياكل" }
+      { "answerText": "حليب الصويا؟" },
+      { "answerText": "هل تقدمون" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "A decaf cappuccino, please.",
+    "answerExplain": "'A decaf cappuccino, please.' translates to 'كابتشينو منزوع الكافيين، من فضلك.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "كابتشينو منزوع الكافيين، من فضلك.",
+    "correctSequence": [2, 0, 1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "cappuccino," },
+      { "answerText": "please." },
+      { "answerText": "A decaf" }
+    ]
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the coffee types with their Arabic translations.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "Espresso",
+        "arabic": "إسبريسو"
+      },
+      {
+        "english": "Latte",
+        "arabic": "لاتيه"
+      },
+      {
+        "english": "Mocha",
+        "arabic": "موكا"
+      },
+      {
+        "english": "Americano",
+        "arabic": "أمريكانو"
+      },
+      {
+        "english": "Flat White",
+        "arabic": "فلات وايت"
+      }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": " ___ She",
-    "questionExplain": "She drives",
-    "answerExplain": "الجملة 'She drives' تترجم إلى 'هي تقود' بالعربية.",
-    "questionType": "type3",
-    "correctSequence": [0],
-    "answerOptions": [
-      { "answerText": "drives" },
-      { "answerText": "drive" },
-      { "answerText": "driving" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "Sleep!",
-    "questionExplain": "Sleep!",
-    "answerExplain": "الكلمة 'Sleep!' تترجم إلى 'نام!' بالعربية.",
+    "questionExplain": "Extra shot of espresso, please.",
+    "answerExplain": "'Extra shot of espresso, please.' translates to 'شوت إضافي من الإسبريسو، من فضلك.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "Extra shot of espresso, please.",
+    "correctSequence": [1, 0, 2],
     "questionType": "type1",
-    "correctSequence": [3],
     "answerOptions": [
-      { "answerText": "بنت" },
-      { "answerText": "مياه" },
-      { "answerText": "ال" },
-      { "answerText": "نام" },
-      { "answerText": "كل" }
+      { "answerText": "من الإسبريسو،" },
+      { "answerText": "شوت إضافي" },
+      { "answerText": "من فضلك." }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "الولد يشرب الماء",
-    "questionExplain": "the boy drinks water",
-    "answerExplain": "الجملة 'الولد يشرب الماء' تترجم إلى 'the boy drinks water' بالإنجليزية.",
-    "questionType": "type4",
-    "correctAnswer": "the boy drinks water"
+    "questionExplain": "How much is a small coffee?",
+    "answerExplain": "'How much is a small coffee?' translates to 'كم سعر القهوة الصغيرة؟'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "كم سعر القهوة الصغيرة؟",
+    "correctSequence": [2, 0, 1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "a small coffee?" },
+      { "answerText": "How much is" },
+      { "answerText": "How" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Is this coffee organic?",
+    "answerExplain": "'Is this coffee organic?' translates to 'هل هذه القهوة عضوية؟'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "Is this coffee organic?",
+    "correctSequence": [1, 0],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "عضوية؟" },
+      { "answerText": "هل هذه القهوة" }
+    ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "المرأة تأكل التفاحة",
-    "questionExplain": "the woman eats the apple",
-    "answerExplain": "الجملة 'المرأة تأكل التفاحة' تترجم إلى 'the woman eats the apple' بالإنجليزية.",
+    "questionSubText": "قهوة باردة",
+    "questionExplain": "Iced coffee",
+    "answerExplain": "'قهوة باردة' تترجم إلى 'Iced coffee' بالإنجليزية",
     "questionType": "type4",
-    "correctAnswer": "the woman eats the apple"
+    "correctAnswer": "iced coffee"
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Can I pay with a credit card?",
+    "answerExplain": "'Can I pay with a credit card?' translates to 'هل يمكنني الدفع ببطاقة ائتمان؟'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "هل يمكنني الدفع ببطاقة ائتمان؟",
+    "correctSequence": [1, 2, 0],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "with a credit card?" },
+      { "answerText": "Can I pay" },
+      { "answerText": "I" }
+    ]
   }
 ]

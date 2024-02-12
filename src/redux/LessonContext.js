@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 const LessonContext = createContext();
 
@@ -7,10 +7,22 @@ export const useLesson = () => {
 };
 
 export const LessonProvider = ({ children }) => {
-  const [lessonsCompleted, setLessonsCompleted] = useState({
-    1: [true, false, false, false, false],
-    2: [false, false, false, false, false],
+  // Initialize state with localStorage value or default
+  const [lessonsCompleted, setLessonsCompleted] = useState(() => {
+    const localData = localStorage.getItem("lessonsCompleted");
+    return localData
+      ? JSON.parse(localData)
+      : {
+          1: [true, false, false, false, false],
+          2: [false, false, false, false, false],
+        };
   });
+
+  // Effect to run when lessonsCompleted state changes
+  useEffect(() => {
+    // Save to localStorage
+    localStorage.setItem("lessonsCompleted", JSON.stringify(lessonsCompleted));
+  }, [lessonsCompleted]);
 
   const incrementLesson = (chapterNumber) => {
     const currentChapterLessons = lessonsCompleted[chapterNumber];

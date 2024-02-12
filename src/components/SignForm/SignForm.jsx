@@ -10,10 +10,11 @@ import {
   SignUpForm,
   LoaderContainer,
   Loader,
+  RegistarButton,
 } from "./SignForm.elements";
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/userRedux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignForm = () => {
   const [inputs, setInputs] = useState({});
@@ -87,7 +88,7 @@ const SignForm = () => {
                 <Loader />
               </LoaderContainer>
             ) : (
-              "تسجيل حساب جديد "
+              "انشاء حساب جديد "
             )}
           </SignButton>
         </SignUpForm>
@@ -96,6 +97,9 @@ const SignForm = () => {
           إشعار الخصوصية الخاص بنا، وإشعار الكوكيز، وإشعار الإعلانات المستندة
           إلى الاهتمامات.
         </LoginSignPara>
+        <Link to={"/login"}>
+          <RegistarButton>املك حساب من قبل</RegistarButton>
+        </Link>
       </LoginContainer>
     </SignContainer>
   );
