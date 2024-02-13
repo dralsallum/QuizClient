@@ -204,7 +204,6 @@ const Project = () => {
   try {
     questions = require(`../../utils/${chapterName}.json`);
   } catch (error) {
-    // Handle the error, for example, setting questions to an empty array
     console.error(`Failed to load questions for ${chapterName}.`, error);
   }
 
@@ -300,10 +299,45 @@ const Project = () => {
     const textToSpeak = textToSpeakRef.current
       ? textToSpeakRef.current.innerText
       : "";
-    speakText(textToSpeak);
+
+    // Ensure the speech synthesis voices are loaded
+    const voices = window.speechSynthesis.getVoices();
+    if (!voices.length) {
+      window.speechSynthesis.onvoiceschanged = () => {
+        speakNow(textToSpeak);
+      };
+    } else {
+      speakNow(textToSpeak);
+    }
   };
 
-  // Helper function to play the sound
+  const speakNow = (textToSpeak) => {
+    const speechSynthesis = window.speechSynthesis;
+    speechSynthesis.cancel(); // Cancel any ongoing speech
+
+    const utterance = new SpeechSynthesisUtterance(textToSpeak);
+
+    // Determine if the text is Arabic or English
+    const isArabic = /[\u0600-\u06FF]/.test(textToSpeak);
+    utterance.voice = speechSynthesis
+      .getVoices()
+      .find((voice) =>
+        isArabic ? voice.lang.startsWith("ar") : voice.lang.startsWith("en")
+      );
+
+    // If no matching voice found, use the default
+    if (!utterance.voice) {
+      utterance.voice = speechSynthesis.getVoices()[0];
+    }
+
+    utterance.pitch = 1; // Adjust as needed
+    utterance.rate = 1; // Adjust as needed
+    utterance.volume = 1; // Adjust as needed
+
+    speechSynthesis.speak(utterance);
+  };
+
+  //for correct and wrong answers
   const playSound = (filename) => {
     const audio = new Audio(filename);
     audio.play();
@@ -416,12 +450,64 @@ const Project = () => {
   };
 
   useEffect(() => {
-    const textToSpeak = textToSpeakRef.current
-      ? textToSpeakRef.current.innerText
-      : "";
-    if (textToSpeak) {
-      speakText(textToSpeak);
-    }
+    const speakNow = (textToSpeak) => {
+      const speechSynthesis = window.speechSynthesis;
+      speechSynthesis.cancel(); // Cancel any ongoing speech
+
+      const utterance = new SpeechSynthesisUtterance(textToSpeak);
+      const isArabic = /[\u0600-\u06FF]/.test(textToSpeak);
+
+      utterance.lang = isArabic ? "ar" : "en";
+      utterance.voice = speechSynthesis
+        .getVoices()
+        .find((voice) =>
+          isArabic
+            ? voice.lang === "ar-SA" || voice.lang.startsWith("ar")
+            : voice.lang.startsWith("en")
+        );
+
+      if (!utterance.voice && isArabic) {
+        utterance.voice = speechSynthesis
+          .getVoices()
+          .find((voice) => voice.lang.startsWith("ar"));
+      }
+
+      if (isArabic) {
+        utterance.pitch = 0.9;
+        utterance.rate = 0.9;
+      } else {
+        utterance.pitch = 1;
+        utterance.rate = 1;
+      }
+      utterance.volume = 1;
+
+      speechSynthesis.speak(utterance);
+    };
+
+    const attemptSpeech = () => {
+      const textToSpeak = textToSpeakRef.current
+        ? textToSpeakRef.current.innerText
+        : "";
+      const voices = window.speechSynthesis.getVoices();
+
+      if (voices.length > 0) {
+        speakNow(textToSpeak);
+      } else {
+        const voicesChangedHandler = () => {
+          window.speechSynthesis.removeEventListener(
+            "voiceschanged",
+            voicesChangedHandler
+          );
+          speakNow(textToSpeak);
+        };
+        window.speechSynthesis.addEventListener(
+          "voiceschanged",
+          voicesChangedHandler
+        );
+      }
+    };
+
+    attemptSpeech();
 
     const currentMatchPairs = questions[currentQuestion]?.matchPairs || [];
     const englishWords = currentMatchPairs.map((pair) => pair.english);
@@ -429,7 +515,7 @@ const Project = () => {
 
     setShuffledEnglish(shuffleArray([...englishWords]));
     setShuffledArabic(shuffleArray([...arabicWords]));
-  }, [currentQuestion, questions]);
+  }, [currentQuestion, questions, textToSpeakRef]);
 
   useEffect(() => {
     setStartTime(new Date());
