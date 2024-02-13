@@ -225,7 +225,7 @@ export const PAnswerCon = styled.div`
 `;
 export const PAnswerSubCon = styled.div`
   border-top: 2px solid lightgray;
-  grid-row-gap: 32px;
+  grid-row-gap: 30px;
   display: grid;
   grid-auto-rows: 1fr;
 `;
@@ -338,7 +338,7 @@ export const PSeqBlockButton = styled.button`
   box-shadow: -2px 2px 0.5px rgba(0, 0, 0, 0.2);
 
   @media screen and (max-width: 700px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 
@@ -443,7 +443,6 @@ export const WrLwText = styled.textarea`
   margin: 0;
 `;
 
-//add grid spacing
 export const ASubWrap = styled.div`
   display: flex;
   justify-content: center;

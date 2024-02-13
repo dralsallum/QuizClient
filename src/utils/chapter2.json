@@ -64,7 +64,6 @@
       { "answerText": "20" }
     ]
   },
-
   {
     "questionText": "اكتب ما يلي بالعربي:",
     "questionExplain": "I am from Saudi Arabia",
@@ -79,24 +78,6 @@
       { "answerText": "هو" },
       { "answerText": "باكستان" },
       { "answerText": "السعودية" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "I work as a Doctor",
-    "answerExplain": "I work as a Doctor تترجم انا اعمل كطبيب",
-    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
-    "questionSubText": "انا اعمل كطبيب",
-    "correctSequence": [2, 6, 3, 4, 5],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "Enginer" },
-      { "answerText": "He" },
-      { "answerText": "I" },
-      { "answerText": "as" },
-      { "answerText": "a" },
-      { "answerText": "Doctor" },
-      { "answerText": "Work" }
     ]
   },
   {

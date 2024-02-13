@@ -135,23 +135,31 @@
     "questionType": "type1",
     "answerOptions": [
       { "answerText": "حتى" },
-      { "answerText": "المرة القادمة" },
+      { "answerText": "المرة " },
       { "answerText": "اعتن بنفسك" }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "We should do this again, bye for now.",
-    "answerExplain": "'We should do this again, bye for now.' translates to 'يجب أن نفعل هذا مجدداً، وداعاً للأن.'",
+    "questionText": "choose the boy waving goodbye!",
+    "questionExplain": "My favorite color is blue",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
-    "questionSubText": "يجب أن نفعل هذا مجدداً، وداعاً للأن.",
-    "correctSequence": [2, 3, 1, 0],
-    "questionType": "type3",
+    "questionType": "type2",
     "answerOptions": [
-      { "answerText": "bye for now" },
-      { "answerText": "should do this again" },
-      { "answerText": "We" },
-      { "answerText": "final" }
+      {
+        "answerText": "مع السلامة!",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/goodbye.png"
+      },
+      {
+        "answerText": "يبكي!",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/crying.png"
+      },
+      {
+        "answerText": "ياكل!",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/eating.png"
+      }
     ]
   }
 ]

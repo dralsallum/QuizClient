@@ -102,12 +102,13 @@
     "answerExplain": "'How much is a small coffee?' translates to 'كم سعر القهوة الصغيرة؟'.",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "كم سعر القهوة الصغيرة؟",
-    "correctSequence": [2, 0, 1],
+    "correctSequence": [1, 2, 0],
     "questionType": "type3",
     "answerOptions": [
       { "answerText": "a small coffee?" },
-      { "answerText": "How much is" },
-      { "answerText": "How" }
+      { "answerText": "How" },
+      { "answerText": "much is" },
+      { "answerText": "who" }
     ]
   },
   {
@@ -116,11 +117,13 @@
     "answerExplain": "'Is this coffee organic?' translates to 'هل هذه القهوة عضوية؟'.",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "Is this coffee organic?",
-    "correctSequence": [1, 0],
+    "correctSequence": [2, 1, 0],
     "questionType": "type1",
     "answerOptions": [
       { "answerText": "عضوية؟" },
-      { "answerText": "هل هذه القهوة" }
+      { "answerText": "القهوة" },
+      { "answerText": "هل هذه" },
+      { "answerText": "الشاهي" }
     ]
   },
   {
@@ -142,7 +145,8 @@
     "answerOptions": [
       { "answerText": "with a credit card?" },
       { "answerText": "Can I pay" },
-      { "answerText": "I" }
+      { "answerText": "I" },
+      { "answerText": "You" }
     ]
   }
 ]
