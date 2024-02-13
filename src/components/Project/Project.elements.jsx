@@ -1,16 +1,5 @@
 import styled, { keyframes, css } from "styled-components";
 
-const fadeInUp = keyframes`
-  from {
-    opacity: 0;
-    transform: translate3d(0, 10%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translateZ(0); // Ensures GPU acceleration for smoother performance
-  }
-`;
-
 const drawerContentAnim = keyframes`
   0% {
     opacity: 0;
@@ -1022,7 +1011,7 @@ export const SlWrap = styled.div`
   animation: ${({ isVisible }) =>
     isVisible
       ? css`
-          ${fadeInUp} 0.50s ease-in forwards
+          ${drawerContentAnim} 0.50s ease-in forwards
         `
       : "none"};
   background-color: #fff;
