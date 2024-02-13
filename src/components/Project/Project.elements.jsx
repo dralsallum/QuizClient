@@ -429,6 +429,7 @@ export const WrLwCon = styled.div`
   }
 `;
 export const WrLwText = styled.textarea`
+  font-size: 16px;
   flex-grow: 1;
   resize: none;
   appearance: none;
