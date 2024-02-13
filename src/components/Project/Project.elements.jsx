@@ -225,7 +225,7 @@ export const PAnswerCon = styled.div`
 `;
 export const PAnswerSubCon = styled.div`
   border-top: 2px solid lightgray;
-  grid-row-gap: 30px;
+  grid-row-gap: 28px;
   display: grid;
   grid-auto-rows: 1fr;
 `;
