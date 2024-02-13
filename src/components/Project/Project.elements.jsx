@@ -1,5 +1,16 @@
 import styled, { keyframes, css } from "styled-components";
 
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0); // Ensures GPU acceleration for smoother performance
+  }
+`;
+
 const drawerContentAnim = keyframes`
   0% {
     opacity: 0;
@@ -1009,20 +1020,21 @@ export const PACon = styled.div`
 export const SlWrap = styled.div`
   will-change: transform, opacity;
   animation: ${({ isVisible }) =>
-    isVisible
-      ? css`
-          ${drawerContentAnim} 0.50s ease-in forwards
-        `
-      : "none"};
+    isVisible ? css`fadeInUp 0.4s ease-out forwards` : "none"};
   background-color: #fff;
-  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
-  transform: translate3d(0, 100%, 0);
-  transition: all 0.25s ease-in-out;
+  opacity: 0; /* Start with hidden to enable animation */
+  transform: translateZ(0); /* Promote layer to GPU */
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
   padding: 1rem 0;
   border-radius: 14px;
   box-shadow: 0 0 0.625rem -0.125rem #d6dee6;
   z-index: 1000;
+  overflow: hidden; /* Ensures content does not overflow the rounded corners */
+  position: relative; /* Ensure it's positioned correctly */
+  max-height: 90vh; /* Prevents the modal from being too tall on small devices */
+  box-sizing: border-box; /* Ensures padding does not add to the width */
 `;
+
 export const SlCon = styled.div`
   margin: 0 auto;
   max-width: 80rem;
