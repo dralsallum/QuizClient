@@ -1,182 +1,152 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "كل تفاحة",
-    "answerExplain": "",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "كل تفاحة",
-    "correctSequence": [0, 2, 4],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "eat" },
-      { "answerText": "he" },
-      { "answerText": "an" },
-      { "answerText": "drink" },
-      { "answerText": "apple" },
-      { "answerText": "water" }
-    ]
+    "questionExplain": "Cats and dogs.",
+    "answerExplain": "'Cats and dogs.' translates to 'قطط وكلاب'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "Cats and dogs.",
+    "correctSequence": [0, 1],
+    "questionType": "type1",
+    "answerOptions": [{ "answerText": "قطط" }, { "answerText": "وكلاب" }]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "a woman and an apple",
-    "answerExplain": "",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "a woman and an apple",
-    "correctSequence": [0, 2],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "امراة" },
-      { "answerText": "وبنت" },
-      { "answerText": "وتفاحة" },
-      { "answerText": "تارو" },
-      { "answerText": "فتاة" },
-      { "answerText": "ناكل" }
-    ]
-  },
-  {
-    "questionText": "اي واحدة من هذه بنت",
-    "questionExplain": "Girl",
-    "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
+    "questionText": "choose the image with multiple books!",
+    "questionExplain": "Identifying plural nouns through images.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionType": "type2",
     "answerOptions": [
       {
-        "answerText": "girl",
+        "answerText": "Multiple books",
         "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/825628e696b71adc00a63df24de6a681"
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/multiple_books.png"
       },
       {
-        "answerText": "man",
+        "answerText": "Single book",
         "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/3d50c3b5122f79e5dc5f1254ce2f5695"
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/single_book.png"
       },
       {
-        "answerText": "boy",
+        "answerText": "A notebook",
         "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/31ca4ce376000442b1237964904daab3"
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/notebook.png"
       }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "The woman drinks water",
-    "answerExplain": " ",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "The woman drinks water",
-    "correctSequence": [1, 2, 4],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "واكل" },
-      { "answerText": "المراة" },
-      { "answerText": "تشرب" },
-      { "answerText": "انا" },
-      { "answerText": "الماء" },
-      { "answerText": "رجل" },
-      { "answerText": "اكل" }
-    ]
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Three mice.",
+    "answerExplain": "'Three mice.' translates to 'ثلاثة فئران.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "ثلاثة فئران.",
+    "correctSequence": [0, 1],
+    "questionType": "type3",
+    "answerOptions": [{ "answerText": "Three" }, { "answerText": "mice" }]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Children playing in the park.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "answerExplain": "The phrase 'Children playing in the park' translates to 'أطفال يلعبون في الحديقة'.",
+    "questionSubText": "أطفال يلعبون في الحديقة.",
+    "questionType": "type4",
+    "correctAnswer": "Children playing in the park"
   },
   {
     "questionText": "اختار الأزواج المتطابقة",
-    "questionExplain": "Match the English words with their Arabic translations.",
-    "avatar": "../../assets/cool.png",
+    "questionExplain": "Match the singular nouns with their plural forms.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionType": "type5",
     "matchPairs": [
       {
-        "english": "He",
-        "arabic": "هو"
+        "english": "Tooth",
+        "arabic": "Teeth"
       },
       {
-        "english": "she",
-        "arabic": "هي"
+        "english": "Foot",
+        "arabic": "Feet"
       },
       {
-        "english": "they",
-        "arabic": "هم"
+        "english": "Person",
+        "arabic": "People"
       },
       {
-        "english": "woman",
-        "arabic": "امراة"
+        "english": "Leaf",
+        "arabic": "Leaves"
       }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "المراة تشرب الماء",
-    "answerExplain": "",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "المراة تشرب الماء",
-    "correctSequence": [1, 6, 7, 4],
+    "questionExplain": "Wolves in the forest.",
+    "answerExplain": "'Wolves in the forest.' translates to 'ذئاب في الغابة'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "Wolves in the forest.",
+    "correctSequence": [0, 1],
+    "questionType": "type1",
+    "answerOptions": [{ "answerText": "ذئاب" }, { "answerText": "في الغابة" }]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Boxes on the shelf.",
+    "answerExplain": "'Boxes on the shelf.' translates to 'صناديق على الرف'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "صناديق على الرف.",
+    "correctSequence": [0, 1, 2],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "she" },
-      { "answerText": "the" },
-      { "answerText": "eat" },
-      { "answerText": "apple" },
-      { "answerText": "water" },
-      { "answerText": "is" },
-      { "answerText": "woman" },
-      { "answerText": "drinks" }
+      { "answerText": "Boxes" },
+      { "answerText": "on the" },
+      { "answerText": "shelf" }
     ]
   },
   {
-    "questionText": "كيف تقول ... بالإنجليزية؟",
-    "questionExplain": "I drink and she eats",
-    "answerExplain": "",
-    "avatar": "../../assets/bear.png",
-    "questionSubText": "I drink and she eats",
-    "correctSequence": [4, 5, 0, 1],
-    "questionType": "type1",
+    "questionText": "choose the image with butterflies!",
+    "questionExplain": "Visual identification of plural nouns.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type2",
     "answerOptions": [
-      { "answerText": "وهي" },
-      { "answerText": "تاكل " },
-      { "answerText": "الماء" },
-      { "answerText": "واكل" },
-      { "answerText": "انا" },
-      { "answerText": "اشرب" },
-      { "answerText": "خبزاً" }
+      {
+        "answerText": "Butterflies",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/butterflies.png"
+      },
+      {
+        "answerText": "A butterfly",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/a_butterfly.png"
+      },
+      {
+        "answerText": "Birds",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/birds.png"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Shelves full of books.",
+    "answerExplain": "'Shelves full of books.' translates to 'رفوف مليئة بالكتب'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "رفوف مليئة بالكتب.",
+    "correctSequence": [0, 1, 2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Shelves" },
+      { "answerText": "full of" },
+      { "answerText": "books" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "The men read the newspaper",
-    "answerExplain": "",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "The men read the newspaper",
-    "correctSequence": [1, 2, 0],
+    "questionExplain": "Glasses on the table.",
+    "answerExplain": "'Glasses on the table.' translates to 'نظارات على الطاولة'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "Glasses on the table.",
+    "correctSequence": [0, 1],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "صحيفة" },
-      { "answerText": "الرجل" },
-      { "answerText": "يقرؤون" },
-      { "answerText": "خبز" },
-      { "answerText": "الجريدة" },
-      { "answerText": "تفاحة" },
-      { "answerText": "فتيات" }
+      { "answerText": "نظارات" },
+      { "answerText": "على الطاولة" }
     ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "البنات يشربن العصير",
-    "answerExplain": " ",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "The girls drink juice",
-    "correctSequence": [0, 2, 4, 6],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "The" },
-      { "answerText": "boy" },
-      { "answerText": "girls" },
-      { "answerText": "rice" },
-      { "answerText": "drink" },
-      { "answerText": "sandwich" },
-      { "answerText": "juice" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "الفتيات ياكلون التفاحة",
-    "questionExplain": "",
-    "answerExplain": "",
-    "questionType": "type4",
-    "correctAnswer": "the girls eat the apple"
   }
 ]

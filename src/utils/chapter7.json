@@ -1,162 +1,82 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "A boy is a child.",
-    "answerExplain": "",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "A boy is a child.",
-    "correctSequence": [3, 4],
+    "questionExplain": "I have one cat.",
+    "answerExplain": "'I have one cat.' translates to 'لدي قطة واحدة'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "I have one cat.",
+    "correctSequence": [1, 0],
     "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "هل" },
-      { "answerText": "ياكل" },
-      { "answerText": "وانت" },
-      { "answerText": "الولد" },
-      { "answerText": "طفل" },
-      { "answerText": "خبز" }
-    ]
+    "answerOptions": [{ "answerText": "قطة واحدة" }, { "answerText": "لدي" }]
   },
   {
-    "questionText": "أي واحدة من هذه هو كتاب",
-    "questionExplain": "Book",
-    "answerExplain": "",
+    "questionText": "choose the picture with two dogs!",
+    "questionExplain": "Counting practice with images.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionType": "type2",
     "answerOptions": [
       {
-        "answerText": "Book",
+        "answerText": "Two dogs",
         "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/b5406351772e6898e0999b4028cbf799"
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/two_dogs.png"
       },
       {
-        "answerText": "Menu",
+        "answerText": "Three cats",
         "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/016b7b168e175683396980bdcf7cf0e0"
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/three_cats.png"
       },
       {
-        "answerText": "Children",
+        "answerText": "One bird",
         "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/8521082c3967d84071751651263bad4f"
-      }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "You eat an apple",
-    "questionExplain": "You eat an apple",
-    "avatar": "../../assets/india.png",
-    "answerExplain": "",
-    "correctSequence": [1, 4, 3],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "هي" },
-      { "answerText": "انت" },
-      { "answerText": "الاولاد" },
-      { "answerText": "تفاحة" },
-      { "answerText": "تاكل" },
-      { "answerText": "وهو" },
-      { "answerText": "رجال" }
-    ]
-  },
-  {
-    "questionText": "اي واحدة من هذه منيو",
-    "questionExplain": "Menu",
-    "answerExplain": "",
-    "questionType": "type2",
-    "answerOptions": [
-      {
-        "answerText": "Book",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/b5406351772e6898e0999b4028cbf799"
-      },
-      {
-        "answerText": "Menu",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/016b7b168e175683396980bdcf7cf0e0"
-      },
-      {
-        "answerText": "Children",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/8521082c3967d84071751651263bad4f"
-      }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "We are Man",
-    "questionExplain": "We are Man",
-    "answerExplain": "",
-    "questionType": "type1",
-    "correctSequence": [5, 4],
-    "answerOptions": [
-      { "answerText": "انها" },
-      { "answerText": "حليباً" },
-      { "answerText": "أنت" },
-      { "answerText": "وهن" },
-      { "answerText": "رجال" },
-      { "answerText": "نحن" }
-    ]
-  },
-  {
-    "questionText": "اي واحدة من هذه منيو",
-    "questionExplain": "Children",
-    "answerExplain": "",
-    "questionType": "type2",
-    "answerOptions": [
-      {
-        "answerText": "Book",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/b5406351772e6898e0999b4028cbf799"
-      },
-      {
-        "answerText": "Menu",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/016b7b168e175683396980bdcf7cf0e0"
-      },
-      {
-        "answerText": "Children",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/8521082c3967d84071751651263bad4f"
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/one_bird.png"
       }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "هم يشربون الماء",
-    "questionExplain": "They drink water",
-    "answerExplain": " الجملة الإنجليزية 'I went to school' تترجم إلى 'أنا ذهبت إلى المدرسة' بالعربية",
-    "correctSequence": [6, 4, 1],
+    "questionExplain": "We have three apples.",
+    "answerExplain": "'We have three apples.' translates to 'لدينا ثلاث تفاحات.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "لدينا ثلاث تفاحات.",
+    "correctSequence": [1, 2, 0],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "boys" },
-      { "answerText": "water" },
-      { "answerText": "men" },
-      { "answerText": "bread" },
-      { "answerText": "drink" },
-      { "answerText": "is" },
-      { "answerText": "they" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "Tree",
-    "questionExplain": "Tree",
-    "answerExplain": " الكلمة الإنجليزية 'Tree' تترجم إلى 'شجرة' بالعربية",
-    "correctSequence": [4],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "ماء" },
-      { "answerText": "بنت" },
-      { "answerText": "مفتاح" },
-      { "answerText": "شجرة" }
+      { "answerText": "apples" },
+      { "answerText": "We have" },
+      { "answerText": "three" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "اقرا كتاب",
-    "questionExplain": "read a book",
-    "answerExplain": " الكلمة الإنجليزية 'Friend' تترجم إلى 'صديق' بالعربية",
+    "questionExplain": "Four pencils.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "answerExplain": "The word 'Four pencils' translates to 'أربعة أقلام'.",
+    "questionSubText": "أربعة أقلام.",
     "questionType": "type4",
-    "correctAnswer": "read a book"
+    "correctAnswer": "Four pencils"
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the numbers with their quantity representation.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "Five stars",
+        "arabic": "★★★★★"
+      },
+      {
+        "english": "Six apples",
+        "arabic": "🍎🍎🍎🍎🍎🍎"
+      },
+      {
+        "english": "Seven hearts",
+        "arabic": "❤️❤️❤️❤️❤️❤️❤️"
+      },
+      {
+        "english": "Eight balls",
+        "arabic": "🏀🏀🏀🏀🏀🏀🏀🏀"
+      }
+    ]
   }
 ]

@@ -1,174 +1,166 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "He has",
-    "answerExplain": "",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "He has",
-    "correctSequence": [2, 4],
+    "questionExplain": "I would like a bag of chips.",
+    "answerExplain": "'I would like a bag of chips.' translates to 'أود كيس من الرقائق'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "I would like a bag of chips.",
+    "correctSequence": [1, 0, 2],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "البنات" },
-      { "answerText": "التفاحة" },
-      { "answerText": "إنه" },
-      { "answerText": "ماء" },
-      { "answerText": "لديه" },
-      { "answerText": "تقرأ" }
+      { "answerText": "كيس" },
+      { "answerText": "أود" },
+      { "answerText": "من الرقائق" }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "The man has the book",
-    "answerExplain": "",
-    "avatar": "../../assets/bear.png",
-    "questionSubText": "The man has the book",
-    "correctSequence": [0, 2, 4],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "الرجل" },
-      { "answerText": "ورجال" },
-      { "answerText": "لديه" },
-      { "answerText": "أطفال" },
-      { "answerText": "الكتاب" },
-      { "answerText": "الارز" }
-    ]
-  },
-  {
-    "questionText": "اي واحدة من هذه بنت",
-    "questionExplain": "Girl",
-    "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
+    "questionText": "choose the image of someone ordering popcorn!",
+    "questionExplain": "Visual identification of snack ordering.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionType": "type2",
     "answerOptions": [
       {
-        "answerText": "girl",
+        "answerText": "Ordering popcorn",
         "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/825628e696b71adc00a63df24de6a681"
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/ordering_popcorn.png"
       },
       {
-        "answerText": "man",
+        "answerText": "Buying a soda",
         "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/3d50c3b5122f79e5dc5f1254ce2f5695"
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/buying_soda.png"
       },
       {
-        "answerText": "boy",
+        "answerText": "Choosing candy",
         "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/31ca4ce376000442b1237964904daab3"
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/choosing_candy.png"
       }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "He has bread",
-    "answerExplain": " ",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "He has bread",
-    "correctSequence": [4, 3, 1],
-    "questionType": "type1",
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Two chocolate bars, please.",
+    "answerExplain": "'Two chocolate bars, please.' translates to 'اثنين من ألواح الشوكولاتة، من فضلك'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "اثنين من ألواح الشوكولاتة، من فضلك.",
+    "correctSequence": [1, 2, 0],
+    "questionType": "type3",
     "answerOptions": [
-      { "answerText": "ارز" },
-      { "answerText": "خبز" },
-      { "answerText": "حليب" },
-      { "answerText": "لديه" },
-      { "answerText": "هو" },
-      { "answerText": "المراة" }
+      { "answerText": "please" },
+      { "answerText": "Two" },
+      { "answerText": "chocolate bars" }
     ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "A slice of pizza.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "answerExplain": "The phrase 'A slice of pizza' translates to 'شريحة من البيتزا'.",
+    "questionSubText": "شريحة من البيتزا.",
+    "questionType": "type4",
+    "correctAnswer": "A slice of pizza"
   },
   {
     "questionText": "اختار الأزواج المتطابقة",
-    "questionExplain": "Match the English words with their Arabic translations.",
-    "avatar": "../../assets/cool.png",
+    "questionExplain": "Match the snacks with their descriptions.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionType": "type5",
     "matchPairs": [
       {
-        "english": "He",
-        "arabic": "هو"
+        "english": "Salty and crunchy",
+        "arabic": "Chips"
       },
       {
-        "english": "she",
-        "arabic": "هي"
+        "english": "Sweet and chewy",
+        "arabic": "Candy"
       },
       {
-        "english": "they",
-        "arabic": "هم"
+        "english": "Warm and cheesy",
+        "arabic": "Pizza"
       },
       {
-        "english": "woman",
-        "arabic": "امراة"
+        "english": "Buttery and fluffy",
+        "arabic": "Popcorn"
       }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "He reads a book",
-    "answerExplain": "",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "He reads a book",
-    "correctSequence": [1, 2, 5],
+    "questionExplain": "Can I get a soft drink?",
+    "answerExplain": "'Can I get a soft drink?' translates to 'هل يمكنني الحصول على مشروب غازي؟'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "Can I get a soft drink?",
+    "correctSequence": [0, 1, 2],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "الرجل" },
-      { "answerText": "هو" },
-      { "answerText": "يقرأ" },
-      { "answerText": "والبنت" },
-      { "answerText": "التفاحة" },
-      { "answerText": "كتاباً" }
+      { "answerText": "هل يمكنني" },
+      { "answerText": "الحصول" },
+      { "answerText": "على مشروب غازي؟" }
     ]
   },
   {
-    "questionText": "كيف تقول ... بالإنجليزية؟",
-    "questionExplain": "I have boys",
-    "answerExplain": " الكلمة الإنجليزية 'How old are you' تترجم إلى 'كم عمرك' بالعربية.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "I have boys",
-    "correctSequence": [3, 4],
-    "questionType": "type1",
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "A cup of coffee and a muffin.",
+    "answerExplain": "'A cup of coffee and a muffin.' translates to 'كوب من القهوة ومافن.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "كوب من القهوة ومافن.",
+    "correctSequence": [1, 2, 0, 3],
+    "questionType": "type3",
     "answerOptions": [
-      { "answerText": "خبز" },
-      { "answerText": "الماء" },
-      { "answerText": "الارز" },
-      { "answerText": "لدي" },
-      { "answerText": "اولاد" },
-      { "answerText": "هل" }
+      { "answerText": "and a muffin" },
+      { "answerText": "A cup of" },
+      { "answerText": "coffee" },
+      { "answerText": "please" }
+    ]
+  },
+  {
+    "questionText": "choose the image of a snack combo!",
+    "questionExplain": "Selecting a combination of snacks.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "Snack combo",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/snack_combo.png"
+      },
+      {
+        "answerText": "Single snack",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/single_snack.png"
+      },
+      {
+        "answerText": "Drink only",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/drink_only.png"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Five cookies, please.",
+    "answerExplain": "'Five cookies, please.' translates to 'خمسة بسكويتات، من فضلك'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "خمسة بسكويتات، من فضلك.",
+    "correctSequence": [1, 2, 0],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "please" },
+      { "answerText": "Five" },
+      { "answerText": "cookies" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "You have a book",
-    "answerExplain": " ",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "You have a book",
-    "correctSequence": [0, 2],
+    "questionExplain": "Add a slice of cake to my order.",
+    "answerExplain": "'Add a slice of cake to my order.' translates to 'أضف شريحة من الكعكة إلى طلبي'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "Add a slice of cake to my order.",
+    "correctSequence": [0, 1, 2],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "لديك" },
-      { "answerText": "الحليب" },
-      { "answerText": "كتاب" },
-      { "answerText": "اولاد" },
-      { "answerText": "رجل" },
-      { "answerText": "و" }
+      { "answerText": "أضف" },
+      { "answerText": "شريحة من الكعكة" },
+      { "answerText": "إلى طلبي" }
     ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "City",
-    "answerExplain": " الكلمة الإنجليزية 'City' تترجم إلى 'مدينة' بالعربية",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "مدينة",
-    "correctSequence": [2],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "Country" },
-      { "answerText": "River" },
-      { "answerText": "City" },
-      { "answerText": "Mountain" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "من انت",
-    "questionExplain": "Who are you",
-    "answerExplain": "",
-    "questionType": "type4",
-    "correctAnswer": "Who are you"
   }
 ]

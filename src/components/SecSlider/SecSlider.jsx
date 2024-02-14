@@ -38,7 +38,7 @@ const imageMapping = {
 const SliderButton = ({ swiper }) => {
   return (
     <SliderArrowContainerAll>
-      <SliderArrowContainer1>كتب انجليزية للمبتدئاً</SliderArrowContainer1>
+      <SliderArrowContainer1>كتب انجليزية مستوى متوسط</SliderArrowContainer1>
       <SliderArrowContainer>
         <SliderArrowButtonLeft onClick={() => swiper && swiper.slidePrev()}>
           &lt;

@@ -1,176 +1,173 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "The child drinks milk",
-    "answerExplain": " ",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "الطفل يشرب الحليب",
-    "correctSequence": [4, 2, 3, 5],
-    "questionType": "type3",
+    "questionExplain": "The lion is the king of the jungle.",
+    "answerExplain": "'The lion is the king of the jungle.' translates to 'الأسد هو ملك الغابة'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "The lion is the king of the jungle.",
+    "correctSequence": [1, 2, 0],
+    "questionType": "type1",
     "answerOptions": [
-      { "answerText": "children" },
-      { "answerText": "and" },
-      { "answerText": "child" },
-      { "answerText": "drinks" },
-      { "answerText": "The" },
-      { "answerText": "milk" },
-      { "answerText": "apple" }
+      { "answerText": "ملك الغابة" },
+      { "answerText": "الأسد" },
+      { "answerText": "هو" }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "نحن نقرأ جريدة",
-    "answerExplain": " الكلمة الإنجليزية 'What's' تترجم إلى 'ما هو' بالعربية وتستخدم في سؤال الاسم.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "We read a newspaper",
-    "correctSequence": [0, 4, 3, 5],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "We" },
-      { "answerText": "bread" },
-      { "answerText": "drinks" },
-      { "answerText": "a" },
-      { "answerText": "read" },
-      { "answerText": "newspaper" },
-      { "answerText": "Hello" }
-    ]
-  },
-  {
-    "questionText": "اي واحدة من هذه بنت",
-    "questionExplain": "Girl",
-    "answerExplain": " الكلمة الإنجليزية 'Girl' تترجم إلى 'فتاة' بالعربية",
+    "questionText": "choose the image of a giraffe!",
+    "questionExplain": "Identifying animals through images.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionType": "type2",
     "answerOptions": [
       {
-        "answerText": "girl",
+        "answerText": "Giraffe",
         "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/825628e696b71adc00a63df24de6a681"
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/giraffe.png"
       },
       {
-        "answerText": "man",
+        "answerText": "Elephant",
         "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/3d50c3b5122f79e5dc5f1254ce2f5695"
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/elephant.png"
       },
       {
-        "answerText": "boy",
+        "answerText": "Zebra",
         "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/31ca4ce376000442b1237964904daab3"
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/zebra.png"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "A flock of birds.",
+    "answerExplain": "'A flock of birds.' translates to 'سرب من الطيور'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "سرب من الطيور.",
+    "correctSequence": [0, 1, 2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "A flock" },
+      { "answerText": "of" },
+      { "answerText": "birds" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Elephants have long trunks.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "answerExplain": "The phrase 'Elephants have long trunks' translates to 'الفيلة لديها خراطيم طويلة'.",
+    "questionSubText": "الفيلة لديها خراطيم طويلة.",
+    "questionType": "type4",
+    "correctAnswer": "Elephants have long trunks"
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the animals with their habitats.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "Penguin",
+        "arabic": "Antarctica"
+      },
+      {
+        "english": "Camel",
+        "arabic": "Desert"
+      },
+      {
+        "english": "Frog",
+        "arabic": "Pond"
+      },
+      {
+        "english": "Bear",
+        "arabic": "Forest"
       }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "A woman and a child",
-    "answerExplain": " الكلمة الإنجليزية 'you' تترجم إلى 'أنت' بالعربية وتستخدم في سؤال المنشأ.",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "A woman and a child",
-    "correctSequence": [4, 5, 6],
+    "questionExplain": "Sharks live in the ocean.",
+    "answerExplain": "'Sharks live in the ocean.' translates to 'القروش تعيش في المحيط'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "Sharks live in the ocean.",
+    "correctSequence": [1, 0],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "النساء" },
-      { "answerText": "والماء" },
-      { "answerText": "شطيرة" },
-      { "answerText": "والماء" },
-      { "answerText": "امراة" },
-      { "answerText": "و" },
-      { "answerText": "طقل" }
+      { "answerText": "تعيش في المحيط" },
+      { "answerText": "القروش" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "The monkey eats bananas.",
+    "answerExplain": "'The monkey eats bananas.' translates to 'القرد يأكل الموز'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "القرد يأكل الموز.",
+    "correctSequence": [0, 1, 2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "The monkey" },
+      { "answerText": "eats" },
+      { "answerText": "bananas" }
+    ]
+  },
+  {
+    "questionText": "choose the image of a tiger in the wild!",
+    "questionExplain": "Identifying animals in their natural habitat through images.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "Tiger in the wild",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/tiger_in_the_wild.png"
+      },
+      {
+        "answerText": "Lion in the zoo",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/lion_in_zoo.png"
+      },
+      {
+        "answerText": "Cheetah running",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/cheetah_running.png"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Butterflies have colorful wings.",
+    "answerExplain": "'Butterflies have colorful wings.' translates to 'الفراشات لديها أجنحة ملونة'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "Butterflies have colorful wings.",
+    "correctSequence": [1, 0],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "لديها أجنحة ملونة" },
+      { "answerText": "الفراشات" }
     ]
   },
   {
     "questionText": "اختار الأزواج المتطابقة",
-    "questionExplain": "Match the English words with their Arabic translations.",
-    "avatar": "../../assets/cool.png",
+    "questionExplain": "Match the animal sounds with the correct animals.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionType": "type5",
     "matchPairs": [
       {
-        "english": "He",
-        "arabic": "هو"
+        "english": "Roar",
+        "arabic": "Lion"
       },
       {
-        "english": "she",
-        "arabic": "هي"
+        "english": "Bark",
+        "arabic": "Dog"
       },
       {
-        "english": "they",
-        "arabic": "هم"
+        "english": "Meow",
+        "arabic": "Cat"
       },
       {
-        "english": "woman",
-        "arabic": "امراة"
+        "english": "Tweet",
+        "arabic": "Bird"
       }
     ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "The child eats an apple",
-    "answerExplain": " ",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "The child eats an apple",
-    "correctSequence": [2, 0, 4],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "ياكل" },
-      { "answerText": "جريدة" },
-      { "answerText": "الطفل" },
-      { "answerText": "يشربون" },
-      { "answerText": "تفاحة" },
-      { "answerText": "انه" },
-      { "answerText": "و" }
-    ]
-  },
-  {
-    "questionText": "كيف تقول ... بالإنجليزية؟",
-    "questionExplain": "___  old are you?",
-    "answerExplain": " الكلمة الإنجليزية 'How old are you' تترجم إلى 'كم عمرك' بالعربية.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "?old are you ___",
-    "correctSequence": [1],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "What's" },
-      { "answerText": "How " },
-      { "answerText": "Who are" },
-      { "answerText": "Hello" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "you ___ milk",
-    "answerExplain": "",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "drink",
-    "correctSequence": [3],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "drink" },
-      { "answerText": "drinking" },
-      { "answerText": "drinks" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "The woman eats rice",
-    "answerExplain": "",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "The woman eats rice",
-    "correctSequence": [6, 2, 3],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "هو" },
-      { "answerText": "انها" },
-      { "answerText": "تاكل" },
-      { "answerText": "الارز" },
-      { "answerText": "اولاد" },
-      { "answerText": "الجريدة" },
-      { "answerText": "المراة" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "الرجل ياكل ارز",
-    "questionExplain": "The man eats rice",
-    "answerExplain": " الكلمة الإنجليزية 'Friend' تترجم إلى 'صديق' بالعربية",
-    "questionType": "type4",
-    "correctAnswer": "The man eats rice"
   }
 ]

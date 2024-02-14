@@ -1,163 +1,165 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "We read a newspaper",
-    "answerExplain": "",
-    "questionSubText": "We read a newspaper",
-    "correctSequence": [4, 6, 5],
-    "avatar": "../../assets/indian.png",
+    "questionExplain": "I am American.",
+    "answerExplain": "'I am American.' translates to 'أنا أمريكي'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "I am American.",
+    "correctSequence": [1, 0],
+    "questionType": "type1",
+    "answerOptions": [{ "answerText": "أمريكي" }, { "answerText": "أنا" }]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "I am from Japan.",
+    "answerExplain": "'I am from Japan.' translates to 'أنا من اليابان.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "أنا من اليابان.",
+    "correctSequence": [2, 0, 1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "from" },
+      { "answerText": "Japan" },
+      { "answerText": "I am" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "My nationality is Brazilian.",
+    "answerExplain": "'My nationality is Brazilian.' translates to 'جنسيتي برازيلية'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "My nationality is Brazilian.",
+    "correctSequence": [3, 1, 0],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "حليب" },
-      { "answerText": "الاولاد" },
-      { "answerText": "الفتيات" },
-      { "answerText": "يشربون" },
+      { "answerText": "برازيلية" },
+      { "answerText": "هي" },
       { "answerText": "نحن" },
-      { "answerText": "جريدة" },
-      { "answerText": "نقرأ" }
+      { "answerText": "جنسيتي" }
     ]
   },
   {
-    "questionText": "أي واحدة من هذه هو الخبز",
-    "questionExplain": "bread",
-    "answerExplain": " ",
-    "avatar": "../../assets/indian.png",
-    "questionType": "type2",
-    "answerOptions": [
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the nationalities with their country.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
       {
-        "answerText": "Milk",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/645fa42dcea02c7e2970a1285e321562"
+        "english": "Canadian",
+        "arabic": "كندا"
       },
       {
-        "answerText": "Sandwich",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/d56b5cfc3455ffcdac9b1207d34cdeaa"
+        "english": "Italian",
+        "arabic": "إيطاليا"
       },
       {
-        "answerText": "Rice",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/80a169600a14918bad9d6c451596c6d7"
-      }
-    ]
-  },
-
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "I drink milk",
-    "questionExplain": "I drink milk",
-    "answerExplain": "",
-    "correctSequence": [0, 4, 1],
-    "avatar": "../../assets/indian.png",
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "أنا" },
-      { "answerText": "ماء" },
-      { "answerText": "حليباً" },
-      { "answerText": "إنه" },
-      { "answerText": "أشرب" },
-      { "answerText": "بنات" },
-      { "answerText": "نحن" }
-    ]
-  },
-  {
-    "questionText": "اي واحدة من هذه بنت",
-    "questionExplain": "واحدة من هذه 'شطيرة",
-    "answerExplain": " ",
-    "questionType": "type2",
-    "answerOptions": [
-      {
-        "answerText": "Rice",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/80a169600a14918bad9d6c451596c6d7"
+        "english": "Russian",
+        "arabic": "روسيا"
       },
       {
-        "answerText": "Sandwich",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/d56b5cfc3455ffcdac9b1207d34cdeaa"
-      },
-      {
-        "answerText": "Milk",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/645fa42dcea02c7e2970a1285e321562"
-      }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "شطيرة",
-    "questionExplain": "Sandwich",
-    "answerExplain": "",
-    "questionType": "type3",
-    "avatar": "../../assets/indian.png",
-    "correctSequence": [2],
-    "answerOptions": [
-      { "answerText": "Men" },
-      { "answerText": "Girl" },
-      { "answerText": "Sandwich" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "انا ذهبت للمدرسة",
-    "questionExplain": "I went to school",
-    "answerExplain": "",
-    "correctSequence": [2, 0, 3, 1],
-    "questionType": "type3",
-    "avatar": "../../assets/indian.png",
-    "answerOptions": [
-      { "answerText": "went" },
-      { "answerText": "school" },
-      { "answerText": "I" },
-      { "answerText": "to" },
-      { "answerText": "by" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionSubText": "Tree",
-    "questionExplain": "Tree",
-    "answerExplain": " الكلمة الإنجليزية 'Tree' تترجم إلى 'شجرة' بالعربية",
-    "correctSequence": [4],
-    "avatar": "../../assets/indian.png",
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "رجل" },
-      { "answerText": "ماء" },
-      { "answerText": "بنت" },
-      { "answerText": "مفتاح" },
-      { "answerText": "شجرة" }
-    ]
-  },
-  {
-    "questionText": "أي واحدة من هذه هو أرز",
-    "questionType": "type2",
-    "questionExplain": "Rice",
-    "answerExplain": "",
-    "answerOptions": [
-      {
-        "answerText": "Rice",
-        "isCorrect": true,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/80a169600a14918bad9d6c451596c6d7"
-      },
-      {
-        "answerText": "Sandwich",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/d56b5cfc3455ffcdac9b1207d34cdeaa"
-      },
-      {
-        "answerText": "Milk",
-        "isCorrect": false,
-        "imgPath": "https://d2pur3iezf4d1j.cloudfront.net/images/645fa42dcea02c7e2970a1285e321562"
+        "english": "Egyptian",
+        "arabic": "مصر"
       }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "Milk",
-    "questionExplain": "Milk",
-    "answerExplain": " الكلمة الإنجليزية 'Boy' تترجم إلى 'ولد' بالعربية",
-    "questionType": "type4",
-    "correctAnswer": "Milk"
+    "questionExplain": "I hold a French passport.",
+    "answerExplain": "'I hold a French passport.' translates to 'أحمل جواز سفر فرنسي.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "أحمل جواز سفر فرنسي.",
+    "correctSequence": [2, 3, 0, 4, 1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "a" },
+      { "answerText": "passport" },
+      { "answerText": "I" },
+      { "answerText": "hold" },
+      { "answerText": "French" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "I was born in Spain.",
+    "answerExplain": "'I was born in Spain.' translates to 'ولدت في إسبانيا'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "I was born in Spain.",
+    "correctSequence": [3, 2, 0],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": " إسبانيا" },
+      { "answerText": " هو" },
+      { "answerText": "في " },
+      { "answerText": "ولدت" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "My parents are Italian.",
+    "answerExplain": "'My parents are Italian.' translates to 'والديّ إيطاليان.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "والديّ إيطاليان.",
+    "correctSequence": [1, 3, 0],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Italian" },
+      { "answerText": "My parents" },
+      { "answerText": "We" },
+      { "answerText": "are" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "I have dual citizenship, British and Canadian.",
+    "answerExplain": "'I have dual citizenship, British and Canadian.' translates to 'لدي الجنسية المزدوجة، بريطانية وكندية'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "I have dual citizenship, British and Canadian.",
+    "correctSequence": [1, 0, 2, 3],
+    "questionType": "type1",
+    "answerOptions": [
+      { "answerText": "الجنسية المزدوجة" },
+      { "answerText": "لدي" },
+      { "answerText": "بريطانية" },
+      { "answerText": "وكندية" }
+    ]
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the languages with the correct nationality.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "Spanish",
+        "arabic": "إسباني"
+      },
+      {
+        "english": "French",
+        "arabic": "فرنسي"
+      },
+      {
+        "english": "German",
+        "arabic": "ألماني"
+      },
+      {
+        "english": "Japanese",
+        "arabic": "ياباني"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "I am a citizen of the world.",
+    "answerExplain": "'I am a citizen of the world.' translates to 'أنا مواطن من مواطني العالم.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "أنا مواطن من مواطني العالم.",
+    "correctSequence": [1, 2, 0, 3],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "of the world" },
+      { "answerText": "I am" },
+      { "answerText": "a citizen" },
+      { "answerText": "for everyone" }
+    ]
   }
 ]

@@ -53,8 +53,8 @@ const chapterItems = [
     lessonId: 1,
     completed: false,
     imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/jack.jpeg",
-    mainText: "السؤال عن الآخرين",
-    subText: "تعلم كيفية السؤال عن مشاعر الأشخاص الآخرين",
+    mainText: "وصف الجنسية",
+    subText: "  السؤال عن جنسية الآخرين والتعريف بجنسيتك",
     url: "/test/chapter6",
   },
   {
