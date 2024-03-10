@@ -17,8 +17,15 @@ export const LessonProvider = ({ children }) => {
           2: [false, false, false, false, false],
         };
   });
+  const [currentQuestion, setCurrentQuestion] = useState(() => {
+    const savedCurrentQuestion = localStorage.getItem("currentQuestion");
+    return savedCurrentQuestion ? JSON.parse(savedCurrentQuestion) : 0;
+  });
 
-  // Effect to run when lessonsCompleted state changes
+  useEffect(() => {
+    localStorage.setItem("currentQuestion", JSON.stringify(currentQuestion));
+  }, [currentQuestion]);
+
   useEffect(() => {
     // Save to localStorage
     localStorage.setItem("lessonsCompleted", JSON.stringify(lessonsCompleted));
@@ -56,7 +63,14 @@ export const LessonProvider = ({ children }) => {
   };
 
   return (
-    <LessonContext.Provider value={{ lessonsCompleted, incrementLesson }}>
+    <LessonContext.Provider
+      value={{
+        lessonsCompleted,
+        incrementLesson,
+        currentQuestion,
+        setCurrentQuestion,
+      }}
+    >
       {children}
     </LessonContext.Provider>
   );

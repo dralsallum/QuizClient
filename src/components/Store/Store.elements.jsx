@@ -8,6 +8,7 @@ export const StoreWtapper = styled.div`
   min-height: 97px;
   margin: 30px auto;
   padding: 0px 0.938rem;
+  width: 100%;
 `;
 export const StoreTimeBoost = styled.div`
   visibility: visible;

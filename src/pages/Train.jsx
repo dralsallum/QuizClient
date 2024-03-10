@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavTech, QueFooter, Question, Slider, Store } from "../components";
+import { NavTech, QueFooter, Question, Store } from "../components";
 
 import useRequireAuth from "../useRequireAuth";
 

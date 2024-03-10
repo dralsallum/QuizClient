@@ -351,7 +351,19 @@ export const QuestionChapterPictureSection = styled.div`
   width: 5.25rem;
   height: 5.25rem;
   padding: 0.2rem;
+  background-image: linear-gradient(
+      ${(props) => (props.completed ? "#4c47e8" : "transparent")},
+      ${(props) => (props.completed ? "#4c47e8" : "transparent")}
+    ),
+    linear-gradient(
+      to right,
+      transparent ${(props) => 100 - props.progress}%,
+      #4c47e8 ${(props) => props.progress}%
+    );
+  background-origin: border-box; /* Ensure the gradient is applied to the border */
+  background-clip: content-box, border-box; /* Clip the background to the content and border */
 `;
+
 export const QuestionChapterPicture = styled.img`
   width: 100%;
   height: 100%;
@@ -421,4 +433,36 @@ export const QuestionChapterPoint = styled.div`
   width: 100%;
   height: 100%;
   background-color: #4c47e9;
+`;
+
+export const FinishChapterProgressContainer = styled.div`
+  position: relative;
+  border-radius: 1rem;
+  width: 100%;
+  background-color: rgb(218, 225, 234);
+`;
+export const FinishChapterProgress = styled.div`
+  position: relative;
+  height: 0.75rem;
+  background-color: #4c47e9;
+  transition: width 0.3s ease 0s;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  animation: 2s ease 0s 1 normal none running fAHHxO;
+`;
+export const FinishChapterProgressSpan = styled.span`
+  font-size: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.25rem;
+  right: calc(100% - 1.188rem);
+  border-radius: 1.25rem;
+  background-color: #4c47e9;
+  color: rgb(255, 255, 255);
+  padding: 0px 0.5rem;
+  min-width: 30px;
+  position: sticky;
+  margin-bottom: 0rem;
 `;

@@ -141,13 +141,12 @@ const Project = () => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
   const [isButtonClicked, setIsButtonClicked] = useState(false);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+
   const [showScore, setShowScore] = useState(false);
-  const [score, setScore] = useState(0);
+
   const textToSpeakRef = useRef(null);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
-  const [progress, setProgress] = useState(0);
-  const [hearts, setHearts] = useState(5);
+
   const [showModal, setShowModal] = useState(false);
   const [userAnswerSequence, setUserAnswerSequence] = useState([]);
   const [scorePercentage, setScorePercentage] = useState(0);
@@ -161,6 +160,19 @@ const Project = () => {
   const [shuffledEnglish, setShuffledEnglish] = useState([]);
   const [shuffledArabic, setShuffledArabic] = useState([]);
   const [startTime, setStartTime] = useState(null);
+  const [progress, setProgress] = useState(() => {
+    const savedProgress = localStorage.getItem("progress");
+    return savedProgress ? JSON.parse(savedProgress) : 0;
+  });
+  const [hearts, setHearts] = useState(() => {
+    const savedHearts = localStorage.getItem("hearts");
+    return savedHearts ? JSON.parse(savedHearts) : 5;
+  });
+  const { currentQuestion, setCurrentQuestion } = useLesson();
+  const [score, setScore] = useState(() => {
+    const savedScore = localStorage.getItem("score");
+    return savedScore ? JSON.parse(savedScore) : 0;
+  });
 
   let questions = [];
 
@@ -245,6 +257,11 @@ const Project = () => {
       );
       setStateFunc(defaultStates[key]);
     });
+
+    localStorage.setItem("currentQuestion", JSON.stringify(0));
+    localStorage.setItem("score", JSON.stringify(0));
+    localStorage.setItem("progress", JSON.stringify(0));
+    localStorage.setItem("hearts", JSON.stringify(5));
   };
 
   const toggleSelection = (pairValue, index) => {
@@ -279,13 +296,10 @@ const Project = () => {
     let currentIndex = array.length,
       randomIndex;
 
-    // While there remain elements to shuffle...
     while (currentIndex !== 0) {
-      // Pick a remaining element...
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
 
-      // And swap it with the current element.
       [array[currentIndex], array[randomIndex]] = [
         array[randomIndex],
         array[currentIndex],
@@ -525,6 +539,13 @@ const Project = () => {
     const percentage = Math.round((score / questions.length) * 100);
     setScorePercentage(percentage);
   }, [score, questions.length]);
+
+  useEffect(() => {
+    localStorage.setItem("currentQuestion", JSON.stringify(currentQuestion));
+    localStorage.setItem("score", JSON.stringify(score));
+    localStorage.setItem("progress", JSON.stringify(progress));
+    localStorage.setItem("hearts", JSON.stringify(hearts));
+  }, [currentQuestion, score, progress, hearts]);
 
   const QuizResults = ({ score, scorePercentage, resetQuiz, lessonIndex }) => {
     const { incrementLesson } = useLesson();

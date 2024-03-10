@@ -82,6 +82,8 @@ const ChapterItem = ({
   url,
   isAccessible,
 }) => {
+  const { lessonsCompleted } = useLesson();
+  const FinishWidth = `${100}%`;
   const content = (
     <QuestionChapterItemElement>
       <QuestionChapterItemPart>
@@ -245,8 +247,8 @@ const Question = () => {
                   const currentChapterItems = chapters[chapterId];
                   const prevChapterLessons = lessonsCompleted[String(index)];
                   const isAccessible =
-                    index === 0 || // the first chapter is always accessible
-                    areAllLessonsCompleted(prevChapterLessons || []); // subsequent chapters are accessible if all lessons in the previous chapter are completed
+                    index === 0 ||
+                    areAllLessonsCompleted(prevChapterLessons || []);
                   return (
                     <Chapter
                       key={chapterId}

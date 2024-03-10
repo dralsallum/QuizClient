@@ -1,6 +1,18 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styled, { keyframes } from "styled-components";
+
+const scaleAnimation = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
 
 export const StyledIcon = styled(FontAwesomeIcon)`
   color: #4c47e9;
@@ -93,7 +105,7 @@ export const FooterLiRi = styled(Link)`
   text-decoration: inherit;
   background: rgb(255, 255, 255);
   border-top: ${(props) =>
-    props.currentComponent === "store" ? "0.125rem solid #4c47e9" : "none"};
+    props.currentComponent === "store" ? "0.125rem solid #886199" : "none"};
   display: inline-flex;
   height: 100%;
   justify-content: center;
@@ -107,6 +119,7 @@ export const FooterPin = styled.div`
   text-align: center;
   margin: calc(-0.125rem);
   cursor: pointer;
+  animation: ${scaleAnimation} 2s infinite;
 
   @media screen and (max-width: 48rem) {
     flex-direction: row;
