@@ -6,6 +6,10 @@ import { StateProvider } from "./StatProvider";
 import { Provider } from "react-redux";
 import { store, persistor } from "./redux/store";
 import { PersistGate } from "redux-persist/integration/react";
+import { analytics } from "./firebase";
+import { logEvent } from "firebase/analytics";
+
+logEvent(analytics, "page_view", { page_title: "Home Page" });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
