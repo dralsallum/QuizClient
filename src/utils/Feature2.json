@@ -1,0 +1,36 @@
+[
+  {
+    "header": "رحلة ميرا في أعماق البحر",
+    "subheader": "Course • 10-20 min",
+    "url": "/meditation/listen/story4",
+    "image": "https://alsallum.s3.eu-north-1.amazonaws.com/girlCat.webp",
+    "svg": {
+      "viewBox": "0 0 16 16",
+      "fill": "none",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "ariaHidden": "true",
+      "class": "css-lnnzhi",
+      "path": "M12.53 12.97c-.12 0-.25-.03-.36-.09l-1.78-.99a.753.753 0 01-.29-1.02c.2-.36.66-.49 1.02-.29l1.77.98a.753.753 0 01-.36 1.41z ... (continue with the path data)"
+    }
+  },
+  {
+    "header": "تحدي البقاء على قمر أوروبا",
+    "subheader": "Course • 10-20 min",
+    "url": "/meditation/listen/story5",
+    "image": "https://alsallum.s3.eu-north-1.amazonaws.com/europe.webp",
+    "svg": {
+      "viewBox": "0 0 16 16",
+      "path": "M12.53 12.97c-.12 0-.25-.03-.36-.09l-1.78-.99a.753.753 0 01-.29-1.02c.2-.36.66-.49 1.02-.29l1.77.98a.753.753 0 01-.36 1.41z ... (continue with the path data)"
+    }
+  },
+  {
+    "header": "أطول مبنى في المدينة",
+    "subheader": "Course • 10-20 min",
+    "url": "/meditation/listen/story6",
+    "image": "https://alsallum.s3.eu-north-1.amazonaws.com/building.webp",
+    "svg": {
+      "viewBox": "0 0 16 16",
+      "path": "M12.53 12.97c-.12 0-.25-.03-.36-.09l-1.78-.99a.753.753 0 01-.29-1.02c.2-.36.66-.49 1.02-.29l1.77.98a.753.753 0 01-.36 1.41z ... (continue with the path data)"
+    }
+  }
+]

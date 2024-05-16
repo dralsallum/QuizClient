@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { publicRequest } from "../requestMethods";
 
-// Async thunk for registration
 export const register = createAsyncThunk(
   "user/register",
   async (user, thunkAPI) => {
@@ -20,7 +19,6 @@ export const register = createAsyncThunk(
   }
 );
 
-// Async thunk for login
 export const login = createAsyncThunk(
   "user/login",
   async (credentials, thunkAPI) => {
@@ -34,7 +32,6 @@ export const login = createAsyncThunk(
   }
 );
 
-// Initial state for the slice
 const initialState = {
   currentUser: null,
   isFetching: false,
@@ -43,7 +40,6 @@ const initialState = {
   errorMessage: "",
 };
 
-// User slice for Redux toolkit
 export const userSlice = createSlice({
   name: "user",
   initialState,
@@ -115,8 +111,6 @@ export const userSlice = createSlice({
 export const { clearState, loginStart, loginSuccess, loginFailure, signOut } =
   userSlice.actions;
 
-// Export the selector (if you need to access the state in your component)
 export const userSelector = (state) => state.user;
 
-// Export the reducer
 export default userSlice.reducer;

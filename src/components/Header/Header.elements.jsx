@@ -31,6 +31,7 @@ export const HeaderPara = styled.h3`
   margin-bottom: 0.5rem;
 
   @media screen and (max-width: 991px) {
+    font-size: 1.5rem;
     text-align: center;
   }
 `;
@@ -61,16 +62,13 @@ export const HeaderButton = styled.button`
   font-size: 1.4rem;
   margin-top: 1rem;
 
-
-}
-
   &:hover {
     cursor: pointer;
-
   }
 
   @media screen and (max-width: 991px) {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 0.6rem 2.2rem;
   }
 `;
 

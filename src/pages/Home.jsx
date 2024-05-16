@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
-import { NavbarQui, Body } from "../components";
+import { NavbarQui, Body, NavAud, FooterMe } from "../components";
 
 const Home = () => {
   return (
     <>
-      <NavbarQui />
+      <NavAud />
       <Body />
+      <FooterMe />
     </>
   );
 };

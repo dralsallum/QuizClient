@@ -1,6 +1,7 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import cartReducer from "./cartRedux";
 import userReducer from "./userRedux";
+import flipReducer from "./flipRedux";
 import basketReducer from "./basketRedux";
 import lessonReducer from "./lessonRedux";
 import storage from "redux-persist/lib/storage";
@@ -26,6 +27,7 @@ const rootReducer = combineReducers({
   cart: cartReducer,
   basket: basketReducer,
   lessons: lessonReducer,
+  flip: flipReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

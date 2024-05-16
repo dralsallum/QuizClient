@@ -29,13 +29,14 @@ import extraHighScoreSVG from "../../assets/level-5.svg";
 
 const Body = () => {
   const [name, setName] = useState("");
-  const [userEmail, setUserEmail] = useState(""); // Use a different state variable for the user's email input
-  const [emails, setEmails] = useState([]); // Use this state variable to store the array of emails fetched from Firestore
+  const [userEmail, setUserEmail] = useState("");
+  const [emails, setEmails] = useState([]);
   const [nameEntered, setNameEntered] = useState(false);
   const [emailEntered, setEmailEntered] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState(null); // To track selected answer
 
   useEffect(() => {
     const fetchEmails = async () => {};
@@ -43,17 +44,21 @@ const Body = () => {
     fetchEmails();
   }, []);
 
-  const handleAnswerButtonClick = (isCorrect) => {
-    if (isCorrect === true) {
+  const handleAnswerButtonClick = (isCorrect, index) => {
+    setSelectedAnswer({ index, isCorrect });
+    if (isCorrect) {
       setScore(score + 9 / questions.length);
     }
-
-    const nextQuestion = currentQuestion + 1;
-    if (nextQuestion < questions.length) {
-      setCurrentQuestion(nextQuestion);
-    } else {
-      setShowScore(true);
-    }
+    // Delay moving to the next question by 1 second
+    setTimeout(() => {
+      const nextQuestion = currentQuestion + 1;
+      if (nextQuestion < questions.length) {
+        setCurrentQuestion(nextQuestion);
+      } else {
+        setShowScore(true);
+      }
+      setSelectedAnswer(null); // Reset selected answer for the next question
+    }, 300);
   };
 
   const timeIsUp = () => {
@@ -189,15 +194,25 @@ const Body = () => {
               </QuestionText>
             </QuestionSection>
             <AnswerSection>
-              {questions[currentQuestion].answerOptions.map((answerOption) => (
-                <QuizButton
-                  onClick={() =>
-                    handleAnswerButtonClick(answerOption.isCorrect)
-                  }
-                >
-                  {answerOption.answerText}
-                </QuizButton>
-              ))}
+              {questions[currentQuestion].answerOptions.map(
+                (answerOption, index) => (
+                  <QuizButton
+                    key={index}
+                    onClick={() =>
+                      handleAnswerButtonClick(answerOption.isCorrect, index)
+                    }
+                    bgColor={
+                      selectedAnswer && selectedAnswer.index === index
+                        ? selectedAnswer.isCorrect
+                          ? "green"
+                          : "red"
+                        : "#f1fafe" // Default background
+                    }
+                  >
+                    {answerOption.answerText}
+                  </QuizButton>
+                )
+              )}
             </AnswerSection>
           </>
         )}

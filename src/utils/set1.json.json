@@ -1,0 +1,158 @@
+[
+  {
+    "word": "apple",
+    "translation": "تفاحة",
+    "answer": "a popular fruit found in grocery stores",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/apple.png"
+  },
+  {
+    "word": "bread",
+    "translation": "خبز",
+    "answer": "a staple food made of flour and water",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/bread.png"
+  },
+  {
+    "word": "carrot",
+    "translation": "جزر",
+    "answer": "a root vegetable, typically orange in color",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/carret.png"
+  },
+  {
+    "word": "dairy",
+    "translation": "منتجات الألبان",
+    "answer": "products made from milk, like cheese and yogurt",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/dairy.png"
+  },
+  {
+    "word": "eggs",
+    "translation": "بيض",
+    "answer": "often found in cartons, essential for many recipes",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/eggs.png"
+  },
+  {
+    "word": "flour",
+    "translation": "طحين",
+    "answer": "a powder obtained by grinding grain",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/flour.png"
+  },
+  {
+    "word": "grapes",
+    "translation": "عنب",
+    "answer": "a bunch of these makes a healthy snack",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/grapes.png"
+  },
+  {
+    "word": "honey",
+    "translation": "عسل",
+    "answer": "a sweet, sticky food made by bees",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/honey.png"
+  },
+  {
+    "word": "ice cream",
+    "translation": "آيس كريم",
+    "answer": "a frozen dessert that comes in many flavors",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/ice+cream.png"
+  },
+  {
+    "word": "juice",
+    "translation": "عصير",
+    "answer": "a liquid drink made from the extraction of fruits",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/juice.png"
+  },
+  {
+    "word": "kale",
+    "translation": "كرنب",
+    "answer": "a type of cabbage with green or purple leaves",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/kale.png"
+  },
+  {
+    "word": "lettuce",
+    "translation": "خس",
+    "answer": "a leafy green vegetable often used in salads",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/lettus.png"
+  },
+  {
+    "word": "milk",
+    "translation": "حليب",
+    "answer": "a white liquid produced by the mammary glands of mammals",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/milk.png"
+  },
+  {
+    "word": "nuts",
+    "translation": "مكسرات",
+    "answer": "edible seeds, typically enclosed in a hard shell",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/nuts.png"
+  },
+  {
+    "word": "oranges",
+    "translation": "برتقال",
+    "answer": "a citrus fruit with a thick skin and a tangy taste",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/orange.png"
+  },
+  {
+    "word": "pasta",
+    "translation": "معكرونة",
+    "answer": "a dish originally from Italy, made from dough",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/pasta.png"
+  },
+  {
+    "word": "quinoa",
+    "translation": "كينوا",
+    "answer": "an edible seed that is rich in protein",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/quinoa.png"
+  },
+  {
+    "word": "rice",
+    "translation": "أرز",
+    "answer": "a staple food for a large part of the world's population",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/rice.png"
+  },
+  {
+    "word": "spinach",
+    "translation": "سبانخ",
+    "answer": "a green leafy vegetable that is rich in iron",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/spinach.png"
+  },
+  {
+    "word": "tea",
+    "translation": "شاي",
+    "answer": "a drink made by infusing dried leaves in boiling water",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/tea.png"
+  },
+  {
+    "word": "udon",
+    "translation": "أودون",
+    "answer": "a type of thick wheat flour noodle used in Japanese cuisine",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/udon.png"
+  },
+  {
+    "word": "vinegar",
+    "translation": "خل",
+    "answer": "a sour liquid used as a condiment or for pickling",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/vinegar.png"
+  },
+  {
+    "word": "water",
+    "translation": "ماء",
+    "answer": "a transparent, tasteless, odorless, and nearly colorless chemical substance",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/water.png"
+  },
+  {
+    "word": "xanthan gum",
+    "translation": "صمغ الزانثان",
+    "answer": "a polysaccharide used as a food additive",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/xanthan+gum.png"
+  },
+  {
+    "word": "yogurt",
+    "translation": "زبادي",
+    "answer": "a food produced by bacterial fermentation of milk",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/yogurt.png"
+  },
+  {
+    "word": "zucchini",
+    "translation": "كوسة",
+    "answer": "a summer squash that can be cooked in a variety of ways",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/zucchini.png"
+  }
+]

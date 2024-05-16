@@ -19,10 +19,8 @@ const NavbarMe = () => {
 
   const handleSignOut = async () => {
     try {
-      // Assuming you have a sign-out API endpoint
       await axios.post("/api/auth/signout");
 
-      // Dispatch the signOut action to update the Redux store
       dispatch(signOut());
     } catch (error) {
       console.error("Error signing out: ", error);
@@ -41,9 +39,7 @@ const NavbarMe = () => {
             }}
           >
             <NavbarContainerImg
-              src={
-                "https://alsallum.s3.eu-north-1.amazonaws.com/main-english-logo.png"
-              }
+              src={"https://alsallum.s3.eu-north-1.amazonaws.com/fox-white.png"}
             />
           </Link>
         </NavLogo>

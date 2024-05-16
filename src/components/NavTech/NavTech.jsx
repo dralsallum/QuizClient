@@ -116,7 +116,7 @@ const NavTech = () => {
               <NavContanierLogoMain>
                 <NavContanierLogoMainSpan>
                   <NavContanierLogoMainSvg>
-                    <Link to="/train">
+                    <Link to="/">
                       <NavContanierLogoMainimg
                         src={
                           "https://alsallum.s3.eu-north-1.amazonaws.com/main-english-logo.png"

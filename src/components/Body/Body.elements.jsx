@@ -5,16 +5,19 @@ export const QuizBody = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  height: 100vh;
-  background-color: #7cc6fe;
+  height: 100%;
+  background-color: #ccecff;
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
 `;
 
 export const QuizApp = styled.div`
-  background-color: #2a46b7;
+  background-color: #ffffff;
   width: 650px;
   min-height: 400px;
   height: min-content;
@@ -98,7 +101,7 @@ export const AnswerSection = styled.div`
 export const QuizButton = styled.button`
   font-size: 16px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: ${(props) => props.bgColor || "#f1fafe"};
   border-radius: 15px;
   display: flex;
   padding: 12px;
@@ -136,6 +139,20 @@ export const InputfieldContainer = styled.div`
 `;
 
 export const Inputfield = styled.input`
+  width: 90%;
+  padding: 5px;
+  border: none;
+  border-style: none;
+  outline: none;
+  height: 3.5rem;
+  font-size: 26px;
+
+  @media screen and (max-width: 960px) {
+    width: 85%;
+  }
+`;
+
+export const Exp = styled.div`
   width: 90%;
   padding: 5px;
   border: none;

@@ -1,7 +1,5 @@
 import React from "react";
-
 import { Navbar, SignForm } from "../components";
-
 const SignUp = () => {
   return (
     <>

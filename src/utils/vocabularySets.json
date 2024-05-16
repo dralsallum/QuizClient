@@ -1,0 +1,221 @@
+[
+  {
+    "grade": 5,
+    "sets": [
+      {
+        "title": "المفردات الأساسية",
+        "imgSrc": "https://cdn.vocab.com/units/hvg545lp/feature.svg",
+        "data": [
+          {
+            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الخامس",
+            "link": "/vocabulary/set1",
+            "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
+          },
+          {
+            "title": "الكلمات المربكة الشائعة، الصف الخامس",
+            "link": "/vocabulary/set2",
+            "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
+          },
+          {
+            "title": "ألفاظ متجانسة صعبة للطلاب",
+            "link": "/vocabulary/set3",
+            "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
+          },
+          {
+            "title": "مفردات اختبارات النواة المشتركة",
+            "link": "/vocabulary/set4",
+            "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
+          },
+          {
+            "title": "كلمات وعبارات أجنبية",
+            "link": "/vocabulary/set5",
+            "description": "لديك حرية كاملة لتعلم هذه الكلمات والعبارات الأجنبية التي تظهر بشكل شائع في الخطاب الإنجليزي و..."
+          }
+        ]
+      },
+      {
+        "title": "القراءة",
+        "imgSrc": "https://cdn.vocab.com/units/r7aruajs/feature.svg",
+        "data": [
+          {
+            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الخامس",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
+          },
+          {
+            "title": "الكلمات المربكة الشائعة، الصف الخامس",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
+          },
+          {
+            "title": "ألفاظ متجانسة صعبة للطلاب",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
+          },
+          {
+            "title": "مفردات اختبارات النواة المشتركة",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
+          },
+          {
+            "title": "كلمات وعبارات أجنبية",
+            "link": "https://example.com/vocab/set1word2",
+            "description": "لديك حرية كاملة لتعلم هذه الكلمات والعبارات الأجنبية التي تظهر بشكل شائع في الخطاب الإنجليزي و..."
+          }
+        ]
+      },
+      {
+        "title": "الكتابة",
+        "imgSrc": "https://cdn.vocab.com/units/loq5mshj/feature.svg",
+        "data": [
+          {
+            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الخامس",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
+          },
+          {
+            "title": "الكلمات المربكة الشائعة، الصف الخامس",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
+          },
+          {
+            "title": "ألفاظ متجانسة صعبة للطلاب",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
+          },
+          {
+            "title": "مفردات اختبارات النواة المشتركة",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
+          },
+          {
+            "title": "كلمات وعبارات أجنبية",
+            "link": "https://example.com/vocab/set1word2",
+            "description": "لديك حرية كاملة لتعلم هذه الكلمات والعبارات الأجنبية التي تظهر بشكل شائع في الخطاب الإنجليزي و..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 6,
+    "sets": [
+      {
+        "title": "Essential Vocabulary",
+        "imgSrc": "https://cdn.vocab.com/units/hvg545lp/feature.svg",
+        "data": [
+          {
+            "title": "150 Words Every 5th Grader Should Know",
+            "link": "https://example.com/vocab/set1word1",
+            "description": " By analyzing student data and commonly taught texts."
+          },
+          {
+            "title": "Commonly Confused Words, Grade 5",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "Commonly confused words are pairs or groups of words that share similar spellings or pronunciations..."
+          },
+          {
+            "title": "Tricky Homonyms for Students",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "Words that sound the same but are spelled differently (a type of homonym) can be stumbling blocks in comprehension..."
+          },
+          {
+            "title": "Common Core Vocabulary",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "Vocabulary is key to performing well on Common Core-aligned tests for English Language Arts as well as for building literacy..."
+          },
+          {
+            "title": "Foreign Words and Phrases",
+            "link": "https://example.com/vocab/set1word2",
+            "description": "You've got carte blanche to learn these foreign words and phrases that commonly appear in English speech and..."
+          }
+        ]
+      },
+      {
+        "title": "Reading",
+        "imgSrc": "https://cdn.vocab.com/units/r7aruajs/feature.svg",
+        "data": [
+          {
+            "title": "150 Words Every 5th Grader Should Know",
+            "link": "https://example.com/vocab/set1word1",
+            "description": " By analyzing student data and commonly taught texts."
+          },
+          {
+            "title": "Commonly Confused Words, Grade 5",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "Commonly confused words are pairs or groups of words that share similar spellings or pronunciations..."
+          },
+          {
+            "title": "Tricky Homonyms for Students",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "Words that sound the same but are spelled differently (a type of homonym) can be stumbling blocks in comprehension..."
+          },
+          {
+            "title": "Common Core Vocabulary",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "Vocabulary is key to performing well on Common Core-aligned tests for English Language Arts as well as for building literacy..."
+          },
+          {
+            "title": "Foreign Words and Phrases",
+            "link": "https://example.com/vocab/set1word2",
+            "description": "You've got carte blanche to learn these foreign words and phrases that commonly appear in English speech and..."
+          }
+        ]
+      },
+      {
+        "title": "Writing",
+        "imgSrc": "https://cdn.vocab.com/units/loq5mshj/feature.svg",
+        "data": [
+          {
+            "title": "Set 3 Word 1",
+            "link": "https://example.com/vocab/set3word1",
+            "description": "Definition of Set 3 Word 1."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 7,
+    "sets": [
+      {
+        "title": "Essential Vocabulary",
+        "imgSrc": "https://cdn.vocab.com/units/hvg545lp/feature.svg",
+        "data": [
+          {
+            "title": "Set 1 Word 1",
+            "link": "https://example.com/vocab/set1word1",
+            "description": "Definition of Set 1 Word 1."
+          },
+          {
+            "title": "Set 1 Word 2",
+            "link": "https://example.com/vocab/set1word2",
+            "description": "Definition of Set 1 Word 2."
+          }
+        ]
+      },
+      {
+        "title": "Reading",
+        "imgSrc": "https://cdn.vocab.com/units/r7aruajs/feature.svg",
+        "data": [
+          {
+            "title": "Set 2 Word 1",
+            "link": "https://example.com/vocab/set2word1",
+            "description": "Definition of Set 2 Word 1."
+          }
+        ]
+      },
+      {
+        "title": "Writing",
+        "imgSrc": "https://cdn.vocab.com/units/loq5mshj/feature.svg",
+        "data": [
+          {
+            "title": "Set 3 Word 1",
+            "link": "https://example.com/vocab/set3word1",
+            "description": "Definition of Set 3 Word 1."
+          }
+        ]
+      }
+    ]
+  }
+]

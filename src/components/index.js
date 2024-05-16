@@ -1,4 +1,5 @@
 export { default as Navbar } from "./Navbar/Navbar";
+export { default as NavAud } from "./NavAud/NavAud";
 export { default as NavbarQui } from "./NavQui/NavbarQui";
 export { default as NavbarMe } from "./NavbarMe/Navbar";
 export { default as NavTech } from "./NavTech/NavTech";
@@ -25,3 +26,10 @@ export { default as Pay } from "./Pay/Pay";
 export { default as Footer } from "./Footer/Footer";
 export { default as FooterMe } from "./FooterMe/Footer";
 export { default as Bottom } from "./Bottom/Bottom";
+export { default as Meditation } from "./Meditation/Meditation";
+export { default as Sun } from "./Sun/Sun";
+export { default as Listen } from "./Listen/Listen";
+export { default as Sections } from "./Sections/Sections";
+export { default as Vocabulary } from "./Vocabulary/Vocabulary";
+export { default as Grade } from "./Grade/Grade";
+export { default as Subscribe } from "./Subscribe/Subscribe";

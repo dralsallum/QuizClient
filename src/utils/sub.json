@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "https://cdn.busuu.com/web-payments/13.14.0/public/images/svg/modular-paywall/premium-crown-modular.svg",
+    "title": "الدورات المتخصصة",
+    "description": "افتح الدورات المتخصصة لتحسين مهاراتك الأساسية."
+  },
+  {
+    "id": 2,
+    "image": "https://cdn.busuu.com/web-payments/13.14.0/public/images/svg/modular-paywall/brain-modular.svg",
+    "title": "التكرار المتباعد",
+    "description": "مارس الكلمات الصحيحة في الوقت المناسب وثبتها في الذاكرة."
+  },
+  {
+    "id": 3,
+    "image": "https://cdn.busuu.com/web-payments/13.14.0/public/images/svg/puzzle.svg",
+    "title": "مراجعة القواعد",
+    "description": "عزز ثقتك في المحادثة مع تدريبات نحوية شخصية."
+  },
+  {
+    "id": 4,
+    "image": "https://cdn.busuu.com/web-payments/13.14.0/public/images/svg/modular-paywall/speech-bubble-modular.svg",
+    "title": "تغذية راجعة ذات أولوية",
+    "description": "مارس اللغة الإنجليزية مع المتحدثين الأصليين."
+  },
+  {
+    "id": 5,
+    "image": "https://cdn.busuu.com/web-payments/13.14.0/public/images/svg/modular-paywall/skip-lessons-modular.svg",
+    "title": "تخطي الدروس",
+    "description": "احصل على الدروس بأي ترتيب لتجد الموضوعات الأكثر ملاءمة لك."
+  },
+  {
+    "id": 6,
+    "image": "https://cdn.busuu.com/web-payments/13.14.0/public/images/svg/modular-paywall/ad-free-modular.svg",
+    "title": "بدون إعلانات",
+    "description": "تجنب الانقطاعات."
+  }
+]
