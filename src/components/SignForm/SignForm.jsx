@@ -47,7 +47,7 @@ const SignForm = () => {
     setIsLoading(true);
     try {
       await dispatch(register(inputs)).unwrap();
-      navigate("/train");
+      navigate("/");
     } catch (error) {
       setErrorMessage(
         getArabicErrorMessage(error.message || "Registration failed.")

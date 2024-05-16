@@ -35,7 +35,7 @@ const SignLog = () => {
     setIsLoading(true);
     try {
       await dispatch(login(inputs)).unwrap();
-      navigate("/train");
+      navigate("/");
     } catch (error) {
       setErrorMessage(error.message || "Login failed.");
     } finally {
