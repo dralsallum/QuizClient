@@ -2,157 +2,157 @@
   {
     "word": "apple",
     "translation": "تفاحة",
-    "answer": "a popular fruit found in grocery stores",
+    "answer": "I ate an apple for breakfast today.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/apple.png"
   },
   {
     "word": "bread",
     "translation": "خبز",
-    "answer": "a staple food made of flour and water",
+    "answer": "We need to buy some bread from the store.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/bread.png"
   },
   {
     "word": "carrot",
     "translation": "جزر",
-    "answer": "a root vegetable, typically orange in color",
+    "answer": "She added a carrot to the salad.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/carret.png"
   },
   {
     "word": "dairy",
     "translation": "منتجات الألبان",
-    "answer": "products made from milk, like cheese and yogurt",
+    "answer": "I am lactose intolerant, so I avoid dairy products.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/dairy.png"
   },
   {
     "word": "eggs",
     "translation": "بيض",
-    "answer": "often found in cartons, essential for many recipes",
+    "answer": "He likes to have eggs for breakfast.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/eggs.png"
   },
   {
     "word": "flour",
     "translation": "طحين",
-    "answer": "a powder obtained by grinding grain",
+    "answer": "You need flour to bake a cake.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/flour.png"
   },
   {
     "word": "grapes",
     "translation": "عنب",
-    "answer": "a bunch of these makes a healthy snack",
+    "answer": "Grapes are my favorite fruit to snack on.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/grapes.png"
   },
   {
     "word": "honey",
     "translation": "عسل",
-    "answer": "a sweet, sticky food made by bees",
+    "answer": "She sweetened her tea with honey.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/honey.png"
   },
   {
     "word": "ice cream",
     "translation": "آيس كريم",
-    "answer": "a frozen dessert that comes in many flavors",
+    "answer": "We enjoyed some ice cream on a hot day.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/ice+cream.png"
   },
   {
     "word": "juice",
     "translation": "عصير",
-    "answer": "a liquid drink made from the extraction of fruits",
+    "answer": "He drank a glass of orange juice.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/juice.png"
   },
   {
     "word": "kale",
     "translation": "كرنب",
-    "answer": "a type of cabbage with green or purple leaves",
+    "answer": "Kale is a healthy addition to any salad.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/kale.png"
   },
   {
     "word": "lettuce",
     "translation": "خس",
-    "answer": "a leafy green vegetable often used in salads",
+    "answer": "The lettuce was fresh and crisp.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/lettus.png"
   },
   {
     "word": "milk",
     "translation": "حليب",
-    "answer": "a white liquid produced by the mammary glands of mammals",
+    "answer": "She poured milk into her cereal.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/milk.png"
   },
   {
     "word": "nuts",
     "translation": "مكسرات",
-    "answer": "edible seeds, typically enclosed in a hard shell",
+    "answer": "Nuts are a great source of protein.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/nuts.png"
   },
   {
     "word": "oranges",
     "translation": "برتقال",
-    "answer": "a citrus fruit with a thick skin and a tangy taste",
+    "answer": "Oranges are a good source of vitamin C.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/orange.png"
   },
   {
     "word": "pasta",
     "translation": "معكرونة",
-    "answer": "a dish originally from Italy, made from dough",
+    "answer": "We had pasta for dinner last night.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/pasta.png"
   },
   {
     "word": "quinoa",
     "translation": "كينوا",
-    "answer": "an edible seed that is rich in protein",
+    "answer": "Quinoa is a great substitute for rice.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/quinoa.png"
   },
   {
     "word": "rice",
     "translation": "أرز",
-    "answer": "a staple food for a large part of the world's population",
+    "answer": "She cooked rice to go with the curry.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/rice.png"
   },
   {
     "word": "spinach",
     "translation": "سبانخ",
-    "answer": "a green leafy vegetable that is rich in iron",
+    "answer": "Spinach is rich in iron and vitamins.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/spinach.png"
   },
   {
     "word": "tea",
     "translation": "شاي",
-    "answer": "a drink made by infusing dried leaves in boiling water",
+    "answer": "He enjoyed a cup of tea in the afternoon.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/tea.png"
   },
   {
     "word": "udon",
     "translation": "أودون",
-    "answer": "a type of thick wheat flour noodle used in Japanese cuisine",
+    "answer": "Udon noodles are popular in Japanese cuisine.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/udon.png"
   },
   {
     "word": "vinegar",
     "translation": "خل",
-    "answer": "a sour liquid used as a condiment or for pickling",
+    "answer": "She used vinegar to make the salad dressing.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/vinegar.png"
   },
   {
     "word": "water",
     "translation": "ماء",
-    "answer": "a transparent, tasteless, odorless, and nearly colorless chemical substance",
+    "answer": "It's important to drink plenty of water.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/water.png"
   },
   {
     "word": "xanthan gum",
     "translation": "صمغ الزانثان",
-    "answer": "a polysaccharide used as a food additive",
+    "answer": "Xanthan gum is often used as a thickening agent.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/xanthan+gum.png"
   },
   {
     "word": "yogurt",
     "translation": "زبادي",
-    "answer": "a food produced by bacterial fermentation of milk",
+    "answer": "Yogurt is a good source of probiotics.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/yogurt.png"
   },
   {
     "word": "zucchini",
     "translation": "كوسة",
-    "answer": "a summer squash that can be cooked in a variety of ways",
+    "answer": "Zucchini can be grilled, baked, or sautéed.",
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/zucchini.png"
   }
 ]
