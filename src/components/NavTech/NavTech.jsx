@@ -119,7 +119,7 @@ const NavTech = () => {
                     <Link to="/">
                       <NavContanierLogoMainimg
                         src={
-                          "https://alsallum.s3.eu-north-1.amazonaws.com/main-english-logo.png"
+                          "https://alsallum.s3.eu-north-1.amazonaws.com/foxlogo.png"
                         }
                         alt=""
                       />
