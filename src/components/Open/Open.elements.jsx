@@ -240,7 +240,7 @@ export const CatUl = styled.ul`
   gap: 15px;
 
   @media screen and (max-width: 768px) {
-    gap: 5.5px;
+    gap: 3.5px;
   }
 `;
 export const CatLi = styled.li`
