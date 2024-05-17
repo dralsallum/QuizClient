@@ -1,53 +1,158 @@
 [
   {
-    "word": "eleven",
-    "answer": "the state of being joined in an association or coalition",
-    "americanImgSrc": "https://cdn.vocab.com/js3/289804eefb36d3e17d26.svg",
-    "britishImgSrc": "https://cdn.vocab.com/js3/4ca9ab6cd2940a46a096.svg"
+    "word": "table",
+    "translation": "طاولة",
+    "answer": "The dinner is set on the table.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/table.png"
   },
   {
-    "word": "second",
-    "americanImgSrc": "https://cdn.vocab.com/js3/289804eefb36d3e17d26.svg",
-    "britishImgSrc": "https://cdn.vocab.com/js3/4ca9ab6cd2940a46a096.svg"
+    "word": "chair",
+    "translation": "كرسي",
+    "answer": "He sat on the chair to read his book.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/chair.png"
   },
   {
-    "word": "third",
-    "americanImgSrc": "https://cdn.vocab.com/js3/289804eefb36d3e17d26.svg",
-    "britishImgSrc": "https://cdn.vocab.com/js3/4ca9ab6cd2940a46a096.svg"
+    "word": "bed",
+    "translation": "سرير",
+    "answer": "She made her bed in the morning.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/bed.png"
   },
   {
-    "word": "four",
-    "americanImgSrc": "https://cdn.vocab.com/js3/289804eefb36d3e17d26.svg",
-    "britishImgSrc": "https://cdn.vocab.com/js3/4ca9ab6cd2940a46a096.svg"
+    "word": "lamp",
+    "translation": "مصباح",
+    "answer": "I turned on the lamp to read at night.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/lamp.png"
   },
   {
-    "word": "five",
-    "americanImgSrc": "https://cdn.vocab.com/js3/289804eefb36d3e17d26.svg",
-    "britishImgSrc": "https://cdn.vocab.com/js3/4ca9ab6cd2940a46a096.svg"
+    "word": "sofa",
+    "translation": "أريكة",
+    "answer": "We sat on the sofa to watch TV.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/sofa.png"
   },
   {
-    "word": "six",
-    "americanImgSrc": "https://cdn.vocab.com/js3/289804eefb36d3e17d26.svg",
-    "britishImgSrc": "https://cdn.vocab.com/js3/4ca9ab6cd2940a46a096.svg"
+    "word": "television",
+    "translation": "تلفاز",
+    "answer": "The kids watched cartoons on the television.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/television.png"
   },
   {
-    "word": "seven",
-    "americanImgSrc": "https://cdn.vocab.com/js3/289804eefb36d3e17d26.svg",
-    "britishImgSrc": "https://cdn.vocab.com/js3/4ca9ab6cd2940a46a096.svg"
+    "word": "fridge",
+    "translation": "ثلاجة",
+    "answer": "She put the groceries in the fridge.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/fridge.png"
   },
   {
-    "word": "eight",
-    "americanImgSrc": "https://cdn.vocab.com/js3/289804eefb36d3e17d26.svg",
-    "britishImgSrc": "https://cdn.vocab.com/js3/4ca9ab6cd2940a46a096.svg"
+    "word": "oven",
+    "translation": "فرن",
+    "answer": "The cookies are baking in the oven.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/oven.png"
   },
   {
-    "word": "nine",
-    "americanImgSrc": "https://cdn.vocab.com/js3/289804eefb36d3e17d26.svg",
-    "britishImgSrc": "https://cdn.vocab.com/js3/4ca9ab6cd2940a46a096.svg"
+    "word": "sink",
+    "translation": "حوض",
+    "answer": "He washed the dishes in the sink.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/sink.png"
   },
   {
-    "word": "ten",
-    "americanImgSrc": "https://cdn.vocab.com/js3/289804eefb36d3e17d26.svg",
-    "britishImgSrc": "https://cdn.vocab.com/js3/4ca9ab6cd2940a46a096.svg"
+    "word": "wardrobe",
+    "translation": "خزانة ملابس",
+    "answer": "She hung her clothes in the wardrobe.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/wardrobe.png"
+  },
+  {
+    "word": "mirror",
+    "translation": "مرآة",
+    "answer": "He checked his appearance in the mirror.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/mirror.png"
+  },
+  {
+    "word": "rug",
+    "translation": "سجادة",
+    "answer": "The rug in the living room is very soft.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/rug.png"
+  },
+  {
+    "word": "bookshelf",
+    "translation": "رف الكتب",
+    "answer": "The books are neatly arranged on the bookshelf.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/bookshelf.png"
+  },
+  {
+    "word": "toaster",
+    "translation": "محمص الخبز",
+    "answer": "She made toast using the toaster.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/toaster.png"
+  },
+  {
+    "word": "clock",
+    "translation": "ساعة",
+    "answer": "The clock on the wall struck twelve.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/clock.png"
+  },
+  {
+    "word": "vacuum cleaner",
+    "translation": "مكنسة كهربائية",
+    "answer": "He used the vacuum cleaner to clean the carpet.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/vacuum_cleaner.png"
+  },
+  {
+    "word": "bathtub",
+    "translation": "حوض الاستحمام",
+    "answer": "She filled the bathtub with warm water.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/bathtub.png"
+  },
+  {
+    "word": "curtain",
+    "translation": "ستارة",
+    "answer": "He closed the curtain to block out the sun.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/curtain.png"
+  },
+  {
+    "word": "pillow",
+    "translation": "وسادة",
+    "answer": "She fluffed the pillow before sleeping.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/pillow.png"
+  },
+  {
+    "word": "blanket",
+    "translation": "بطانية",
+    "answer": "He covered himself with a warm blanket.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/blanket.png"
+  },
+  {
+    "word": "washing machine",
+    "translation": "غسالة",
+    "answer": "The clothes are being washed in the washing machine.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/washing_machine.png"
+  },
+  {
+    "word": "dryer",
+    "translation": "مجفف",
+    "answer": "The dryer is used to dry clothes after washing.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/dryer.png"
+  },
+  {
+    "word": "stove",
+    "translation": "موقد",
+    "answer": "She cooked dinner on the stove.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/stove.png"
+  },
+  {
+    "word": "cabinet",
+    "translation": "خزانة",
+    "answer": "The plates are stored in the cabinet.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/cabinet.png"
+  },
+  {
+    "word": "blender",
+    "translation": "خلاط",
+    "answer": "He made a smoothie using the blender.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/blender.png"
+  },
+  {
+    "word": "fan",
+    "translation": "مروحة",
+    "answer": "The fan keeps the room cool during summer.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/fan.png"
   }
 ]
