@@ -40,9 +40,9 @@ const Sections = () => {
     },
     {
       src: "https://img.icons8.com/clouds/100/rocket.png",
-      title: "قواعد اللغة الانجليزية",
+      title: "التعلم التفاعلي",
       description: "تعلم القواعد للممارسة",
-      link: "/extra",
+      link: "/train",
     },
     {
       src: "https://img.icons8.com/clouds/100/graduation-cap.png",
