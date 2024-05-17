@@ -59,10 +59,12 @@ import {
   TeBot,
   TeBotLi,
   TeDiv,
+  VocOp,
 } from "./Vocabulary.elements";
 import { useParams, useNavigate } from "react-router-dom";
 import vocabOptions from "../../utils/vocabOptions.json";
 import { useSelector } from "react-redux";
+import axios from "axios";
 
 const CardContent = ({ word, answer, img, translation }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -142,9 +144,7 @@ const CardContent = ({ word, answer, img, translation }) => {
           <CardTwo>
             <CardTwoSub>
               <CardTwoLi>
-                {img && ( // Conditional rendering based on `img`
-                  <CardTwoIm src={img} alt={`${word} illustration`} />
-                )}
+                {img && <CardTwoIm src={img} alt={`${word} illustration`} />}
                 <CardTwoTe>
                   <CardTwoSpa>{translation}</CardTwoSpa>
                   <CardTwoSp>{answer}</CardTwoSp>
@@ -205,10 +205,6 @@ const Vocabulary = () => {
   const handleSelectChange = (event) => {
     const newVocabSet = event.target.value;
     navigate(`/vocabulary/${newVocabSet}`);
-    const selectedOption = vocabOptions.find(
-      (option) => option.value === newVocabSet
-    );
-    setSelectedTopic(selectedOption ? selectedOption.label : "");
   };
 
   return (
@@ -247,9 +243,9 @@ const Vocabulary = () => {
           <VocTh>مجموعة الكلمات</VocTh>
           <VocThSel value={vocabSet} onChange={handleSelectChange}>
             {vocabOptions.map((option, index) => (
-              <option key={index} value={option.value}>
+              <VocOp key={index} value={option.value}>
                 {option.label}
-              </option>
+              </VocOp>
             ))}
           </VocThSel>
           <VocFo>

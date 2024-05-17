@@ -44,6 +44,12 @@ export const AllWr = styled.div`
   @media screen and (max-width: 768px) {
   }
 `;
+export const VocOp = styled.option`
+  direction: rtl;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
 
 export const VocWra = styled.div`
   padding: 1rem;
@@ -131,6 +137,7 @@ export const VocTh = styled.div`
 `;
 
 export const VocThSel = styled.select`
+direction: rtl;
     padding: .3em 2em .3em .3em;
     margin-left: 10px;
     background-position: right .7em top 50%;

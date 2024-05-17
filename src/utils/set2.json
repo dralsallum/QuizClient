@@ -93,7 +93,7 @@
     "word": "vacuum cleaner",
     "translation": "مكنسة كهربائية",
     "answer": "He used the vacuum cleaner to clean the carpet.",
-    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/vacuum_cleaner.png"
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/vacuum+cleaner.png"
   },
   {
     "word": "bathtub",
@@ -126,10 +126,10 @@
     "img": "https://alsallum.s3.eu-north-1.amazonaws.com/washing_machine.png"
   },
   {
-    "word": "dryer",
-    "translation": "مجفف",
-    "answer": "The dryer is used to dry clothes after washing.",
-    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/dryer.png"
+    "word": "remote control",
+    "translation": "جهاز تحكم",
+    "answer": "The remote control is used to operate electronic devices from a distance.",
+    "img": "https://alsallum.s3.eu-north-1.amazonaws.com/remote.png"
   },
   {
     "word": "stove",

@@ -84,24 +84,33 @@ const Open = () => {
           <CatUl>
             <CatLi>
               <CatAt to="/train">
-                <strong> تعلم الانجليزي </strong>
-                <br /> بطريقة مسلية وفعالة <br />
+                <strong>
+                  {" "}
+                  تعلم الانجليزي
+                  <br /> بطريقة مسلية وفعالة <br />
+                </strong>
               </CatAt>
             </CatLi>
             <CatLiTw>
               <CatAa to="/meditation">
                 <CatAaSp>
-                  تعلم الانجليزي باستخدام
+                  <strong>
+                    تعلم الانجليزي باستخدام
+                    <br />
+                    القصص القصيرة
+                  </strong>{" "}
                   <br />
-                  <strong> القصص القصيرة</strong> <br />
                 </CatAaSp>
               </CatAa>
             </CatLiTw>
             <CatLiTh>
               <CatAn to="/level/grade-5">
-                احفظ الكلمات الانجليزية
+                <strong>
+                  احفظ الكلمات الانجليزية
+                  <br />
+                  بالبطاقات التعليمية{" "}
+                </strong>{" "}
                 <br />
-                <strong> بالبطاقات التعليمية </strong> <br />
               </CatAn>
             </CatLiTh>
           </CatUl>
