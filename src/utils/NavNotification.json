@@ -1,0 +1,36 @@
+[
+  {
+    "label": "سجل الدخول",
+    "link": "/signup"
+  },
+  {
+    "label": "اختبارنا",
+    "link": "/personality"
+  },
+  {
+    "type": "separator"
+  },
+  {
+    "label": "اختبار تحديد المستوى",
+    "link": "/home"
+  },
+  {
+    "label": "البطاقات التعليمية",
+    "link": "/level/grade-5"
+  },
+  {
+    "label": "القصص التعليمة",
+    "link": "/meditation"
+  },
+  {
+    "label": "التعليم التفاعلي",
+    "link": "/train"
+  },
+  {
+    "label": "الشروط والأحكام",
+    "link": "/"
+  },
+  {
+    "type": "separator"
+  }
+]

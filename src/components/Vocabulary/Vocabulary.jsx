@@ -74,9 +74,12 @@ const CardContent = ({ word, answer, img, translation }) => {
     speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(textToSpeak);
     const voices = speechSynthesis.getVoices();
-    const selectedVoice = voices.find((voice) => {
+    let selectedVoice = voices.find((voice) => {
       return voice.lang.startsWith("en") && voice.name.includes(accent);
     });
+    if (!selectedVoice) {
+      selectedVoice = voices.find((voice) => voice.lang.startsWith("en"));
+    }
     utterance.voice = selectedVoice || voices[0];
     utterance.pitch = 1;
     utterance.rate = 1;

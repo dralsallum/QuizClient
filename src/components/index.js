@@ -33,3 +33,5 @@ export { default as Sections } from "./Sections/Sections";
 export { default as Vocabulary } from "./Vocabulary/Vocabulary";
 export { default as Grade } from "./Grade/Grade";
 export { default as Subscribe } from "./Subscribe/Subscribe";
+export { default as Open } from "./Open/Open";
+export { default as NavVoc } from "./NavVoc/NavVoc";

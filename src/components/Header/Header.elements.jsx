@@ -15,6 +15,7 @@ export const HeaderWrapper = styled.div`
   }
 `;
 export const HeaderContainer = styled.div`
+  direction: rtl;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

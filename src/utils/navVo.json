@@ -1,0 +1,17 @@
+[
+  {
+    "text": "تعلم",
+    "icon": "faBook",
+    "link": "/train"
+  },
+  {
+    "text": "تحديد المستوى",
+    "icon": "faBookOpen",
+    "link": "/home"
+  },
+  {
+    "text": "قوائم المفردات",
+    "icon": "faClipboardList",
+    "link": "/level"
+  }
+]
