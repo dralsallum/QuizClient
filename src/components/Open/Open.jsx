@@ -85,9 +85,8 @@ const Open = () => {
             <CatLi>
               <CatAt to="/train">
                 <strong>
-                  {" "}
                   تعلم الانجليزي
-                  <br /> بطريقة مسلية وفعالة <br />
+                  <br /> بطريقة مسلية <br />
                 </strong>
               </CatAt>
             </CatLi>
