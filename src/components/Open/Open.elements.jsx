@@ -390,7 +390,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 
   @media screen and (max-width: 991px) {
     justify-content: center;
