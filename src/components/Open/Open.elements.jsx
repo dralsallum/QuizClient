@@ -250,7 +250,7 @@ export const CatLi = styled.li`
   font-size: 18px;
 
   @media screen and (max-width: 768px) {
-    font-size: 13px;
+    font-size: 12px;
   }
 `;
 export const CatLiTw = styled.li`
@@ -260,7 +260,7 @@ export const CatLiTw = styled.li`
   font-size: 18px;
 
   @media screen and (max-width: 768px) {
-    font-size: 13px;
+    font-size: 12px;
   }
 `;
 export const CatAa = styled(Link)`
@@ -298,7 +298,7 @@ export const CatLiTh = styled.li`
   color: #fff;
 
   @media screen and (max-width: 768px) {
-    font-size: 13px;
+    font-size: 12px;
   }
 `;
 export const CatAt = styled(Link)`
