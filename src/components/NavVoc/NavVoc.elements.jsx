@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const AllWr = styled.header`
   direction: rtl;
@@ -10,12 +10,14 @@ export const AllWr = styled.header`
   right: 0;
   width: 100%;
   z-index: 700;
-  min-height: var(--page-header-height);
+  min-height: 100px;
   transition: background-color 0.5s;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: ${(props) =>
+    props.scrollY > 0 ? "rgba(51, 54, 59, 0.95)" : "rgba(0, 0, 0, 0)"};
   @media screen and (max-width: 768px) {
   }
 `;
+
 export const AllCon = styled.div`
   position: relative;
   width: 95%;
@@ -49,6 +51,7 @@ export const NavSubAt = styled(Link)`
   position: relative;
   top: -1px;
   cursor: pointer;
+  border: none;
 
   @media screen and (max-width: 768px) {
   }
@@ -66,6 +69,7 @@ export const NavSubAa = styled(Link)`
   vertical-align: middle;
   position: relative;
   top: -1px;
+  border: none;
 
   @media screen and (max-width: 768px) {
   }

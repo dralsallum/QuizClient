@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// NavVoc.jsx
+import React, { useState, useEffect } from "react";
 import {
   AllWr,
   AllCon,
@@ -20,7 +21,7 @@ import {
   NotUl,
   NotBot,
   NotBotAt,
-} from "./NavVoc.elements.jsx";
+} from "./NavVoc.elements";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -43,12 +44,24 @@ const iconMap = {
 
 const NavVoc = () => {
   const [showNotification, setShowNotification] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user.currentUser);
 
   const toggleNotification = () => {
     setShowNotification((prevState) => !prevState);
   };
+
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleSignOut = () => {
     dispatch(signOut());
@@ -73,7 +86,9 @@ const NavVoc = () => {
             <NotBot>
               <NotBotAt>
                 {user ? (
-                  <NavSubAt onClick={handleSignOut}>تسجيل الخروج</NavSubAt>
+                  <NavSubAt as="button" onClick={handleSignOut}>
+                    تسجيل الخروج
+                  </NavSubAt>
                 ) : (
                   <NavSubAt to="/login">تسجيل الدخول</NavSubAt>
                 )}
@@ -88,7 +103,7 @@ const NavVoc = () => {
   return (
     <>
       {showNotification && <Notification />}
-      <AllWr>
+      <AllWr scrollY={scrollY}>
         <AllCon>
           <NavTop>
             <NavTopAt href="">
@@ -99,7 +114,9 @@ const NavVoc = () => {
             </NavTopAt>
             <NavSubTop>
               {user ? (
-                <NavSubAt onClick={handleSignOut}>تسجيل الخروج</NavSubAt>
+                <NavSubAt as="button" onClick={handleSignOut}>
+                  تسجيل الخروج
+                </NavSubAt>
               ) : (
                 <NavSubAt to="/login">تسجيل الدخول</NavSubAt>
               )}
@@ -115,14 +132,12 @@ const NavVoc = () => {
                 <NavBotLi key={index}>
                   <NavBotAt to={item.link}>
                     <FontAwesomeIcon icon={iconMap[item.icon]} />
-                    <NavBotSp icon={item.icon}>{item.text}</NavBotSp>
+                    <NavBotSp>{item.text}</NavBotSp>
                   </NavBotAt>
                 </NavBotLi>
               ))}
             </NavBotUl>
           </NavBot>
-          <div></div>
-          <div></div>
         </AllCon>
       </AllWr>
     </>
