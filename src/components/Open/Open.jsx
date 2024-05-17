@@ -85,7 +85,7 @@ const Open = () => {
             <CatLi>
               <CatAt to="/train">
                 <strong> تعلم الانجليزي </strong>
-                <br /> بطريقة مسلية وفعالة
+                <br /> بطريقة مسلية وفعالة <br />
               </CatAt>
             </CatLi>
             <CatLiTw>
@@ -93,7 +93,7 @@ const Open = () => {
                 <CatAaSp>
                   تعلم الانجليزي باستخدام
                   <br />
-                  <strong> القصص القصيرة</strong>
+                  <strong> القصص القصيرة</strong> <br />
                 </CatAaSp>
               </CatAa>
             </CatLiTw>
@@ -101,7 +101,7 @@ const Open = () => {
               <CatAn to="/level/grade-5">
                 احفظ الكلمات الانجليزية
                 <br />
-                <strong> بالبطاقات التعليمية </strong>
+                <strong> بالبطاقات التعليمية </strong> <br />
               </CatAn>
             </CatLiTh>
           </CatUl>

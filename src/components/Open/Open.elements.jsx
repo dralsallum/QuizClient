@@ -250,7 +250,7 @@ export const CatLi = styled.li`
   font-size: 18px;
 
   @media screen and (max-width: 768px) {
-    font-size: 12px;
+    font-size: 13px;
   }
 `;
 export const CatLiTw = styled.li`
@@ -260,7 +260,7 @@ export const CatLiTw = styled.li`
   font-size: 18px;
 
   @media screen and (max-width: 768px) {
-    font-size: 12px;
+    font-size: 13px;
   }
 `;
 export const CatAa = styled(Link)`
@@ -281,7 +281,7 @@ export const CatAa = styled(Link)`
   @media screen and (max-width: 768px) {
     padding: 1em 0.75em 4.25em 0.75em;
     background-position: center bottom 1em;
-    background-size: 3.5em;
+    background-size: 3.8em;
   }
 `;
 export const CatAaSp = styled.span`
@@ -298,7 +298,7 @@ export const CatLiTh = styled.li`
   color: #fff;
 
   @media screen and (max-width: 768px) {
-    font-size: 12px;
+    font-size: 13px;
   }
 `;
 export const CatAt = styled(Link)`
@@ -319,7 +319,7 @@ export const CatAt = styled(Link)`
   @media screen and (max-width: 768px) {
     padding: 1em 0.75em 4.25em 0.75em;
     background-position: center bottom 1em;
-    background-size: 3.5em;
+    background-size: 3.8em;
   }
 `;
 export const CatAn = styled(Link)`
@@ -340,7 +340,7 @@ export const CatAn = styled(Link)`
   @media screen and (max-width: 768px) {
     padding: 1em 0.75em 4.25em 0.75em;
     background-position: center bottom 1em;
-    background-size: 3.5em;
+    background-size: 3.8em;
   }
 `;
 export const BaWr = styled.div`
