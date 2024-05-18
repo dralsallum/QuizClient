@@ -8,7 +8,7 @@ const Navbar = () => {
     <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
       <NavbarContainer>
         <NavbarContainerImg
-          src={"https://alsallum.s3.eu-north-1.amazonaws.com/12english.png"}
+          src={"https://alsallum.s3.eu-north-1.amazonaws.com/foxlogo.png"}
         />
       </NavbarContainer>
     </Link>
