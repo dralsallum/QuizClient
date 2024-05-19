@@ -39,27 +39,27 @@
         "data": [
           {
             "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الخامس",
-            "link": "https://example.com/vocab/set1word1",
+            "link": "/meditation/listen/story1",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
             "title": "الكلمات المربكة الشائعة، الصف الخامس",
-            "link": "https://example.com/vocab/set1word1",
+            "link": "/meditation/listen/story2",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "https://example.com/vocab/set1word1",
+            "link": "/meditation/listen/story3",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
             "title": "مفردات اختبارات النواة المشتركة",
-            "link": "https://example.com/vocab/set1word1",
+            "link": "/meditation/listen/story4",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           },
           {
             "title": "كلمات وعبارات أجنبية",
-            "link": "https://example.com/vocab/set1word2",
+            "link": "/meditation/listen/story5",
             "description": "لديك حرية كاملة لتعلم هذه الكلمات والعبارات الأجنبية التي تظهر بشكل شائع في الخطاب الإنجليزي و..."
           }
         ]
