@@ -1,4 +1,8 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { userRequest } from "../../requestMethods";
+import vocabOptions from "../../utils/vocabOptions.json";
 import {
   CardOn,
   CardOnAm,
@@ -61,9 +65,6 @@ import {
   TeDiv,
   VocOp,
 } from "./Vocabulary.elements";
-import { useParams, useNavigate } from "react-router-dom";
-import vocabOptions from "../../utils/vocabOptions.json";
-import { useSelector } from "react-redux";
 
 const CardContent = ({ word, answer, img, translation }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -169,15 +170,19 @@ const Vocabulary = () => {
   const user = useSelector((state) => state.user.currentUser);
 
   useEffect(() => {
-    const dataFile = vocabSet ? `${vocabSet}.json` : "defaultVocabulary.json";
-    import(`../../utils/${dataFile}`)
-      .then((data) => {
-        const cards = data.default;
-        setCardsData(cards);
-        const words = cards.map((card) => card.word);
-        setAllWords(words);
-      })
-      .catch((error) => console.error("Failed to load vocabulary data", error));
+    if (vocabSet) {
+      userRequest
+        .get(`/vocabulary/${vocabSet}`)
+        .then((response) => {
+          const cards = response.data.words;
+          setCardsData(cards);
+          const words = cards.map((card) => card.word);
+          setAllWords(words);
+        })
+        .catch((error) => {
+          console.error("Failed to load vocabulary data", error);
+        });
+    }
 
     const selectedOption = vocabOptions.find(
       (option) => option.value === vocabSet
