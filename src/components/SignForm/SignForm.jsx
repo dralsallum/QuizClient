@@ -24,9 +24,7 @@ const SignForm = () => {
   const dispatch = useDispatch();
 
   const handleChange = (e) => {
-    setInputs((prev) => {
-      return { ...prev, [e.target.name]: e.target.value };
-    });
+    setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const getArabicErrorMessage = (englishMessage) => {

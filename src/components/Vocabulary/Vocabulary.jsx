@@ -64,7 +64,6 @@ import {
 import { useParams, useNavigate } from "react-router-dom";
 import vocabOptions from "../../utils/vocabOptions.json";
 import { useSelector } from "react-redux";
-import axios from "axios";
 
 const CardContent = ({ word, answer, img, translation }) => {
   const [isFlipped, setIsFlipped] = useState(false);
