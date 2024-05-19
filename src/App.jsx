@@ -63,7 +63,14 @@ const App = () => {
                 element={user ? <Navigate to="/" /> : <SignUp />}
               />
               <Route path="/checkout" element={<Checkout />} />
-              <Route path="/test/:chapterName" element={<Test />} />
+              <Route
+                path="/test/:chapterName"
+                element={
+                  <ProtectedRoute>
+                    <Test />
+                  </ProtectedRoute>
+                }
+              />
               <Route path="/items" element={<Items />} />
               <Route path="/payment" element={<Payment />} />
               <Route path="/cashout" element={<Cashout />} />
