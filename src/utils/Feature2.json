@@ -2,7 +2,7 @@
   {
     "header": "رحلة ميرا في أعماق البحر",
     "subheader": "Course • 10-20 min",
-    "url": "/meditation/listen/story4",
+    "url": "/audio/listen/story4",
     "image": "https://alsallum.s3.eu-north-1.amazonaws.com/girlCat.webp",
     "svg": {
       "viewBox": "0 0 16 16",
@@ -16,7 +16,7 @@
   {
     "header": "تحدي البقاء على قمر أوروبا",
     "subheader": "Course • 10-20 min",
-    "url": "/meditation/listen/story5",
+    "url": "/audio/listen/story5",
     "image": "https://alsallum.s3.eu-north-1.amazonaws.com/europe.webp",
     "svg": {
       "viewBox": "0 0 16 16",
@@ -26,7 +26,7 @@
   {
     "header": "أطول مبنى في المدينة",
     "subheader": "Course • 10-20 min",
-    "url": "/meditation/listen/story6",
+    "url": "/audio/listen/story6",
     "image": "https://alsallum.s3.eu-north-1.amazonaws.com/building.webp",
     "svg": {
       "viewBox": "0 0 16 16",

@@ -30,7 +30,7 @@ const Sections = () => {
       src: "https://img.icons8.com/clouds/100/books.png",
       title: "القصص القصيرة",
       description: "تحديد الوظيفة",
-      link: "/meditation",
+      link: "/audio",
     },
     {
       src: "https://img.icons8.com/clouds/100/pen.png",

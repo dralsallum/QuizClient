@@ -7,6 +7,7 @@ import Payment from "./pages/Payment";
 import Login from "./pages/Login";
 import Train from "./pages/Train";
 import Test from "./pages/Test";
+import Audio from "./pages/Audio";
 import { Listen, Meditation, Products, Sun, Vocabulary } from "./components";
 import {
   BrowserRouter as Router,
@@ -45,11 +46,10 @@ const App = () => {
                 }
               />
               <Route path="/level/:gradeSet" element={<Level />} />
-              <Route path="/meditation" element={<Meditation />} />
+              <Route path="/audio" element={<Audio />} />
               <Route path="/meditation/listen/sun" element={<Sun />} />
-
               <Route
-                path="/meditation/listen/:storyUrl"
+                path="/audio/listen/:storyUrl"
                 element={
                   <ProtectedRoute>
                     <Listen />

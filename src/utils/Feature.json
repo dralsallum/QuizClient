@@ -2,7 +2,7 @@
   {
     "header": "قصة العصفور الطائر",
     "subheader": "Course • 10-20 min",
-    "url": "/meditation/listen/story1",
+    "url": "/audio/listen/story1",
     "image": "https://alsallum.s3.eu-north-1.amazonaws.com/boyBird.webp",
     "svg": {
       "viewBox": "0 0 16 16",
@@ -16,7 +16,7 @@
   {
     "header": "صداقة لينا وقطها ويسكيرس",
     "subheader": "Course • 10-20 min",
-    "url": "/meditation/listen/story2",
+    "url": "/audio/listen/story2",
     "image": "https://alsallum.s3.eu-north-1.amazonaws.com/girlCat.webp",
     "svg": {
       "viewBox": "0 0 16 16",
@@ -26,7 +26,7 @@
   {
     "header": "مغامرة في الفضاء",
     "subheader": "Course • 10-20 min",
-    "url": "/meditation/listen/story3",
+    "url": "/audio/listen/story3",
     "image": "https://alsallum.s3.eu-north-1.amazonaws.com/space.webp",
     "svg": {
       "viewBox": "0 0 16 16",
