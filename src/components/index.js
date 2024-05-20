@@ -35,3 +35,4 @@ export { default as Grade } from "./Grade/Grade";
 export { default as Subscribe } from "./Subscribe/Subscribe";
 export { default as Open } from "./Open/Open";
 export { default as NavVoc } from "./NavVoc/NavVoc";
+export { default as Write } from "./Write/Write";

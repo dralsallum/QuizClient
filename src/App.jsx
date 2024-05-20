@@ -8,7 +8,14 @@ import Login from "./pages/Login";
 import Train from "./pages/Train";
 import Test from "./pages/Test";
 import Audio from "./pages/Audio";
-import { Listen, Meditation, Products, Sun, Vocabulary } from "./components";
+import {
+  Listen,
+  Meditation,
+  Products,
+  Sun,
+  Vocabulary,
+  Write,
+} from "./components";
 import {
   BrowserRouter as Router,
   Route,
@@ -74,6 +81,14 @@ const App = () => {
               <Route path="/items" element={<Items />} />
               <Route path="/payment" element={<Payment />} />
               <Route path="/cashout" element={<Cashout />} />
+              <Route
+                path="/write/:spellName"
+                element={
+                  <ProtectedRoute>
+                    <Write />
+                  </ProtectedRoute>
+                }
+              />
               <Route path="/product/:name" element={<Products />} />
             </Routes>
           </LessonProvider>
