@@ -64,10 +64,7 @@ import {
   TeBotLi,
   TeDiv,
   VocOp,
-  Loading,
-  StyledSpinner,
 } from "./Vocabulary.elements";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 const CardContent = ({ word, answer, img, translation }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -170,7 +167,6 @@ const Vocabulary = () => {
   const [allWords, setAllWords] = useState([]);
   const [animationDirection, setAnimationDirection] = useState(null);
   const [selectedTopic, setSelectedTopic] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
   const user = useSelector((state) => state.user.currentUser);
 
   useEffect(() => {
@@ -182,11 +178,9 @@ const Vocabulary = () => {
           setCardsData(cards);
           const words = cards.map((card) => card.word);
           setAllWords(words);
-          setIsLoading(false);
         })
         .catch((error) => {
           console.error("Failed to load vocabulary data", error);
-          setIsLoading(false);
         });
     }
 
@@ -266,21 +260,7 @@ const Vocabulary = () => {
                 left={50}
                 zIndex={1}
               >
-                {isLoading ? (
-                  <Loading>
-                    <StyledSpinner
-                      icon={faSpinner}
-                      style={{
-                        color: "blue",
-                        height: "34px",
-                        width: "50px",
-                        padding: "30px",
-                      }}
-                    />
-                  </Loading>
-                ) : (
-                  <CardContent {...cardsData[currentCard]} />
-                )}
+                <CardContent {...cardsData[currentCard]} />
               </Card>
             </VocFoTop>
             <VocFoMid>
