@@ -55,9 +55,9 @@ export const StyledSpinner = styled(FontAwesomeIcon)`
 `;
 
 export const StyledSpeakerIcon = styled(IoMdVolumeHigh)`
-  color: #08aaf9; // Set the color to blue
-  width: 16px; // Set width of the icon
-  height: 16px; // Set height of the icon
+  color: #08aaf9;
+  width: 16px;
+  height: 16px;
   animation: ${ScaleUpDown} 2s ease-in-out infinite;
 `;
 

@@ -67,6 +67,7 @@ import {
   Loading,
   StyledSpinner,
 } from "./Vocabulary.elements";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 const CardContent = ({ word, answer, img, translation }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -267,7 +268,15 @@ const Vocabulary = () => {
               >
                 {isLoading ? (
                   <Loading>
-                    <StyledSpinner icon="spinner" />
+                    <StyledSpinner
+                      icon={faSpinner}
+                      style={{
+                        color: "blue",
+                        height: "34px",
+                        width: "50px",
+                        padding: "30px",
+                      }}
+                    />
                   </Loading>
                 ) : (
                   <CardContent {...cardsData[currentCard]} />
