@@ -101,8 +101,8 @@ const Grade = () => {
             </EssUl>
             <EssBot>
               <EssBut onClick={() => toggleShowMore(index)}>
-                <EssSpan show={!showMore[index]}>اضغط لرؤيةالمزيد</EssSpan>
-                <EssSpan show={showMore[index]}>اضغط لرؤيةاقل</EssSpan>
+                <EssSpan show={!showMore[index]}>رؤية المزيد</EssSpan>
+                <EssSpan show={showMore[index]}>رؤية اقل</EssSpan>
               </EssBut>
             </EssBot>
           </EssWr>
