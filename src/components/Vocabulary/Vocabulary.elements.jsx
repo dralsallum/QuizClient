@@ -1,5 +1,15 @@
 import styled, { css, keyframes } from "styled-components";
 import { IoMdVolumeHigh } from "react-icons/io";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+export const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
 const slideInLeft = keyframes`
   from {
@@ -26,6 +36,22 @@ const ScaleUpDown = keyframes`
   50% {
     transform: scale(1.1);
   }
+`;
+
+export const Loading = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+  }
+`;
+
+export const StyledSpinner = styled(FontAwesomeIcon)`
+  animation: ${rotate} 1s linear infinite;
+  color: blue;
+  height: 34px;
+  width: 50px;
+  padding: 30px;
 `;
 
 export const StyledSpeakerIcon = styled(IoMdVolumeHigh)`

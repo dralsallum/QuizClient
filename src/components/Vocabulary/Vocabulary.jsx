@@ -64,6 +64,8 @@ import {
   TeBotLi,
   TeDiv,
   VocOp,
+  Loading,
+  StyledSpinner,
 } from "./Vocabulary.elements";
 
 const CardContent = ({ word, answer, img, translation }) => {
@@ -167,6 +169,7 @@ const Vocabulary = () => {
   const [allWords, setAllWords] = useState([]);
   const [animationDirection, setAnimationDirection] = useState(null);
   const [selectedTopic, setSelectedTopic] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
   const user = useSelector((state) => state.user.currentUser);
 
   useEffect(() => {
@@ -178,9 +181,11 @@ const Vocabulary = () => {
           setCardsData(cards);
           const words = cards.map((card) => card.word);
           setAllWords(words);
+          setIsLoading(false);
         })
         .catch((error) => {
           console.error("Failed to load vocabulary data", error);
+          setIsLoading(false);
         });
     }
 
@@ -260,7 +265,13 @@ const Vocabulary = () => {
                 left={50}
                 zIndex={1}
               >
-                <CardContent {...cardsData[currentCard]} />
+                {isLoading ? (
+                  <Loading>
+                    <StyledSpinner icon="spinner" />
+                  </Loading>
+                ) : (
+                  <CardContent {...cardsData[currentCard]} />
+                )}
               </Card>
             </VocFoTop>
             <VocFoMid>
