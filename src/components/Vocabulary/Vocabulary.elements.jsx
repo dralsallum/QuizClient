@@ -501,15 +501,15 @@ export const CardTwoLi = styled.div`
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   justify-content: center;
 `;
 export const CardTwoIm = styled.img`
-  width: 81.176px;
-  height: 55.62px;
+  width: 71.176px;
+  height: 45.62px;
   border-radius: 10px;
 `;
 export const CardTwoTe = styled.div`
@@ -525,7 +525,7 @@ export const CardTwoSp = styled.span`
 export const CardTwoSpa = styled.span`
   color: f1fafe; !important;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 4px;
   padding-right: 0.25em;
 `;
