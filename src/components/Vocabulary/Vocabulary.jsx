@@ -66,7 +66,7 @@ import {
   VocOp,
 } from "./Vocabulary.elements";
 
-const CardContent = ({ word, answer, img, translation }) => {
+const CardContent = ({ word, answer, img, translation, explain }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const speechSynthesis = window.speechSynthesis;
 
@@ -148,6 +148,7 @@ const CardContent = ({ word, answer, img, translation }) => {
                 <CardTwoTe>
                   <CardTwoSpa>{translation}</CardTwoSpa>
                   <CardTwoSp>{answer}</CardTwoSp>
+                  <CardTwoSp>{explain}</CardTwoSp>
                 </CardTwoTe>
               </CardTwoLi>
             </CardTwoSub>

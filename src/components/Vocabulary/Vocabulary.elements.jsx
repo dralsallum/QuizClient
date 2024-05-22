@@ -519,9 +519,14 @@ export const CardTwoTe = styled.div`
 `;
 export const CardTwoSp = styled.span`
   text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 1px;
 `;
 export const CardTwoSpa = styled.span`
+  color: f1fafe; !important;
   font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
   padding-right: 0.25em;
 `;
 
