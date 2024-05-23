@@ -20,8 +20,28 @@ import {
   GradLi,
   GradUl,
   GradWr,
+  TiSpan,
+  TitCat,
+  TitCatSp,
+  TitCon,
+  TitEx,
+  TitIm,
+  TitImCon,
+  TitNoSp,
+  TitSec,
+  TitSecHe,
+  TitSecSp,
+  TitSp,
+  TitWr,
 } from "./Grade.elements";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaArrowRight,
+  FaBook,
+  FaCheck,
+  FaLightbulb,
+  FaPrint,
+} from "react-icons/fa";
 import gradeData from "../../utils/grades.json";
 import vocabularySetsData from "../../utils/vocabularySets.json";
 import { useParams } from "react-router-dom";
@@ -30,6 +50,8 @@ const Grade = () => {
   const { gradeSet } = useParams();
   const [vocabularySets, setVocabularySets] = useState([]);
   const [showMore, setShowMore] = useState({});
+  const [titWrContent, setTitWrContent] = useState(null);
+  const [backgroundColor, setBackgroundColor] = useState("#04329e");
   const gradUlRef = useRef(null);
 
   useEffect(() => {
@@ -42,6 +64,16 @@ const Grade = () => {
       ? currentGradeData.sets.map(() => false)
       : [];
     setShowMore(initialShowMoreStates);
+
+    // Update TitWr content and background color
+    if (currentGradeData) {
+      const titWrData = currentGradeData.titWr;
+      setTitWrContent(titWrData);
+      setBackgroundColor(currentGradeData.backgroundColor);
+    } else {
+      setTitWrContent(null);
+      setBackgroundColor("#04329e");
+    }
   }, [gradeSet]);
 
   const toggleShowMore = (index) => {
@@ -83,6 +115,56 @@ const Grade = () => {
             <FaArrowLeft />
           </GradArr>
         </AllNav>
+
+        {titWrContent && (
+          <TitWr>
+            <TitCon backgroundColor={backgroundColor}>
+              <TitImCon>
+                <TitIm src={titWrContent.imgSrc} alt={titWrContent.imgAlt} />
+              </TitImCon>
+              <TitSec>
+                <TitSecHe>
+                  <TitSp>
+                    {titWrContent.title}
+                    <TitNoSp>
+                      <span title={titWrContent.checkTitle}>
+                        <FaCheck
+                          className="check"
+                          style={{ color: "#68AB1C" }}
+                        />
+                      </span>
+                    </TitNoSp>
+                  </TitSp>
+                </TitSecHe>
+                <TitEx>{titWrContent.description}</TitEx>
+                <TitCat>
+                  <TitCatSp>
+                    <FaBook
+                      style={{ color: "#fff", width: "13px", height: "17px" }}
+                    />
+                    <TiSpan>القوائم</TiSpan>
+                    <TiSpan>{titWrContent.listsCount}</TiSpan>
+                  </TitCatSp>
+                  <TitCatSp>
+                    <FaLightbulb
+                      style={{ color: "#fff", width: "13px", height: "17px" }}
+                    />
+                    <TiSpan>الكلمات</TiSpan>
+                    <TiSpan>{titWrContent.wordsCount}</TiSpan>
+                  </TitCatSp>
+                  <TitCatSp>
+                    <FaPrint
+                      style={{ color: "#fff", width: "13px", height: "17px" }}
+                    />
+                    <TiSpan>المتعلمين</TiSpan>
+                    <TiSpan>{titWrContent.learnersCount}</TiSpan>
+                  </TitCatSp>
+                </TitCat>
+              </TitSec>
+            </TitCon>
+          </TitWr>
+        )}
+
         {vocabularySets.map((set, index) => (
           <EssWr key={index}>
             <EssHe>{set.title}</EssHe>

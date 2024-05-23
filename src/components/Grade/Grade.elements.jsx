@@ -18,6 +18,124 @@ export const AllWr = styled.div`
   @media screen and (max-width: 768px) {
   }
 `;
+export const TitWr = styled.div`
+  direction: rtl;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
+export const TitCon = styled.div`
+  display: flex;
+  background: #eee;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+  padding: 1.35em 1.35em 1.35em 1.35em;
+  margin-right: 1em;
+  margin-left: 1em;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: ${({ backgroundColor }) => backgroundColor || "#04329e"};
+  flex-direction: row;
+  gap: 10px;
+  min-height: auto;
+  border-radius: 5px;
+  align-self: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+`;
+export const TitSec = styled.div`
+  flex: 1;
+  font-size: 14px;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
+export const TitSecHe = styled.h1`
+  font-size: 24px;
+  line-height: normal;
+  margin: 0 0 10px 0;
+  overflow-wrap: break-word;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+`;
+export const TitEx = styled.blockquote`
+  padding: 0;
+  margin: 10px 0;
+  overflow-wrap: break-word;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
+export const TitCat = styled.div`
+  display: flex;
+  gap: 1em;
+  margin-top: 12px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
+export const TitCatSp = styled.span`
+  display: flex;
+  line-height: 17px;
+  font-size: 13px;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
+export const TiSpan = styled.span`
+  font-weight: bold;
+  margin-right: 0.3em;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
+export const TitSecSp = styled.span`
+  display: block;
+  font-size: 16px;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
+export const TitSp = styled.span`
+  display: block;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
+export const TitNoSp = styled.span`
+  white-space: nowrap;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
+export const TitImCon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
+export const TitIm = styled.img`
+  text-align: center;
+  object-fit: contain;
+  object-position: top;
+  aspect-ratio: auto 120 / 160;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  width: 120px;
+  font-size: 14px;
+
+  @media screen and (max-width: 768px) {
+    width: 80px;
+  }
+`;
 export const AllCon = styled.div`
   background-color: #f8f8f8;
   margin: 0 auto;
@@ -35,7 +153,7 @@ export const AllNav = styled.nav`
   justify-content: space-between;
   height: 60px;
   gap: 8px;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
   padding: 0 10px;
 
   @media screen and (max-width: 768px) {

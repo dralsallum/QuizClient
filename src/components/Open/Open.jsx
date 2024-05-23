@@ -91,7 +91,7 @@ const Open = () => {
               </CatAt>
             </CatLi>
             <CatLiTw>
-              <CatAa to="/meditation">
+              <CatAa to="/audio">
                 <CatAaSp>
                   <strong>
                     استمع لقصص

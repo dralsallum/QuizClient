@@ -1,12 +1,12 @@
 {
   "grades": [
+    { "number": 1, "url": "/level/grade-1" },
+    { "number": 2, "url": "/level/grade-2" },
+    { "number": 3, "url": "/level/grade-3" },
+    { "number": 4, "url": "/level/grade-4" },
     { "number": 5, "url": "/level/grade-5" },
     { "number": 6, "url": "/level/grade-6" },
     { "number": 7, "url": "/level/grade-7" },
-    { "number": 8, "url": "/level/grade-8" },
-    { "number": 9, "url": "/level/grade-9" },
-    { "number": 10, "url": "/level/grade-10" },
-    { "number": 11, "url": "/level/grade-11" },
-    { "number": 12, "url": "/level/grade-12" }
+    { "number": 8, "url": "/level/grade-8" }
   ]
 }
