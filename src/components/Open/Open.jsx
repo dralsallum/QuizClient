@@ -103,7 +103,7 @@ const Open = () => {
               </CatAa>
             </CatLiTw>
             <CatLiTh>
-              <CatAn to="/level/grade-5">
+              <CatAn to="/level/grade-1">
                 <strong>
                   احفظ الكلمات الانجليزية
                   <br />
