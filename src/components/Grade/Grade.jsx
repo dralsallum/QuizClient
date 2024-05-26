@@ -3,6 +3,7 @@ import {
   AllCon,
   AllNav,
   AllWr,
+  CardLink,
   EssBot,
   EssBut,
   EssHe,
@@ -197,15 +198,17 @@ const Grade = () => {
                 <EssImg src={set.imgSrc} alt="" />
               </EssLiImg>
               {set.data.map((vocab, idx) => (
-                <EssLi key={idx}>
-                  <ImgContainer>
-                    <ImgTit src={vocab.imgTit} alt={set.title} />
-                  </ImgContainer>
-                  <EssLiHe>
-                    <EssLiAt href={vocab.link}>{vocab.title}</EssLiAt>
-                  </EssLiHe>
-                  <EssLiDiv>{vocab.description}</EssLiDiv>
-                </EssLi>
+                <CardLink to={vocab.link}>
+                  <EssLi key={idx}>
+                    <ImgContainer>
+                      <ImgTit src={vocab.imgTit} alt={set.title} />
+                    </ImgContainer>
+                    <EssLiHe>
+                      <EssLiAt href={vocab.link}>{vocab.title}</EssLiAt>
+                    </EssLiHe>
+                    <EssLiDiv>{vocab.description}</EssLiDiv>
+                  </EssLi>
+                </CardLink>
               ))}
             </EssUl>
             <EssBot>

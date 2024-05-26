@@ -44,7 +44,6 @@ export const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {
-    // Proper reducer functions
     loginStart: (state) => {
       state.isFetching = true;
     },
@@ -70,7 +69,6 @@ export const userSlice = createSlice({
       state.isFetching = false;
       state.errorMessage = "";
     },
-    // Other reducers can be added here if needed
   },
   extraReducers: (builder) => {
     builder

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 
 const ScaleUpDown = keyframes`
@@ -320,6 +321,10 @@ export const ImgTit = styled.img`
 
   border-radius: 5px;
 `;
+export const CardLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`;
 
 export const EssImg = styled.img`
   width: 100%;
@@ -366,10 +371,11 @@ export const EssLiAt = styled.a`
   }
 `;
 export const EssLiDiv = styled.div`
-  color: #333;
+  color: #000; !important;
   font-size: 0.75em;
   overflow: hidden;
   width: 100%;
+  text-decoration: none;
 
   @media screen and (max-width: 768px) {
   }
