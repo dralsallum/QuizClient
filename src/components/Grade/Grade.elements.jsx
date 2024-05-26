@@ -338,7 +338,8 @@ export const EssLi = styled.li`
   align-items: flex-start;
   background-color: #fff;
   border-radius: 3px;
-  box-shadow: 0px 2px 3px 0px rgba(50, 98, 144, 0.2);
+  box-shadow: 0px 4px 6px rgba(50, 98, 144, 0.3),
+    0px 8px 10px rgba(50, 98, 144, 0.2);
   display: flex;
   flex-direction: column;
   justify-self: self-end;
