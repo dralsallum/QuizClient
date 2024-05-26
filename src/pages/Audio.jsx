@@ -3,7 +3,6 @@ import { Meditation, NavTech, QueFooter, Store } from "../components";
 import useRequireAuth from "../useRequireAuth";
 
 const Audio = () => {
-  useRequireAuth();
   const [showComponent, setShowComponent] = useState("question");
 
   useEffect(() => {

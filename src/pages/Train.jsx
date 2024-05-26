@@ -3,7 +3,6 @@ import { NavTech, QueFooter, Question, Store } from "../components";
 import useRequireAuth from "../useRequireAuth";
 
 const Train = () => {
-  useRequireAuth();
   const [showComponent, setShowComponent] = useState("question");
 
   useEffect(() => {

@@ -5,7 +5,7 @@ export const hasAccess = (user, route, param) => {
   };
 
   if (!user) {
-    return { access: false, redirect: "/login" };
+    return { access: false, redirect: "/signup" };
   }
 
   const freeAccessParams = freeAccessMap[route];

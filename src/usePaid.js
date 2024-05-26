@@ -7,13 +7,12 @@ export const ProtectedRoute = ({ children }) => {
   const { vocabSet, storyUrl, chapterName } = useParams();
   const location = useLocation();
 
-  // Define free access vocabulary sets, story URLs, and chapters
   const freeAccessVocabSets = ["set1"];
   const freeAccessStoryUrls = ["story4"]; // Include the stories that are free to access
   const freeAccessChapters = ["chapter1", "chapter2"]; // Include the chapters that are free to access
 
   if (!user) {
-    return <Navigate to="/login" />;
+    return <Navigate to="/signup" />;
   }
 
   if (

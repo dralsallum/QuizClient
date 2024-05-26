@@ -20,6 +20,8 @@ import {
   GradLi,
   GradUl,
   GradWr,
+  ImgContainer,
+  ImgTit,
   SliderCardContainer,
   SliderCardImg,
   SliderCardSpan,
@@ -196,6 +198,9 @@ const Grade = () => {
               </EssLiImg>
               {set.data.map((vocab, idx) => (
                 <EssLi key={idx}>
+                  <ImgContainer>
+                    <ImgTit src={vocab.imgTit} alt={set.title} />
+                  </ImgContainer>
                   <EssLiHe>
                     <EssLiAt href={vocab.link}>{vocab.title}</EssLiAt>
                   </EssLiHe>

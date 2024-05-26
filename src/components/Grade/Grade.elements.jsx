@@ -259,6 +259,7 @@ export const EssHe = styled.h2`
 
   @media screen and (max-width: 768px) {
     font-size: 1.175em;
+    margin-bottom: 10px;
   }
 `;
 export const EssUl = styled.ul`
@@ -297,11 +298,30 @@ export const EssLiImg = styled.li`
   height: 188px;
 
   @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
+
+export const ImgContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 33.33%; /* One-third of the container height */
+  margin-bottom: 10px;
+  width: 100%;
+`;
+
+export const ImgTit = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  width: 120px;
+
+  border-radius: 5px;
+`;
+
 export const EssImg = styled.img`
   width: 100%;
-
   height: 188px;
 
   @media screen and (max-width: 768px) {
@@ -320,8 +340,8 @@ export const EssLi = styled.li`
   justify-content: flex-start;
   margin: 0 5px 0;
   padding: 10px;
-  height: 188px;
-  width: 155px;
+  height: 200px;
+  width: 150px;
 
   @media screen and (max-width: 768px) {
   }
@@ -329,7 +349,7 @@ export const EssLi = styled.li`
 export const EssLiHe = styled.h3`
   color: #00578a;
   font-size: 0.8125em;
-  padding: 0 0 15px 0;
+  padding: 0 0 10px 0;
   margin: 0;
   font-weight: 300;
 
