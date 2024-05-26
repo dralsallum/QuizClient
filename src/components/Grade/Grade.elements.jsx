@@ -415,7 +415,7 @@ export const EssSpan = styled.span`
   cursor: pointer;
   font-size: 13px;
   font-weight: 600;
-  padding: 0 17px 0 0;
+  padding: 0 10px 0 0;
   display: ${(props) =>
     props.show
       ? "inline"
@@ -423,6 +423,7 @@ export const EssSpan = styled.span`
   position: relative;
 
   @media screen and (max-width: 768px) {
+    padding: 0 5px 0 0;
   }
 `;
 
