@@ -226,7 +226,7 @@ const Subscribe = () => {
                 <OpBoCh>
                   <FontAwesomeIcon icon={faCheckCircle} />
                 </OpBoCh>
-                <OpBoPa>ضمان استعادة الأموال لمدة 14 يومًا.</OpBoPa>
+                <OpBoPa>طور لوغتك بطريقة علمية ومدروسة</OpBoPa>
               </OpBoDiv>
               <MidWr>
                 <MidCon>
