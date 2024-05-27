@@ -8,8 +8,8 @@ export const ProtectedRoute = ({ children }) => {
   const location = useLocation();
 
   const freeAccessVocabSets = ["set1"];
-  const freeAccessStoryUrls = ["story4"]; // Include the stories that are free to access
-  const freeAccessChapters = ["chapter1", "chapter2"]; // Include the chapters that are free to access
+  const freeAccessStoryUrls = ["story4"];
+  const freeAccessChapters = ["chapter1"];
 
   if (!user) {
     return <Navigate to="/signup" />;

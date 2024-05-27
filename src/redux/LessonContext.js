@@ -13,10 +13,13 @@ export const LessonProvider = ({ children }) => {
     return localData
       ? JSON.parse(localData)
       : {
-          1: [true, false, false, false, false],
+          1: [true, true, true, true, false],
           2: [false, false, false, false, false],
+          3: [false, false, false, false, false],
+          4: [false, false, false, false, false],
         };
   });
+
   const [currentQuestion, setCurrentQuestion] = useState(() => {
     const savedCurrentQuestion = localStorage.getItem("currentQuestion");
     return savedCurrentQuestion ? JSON.parse(savedCurrentQuestion) : 0;
@@ -35,8 +38,9 @@ export const LessonProvider = ({ children }) => {
     const currentChapterLessons = lessonsCompleted[chapterNumber];
     const nextChapterNumber = chapterNumber + 1;
 
+    const firstIncompleteLessonIndex = currentChapterLessons.indexOf(false);
     const updatedChapterLessons = currentChapterLessons.map((lesson, index) => {
-      return index === currentChapterLessons.indexOf(false) ? true : lesson;
+      return index === firstIncompleteLessonIndex ? true : lesson;
     });
 
     const newState = {
@@ -51,9 +55,11 @@ export const LessonProvider = ({ children }) => {
         newState[nextChapterNumber] = [true, false, false, false, false];
       } else {
         const nextChapterLessons = lessonsCompleted[nextChapterNumber];
-        if (nextChapterLessons.every((lesson) => !lesson)) {
+        const firstIncompleteLessonIndex = nextChapterLessons.indexOf(false);
+        if (firstIncompleteLessonIndex !== -1) {
           newState[nextChapterNumber] = nextChapterLessons.map(
-            (lesson, index) => (index === 0 ? true : lesson)
+            (lesson, index) =>
+              index === firstIncompleteLessonIndex ? true : lesson
           );
         }
       }
