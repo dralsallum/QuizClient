@@ -265,7 +265,7 @@ export const EssHe = styled.h2`
   }
 `;
 export const EssUl = styled.ul`
-  max-height: ${(props) => (props.showMore ? "999px" : "205px")};
+  max-height: ${(props) => (props.showMore ? "999px" : "210px")};
   transition-property: max-height;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
