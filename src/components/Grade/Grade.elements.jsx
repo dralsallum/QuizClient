@@ -265,7 +265,7 @@ export const EssHe = styled.h2`
   }
 `;
 export const EssUl = styled.ul`
-  max-height: ${(props) => (props.showMore ? "999px" : "205px")};
+  max-height: ${(props) => (props.showMore ? "999px" : "200px")};
   transition-property: max-height;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
@@ -275,7 +275,7 @@ export const EssUl = styled.ul`
   column-gap: 23px;
   grid-template-rows: auto;
   overflow: hidden;
-  padding: 0;
+  padding: 5px;
   row-gap: 24px;
   grid-template-columns: repeat(4, 155px) auto;
 
