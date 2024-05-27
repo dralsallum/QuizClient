@@ -67,7 +67,7 @@ const Subscribe = () => {
       discountedPrice: "SAR 59.98",
       monthlyPrice: "SAR 19.99 / شهرياً",
       discount: "خصم 50%",
-      productId: "7300148920425",
+      productId: "8530677760215",
     },
     {
       id: 2,
@@ -114,8 +114,8 @@ const Subscribe = () => {
 
     function ShopifyBuyInit() {
       const client = ShopifyBuy.buildClient({
-        domain: "e56140-39.myshopify.com",
-        storefrontAccessToken: "14ff8ef40a759079789f69952bc52d51",
+        domain: "13a967-40.myshopify.com",
+        storefrontAccessToken: "bb59ebb309f33cfc4686baec67afebe2",
       });
 
       ShopifyBuy.UI.onReady(client).then(function (ui) {
