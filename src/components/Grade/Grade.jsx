@@ -23,12 +23,6 @@ import {
   GradWr,
   ImgContainer,
   ImgTit,
-  SliderCardContainer,
-  SliderCardImg,
-  SliderCardSpan,
-  SliderCardSubSpan1,
-  SliderCardSubSpan2,
-  SliderCardSubSpan3,
   TiSpan,
   TitCat,
   TitCatSp,
@@ -39,7 +33,6 @@ import {
   TitNoSp,
   TitSec,
   TitSecHe,
-  TitSecSp,
   TitSp,
   TitWr,
 } from "./Grade.elements";
@@ -56,7 +49,6 @@ import vocabularySetsData from "../../utils/vocabularySets.json";
 import { Link, useParams } from "react-router-dom";
 import data from "../../utils/SecSlider.json";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { sliderSettings } from "../../utils/common";
 
 const Dystopian = "https://alsallum.s3.eu-north-1.amazonaws.com/Dystopian.jpg";
 const Forgotten = "https://alsallum.s3.eu-north-1.amazonaws.com/forgetten.jpg";
@@ -125,7 +117,7 @@ const Grade = () => {
       <AllCon>
         <AllNav>
           <GradArr onClick={scrollRight}>
-            <FaArrowRight />
+            <FaArrowRight style={{ color: "#00578A" }} />
           </GradArr>
           <GradWr ref={gradUlRef}>
             <GradUl>
@@ -137,7 +129,7 @@ const Grade = () => {
             </GradUl>
           </GradWr>
           <GradArr onClick={scrollLeft}>
-            <FaArrowLeft />
+            <FaArrowLeft style={{ color: "#00578A" }} />
           </GradArr>
         </AllNav>
 
