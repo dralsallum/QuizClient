@@ -17,13 +17,13 @@
         "imgSrc": "https://cdn.vocab.com/units/hvg545lp/feature.svg",
         "data": [
           {
-            "title": " كلمات يجب أن يعرفها كل طالب في الصف الاول",
+            "title": "الكلمات الجوهرية المعرفية",
             "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn2.jpg",
             "link": "/vocabulary/set1",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
+            "title": "الكلمات المربكة الشائعة",
             "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse.jpg",
             "link": "/vocabulary/list1",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
@@ -35,7 +35,7 @@
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
+            "title": "اختبار المستوى",
             "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam.jpg",
             "link": "/vocabulary/test1",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
@@ -47,13 +47,13 @@
         "imgSrc": "https://cdn.vocab.com/units/r7aruajs/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
+            "title": "الكلمات الجوهرية المعرفية",
             "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn1.jpg",
             "link": "/audio/listen/story1",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
+            "title": "الكلمات المربكة الشائعة",
             "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse2.jpg",
             "link": "/audio/listen/story2",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
@@ -65,7 +65,7 @@
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
+            "title": "اختبار المستوى",
             "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam1.jpg",
             "link": "/audio/listen/story4",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
@@ -77,13 +77,13 @@
         "imgSrc": "https://cdn.vocab.com/units/loq5mshj/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
+            "title": "الكلمات الجوهرية المعرفية",
             "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn3.jpg",
             "link": "/write/spell1",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
+            "title": "الكلمات المربكة الشائعة",
             "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse3.jpg",
             "link": "/write/spell2",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
@@ -95,7 +95,7 @@
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
+            "title": "اختبار المستوى",
             "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam2.jpg",
             "link": "/write/spell4",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
@@ -123,23 +123,27 @@
         "imgSrc": "https://cdn.vocab.com/units/hvg545lp/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الثاني",
-            "link": "/vocabulary/set1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn2.jpg",
+            "link": "/vocabulary/set2",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الثاني",
-            "link": "/vocabulary/list1",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse.jpg",
+            "link": "/vocabulary/list2",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/vocabulary/similar1",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar.jpg",
+            "link": "/vocabulary/similar2",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/vocabulary/test1",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam.jpg",
+            "link": "/vocabulary/test2",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -149,23 +153,27 @@
         "imgSrc": "https://cdn.vocab.com/units/r7aruajs/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الثاني",
-            "link": "/audio/listen/story1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn1.jpg",
+            "link": "/audio/listen/story2",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الثاني",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse2.jpg",
             "link": "/audio/listen/story2",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/audio/listen/story3",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar2.jpg",
+            "link": "/audio/listen/story2",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/audio/listen/story4",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam1.jpg",
+            "link": "/audio/listen/story2",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -175,23 +183,27 @@
         "imgSrc": "https://cdn.vocab.com/units/loq5mshj/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الثاني",
-            "link": "/write/spell1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn3.jpg",
+            "link": "/write/spell2",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الثاني",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse3.jpg",
             "link": "/write/spell2",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/write/spell3",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar3.jpg",
+            "link": "/write/spell2",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/write/spell4",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam2.jpg",
+            "link": "/write/spell2",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -217,23 +229,27 @@
         "imgSrc": "https://cdn.vocab.com/units/hvg545lp/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الثالث",
-            "link": "/vocabulary/set1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn2.jpg",
+            "link": "/vocabulary/set3",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الثالث",
-            "link": "/vocabulary/list1",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse.jpg",
+            "link": "/vocabulary/list3",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/vocabulary/similar1",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar.jpg",
+            "link": "/vocabulary/similar3",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/vocabulary/test1",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam.jpg",
+            "link": "/vocabulary/test3",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -243,23 +259,27 @@
         "imgSrc": "https://cdn.vocab.com/units/r7aruajs/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الثالث",
-            "link": "/audio/listen/story1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn1.jpg",
+            "link": "/audio/listen/story3",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الثالث",
-            "link": "/audio/listen/story2",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse2.jpg",
+            "link": "/audio/listen/story3",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar2.jpg",
             "link": "/audio/listen/story3",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/audio/listen/story4",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam1.jpg",
+            "link": "/audio/listen/story3",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -269,23 +289,27 @@
         "imgSrc": "https://cdn.vocab.com/units/loq5mshj/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الثالث",
-            "link": "/write/spell1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn3.jpg",
+            "link": "/write/spell3",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الثالث",
-            "link": "/write/spell2",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse3.jpg",
+            "link": "/write/spell3",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar3.jpg",
             "link": "/write/spell3",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/write/spell4",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam2.jpg",
+            "link": "/write/spell3",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -310,23 +334,27 @@
         "imgSrc": "https://cdn.vocab.com/units/hvg545lp/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/vocabulary/set1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn2.jpg",
+            "link": "/vocabulary/set4",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/vocabulary/list1",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse.jpg",
+            "link": "/vocabulary/list4",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/vocabulary/similar1",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar.jpg",
+            "link": "/vocabulary/similar4",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/vocabulary/test1",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam.jpg",
+            "link": "/vocabulary/test4",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -336,22 +364,26 @@
         "imgSrc": "https://cdn.vocab.com/units/r7aruajs/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/audio/listen/story1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn1.jpg",
+            "link": "/audio/listen/story4",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/audio/listen/story2",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse2.jpg",
+            "link": "/audio/listen/story4",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/audio/listen/story3",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar2.jpg",
+            "link": "/audio/listen/story4",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam1.jpg",
             "link": "/audio/listen/story4",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
@@ -362,22 +394,26 @@
         "imgSrc": "https://cdn.vocab.com/units/loq5mshj/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/write/spell1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn3.jpg",
+            "link": "/write/spell4",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/write/spell2",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse3.jpg",
+            "link": "/write/spell4",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/write/spell3",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar3.jpg",
+            "link": "/write/spell4",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam2.jpg",
             "link": "/write/spell4",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
@@ -403,23 +439,27 @@
         "imgSrc": "https://cdn.vocab.com/units/hvg545lp/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/vocabulary/set1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn2.jpg",
+            "link": "/vocabulary/set5",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/vocabulary/list1",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse.jpg",
+            "link": "/vocabulary/list5",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/vocabulary/similar1",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar.jpg",
+            "link": "/vocabulary/similar5",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/vocabulary/test1",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam.jpg",
+            "link": "/vocabulary/test5",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -429,23 +469,27 @@
         "imgSrc": "https://cdn.vocab.com/units/r7aruajs/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/audio/listen/story1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn1.jpg",
+            "link": "/audio/listen/story5",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/audio/listen/story2",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse2.jpg",
+            "link": "/audio/listen/story5",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/audio/listen/story3",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar2.jpg",
+            "link": "/audio/listen/story5",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/audio/listen/story4",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam1.jpg",
+            "link": "/audio/listen/story5",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -455,23 +499,27 @@
         "imgSrc": "https://cdn.vocab.com/units/loq5mshj/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/write/spell1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn3.jpg",
+            "link": "/write/spell5",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/write/spell2",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse3.jpg",
+            "link": "/write/spell5",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/write/spell3",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar3.jpg",
+            "link": "/write/spell5",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/write/spell4",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam2.jpg",
+            "link": "/write/spell5",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -496,23 +544,27 @@
         "imgSrc": "https://cdn.vocab.com/units/hvg545lp/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/vocabulary/set1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn2.jpg",
+            "link": "/vocabulary/set6",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/vocabulary/list1",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse.jpg",
+            "link": "/vocabulary/list6",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/vocabulary/similar1",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar.jpg",
+            "link": "/vocabulary/similar6",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/vocabulary/test1",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam.jpg",
+            "link": "/vocabulary/test6",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -522,23 +574,27 @@
         "imgSrc": "https://cdn.vocab.com/units/r7aruajs/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/audio/listen/story1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn1.jpg",
+            "link": "/audio/listen/story6",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/audio/listen/story2",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse2.jpg",
+            "link": "/audio/listen/story6",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/audio/listen/story3",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar2.jpg",
+            "link": "/audio/listen/story6",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/audio/listen/story4",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam1.jpg",
+            "link": "/audio/listen/story6",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -548,23 +604,27 @@
         "imgSrc": "https://cdn.vocab.com/units/loq5mshj/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/write/spell1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn3.jpg",
+            "link": "/write/spell6",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/write/spell2",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse3.jpg",
+            "link": "/write/spell6",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/write/spell3",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar3.jpg",
+            "link": "/write/spell6",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/write/spell4",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam2.jpg",
+            "link": "/write/spell6",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -589,23 +649,27 @@
         "imgSrc": "https://cdn.vocab.com/units/hvg545lp/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/vocabulary/set1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn2.jpg",
+            "link": "/vocabulary/set7",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/vocabulary/list1",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse.jpg",
+            "link": "/vocabulary/list7",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/vocabulary/similar1",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar.jpg",
+            "link": "/vocabulary/similar7",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/vocabulary/test1",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam.jpg",
+            "link": "/vocabulary/test7",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -615,23 +679,27 @@
         "imgSrc": "https://cdn.vocab.com/units/r7aruajs/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/audio/listen/story1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn1.jpg",
+            "link": "/audio/listen/story7",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/audio/listen/story2",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse2.jpg",
+            "link": "/audio/listen/story7",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/audio/listen/story3",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar2.jpg",
+            "link": "/audio/listen/story7",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/audio/listen/story4",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam1.jpg",
+            "link": "/audio/listen/story7",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -641,23 +709,27 @@
         "imgSrc": "https://cdn.vocab.com/units/loq5mshj/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/write/spell1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn3.jpg",
+            "link": "/write/spell7",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/write/spell2",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse3.jpg",
+            "link": "/write/spell7",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/write/spell3",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar3.jpg",
+            "link": "/write/spell7",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/write/spell4",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam2.jpg",
+            "link": "/write/spell7",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -682,23 +754,27 @@
         "imgSrc": "https://cdn.vocab.com/units/hvg545lp/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/vocabulary/set1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn2.jpg",
+            "link": "/vocabulary/set8",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/vocabulary/list1",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse.jpg",
+            "link": "/vocabulary/list8",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/vocabulary/similar1",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar.jpg",
+            "link": "/vocabulary/similar8",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/vocabulary/test1",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam.jpg",
+            "link": "/vocabulary/test8",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -708,23 +784,27 @@
         "imgSrc": "https://cdn.vocab.com/units/r7aruajs/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/audio/listen/story1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn1.jpg",
+            "link": "/audio/listen/story8",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/audio/listen/story2",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse2.jpg",
+            "link": "/audio/listen/story8",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/audio/listen/story3",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar2.jpg",
+            "link": "/audio/listen/story8",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/audio/listen/story4",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam1.jpg",
+            "link": "/audio/listen/story8",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
@@ -734,23 +814,27 @@
         "imgSrc": "https://cdn.vocab.com/units/loq5mshj/feature.svg",
         "data": [
           {
-            "title": "150 كلمة يجب أن يعرفها كل طالب في الصف الاول",
-            "link": "/write/spell1",
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn3.jpg",
+            "link": "/write/spell8",
             "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
           },
           {
-            "title": "الكلمات المربكة الشائعة، الصف الاول",
-            "link": "/write/spell2",
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse3.jpg",
+            "link": "/write/spell8",
             "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
           },
           {
             "title": "ألفاظ متجانسة صعبة للطلاب",
-            "link": "/write/spell3",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar3.jpg",
+            "link": "/write/spell8",
             "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
           },
           {
-            "title": "مفردات اختبارات النواة المشتركة",
-            "link": "/write/spell4",
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam2.jpg",
+            "link": "/write/spell8",
             "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
           }
         ]
