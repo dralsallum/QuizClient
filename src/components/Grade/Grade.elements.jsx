@@ -422,7 +422,7 @@ export const EssSpan = styled.span`
   position: relative;
 
   @media screen and (max-width: 768px) {
-    padding: 0 5px 0 0;
+    padding: 0 2px 0 0;
   }
 `;
 
