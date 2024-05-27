@@ -64,7 +64,7 @@ const Subscribe = () => {
       id: 1,
       duration: "1 أشهر",
       price: "SAR 29.00",
-      discountedPrice: "SAR 00.00",
+      discountedPrice: "SAR 29.00",
       monthlyPrice: "SAR 29.00 / شهرياً",
       discount: "خصم 0%",
       productId: "8530677760215",
@@ -72,8 +72,8 @@ const Subscribe = () => {
     {
       id: 2,
       duration: "3 أشهر",
-      price: "SAR 52.00",
-      discountedPrice: "SAR 35.00",
+      price: "SAR 87.00",
+      discountedPrice: "SAR 52.00",
       monthlyPrice: "SAR 17.99 / شهرياً",
       discount: "خصم 40%",
       productId: "8530678710487",
@@ -81,8 +81,8 @@ const Subscribe = () => {
     {
       id: 3,
       duration: "12 شهراً",
-      price: "SAR 139.00",
-      discountedPrice: "SAR 209.00",
+      price: "SAR 348.00",
+      discountedPrice: "SAR 139.00",
       monthlyPrice: "SAR 11.99 / شهرياً",
       discount: "خصم 60%",
       productId: "8530679202007",
@@ -209,7 +209,7 @@ const Subscribe = () => {
             </BanIcDiv>
             <BanCon>
               <BanPaDiv>
-                <BanPa>خصم 70% على العضوية المميزة</BanPa>
+                <BanPa>خصم 60% على العضوية المميزة</BanPa>
               </BanPaDiv>
             </BanCon>
           </BanSubDiv>
