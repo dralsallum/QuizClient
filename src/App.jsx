@@ -71,7 +71,7 @@ const App = () => {
               />
               <Route path="/checkout" element={<Checkout />} />
               <Route
-                path="/test/:chapterName"
+                path="/test/:chapterId/:chapterName"
                 element={
                   <ProtectedRoute>
                     <Test />

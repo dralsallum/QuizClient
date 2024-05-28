@@ -550,6 +550,7 @@ const Project = () => {
   const QuizResults = ({ score, scorePercentage, resetQuiz, lessonIndex }) => {
     const { incrementLesson } = useLesson();
     const navigate = useNavigate();
+    const { chapterId } = useParams();
 
     return (
       <RWrap>
@@ -593,7 +594,7 @@ const Project = () => {
         <RButton
           onClick={() => {
             resetQuiz();
-            incrementLesson(1, lessonIndex);
+            const nextChapter = incrementLesson(parseInt(chapterId));
             navigate("/train");
           }}
         >

@@ -92,7 +92,7 @@
     "answerExplain": "'Farewell, until we meet again.' translates to 'وداعاً، حتى نلتقي مجدداً.'",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "وداعاً، حتى نلتقي مجدداً.",
-    "correctSequence": [0, 1, 2],
+    "correctSequence": [2, 0, 1],
     "questionType": "type3",
     "answerOptions": [
       { "answerText": "until we " },

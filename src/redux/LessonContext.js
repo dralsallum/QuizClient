@@ -7,37 +7,26 @@ export const useLesson = () => {
 };
 
 export const LessonProvider = ({ children }) => {
-  // Initialize state with localStorage value or default
   const [lessonsCompleted, setLessonsCompleted] = useState(() => {
-    const localData = localStorage.getItem("lessonsCompleted");
-    return localData
-      ? JSON.parse(localData)
+    const savedProgress = localStorage.getItem("lessonsCompleted");
+    return savedProgress
+      ? JSON.parse(savedProgress)
       : {
-          1: [true, true, true, true, false],
+          1: [true, false, false, false, false],
           2: [false, false, false, false, false],
           3: [false, false, false, false, false],
           4: [false, false, false, false, false],
         };
   });
 
-  const [currentQuestion, setCurrentQuestion] = useState(() => {
-    const savedCurrentQuestion = localStorage.getItem("currentQuestion");
-    return savedCurrentQuestion ? JSON.parse(savedCurrentQuestion) : 0;
-  });
+  const [currentQuestion, setCurrentQuestion] = useState(0);
 
   useEffect(() => {
-    localStorage.setItem("currentQuestion", JSON.stringify(currentQuestion));
-  }, [currentQuestion]);
-
-  useEffect(() => {
-    // Save to localStorage
     localStorage.setItem("lessonsCompleted", JSON.stringify(lessonsCompleted));
   }, [lessonsCompleted]);
 
   const incrementLesson = (chapterNumber) => {
     const currentChapterLessons = lessonsCompleted[chapterNumber];
-    const nextChapterNumber = chapterNumber + 1;
-
     const firstIncompleteLessonIndex = currentChapterLessons.indexOf(false);
     const updatedChapterLessons = currentChapterLessons.map((lesson, index) => {
       return index === firstIncompleteLessonIndex ? true : lesson;
@@ -51,6 +40,7 @@ export const LessonProvider = ({ children }) => {
     const allLessonsCompleted = updatedChapterLessons.every((lesson) => lesson);
 
     if (allLessonsCompleted) {
+      const nextChapterNumber = chapterNumber + 1;
       if (!lessonsCompleted[nextChapterNumber]) {
         newState[nextChapterNumber] = [true, false, false, false, false];
       } else {
@@ -66,6 +56,7 @@ export const LessonProvider = ({ children }) => {
     }
 
     setLessonsCompleted(newState);
+    return allLessonsCompleted ? chapterNumber + 1 : chapterNumber;
   };
 
   return (
@@ -81,3 +72,5 @@ export const LessonProvider = ({ children }) => {
     </LessonContext.Provider>
   );
 };
+
+export default LessonProvider;
