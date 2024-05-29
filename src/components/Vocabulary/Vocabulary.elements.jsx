@@ -508,8 +508,8 @@ export const CardTwoLi = styled.div`
   justify-content: center;
 `;
 export const CardTwoIm = styled.img`
-  width: 71.176px;
-  height: 45.62px;
+  width: 80px;
+  height: 55px;
   border-radius: 10px;
 `;
 export const CardTwoTe = styled.div`
@@ -519,7 +519,7 @@ export const CardTwoTe = styled.div`
 `;
 export const CardTwoSp = styled.span`
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-bottom: 1px;
 `;
 export const CardTwoSpa = styled.span`
