@@ -23,6 +23,7 @@ import {
   VocFoBut,
   VocFoBu,
 } from "./Body.elements";
+import axios from "axios";
 import questions from "../../utils/exam.json";
 const lowScoreSVG =
   "https://alsallum.s3.eu-north-1.amazonaws.com/boy_study4.webp";
@@ -82,11 +83,32 @@ const Body = () => {
   const handleNameSubmit = (event) => {
     event.preventDefault();
     setNameEntered(true);
+    if (userEmail) {
+      submitExamData(name, userEmail);
+    }
   };
 
   const handleEmailSubmit = (event) => {
     event.preventDefault();
     setEmailEntered(true);
+    if (name) {
+      submitExamData(name, userEmail);
+    }
+  };
+
+  const submitExamData = async (name, email) => {
+    try {
+      const response = await axios.post(
+        "https://quizeng-022517ad949b.herokuapp.com/api/exam/submit",
+        {
+          username: name,
+          email: email,
+        }
+      );
+      console.log(response.data);
+    } catch (error) {
+      console.error("Error saving exam data", error);
+    }
   };
 
   const getScoreSVG = (score) => {
