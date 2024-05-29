@@ -20,23 +20,28 @@ import {
   ScoreSectionImg,
   ScoreSectionbackground,
   ScoreSectionProgress,
+  VocFoBut,
+  VocFoBu,
 } from "./Body.elements";
-import questions from "../../utils/chapter2.json";
-import lowScoreSVG from "../../assets/level-0.svg";
-import mediumScoreSVG from "../../assets/level-2.svg";
-import highScoreSVG from "../../assets/level-4.svg";
-import extraHighScoreSVG from "../../assets/level-5.svg";
+import questions from "../../utils/exam.json";
+const lowScoreSVG =
+  "https://alsallum.s3.eu-north-1.amazonaws.com/boy_study4.webp";
+const mediumScoreSVG =
+  "https://alsallum.s3.eu-north-1.amazonaws.com/boy_study4.webp";
+const highScoreSVG =
+  "https://alsallum.s3.eu-north-1.amazonaws.com/boy_study4.webp";
+const extraHighScoreSVG =
+  "https://alsallum.s3.eu-north-1.amazonaws.com/boy_study4.webp";
 
 const Body = () => {
   const [name, setName] = useState("");
   const [userEmail, setUserEmail] = useState("");
-  const [emails, setEmails] = useState([]);
   const [nameEntered, setNameEntered] = useState(false);
   const [emailEntered, setEmailEntered] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState(null); // To track selected answer
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
 
   useEffect(() => {
     const fetchEmails = async () => {};
@@ -44,12 +49,21 @@ const Body = () => {
     fetchEmails();
   }, []);
 
+  const playSound = (isCorrect) => {
+    const sound = new Audio(
+      isCorrect
+        ? "https://alsallum.s3.eu-north-1.amazonaws.com/correct.mp3"
+        : "https://alsallum.s3.eu-north-1.amazonaws.com/Wrong.mp3"
+    );
+    sound.play();
+  };
+
   const handleAnswerButtonClick = (isCorrect, index) => {
     setSelectedAnswer({ index, isCorrect });
+    playSound(isCorrect);
     if (isCorrect) {
       setScore(score + 9 / questions.length);
     }
-    // Delay moving to the next question by 1 second
     setTimeout(() => {
       const nextQuestion = currentQuestion + 1;
       if (nextQuestion < questions.length) {
@@ -57,8 +71,8 @@ const Body = () => {
       } else {
         setShowScore(true);
       }
-      setSelectedAnswer(null); // Reset selected answer for the next question
-    }, 300);
+      setSelectedAnswer(null);
+    }, 400);
   };
 
   const timeIsUp = () => {
@@ -159,6 +173,10 @@ const Body = () => {
               <progress value={calculateScorePercentage(score, 9)} max="100" />
               <p>9</p>
             </ScoreSectionProgress>
+            <div>
+              <VocFoBut to={"/train"}>انتقل للتعليم التفاعلي</VocFoBut>
+              <VocFoBu to={"/level/grade-1"}>انتقل لتطوير المفردات</VocFoBu>
+            </div>
           </ScoreSection>
         ) : (
           <>

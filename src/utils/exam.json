@@ -1,0 +1,95 @@
+[
+  {
+    "questionText": "We _______ a great time at the beach last summer.",
+    "audioUrl": null,
+    "answerOptions": [
+      { "answerText": "made", "isCorrect": false },
+      { "answerText": "had", "isCorrect": true },
+      { "answerText": "took", "isCorrect": false },
+      { "answerText": "did", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "She is upset _______ the new company policy.",
+    "audioUrl": null,
+    "answerOptions": [
+      { "answerText": "for", "isCorrect": false },
+      { "answerText": "about", "isCorrect": true },
+      { "answerText": "on", "isCorrect": false },
+      { "answerText": "at", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "When Alex was young, he _______ go fishing with his grandfather every weekend.",
+    "audioUrl": null,
+    "answerOptions": [
+      { "answerText": "used to", "isCorrect": true },
+      { "answerText": "would", "isCorrect": false },
+      { "answerText": "could", "isCorrect": false },
+      { "answerText": "might", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Which planet is the largest in our solar system?",
+    "audioUrl": null,
+    "answerOptions": [
+      { "answerText": "Mars", "isCorrect": false },
+      { "answerText": "Jupiter", "isCorrect": true },
+      { "answerText": "Saturn", "isCorrect": false },
+      { "answerText": "Neptune", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "I believe that the topic Sarah mentioned is a significant _______ in today's world.",
+    "audioUrl": null,
+    "answerOptions": [
+      { "answerText": "subject", "isCorrect": false },
+      { "answerText": "issue", "isCorrect": true },
+      { "answerText": "theme", "isCorrect": false },
+      { "answerText": "point", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Did you face any difficulty _______ the venue?",
+    "audioUrl": null,
+    "answerOptions": [
+      { "answerText": "to locate", "isCorrect": false },
+      { "answerText": "locating", "isCorrect": true },
+      { "answerText": "locate", "isCorrect": false },
+      { "answerText": "for locating", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Which meal is the person referring to?",
+    "audioUrl": "https://alsallum.s3.eu-north-1.amazonaws.com/Exam_aud1.mp3",
+    "answerOptions": [
+      { "answerText": "breakfast", "isCorrect": true },
+      { "answerText": "lunch", "isCorrect": false },
+      { "answerText": "dinner", "isCorrect": false },
+      { "answerText": "snack", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "What is the woman suggesting?",
+    "audioUrl": "https://alsallum.s3.eu-north-1.amazonaws.com/exam_aud2.mp3",
+    "answerOptions": [
+      { "answerText": "postponing a meeting", "isCorrect": false },
+      { "answerText": "arranging a meeting", "isCorrect": true },
+      { "answerText": "cancelling a meeting", "isCorrect": false },
+      {
+        "answerText": "discussing a meeting agenda",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "You need to hurry or we will _______ the train.",
+    "audioUrl": null,
+    "answerOptions": [
+      { "answerText": "miss", "isCorrect": true },
+      { "answerText": "lose", "isCorrect": false },
+      { "answerText": "catch", "isCorrect": false },
+      { "answerText": "leave", "isCorrect": false }
+    ]
+  }
+]

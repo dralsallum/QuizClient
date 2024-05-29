@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const QuizBody = styled.div`
@@ -14,6 +15,50 @@ export const QuizBody = styled.div`
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 100%;
+`;
+
+export const VocFoBut = styled.button`
+  background-color: #56c1ff;
+  border-radius: 3px;
+  color: #fff;
+  padding: 9px 10px;
+  font-size: 16px;
+  line-height: 16px;
+  min-width: 96px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  outline: none;
+  border: none;
+  margin: 0;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-family: "open sans", sans-serif;
+  text-decoration: none !important;
+`;
+export const VocCon = styled.div`
+  display: flex;
+  width: 100%;
+`;
+export const VocFoBu = styled(Link)`
+  background-color: #6f56ff;
+  border-radius: 3px;
+  color: #fff;
+  padding: 9px 10px;
+  font-size: 16px;
+  line-height: 16px;
+  min-width: 96px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  outline: none;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  font-family: "open sans", sans-serif;
+  text-decoration: none !important;
 `;
 
 export const QuizApp = styled.div`
@@ -47,7 +92,8 @@ export const ScoreSection = styled.div`
 `;
 
 export const ScoreSectionImg = styled.img`
-  width: 150px;
+  width: 100%;
+  border-radius: 5px;
 `;
 export const ScoreSectionProgress = styled.div`
   display: flex;

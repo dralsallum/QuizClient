@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import { speakText } from "../../speechSynthesis";
 import {
   AButton,
   ACon,
@@ -141,17 +140,14 @@ const Project = () => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
   const [isButtonClicked, setIsButtonClicked] = useState(false);
-
   const [showScore, setShowScore] = useState(false);
-
   const textToSpeakRef = useRef(null);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
-
   const [showModal, setShowModal] = useState(false);
   const [userAnswerSequence, setUserAnswerSequence] = useState([]);
   const [scorePercentage, setScorePercentage] = useState(0);
   const [sureText, setSureText] = useState("تحقق");
-  const [backgroundColor, setBackgroundColor] = useState(); // change it if type 5 not working
+  const [backgroundColor, setBackgroundColor] = useState();
   const [isVisible, setIsVisible] = useState(false);
   const [maybe, setMaybe] = useState("");
   const [textareaValue, setTextareaValue] = useState("");
@@ -339,7 +335,6 @@ const Project = () => {
         isArabic ? voice.lang.startsWith("ar") : voice.lang.startsWith("en")
       );
 
-    // If no matching voice found, use the default
     if (!utterance.voice) {
       utterance.voice = speechSynthesis.getVoices()[0];
     }
@@ -351,7 +346,6 @@ const Project = () => {
     speechSynthesis.speak(utterance);
   };
 
-  //for correct and wrong answers
   const playSound = (filename) => {
     const audio = new Audio(filename);
     audio.play();
