@@ -30,13 +30,13 @@
     ]
   },
   {
-    "questionText": "Which planet is the largest in our solar system?",
+    "questionText": "The cake was baked _______ a professional chef.",
     "audioUrl": null,
     "answerOptions": [
-      { "answerText": "Mars", "isCorrect": false },
-      { "answerText": "Jupiter", "isCorrect": true },
-      { "answerText": "Saturn", "isCorrect": false },
-      { "answerText": "Neptune", "isCorrect": false }
+      { "answerText": "from", "isCorrect": false },
+      { "answerText": "with", "isCorrect": false },
+      { "answerText": "by", "isCorrect": true },
+      { "answerText": "at", "isCorrect": false }
     ]
   },
   {
@@ -90,6 +90,66 @@
       { "answerText": "lose", "isCorrect": false },
       { "answerText": "catch", "isCorrect": false },
       { "answerText": "leave", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "The concert was cancelled _______ the heavy rain.",
+    "audioUrl": null,
+    "answerOptions": [
+      { "answerText": "due to", "isCorrect": true },
+      { "answerText": "because", "isCorrect": false },
+      { "answerText": "for", "isCorrect": false },
+      { "answerText": "since", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "He decided to quit his job _______ he didn't like his boss.",
+    "audioUrl": null,
+    "answerOptions": [
+      { "answerText": "because", "isCorrect": true },
+      { "answerText": "so", "isCorrect": false },
+      { "answerText": "although", "isCorrect": false },
+      { "answerText": "but", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "If it _______ tomorrow, we will go to the park.",
+    "audioUrl": null,
+    "answerOptions": [
+      { "answerText": "doesn't rain", "isCorrect": true },
+      { "answerText": "won't rain", "isCorrect": false },
+      { "answerText": "isn't raining", "isCorrect": false },
+      { "answerText": "didn't rain", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "They _______ the movie by the time we arrived.",
+    "audioUrl": null,
+    "answerOptions": [
+      { "answerText": "had started", "isCorrect": true },
+      { "answerText": "will start", "isCorrect": false },
+      { "answerText": "are starting", "isCorrect": false },
+      { "answerText": "started", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "This is the book _______ I was telling you about.",
+    "audioUrl": null,
+    "answerOptions": [
+      { "answerText": "which", "isCorrect": true },
+      { "answerText": "what", "isCorrect": false },
+      { "answerText": "that", "isCorrect": false },
+      { "answerText": "whom", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "He has worked here _______ five years.",
+    "audioUrl": null,
+    "answerOptions": [
+      { "answerText": "for", "isCorrect": true },
+      { "answerText": "since", "isCorrect": false },
+      { "answerText": "from", "isCorrect": false },
+      { "answerText": "during", "isCorrect": false }
     ]
   }
 ]

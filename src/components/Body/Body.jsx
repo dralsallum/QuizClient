@@ -22,15 +22,16 @@ import {
   ScoreSectionProgress,
   VocFoBut,
   VocFoBu,
+  StyledProgress,
 } from "./Body.elements";
 import axios from "axios";
 import questions from "../../utils/exam.json";
 const lowScoreSVG =
-  "https://alsallum.s3.eu-north-1.amazonaws.com/boy_study4.webp";
+  "https://alsallum.s3.eu-north-1.amazonaws.com/boy_study.webp";
 const mediumScoreSVG =
-  "https://alsallum.s3.eu-north-1.amazonaws.com/boy_study4.webp";
+  "https://alsallum.s3.eu-north-1.amazonaws.com/boy_studying2.webp";
 const highScoreSVG =
-  "https://alsallum.s3.eu-north-1.amazonaws.com/boy_study4.webp";
+  "https://alsallum.s3.eu-north-1.amazonaws.com/boy_studying3.webp";
 const extraHighScoreSVG =
   "https://alsallum.s3.eu-north-1.amazonaws.com/boy_study4.webp";
 
@@ -63,7 +64,7 @@ const Body = () => {
     setSelectedAnswer({ index, isCorrect });
     playSound(isCorrect);
     if (isCorrect) {
-      setScore(score + 9 / questions.length);
+      setScore(score + 1);
     }
     setTimeout(() => {
       const nextQuestion = currentQuestion + 1;
@@ -112,12 +113,12 @@ const Body = () => {
   };
 
   const getScoreSVG = (score) => {
-    score = Math.round(score);
-    if (score <= (9 * 1) / 3) {
+    const normalizedScore = (score / questions.length) * 9; // Normalize score to be out of 9
+    if (normalizedScore <= 3) {
       return lowScoreSVG;
-    } else if (score <= (9 * 2) / 3) {
+    } else if (normalizedScore <= 6) {
       return mediumScoreSVG;
-    } else if (score < 9) {
+    } else if (normalizedScore < 9) {
       return highScoreSVG;
     } else {
       return extraHighScoreSVG;
@@ -188,11 +189,17 @@ const Body = () => {
             </ScoreSectionbackground>
             <h3> درجتك التقريبية في الايلتس </h3>
             <br />
-            {Math.round(score)}
+            {Math.round((score / questions.length) * 9)}
 
             <ScoreSectionProgress>
               <p>1</p>
-              <progress value={calculateScorePercentage(score, 9)} max="100" />
+              <StyledProgress
+                value={calculateScorePercentage(
+                  (score / questions.length) * 9,
+                  9
+                )}
+                max="100"
+              />
               <p>9</p>
             </ScoreSectionProgress>
             <div>

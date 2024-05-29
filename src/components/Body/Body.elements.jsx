@@ -17,7 +17,9 @@ export const QuizBody = styled.div`
   width: 100%;
 `;
 
-export const VocFoBut = styled.button`
+export const StyledProgress = styled.progress``;
+
+export const VocFoBut = styled(Link)`
   background-color: #56c1ff;
   border-radius: 3px;
   color: #fff;
@@ -101,7 +103,6 @@ export const ScoreSectionProgress = styled.div`
   gap: 0.5rem;
 `;
 export const ScoreSectionbackground = styled.div`
-  background-image: url(${"https://alsallum.s3.eu-north-1.amazonaws.com/gym-with-window-sport-interior-with-barbells-healthy-fitness-room-free-vector.jpg"});
   background-size: cover;
   background-position: center;
   width: 90%;
