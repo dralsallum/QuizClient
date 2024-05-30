@@ -315,11 +315,11 @@ export const VocFoTop = styled.div`
 `;
 
 export const Card = styled.div`
-  left: ${(props) => `calc(${props.left}% - 270px / 2)`};
+  left: ${(props) => `calc(${props.left}% - 300px / 2)`};
   top: calc(50% - 185px / 2);
   z-index: ${(props) => props.zIndex};
   position: absolute;
-  width: 270px;
+  width: 300px;
   height: 185px;
   display: flex;
   perspective: 1000px;

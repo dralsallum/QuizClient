@@ -47,20 +47,6 @@ import {
 import gradeData from "../../utils/grades.json";
 import vocabularySetsData from "../../utils/vocabularySets.json";
 import { Link, useParams } from "react-router-dom";
-import data from "../../utils/SecSlider.json";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-const Dystopian = "https://alsallum.s3.eu-north-1.amazonaws.com/Dystopian.jpg";
-const Forgotten = "https://alsallum.s3.eu-north-1.amazonaws.com/forgetten.jpg";
-const Shadows = "https://alsallum.s3.eu-north-1.amazonaws.com/shadows.jpg";
-const Winds = "https://alsallum.s3.eu-north-1.amazonaws.com/winds.jpg";
-
-const imageMapping = {
-  "Shadows Over Maplewood": Shadows,
-  "Winds of change": Winds,
-  "The Forgotten Realms": Forgotten,
-  "A Dystopian future": Dystopian,
-};
 
 const Grade = () => {
   const { gradeSet } = useParams();
@@ -69,7 +55,6 @@ const Grade = () => {
   const [titWrContent, setTitWrContent] = useState(null);
   const [backgroundColor, setBackgroundColor] = useState("#04329e");
   const gradUlRef = useRef(null);
-  const [swiperInstance, setSwiperInstance] = React.useState(null);
 
   useEffect(() => {
     const gradeNumber = gradeSet.split("-")[1];
@@ -82,7 +67,6 @@ const Grade = () => {
       : [];
     setShowMore(initialShowMoreStates);
 
-    // Update TitWr content and background color
     if (currentGradeData) {
       const titWrData = currentGradeData.titWr;
       setTitWrContent(titWrData);
