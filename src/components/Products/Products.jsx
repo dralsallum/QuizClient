@@ -32,10 +32,10 @@ const imageMapping = {
 };
 
 const shopifyProductIds = {
-  "Whispers in the Rails": "9167704752287",
-  "Friends Forever": "9167705276575",
-  "Behind Grey Eyes": "9167705931935",
-  "Beyond the clock": "9167706620063",
+  "Whispers in the Rails": "7585039548478",
+  "Friends Forever": "7585041612862",
+  "Behind Grey Eyes": "7585043578942",
+  "Beyond the clock": "7585044725822",
   "Shadows Over Maplewood": "9167548842143",
   "Winds of change": "9167549366431",
   "The Forgotten Realms": "9167707242655",
@@ -69,8 +69,8 @@ const Products = () => {
     const initializeShopifyBuyButton = (productName) => {
       if (window.ShopifyBuy && window.ShopifyBuy.UI) {
         const client = ShopifyBuy.buildClient({
-          domain: "ec56aa-4.myshopify.com",
-          storefrontAccessToken: "6e9ee9bb674850fe85217bb059ded6c3",
+          domain: "dc1079-7d.myshopify.com",
+          storefrontAccessToken: "16ed199bc02989cbd9a9083c474e6cf3",
         });
 
         ShopifyBuy.UI.onReady(client).then((ui) => {

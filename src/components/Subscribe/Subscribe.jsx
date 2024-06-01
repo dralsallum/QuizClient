@@ -1,5 +1,5 @@
 /* global ShopifyBuy */
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   AllWr,
   BanCon,
@@ -67,7 +67,7 @@ const Subscribe = () => {
       discountedPrice: "SAR 29.00",
       monthlyPrice: "SAR 29.00 / شهرياً",
       discount: "خصم 0%",
-      productId: "8530677760215",
+      productId: "7584996163646",
     },
     {
       id: 2,
@@ -76,7 +76,7 @@ const Subscribe = () => {
       discountedPrice: "SAR 52.00",
       monthlyPrice: "SAR 17.99 / شهرياً",
       discount: "خصم 40%",
-      productId: "8530678710487",
+      productId: "7584998752318",
     },
     {
       id: 3,
@@ -85,7 +85,7 @@ const Subscribe = () => {
       discountedPrice: "SAR 139.00",
       monthlyPrice: "SAR 11.99 / شهرياً",
       discount: "خصم 60%",
-      productId: "8530679202007",
+      productId: "7585000915006",
     },
   ];
 
@@ -114,8 +114,8 @@ const Subscribe = () => {
 
     function ShopifyBuyInit() {
       const client = ShopifyBuy.buildClient({
-        domain: "13a967-40.myshopify.com",
-        storefrontAccessToken: "bb59ebb309f33cfc4686baec67afebe2",
+        domain: "dc1079-7d.myshopify.com",
+        storefrontAccessToken: "16ed199bc02989cbd9a9083c474e6cf3",
       });
 
       ShopifyBuy.UI.onReady(client).then(function (ui) {
