@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { NavTech, QueFooter, Question, Store } from "../components";
-import useRequireAuth from "../useRequireAuth";
 
 const Train = () => {
   const [showComponent, setShowComponent] = useState("question");

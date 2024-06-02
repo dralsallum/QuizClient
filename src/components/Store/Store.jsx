@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"; // Import useEffect
+import React, { useEffect, useState } from "react";
 import {
   StoreBanner,
   StoreBannerArrowContain,
@@ -16,8 +16,8 @@ import {
   StoreTimeKeyContainer,
   StoreWtapper,
 } from "../Store/Store.elements";
+import SecSlider from "../SecSlider/SecSlider";
 import Slider from "../Slider/Slider";
-import { SecSlider } from "..";
 
 const Store = () => {
   useEffect(() => {

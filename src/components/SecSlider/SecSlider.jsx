@@ -1,5 +1,4 @@
-/* global ShopifyBuy */
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -18,10 +17,11 @@ import {
   SliderArrowButtonLeft,
   SliderArrowContainerAll,
   SliderArrowContainer1,
-  Button1,
-} from "./SecSlider.elements";
+  Button,
+} from "./SecSlider.elements"; // Ensure correct import path
 import { sliderSettings } from "../../utils/common";
 import data from "../../utils/SecSlider.json";
+import initializeShopifyButtons from "../../utils/shopify";
 
 const Dystopian = "https://alsallum.s3.eu-north-1.amazonaws.com/Dystopian.jpg";
 const Forgotten = "https://alsallum.s3.eu-north-1.amazonaws.com/forgetten.jpg";
@@ -42,102 +42,9 @@ const products = [
   { id: 8, name: "A Dystopian future", productId: "7586030354494" },
 ];
 
-const initializeShopifyButtons = () => {
-  const scriptURL =
-    "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
-
-  if (window.ShopifyBuy && window.ShopifyBuy.UI) {
-    ShopifyBuyInit();
-  } else {
-    if (!document.querySelector(`script[src="${scriptURL}"]`)) {
-      loadScript();
-    } else {
-      document.querySelector(`script[src="${scriptURL}"]`).onload =
-        ShopifyBuyInit;
-    }
-  }
-
-  function loadScript() {
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = scriptURL;
-    document.head.appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-
-  function ShopifyBuyInit() {
-    const client = ShopifyBuy.buildClient({
-      domain: "dc1079-7d.myshopify.com",
-      storefrontAccessToken: "16ed199bc02989cbd9a9083c474e6cf3",
-    });
-
-    ShopifyBuy.UI.onReady(client).then((ui) => {
-      products.forEach((plan) => {
-        ui.createComponent("product", {
-          id: plan.productId,
-          node: document.getElementById(`product-component-${plan.id}`),
-          moneyFormat: "%7B%7Bamount%7D%7D%20SR",
-          options: {
-            product: {
-              iframe: false,
-              contents: {
-                title: false,
-                price: false,
-                description: false,
-                img: false,
-                imgWithCarousel: false,
-                button: true,
-              },
-              styles: {
-                product: {
-                  "@media (min-width: 601px)": {
-                    "max-width": "calc(25% - 20px)",
-                    "margin-left": "20px",
-                    "margin-bottom": "50px",
-                  },
-                },
-                button: {
-                  ":hover": { "background-color": "#4c32c6" },
-                  "background-color": "#5438dc",
-                  ":focus": { "background-color": "#4c32c6" },
-                },
-              },
-              text: {
-                button: "اضافة للسلة",
-              },
-            },
-            cart: {
-              styles: {
-                button: {
-                  ":hover": { "background-color": "#4c32c6" },
-                  "background-color": "#5438dc",
-                  ":focus": { "background-color": "#4c32c6" },
-                },
-              },
-              text: {
-                total: "المجموع",
-                button: "الدفع",
-              },
-            },
-            toggle: {
-              styles: {
-                toggle: {
-                  "background-color": "#5438dc",
-                  ":hover": { "background-color": "#4c32c6" },
-                  ":focus": { "background-color": "#4c32c6" },
-                },
-              },
-            },
-          },
-        });
-      });
-    });
-  }
-};
-
-const SliderButton = ({ swiper }) => (
+const SecSliderButton = ({ swiper }) => (
   <SliderArrowContainerAll>
-    <SliderArrowContainer1>كتب انجليزية مستوى متوسط</SliderArrowContainer1>
+    <SliderArrowContainer1>كتب انجليزية مستوى متقدم</SliderArrowContainer1>
     <SliderArrowContainer>
       <SliderArrowButtonLeft onClick={() => swiper && swiper.slidePrev()}>
         &lt;
@@ -153,12 +60,7 @@ const SecSlider = () => {
   const dispatch = useDispatch();
   const [swiperInstance, setSwiperInstance] = useState(null);
 
-  useEffect(() => {
-    initializeShopifyButtons();
-  }, []);
-
   const slides = data.map((card, i) => {
-    const plan = products.find((p) => p.name === card.name);
     return (
       <SwiperSlide key={i}>
         <Link
@@ -174,21 +76,9 @@ const SecSlider = () => {
           </SliderCardContainer>
         </Link>
         <SliderCardSubSpan2>
-          <Button1
-            onClick={() =>
-              document
-                .querySelector(
-                  `#product-component-${plan.id} .shopify-buy__btn`
-                )
-                .click()
-            }
-          >
-            اضافة للسلة
-          </Button1>
-          <div
-            id={`product-component-${plan.id}`}
-            style={{ display: "none" }}
-          ></div>
+          <Link to={`/product/${encodeURIComponent(card.name)}`}>
+            <Button>اضافة للسلة</Button>
+          </Link>
         </SliderCardSubSpan2>
       </SwiperSlide>
     );
@@ -197,7 +87,7 @@ const SecSlider = () => {
   return (
     <SliderWrapper>
       <SliderContainer>
-        <SliderButton swiper={swiperInstance} />
+        <SecSliderButton swiper={swiperInstance} />
         <Swiper
           {...sliderSettings}
           style={{ overflow: "visible" }}

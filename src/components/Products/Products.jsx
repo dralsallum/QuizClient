@@ -36,10 +36,10 @@ const shopifyProductIds = {
   "Friends Forever": "7585041612862",
   "Behind Grey Eyes": "7585043578942",
   "Beyond the clock": "7585044725822",
-  "Shadows Over Maplewood": "9167548842143",
-  "Winds of change": "9167549366431",
-  "The Forgotten Realms": "9167707242655",
-  "A Dystopian future": "9167688433823",
+  "Shadows Over Maplewood": "7586031960126",
+  "Winds of change": "7586033041470",
+  "The Forgotten Realms": "7586031304766",
+  "A Dystopian future": "7586030354494",
 };
 
 const Products = () => {
@@ -69,7 +69,7 @@ const Products = () => {
     const initializeShopifyBuyButton = (productName) => {
       if (window.ShopifyBuy && window.ShopifyBuy.UI) {
         const client = ShopifyBuy.buildClient({
-          domain: "dc1079-7d.myshopify.com",
+          domain: "fluentfox.shop",
           storefrontAccessToken: "16ed199bc02989cbd9a9083c474e6cf3",
         });
 

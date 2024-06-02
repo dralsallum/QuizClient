@@ -182,7 +182,7 @@ export const SliderCardSubSpan4 = styled.span`
   width: 15rem;
 `;
 
-export const Button1 = styled.button`
+export const Button = styled.button`
   border-radius: 4px;
   background: #2946b6;
   white-space: nowrap;

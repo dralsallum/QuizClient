@@ -114,7 +114,7 @@ const Subscribe = () => {
 
     function ShopifyBuyInit() {
       const client = ShopifyBuy.buildClient({
-        domain: "dc1079-7d.myshopify.com",
+        domain: "fluentfox.shop",
         storefrontAccessToken: "16ed199bc02989cbd9a9083c474e6cf3",
       });
 
