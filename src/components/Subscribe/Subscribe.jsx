@@ -171,8 +171,10 @@ const Subscribe = () => {
                   },
                 },
                 text: {
+                  title: "سلة",
                   total: "المجموع",
                   button: "الدفع",
+                  notice: "تضاف رسوم الشحن وأكواد الخصم عند الدفع.",
                 },
               },
               toggle: {
