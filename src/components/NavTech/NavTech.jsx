@@ -141,19 +141,7 @@ const NavTech = () => {
                 <NavrightSec>
                   <NavrightSecSub>
                     <NavrightSecsSpan>
-                      <NavrightSecsSpanIcon>
-                        <FontAwesomeIcon
-                          icon={faShoppingBasket}
-                          style={{
-                            color: "#870099",
-                            fill: "currentcolor",
-                            display: "block",
-                            width: "100%",
-                            height: "100%",
-                            overflow: "hidden",
-                          }}
-                        />
-                      </NavrightSecsSpanIcon>
+                      <NavrightSecsSpanIcon></NavrightSecsSpanIcon>
                     </NavrightSecsSpan>
                     <NavrightSecsSpanText className={animate ? "animate" : ""}>
                       {basketCount}

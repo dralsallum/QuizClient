@@ -11,7 +11,6 @@ const chapterItems = [
   {
     chapterId: 1,
     lessonId: 2,
-
     imgSrc:
       "https://alsallum.s3.eu-north-1.amazonaws.com/davidcover1661254508_256.jpg",
     mainText: "تقديم نفسك",
@@ -21,7 +20,6 @@ const chapterItems = [
   {
     chapterId: 1,
     lessonId: 3,
-
     imgSrc:
       "https://alsallum.s3.eu-north-1.amazonaws.com/sogreat1661259325_256.jpg",
     mainText: "توديع الغير",
@@ -31,7 +29,6 @@ const chapterItems = [
   {
     chapterId: 1,
     lessonId: 4,
-
     imgSrc:
       "https://alsallum.s3.eu-north-1.amazonaws.com/european-man-woman-casual-wear-standing-back-back-with-arms-crossed-isolated-colorful-wall_171337-51292.jpg",
     mainText: "طلب القهوة",
@@ -41,7 +38,6 @@ const chapterItems = [
   {
     chapterId: 1,
     lessonId: 5,
-
     type: "checkpoint",
     imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/Diamond.png",
     mainText: "نقطة التحقق",
