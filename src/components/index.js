@@ -36,3 +36,5 @@ export { default as Subscribe } from "./Subscribe/Subscribe";
 export { default as Open } from "./Open/Open";
 export { default as NavVoc } from "./NavVoc/NavVoc";
 export { default as Write } from "./Write/Write";
+export { default as Reset } from "./Reset/Reset";
+export { default as Term } from "./Term/Term";

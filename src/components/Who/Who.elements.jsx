@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const WhoWrapper = styled.div`
@@ -18,6 +19,15 @@ export const WhoMain = styled.div`
   direction: rtl;
   flex-wrap: wrap;
   gap: 1rem;
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #0000ed;
+  color: inherit; /* You can customize this color as needed */
+  &:hover {
+    text-decoration: none;
+  }
 `;
 
 export const WhoContainer = styled.div``;

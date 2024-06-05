@@ -12,6 +12,7 @@ import {
   ErrorCon,
   LoaderContainer,
   Loader,
+  StyledLink,
 } from "./SignLog.elements";
 import { useDispatch } from "react-redux";
 import { login } from "../../redux/userRedux";
@@ -70,14 +71,16 @@ const SignLog = () => {
             )}
           </SignButton>
         </SignUpForm>
-        <LoginSignPara>
-          بتسجيل الدخول، أنت توافق على شروط استخدام فلونت فوكس. يُرجى الاطلاع
-          على إشعار الخصوصية الخاص بنا، وإشعار الكوكيز، وإشعار الإعلانات
-          المستندة إلى الاهتمامات.
-        </LoginSignPara>
+
         <Link to={"/signup"}>
           <RegistarButton>تسجيل حساب جديد</RegistarButton>
         </Link>
+        <LoginSignPara>
+          بتسجيل الدخول، أنت توافق على شروط استخدام فلونت فوكس. يُرجى الاطلاع
+          على <Link to={""}>اشعارات الخصوصية الخاص بنا</Link>، وإشعار الكوكيز،
+          وإشعار الإعلانات المستندة إلى الاهتمامات.
+        </LoginSignPara>
+        <StyledLink to={"reset"}>نسيت كلمة المرور</StyledLink>
       </LoginContainer>
     </SignContainer>
   );

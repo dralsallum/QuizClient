@@ -19,6 +19,7 @@ import {
   SocialIcons,
   SocialIconLink,
   SocialIcon,
+  StyledLink,
 } from "./Footer.elements";
 import { FaTiktok } from "react-icons/fa";
 import { NavLogo, NavbarContainerImg } from "../NavbarMe/Navbar.elements";
@@ -43,8 +44,11 @@ const Footer = () => {
         <FooterLinksWrapper>
           <FooterLinksItems>
             <FooterLinkTitle>من نحن</FooterLinkTitle>
-            <FooterLink to="/sign-up">كيف يعمل</FooterLink>
-            <FooterLink to="/">شهادة المستخدمين</FooterLink>
+            <FooterLink to="/sign-up">
+              {" "}
+              <StyledLink to={"/who"}>قصتنا</StyledLink>
+            </FooterLink>
+            <FooterLink to="/condition">الشروط والاحكام</FooterLink>
           </FooterLinksItems>
           <FooterLinksItems>
             <FooterLinkTitle>تواصل معنا</FooterLinkTitle>

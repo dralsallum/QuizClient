@@ -243,13 +243,14 @@ export const NotWrap = styled.div`
   text-align: right;
   z-index: 998;
   box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.06);
-  right: 0;
+  left: 10rem;
   pointer-events: auto;
 
   @media screen and (max-width: 50rem) {
     margin-top: 4.5rem;
     margin-right: 1rem;
     width: 21.25rem;
+    left: 1rem;
   }
 `;
 export const NotCon = styled.div`

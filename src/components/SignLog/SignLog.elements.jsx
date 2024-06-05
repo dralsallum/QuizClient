@@ -1,9 +1,19 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const LoaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #0000ed;
+
+  &:hover {
+    text-decoration: none;
+  }
 `;
 
 export const Loader = styled.div`

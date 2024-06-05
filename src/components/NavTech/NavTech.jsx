@@ -137,18 +137,7 @@ const NavTech = () => {
                   textDecoration: "none",
                   color: "inherit",
                 }}
-              >
-                <NavrightSec>
-                  <NavrightSecSub>
-                    <NavrightSecsSpan>
-                      <NavrightSecsSpanIcon></NavrightSecsSpanIcon>
-                    </NavrightSecsSpan>
-                    <NavrightSecsSpanText className={animate ? "animate" : ""}>
-                      {basketCount}
-                    </NavrightSecsSpanText>
-                  </NavrightSecSub>
-                </NavrightSec>
-              </Link>
+              ></Link>
               <NavrightThi></NavrightThi>
               <NavrightFour>
                 <NavrightFourContainer>

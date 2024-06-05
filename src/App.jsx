@@ -8,14 +8,7 @@ import Login from "./pages/Login";
 import Train from "./pages/Train";
 import Test from "./pages/Test";
 import Audio from "./pages/Audio";
-import {
-  Listen,
-  Meditation,
-  Products,
-  Sun,
-  Vocabulary,
-  Write,
-} from "./components";
+import { Listen, Products, Reset, Sun, Who, Write } from "./components";
 import {
   BrowserRouter as Router,
   Route,
@@ -32,6 +25,7 @@ import Words from "./pages/Words";
 import Level from "./pages/Level";
 import { ProtectedRoute } from "./usePaid";
 import Cashout from "./pages/Cashout";
+import Condition from "./pages/Condition";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -80,6 +74,9 @@ const App = () => {
               />
               <Route path="/items" element={<Items />} />
               <Route path="/payment" element={<Payment />} />
+              <Route path="/reset" element={<Reset />} />
+              <Route path="/who" element={<Who />} />
+              <Route path="/condition" element={<Condition />} />
               <Route path="/cashout" element={<Cashout />} />
               <Route
                 path="/write/:spellName"

@@ -2,6 +2,14 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FaMagento, FaYoutube } from "react-icons/fa";
 
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit; /* You can customize this color as needed */
+  &:hover {
+    text-decoration: none;
+  }
+`;
+
 export const FooterContainer = styled.div`
   background-color: #101522;
   padding: 3rem 0 2rem 0;

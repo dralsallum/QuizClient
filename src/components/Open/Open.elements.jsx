@@ -225,12 +225,12 @@ export const AllSub = styled.div`
 export const AllEm = styled.em`
   direction: rtl;
   display: block;
-  font-size: 20px;
-  margin: 0 0 1em 0;
+  font-size: 24px;
+  margin: 0 0 0.5em 0;
   text-align: right;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 20px;
   }
 `;
 export const CatUl = styled.ul`
