@@ -82,7 +82,7 @@ const Products = () => {
           ui.createComponent("product", {
             id: shopifyId,
             node: document.getElementById("product-component-1707638219372"),
-            moneyFormat: "%24%7B%7Bamount%7D%7D",
+            moneyFormat: "SAR %24%7B%7Bamount%7D%7D",
             options: {
               product: {
                 buttonDestination: "cart",
