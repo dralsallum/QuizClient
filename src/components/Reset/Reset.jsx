@@ -59,14 +59,14 @@ const ResetPassword = () => {
           <ResetInput
             type="password"
             name="password"
-            placeholder="New Password"
+            placeholder="كلمة مرور جديدة"
             onChange={handleChange}
           />
           <ResetSubHeader>تاكيد كلمة المرور</ResetSubHeader>
           <ResetInput
             type="password"
             name="confirmPassword"
-            placeholder="Confirm Password"
+            placeholder="تاكيد كلمة المرور"
             onChange={handleChange}
           />
           <ResetButton disabled={isLoading}>

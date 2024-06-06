@@ -10,6 +10,7 @@ export const LoaderContainer = styled.div`
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: #0000ed;
+  font-size: 11px;
 
   &:hover {
     text-decoration: none;
