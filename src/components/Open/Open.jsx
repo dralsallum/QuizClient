@@ -60,7 +60,7 @@ const Open = () => {
                     marginLeft: "0.25rem",
                   }}
                 />
-                اسئلة ممتعة ومتنوعة تطور مستواك بشكل حقيقي
+                اسئلة مصممة من منصة فلونت فوكس لتطور مستواك بشكل حقيقي
               </HeaderElements>
               <HeaderElements>
                 <FontAwesomeIcon
