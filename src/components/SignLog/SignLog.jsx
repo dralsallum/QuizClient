@@ -71,16 +71,15 @@ const SignLog = () => {
             )}
           </SignButton>
         </SignUpForm>
-
-        <Link to={"/signup"}>
-          <RegistarButton>تسجيل حساب جديد</RegistarButton>
-        </Link>
         <LoginSignPara>
           بتسجيل الدخول، أنت توافق على شروط استخدام فلونت فوكس. يُرجى الاطلاع
           على <Link to={"/condition"}>اشعارات الخصوصية الخاص بنا</Link>، وإشعار
           الكوكيز، وإشعار الإعلانات المستندة إلى الاهتمامات.
         </LoginSignPara>
         <StyledLink to={"/reset"}>نسيت كلمة المرور</StyledLink>
+        <Link to={"/signup"}>
+          <RegistarButton>تسجيل حساب جديد</RegistarButton>
+        </Link>
       </LoginContainer>
     </SignContainer>
   );
