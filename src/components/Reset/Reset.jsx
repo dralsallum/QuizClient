@@ -70,7 +70,7 @@ const ResetPassword = () => {
             onChange={handleChange}
           />
           <ResetButton disabled={isLoading}>
-            {isLoading ? "Resetting..." : "Reset Password"}
+            {isLoading ? "قيد التغيير..." : "اعادة تعيين"}
           </ResetButton>
         </form>
       </ResetFormContainer>
