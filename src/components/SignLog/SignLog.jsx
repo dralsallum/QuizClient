@@ -77,10 +77,10 @@ const SignLog = () => {
         </Link>
         <LoginSignPara>
           بتسجيل الدخول، أنت توافق على شروط استخدام فلونت فوكس. يُرجى الاطلاع
-          على <Link to={""}>اشعارات الخصوصية الخاص بنا</Link>، وإشعار الكوكيز،
-          وإشعار الإعلانات المستندة إلى الاهتمامات.
+          على <Link to={"/condition"}>اشعارات الخصوصية الخاص بنا</Link>، وإشعار
+          الكوكيز، وإشعار الإعلانات المستندة إلى الاهتمامات.
         </LoginSignPara>
-        <StyledLink to={"reset"}>نسيت كلمة المرور</StyledLink>
+        <StyledLink to={"/reset"}>نسيت كلمة المرور</StyledLink>
       </LoginContainer>
     </SignContainer>
   );

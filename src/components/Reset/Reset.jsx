@@ -47,7 +47,7 @@ const ResetPassword = () => {
   return (
     <ResetContainer>
       <ResetFormContainer>
-        <ResetHeader>Reset Password</ResetHeader>
+        <ResetHeader>اعادة تعيين كلمة المرور</ResetHeader>
         {message &&
           (message.includes("successful") ? (
             <SuccessContainer>{message}</SuccessContainer>
@@ -55,14 +55,14 @@ const ResetPassword = () => {
             <ErrorContainer>{message}</ErrorContainer>
           ))}
         <form onSubmit={handleSubmit}>
-          <ResetSubHeader>New Password</ResetSubHeader>
+          <ResetSubHeader>كلمة مرور جديدة</ResetSubHeader>
           <ResetInput
             type="password"
             name="password"
             placeholder="New Password"
             onChange={handleChange}
           />
-          <ResetSubHeader>Confirm Password</ResetSubHeader>
+          <ResetSubHeader>تاكيد كلمة المرور</ResetSubHeader>
           <ResetInput
             type="password"
             name="confirmPassword"
