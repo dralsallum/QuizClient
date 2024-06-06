@@ -27,6 +27,7 @@ import { ProtectedRoute } from "./usePaid";
 import Cashout from "./pages/Cashout";
 import Condition from "./pages/Condition";
 import Forgot from "./pages/Forgot";
+import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -76,6 +77,7 @@ const App = () => {
               <Route path="/items" element={<Items />} />
               <Route path="/payment" element={<Payment />} />
               <Route path="/forgot" element={<Forgot />} />
+              <Route path="/forgotpassword" element={<ForgotPassword />} />
               <Route path="/who" element={<Who />} />
               <Route path="/condition" element={<Condition />} />
               <Route path="/cashout" element={<Cashout />} />

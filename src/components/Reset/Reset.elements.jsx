@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const ResetContainer = styled.div`
+  direction: rtl;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 60vh;
   background-color: #f5f5f5;
+  padding: 2rem;
 `;
 
 export const ResetFormContainer = styled.div`
