@@ -26,6 +26,7 @@ import Level from "./pages/Level";
 import { ProtectedRoute } from "./usePaid";
 import Cashout from "./pages/Cashout";
 import Condition from "./pages/Condition";
+import Forgot from "./pages/Forgot";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -74,7 +75,7 @@ const App = () => {
               />
               <Route path="/items" element={<Items />} />
               <Route path="/payment" element={<Payment />} />
-              <Route path="/reset" element={<Reset />} />
+              <Route path="/forgot" element={<Forgot />} />
               <Route path="/who" element={<Who />} />
               <Route path="/condition" element={<Condition />} />
               <Route path="/cashout" element={<Cashout />} />
