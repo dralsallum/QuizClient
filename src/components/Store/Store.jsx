@@ -53,7 +53,6 @@ const Store = () => {
         </StoreTimeKeyContainer>
       </StoreTimeBoost>
       <Slider />
-      <SecSlider />
     </StoreWtapper>
   );
 };
