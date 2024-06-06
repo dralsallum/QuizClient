@@ -24,7 +24,7 @@ export const ProtectedRoute = ({ children }) => {
   }
 
   if (
-    location.pathname.startsWith("/meditation/listen/") &&
+    location.pathname.startsWith("/audio/listen/") &&
     !user.isPaid &&
     !freeAccessStoryUrls.includes(storyUrl)
   ) {

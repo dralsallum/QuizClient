@@ -8,7 +8,7 @@ import Login from "./pages/Login";
 import Train from "./pages/Train";
 import Test from "./pages/Test";
 import Audio from "./pages/Audio";
-import { Listen, Products, Reset, Sun, Who, Write } from "./components";
+import { Listen, Products, Sun, Who, Write } from "./components";
 import {
   BrowserRouter as Router,
   Route,

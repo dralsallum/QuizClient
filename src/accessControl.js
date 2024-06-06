@@ -1,7 +1,7 @@
 export const hasAccess = (user, route, param) => {
   const freeAccessMap = {
-    "/vocabulary/": ["set1", "story4"],
-    "/meditation/listen/": ["story4"],
+    "/vocabulary/": ["set1"],
+    "/audio/listen/": ["story4"],
   };
 
   if (!user) {
