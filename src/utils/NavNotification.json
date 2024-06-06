@@ -1,11 +1,7 @@
 [
   {
-    "label": "سجل الدخول",
+    "label": "اشترك",
     "link": "/signup"
-  },
-  {
-    "label": "اختبارنا",
-    "link": "/personality"
   },
   {
     "type": "separator"
@@ -28,7 +24,7 @@
   },
   {
     "label": "الشروط والأحكام",
-    "link": "/"
+    "link": "/condition"
   },
   {
     "type": "separator"
