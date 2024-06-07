@@ -27,6 +27,7 @@ import { ProtectedRoute } from "./usePaid";
 import Cashout from "./pages/Cashout";
 import Condition from "./pages/Condition";
 import Forgot from "./pages/Forgot";
+import Shop from "./pages/Shop";
 import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
 
 const App = () => {
@@ -77,6 +78,7 @@ const App = () => {
               <Route path="/items" element={<Items />} />
               <Route path="/payment" element={<Payment />} />
               <Route path="/forgot" element={<Forgot />} />
+              <Route path="/shop" element={<Shop />} />
               <Route path="/forgotpassword" element={<ForgotPassword />} />
               <Route path="/who" element={<Who />} />
               <Route path="/condition" element={<Condition />} />
