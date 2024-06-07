@@ -28,9 +28,16 @@ export const SliderArrowContainer1 = styled.div`
   color: #2946b6;
 
   @media screen and (max-width: 960px) {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding-top: 0.4rem;
   }
+`;
+
+export const Divider = styled.div`
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  margin: 20px 0;
 `;
 
 export const SliderArrowButtonRight = styled.button`
@@ -67,7 +74,7 @@ export const SliderArrowButtonLeft = styled.button`
 `;
 
 export const SliderContainer = styled.div`
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 1.5rem;
   width: 100%;
   overflow: hidden;
   position: relative;

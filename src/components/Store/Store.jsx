@@ -18,6 +18,7 @@ import {
 } from "../Store/Store.elements";
 import SecSlider from "../SecSlider/SecSlider";
 import Slider from "../Slider/Slider";
+import { Link } from "react-router-dom";
 
 const Store = () => {
   useEffect(() => {
@@ -38,9 +39,14 @@ const Store = () => {
                   <StoreTextContainerSub></StoreTextContainerSub>
                   <StoreTextContainerSec>
                     <StoreTextContainerThi>
-                      <StoreTextHeader>
-                        زِّد مهارات اللغة بخصم 50% على النسخة المميزة
-                      </StoreTextHeader>
+                      <Link
+                        to={"cashout"}
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <StoreTextHeader>
+                          زِّد قدرتك على فهم اللغة بخصم 60% على الاشتراك المميز
+                        </StoreTextHeader>
+                      </Link>
                     </StoreTextContainerThi>
                   </StoreTextContainerSec>
                 </StoreTextContainer>
