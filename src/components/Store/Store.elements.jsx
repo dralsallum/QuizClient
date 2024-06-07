@@ -103,7 +103,7 @@ export const StoreTextHeader = styled.h6`
   font-size: 1.25rem;
   font-weight: 800;
   line-height: 1.3em;
-  text-align: right;
+  text-align: center;
   @media screen and (max-width: 31.25rem) {
     font-size: 1rem;
   }
