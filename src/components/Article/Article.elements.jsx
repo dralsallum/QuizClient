@@ -36,6 +36,7 @@ export const ArContainerFHe = styled.h3`
   font-size: 1.725rem;
   font-weight: 800;
   margin-bottom: 1rem;
+  color: #2a46b5;
   @media screen and (max-width: 700px) {
     font-size: 1.125rem;
     line-height: 1.625rem;
