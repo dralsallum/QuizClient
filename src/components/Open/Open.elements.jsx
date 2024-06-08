@@ -159,7 +159,7 @@ export const SearAt = styled(Link)`
   @media screen and (max-width: 768px) {
   }
 `;
-export const SearHead = styled.h2`
+export const SearHead = styled.h1`
   margin-top: 36px;
   font-size: 30px;
   margin: 68px 0 14px 0;
