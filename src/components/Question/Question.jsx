@@ -215,9 +215,18 @@ const Question = () => {
                             <QuestionTextContainerSub></QuestionTextContainerSub>
                             <QuestionTextContainerSec>
                               <QuestionTextContainerThi>
-                                <QuestionTextHeader>
-                                  زِّد مهارات اللغة بخصم 50% على النسخة المميزة
-                                </QuestionTextHeader>
+                                <Link
+                                  to={"/cashout"}
+                                  style={{
+                                    textDecoration: "none",
+                                    color: "inherit",
+                                  }}
+                                >
+                                  <QuestionTextHeader>
+                                    زِّد مهارات اللغة بخصم 50% على النسخة
+                                    المميزة
+                                  </QuestionTextHeader>
+                                </Link>
                               </QuestionTextContainerThi>
                             </QuestionTextContainerSec>
                           </QuestionTextContainer>

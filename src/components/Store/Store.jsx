@@ -40,7 +40,7 @@ const Store = () => {
                   <StoreTextContainerSec>
                     <StoreTextContainerThi>
                       <Link
-                        to={"cashout"}
+                        to={"/cashout"}
                         style={{ textDecoration: "none", color: "inherit" }}
                       >
                         <StoreTextHeader>
