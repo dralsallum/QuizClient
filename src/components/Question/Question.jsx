@@ -223,7 +223,7 @@ const Question = () => {
                                   }}
                                 >
                                   <QuestionTextHeader>
-                                    زِّد مهارات اللغة بخصم 50% على النسخة
+                                    زِّد مهارات اللغة بخصم 60% على الاشتراك
                                     المميزة
                                   </QuestionTextHeader>
                                 </Link>
