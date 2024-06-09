@@ -52,7 +52,7 @@ const Footer = () => {
           </FooterLinksItems>
           <FooterLinksItems>
             <FooterLinkTitle>تواصل معنا</FooterLinkTitle>
-            <FooterLink to="/sign-up">كيف يعمل</FooterLink>
+            <FooterLink to="/sign-up">حساباتنا عل</FooterLink>
             <FooterLink to="/">شهادة المستخدمين</FooterLink>
           </FooterLinksItems>
         </FooterLinksWrapper>
@@ -103,7 +103,7 @@ const Footer = () => {
               <FaTiktok />
             </SocialIconLink>
             <SocialIconLink
-              href={"https://www.twitter.com/@dralsallum"}
+              href={"https://www.twitter.com/@fluent_fox"}
               target="_blank"
               aria-label="Twitter"
               rel="noopener noreferrer"
