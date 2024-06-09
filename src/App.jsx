@@ -29,6 +29,7 @@ import Condition from "./pages/Condition";
 import Forgot from "./pages/Forgot";
 import Shop from "./pages/Shop";
 import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
+import Contact from "./pages/Contact";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -40,6 +41,7 @@ const App = () => {
             <GlobalStyle />
             <Routes>
               <Route path="/" element={<Landing />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/home" element={<Home />} />
               <Route
                 path="/vocabulary/:vocabSet"

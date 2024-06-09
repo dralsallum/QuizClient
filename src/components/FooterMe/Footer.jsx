@@ -14,11 +14,8 @@ import {
   FooterLink,
   SocialMedia,
   SocialMediaWrap,
-  SocialLogo,
-  WebsiteRights,
   SocialIcons,
   SocialIconLink,
-  SocialIcon,
   StyledLink,
 } from "./Footer.elements";
 import { FaTiktok } from "react-icons/fa";
@@ -45,15 +42,14 @@ const Footer = () => {
           <FooterLinksItems>
             <FooterLinkTitle>من نحن</FooterLinkTitle>
             <FooterLink to="/sign-up">
-              {" "}
               <StyledLink to={"/who"}>قصتنا</StyledLink>
             </FooterLink>
             <FooterLink to="/condition">الشروط والاحكام</FooterLink>
           </FooterLinksItems>
           <FooterLinksItems>
             <FooterLinkTitle>تواصل معنا</FooterLinkTitle>
-            <FooterLink to="/sign-up">حساباتنا عل</FooterLink>
-            <FooterLink to="/">شهادة المستخدمين</FooterLink>
+            <FooterLink to="/contact">حساباتنا على السوشل</FooterLink>
+            <FooterLink to="/contact">التواصل على الايميل</FooterLink>
           </FooterLinksItems>
         </FooterLinksWrapper>
         <FooterLinksWrapper>
