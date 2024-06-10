@@ -175,6 +175,8 @@ const Vocabulary = () => {
       return vocabOptions.sets;
     } else if (vocabSet.startsWith("list")) {
       return vocabOptions.lists;
+    } else if (vocabSet.startsWith("test")) {
+      return vocabOptions.tests;
     } else if (vocabSet.startsWith("similar")) {
       return vocabOptions.similars;
     }
