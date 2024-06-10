@@ -37,16 +37,16 @@ import {
   TitWr,
 } from "./Grade.elements";
 import {
-  FaArrowLeft,
-  FaArrowRight,
-  FaBook,
-  FaCheck,
-  FaLightbulb,
-  FaPrint,
-} from "react-icons/fa";
+  IoArrowBackCircleOutline,
+  IoArrowForwardCircleOutline,
+  IoBookOutline,
+  IoCheckmarkCircleOutline,
+  IoBulbOutline,
+  IoPrintOutline,
+} from "react-icons/io5";
 import gradeData from "../../utils/grades.json";
 import vocabularySetsData from "../../utils/vocabularySets.json";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const Grade = () => {
   const { gradeSet } = useParams();
@@ -55,6 +55,9 @@ const Grade = () => {
   const [titWrContent, setTitWrContent] = useState(null);
   const [backgroundColor, setBackgroundColor] = useState("#04329e");
   const gradUlRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [initialScrollLeft, setInitialScrollLeft] = useState(0);
 
   useEffect(() => {
     const gradeNumber = gradeSet.split("-")[1];
@@ -84,26 +87,77 @@ const Grade = () => {
     }));
   };
 
-  const scrollLeft = () => {
+  const scrollListLeft = () => {
     if (gradUlRef.current) {
       gradUlRef.current.scrollLeft -= 100;
     }
   };
 
-  const scrollRight = () => {
+  const scrollListRight = () => {
     if (gradUlRef.current) {
       gradUlRef.current.scrollLeft += 100;
     }
+  };
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - gradUlRef.current.offsetLeft);
+    setInitialScrollLeft(gradUlRef.current.scrollLeft);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - gradUlRef.current.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    gradUlRef.current.scrollLeft = initialScrollLeft - walk;
+  };
+
+  const handleTouchStart = (e) => {
+    setIsDragging(true);
+    setStartX(e.touches[0].pageX - gradUlRef.current.offsetLeft);
+    setInitialScrollLeft(gradUlRef.current.scrollLeft);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isDragging) return;
+    const x = e.touches[0].pageX - gradUlRef.current.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    gradUlRef.current.scrollLeft = initialScrollLeft - walk;
+  };
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
   };
 
   return (
     <AllWr>
       <AllCon>
         <AllNav>
-          <GradArr onClick={scrollRight}>
-            <FaArrowRight style={{ color: "#00578A" }} />
+          <GradArr onClick={scrollListRight}>
+            <IoArrowForwardCircleOutline
+              style={{ color: "#00578A", fontSize: "24px" }}
+            />
           </GradArr>
-          <GradWr ref={gradUlRef}>
+          <GradWr
+            ref={gradUlRef}
+            onMouseDown={handleMouseDown}
+            onMouseLeave={handleMouseLeave}
+            onMouseUp={handleMouseUp}
+            onMouseMove={handleMouseMove}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            style={{ cursor: isDragging ? "grabbing" : "grab" }}
+          >
             <GradUl>
               {gradeData.grades.map((grade, index) => (
                 <GradLi key={index}>
@@ -112,8 +166,10 @@ const Grade = () => {
               ))}
             </GradUl>
           </GradWr>
-          <GradArr onClick={scrollLeft}>
-            <FaArrowLeft style={{ color: "#00578A" }} />
+          <GradArr onClick={scrollListLeft}>
+            <IoArrowBackCircleOutline
+              style={{ color: "#00578A", fontSize: "24px" }}
+            />
           </GradArr>
         </AllNav>
 
@@ -129,7 +185,7 @@ const Grade = () => {
                     {titWrContent.title}
                     <TitNoSp>
                       <span title={titWrContent.checkTitle}>
-                        <FaCheck
+                        <IoCheckmarkCircleOutline
                           className="check"
                           style={{ color: "#68AB1C" }}
                         />
@@ -140,21 +196,21 @@ const Grade = () => {
                 <TitEx>{titWrContent.description}</TitEx>
                 <TitCat>
                   <TitCatSp>
-                    <FaBook
+                    <IoBookOutline
                       style={{ color: "#fff", width: "13px", height: "17px" }}
                     />
                     <TiSpan>القوائم</TiSpan>
                     <TiSpan>{titWrContent.listsCount}</TiSpan>
                   </TitCatSp>
                   <TitCatSp>
-                    <FaLightbulb
+                    <IoBulbOutline
                       style={{ color: "#fff", width: "13px", height: "17px" }}
                     />
                     <TiSpan>الكلمات</TiSpan>
                     <TiSpan>{titWrContent.wordsCount}</TiSpan>
                   </TitCatSp>
                   <TitCatSp>
-                    <FaPrint
+                    <IoPrintOutline
                       style={{ color: "#fff", width: "13px", height: "17px" }}
                     />
                     <TiSpan>المتعلمين</TiSpan>

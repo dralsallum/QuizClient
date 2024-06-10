@@ -5,9 +5,6 @@ import {
   ContactSection,
   ContactMethod,
   ContactLink,
-  SocialMediaContainer,
-  SocialMediaLink,
-  SocialMediaIcon,
 } from "./Reach.elements";
 import {
   SocialIconLink,
@@ -15,9 +12,7 @@ import {
   SocialMedia,
   SocialMediaWrap,
 } from "../FooterMe/Footer.elements";
-import { NavLogo } from "../NavbarMe/Navbar.elements";
-import { Link } from "react-router-dom";
-import { NavbarContainerImg } from "../Navbar/Navbar.elements";
+
 import { FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Reach = () => {

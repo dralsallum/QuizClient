@@ -156,7 +156,7 @@ export const AllNav = styled.nav`
   height: 60px;
   gap: 8px;
   margin: 0 0 20px 0;
-  padding: 0 10px;
+  padding: 0 12px;
 
   @media screen and (max-width: 768px) {
   }
