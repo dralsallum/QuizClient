@@ -170,6 +170,17 @@ const Vocabulary = () => {
   const [selectedTopic, setSelectedTopic] = useState("");
   const user = useSelector((state) => state.user.currentUser);
 
+  const getOptions = useCallback(() => {
+    if (vocabSet.startsWith("set")) {
+      return vocabOptions.sets;
+    } else if (vocabSet.startsWith("list")) {
+      return vocabOptions.lists;
+    } else if (vocabSet.startsWith("similar")) {
+      return vocabOptions.similars;
+    }
+    return [];
+  }, [vocabSet]);
+
   useEffect(() => {
     if (vocabSet) {
       userRequest
@@ -185,11 +196,11 @@ const Vocabulary = () => {
         });
     }
 
-    const selectedOption = vocabOptions.find(
+    const selectedOption = getOptions().find(
       (option) => option.value === vocabSet
     );
     setSelectedTopic(selectedOption ? selectedOption.label : "");
-  }, [vocabSet]);
+  }, [vocabSet, getOptions]);
 
   const handleNext = () => {
     setAnimationDirection("left");
@@ -247,7 +258,7 @@ const Vocabulary = () => {
           </HiddenWr>
           <VocTh>مجموعة الكلمات</VocTh>
           <VocThSel value={vocabSet} onChange={handleSelectChange}>
-            {vocabOptions.map((option, index) => (
+            {getOptions().map((option, index) => (
               <VocOp key={index} value={option.value}>
                 {option.label}
               </VocOp>
