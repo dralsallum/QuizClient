@@ -136,13 +136,13 @@
     "answerExplain": "'Can I pay with a credit card?' translates to 'هل يمكنني الدفع ببطاقة ائتمان؟'.",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "هل يمكنني الدفع ببطاقة ائتمان؟",
-    "correctSequence": [1, 2, 0],
+    "correctSequence": [1, 2, 3, 0],
     "questionType": "type3",
     "answerOptions": [
       { "answerText": "with a credit card?" },
-      { "answerText": "Can I pay" },
+      { "answerText": "Can " },
       { "answerText": "I" },
-      { "answerText": "You" }
+      { "answerText": "pay" }
     ]
   }
 ]

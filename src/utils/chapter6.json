@@ -1,165 +1,162 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "I am American.",
-    "answerExplain": "'I am American.' translates to 'أنا أمريكي'.",
+    "questionExplain": "I have one cat.",
+    "answerExplain": "'I have one cat.' translates to 'لدي قطة واحدة'.",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
-    "questionSubText": "I am American.",
-    "correctSequence": [1, 0],
-    "questionType": "type1",
-    "answerOptions": [{ "answerText": "أمريكي" }, { "answerText": "أنا" }]
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "I am from Japan.",
-    "answerExplain": "'I am from Japan.' translates to 'أنا من اليابان.'",
-    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
-    "questionSubText": "أنا من اليابان.",
+    "questionSubText": "I have one cat.",
     "correctSequence": [2, 0, 1],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "from" },
-      { "answerText": "Japan" },
-      { "answerText": "I am" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "My nationality is Brazilian.",
-    "answerExplain": "'My nationality is Brazilian.' translates to 'جنسيتي برازيلية'.",
-    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
-    "questionSubText": "My nationality is Brazilian.",
-    "correctSequence": [3, 1, 0],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "برازيلية" },
-      { "answerText": "هي" },
-      { "answerText": "نحن" },
-      { "answerText": "جنسيتي" }
+      { "answerText": "قطة " },
+      { "answerText": " واحدة" },
+      { "answerText": "لدي" }
     ]
   },
   {
-    "questionText": "اختار الأزواج المتطابقة",
-    "questionExplain": "Match the nationalities with their country.",
+    "questionText": "choose the picture with two dogs!",
+    "questionExplain": "Counting practice with images.",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
-    "questionType": "type5",
-    "matchPairs": [
+    "questionType": "type2",
+    "answerOptions": [
       {
-        "english": "Canadian",
-        "arabic": "كندا"
+        "answerText": "Two dogs",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/two_dogs.png"
       },
       {
-        "english": "Italian",
-        "arabic": "إيطاليا"
+        "answerText": "Three cats",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/three_cats.png"
       },
       {
-        "english": "Russian",
-        "arabic": "روسيا"
-      },
-      {
-        "english": "Egyptian",
-        "arabic": "مصر"
+        "answerText": "One bird",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/one_bird.png"
       }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "I hold a French passport.",
-    "answerExplain": "'I hold a French passport.' translates to 'أحمل جواز سفر فرنسي.'",
+    "questionExplain": "We have three apples.",
+    "answerExplain": "'We have three apples.' translates to 'لدينا ثلاث تفاحات.'",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
-    "questionSubText": "أحمل جواز سفر فرنسي.",
-    "correctSequence": [2, 3, 0, 4, 1],
+    "questionSubText": "لدينا ثلاث تفاحات.",
+    "correctSequence": [1, 2, 0],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "a" },
-      { "answerText": "passport" },
+      { "answerText": "apples" },
+      { "answerText": "We have" },
+      { "answerText": "three" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "Four pencils.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "answerExplain": "The word 'Four pencils' translates to 'أربعة أقلام'.",
+    "questionSubText": "أربعة أقلام رصاص.",
+    "questionType": "type4",
+    "correctAnswer": "Four pencils"
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "Match the numbers with their quantity representation.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "Five stars",
+        "arabic": "★★★★★"
+      },
+      {
+        "english": "Six apples",
+        "arabic": "🍎🍎🍎🍎🍎🍎"
+      },
+      {
+        "english": "Seven hearts",
+        "arabic": "❤️❤️❤️❤️❤️❤️❤️"
+      },
+      {
+        "english": "Eight balls",
+        "arabic": "🏀🏀🏀🏀🏀🏀🏀🏀"
+      }
+    ]
+  },
+  {
+    "questionText": "اختر الصورة مع ثلاث تفاحات",
+    "questionExplain": "Identify the correct image based on the description.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "Three apples",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/three_apples.png"
+      },
+      {
+        "answerText": "Four bananas",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/four_bananas.png"
+      },
+      {
+        "answerText": "Two oranges",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/two_oranges.png"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "I see two birds.",
+    "answerExplain": "'I see two birds.' translates to 'أرى طائرين.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "أرى طائرين.",
+    "correctSequence": [0, 1, 3, 2],
+    "questionType": "type3",
+    "answerOptions": [
       { "answerText": "I" },
-      { "answerText": "hold" },
-      { "answerText": "French" }
+      { "answerText": "see" },
+      { "answerText": "birds" },
+      { "answerText": "two" }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "I was born in Spain.",
-    "answerExplain": "'I was born in Spain.' translates to 'ولدت في إسبانيا'.",
+    "questionText": "اختر الصورة مع ثلاثة قطط",
+    "questionExplain": "Identify the correct image based on the description.",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
-    "questionSubText": "I was born in Spain.",
-    "correctSequence": [3, 2, 0],
-    "questionType": "type1",
+    "questionType": "type2",
     "answerOptions": [
-      { "answerText": " إسبانيا" },
-      { "answerText": " هو" },
-      { "answerText": "في " },
-      { "answerText": "ولدت" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "My parents are Italian.",
-    "answerExplain": "'My parents are Italian.' translates to 'والديّ إيطاليان.'",
-    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
-    "questionSubText": "والديّ إيطاليان.",
-    "correctSequence": [1, 3, 0],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "Italian" },
-      { "answerText": "My parents" },
-      { "answerText": "We" },
-      { "answerText": "are" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "I have dual citizenship, British and Canadian.",
-    "answerExplain": "'I have dual citizenship, British and Canadian.' translates to 'لدي الجنسية المزدوجة، بريطانية وكندية'.",
-    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
-    "questionSubText": "I have dual citizenship, British and Canadian.",
-    "correctSequence": [1, 0, 2, 3],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "الجنسية المزدوجة" },
-      { "answerText": "لدي" },
-      { "answerText": "بريطانية" },
-      { "answerText": "وكندية" }
-    ]
-  },
-  {
-    "questionText": "اختار الأزواج المتطابقة",
-    "questionExplain": "Match the languages with the correct nationality.",
-    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
-    "questionType": "type5",
-    "matchPairs": [
       {
-        "english": "Spanish",
-        "arabic": "إسباني"
+        "answerText": "Three cats",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/three_cats.png"
       },
       {
-        "english": "French",
-        "arabic": "فرنسي"
+        "answerText": "One dog",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/one_dog.png"
       },
       {
-        "english": "German",
-        "arabic": "ألماني"
-      },
-      {
-        "english": "Japanese",
-        "arabic": "ياباني"
+        "answerText": "Four birds",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/four_birds.png"
       }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "I am a citizen of the world.",
-    "answerExplain": "'I am a citizen of the world.' translates to 'أنا مواطن من مواطني العالم.'",
+    "questionExplain": "She has five books.",
+    "answerExplain": "'She has five books.' translates to 'لديها خمسة كتب.'",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
-    "questionSubText": "أنا مواطن من مواطني العالم.",
-    "correctSequence": [1, 2, 0, 3],
+    "questionSubText": "لديها خمسة كتب.",
+    "correctSequence": [2, 1, 3, 0],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "of the world" },
-      { "answerText": "I am" },
-      { "answerText": "a citizen" },
-      { "answerText": "for everyone" }
+      { "answerText": "books" },
+      { "answerText": "has" },
+      { "answerText": "She " },
+      { "answerText": "five" }
     ]
   }
 ]

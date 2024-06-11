@@ -5,9 +5,13 @@
     "answerExplain": "'I have one cat.' translates to 'لدي قطة واحدة'.",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "I have one cat.",
-    "correctSequence": [1, 0],
+    "correctSequence": [2, 0, 1],
     "questionType": "type1",
-    "answerOptions": [{ "answerText": "قطة واحدة" }, { "answerText": "لدي" }]
+    "answerOptions": [
+      { "answerText": "قطة " },
+      { "answerText": " واحدة" },
+      { "answerText": "لدي" }
+    ]
   },
   {
     "questionText": "choose the picture with two dogs!",
@@ -51,7 +55,7 @@
     "questionExplain": "Four pencils.",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "answerExplain": "The word 'Four pencils' translates to 'أربعة أقلام'.",
-    "questionSubText": "أربعة أقلام.",
+    "questionSubText": "أربعة أقلام رصاص.",
     "questionType": "type4",
     "correctAnswer": "Four pencils"
   },

@@ -116,7 +116,7 @@
     "answerExplain": "'Let's catch up soon, goodbye.' translates to 'لنلتقي قريباً، وداعاً.'",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "لنلتقي قريباً، وداعاً.",
-    "correctSequence": [2, 3, 1, 0],
+    "correctSequence": [2, 1, 0],
     "questionType": "type3",
     "answerOptions": [
       { "answerText": "goodbye" },

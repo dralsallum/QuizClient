@@ -103,7 +103,7 @@
     "answerExplain": "'A cup of coffee and a muffin.' translates to 'كوب من القهوة ومافن.'",
     "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "كوب من القهوة ومافن.",
-    "correctSequence": [1, 2, 0, 3],
+    "correctSequence": [1, 2, 0],
     "questionType": "type3",
     "answerOptions": [
       { "answerText": "and a muffin" },
