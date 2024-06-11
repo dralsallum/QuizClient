@@ -1,154 +1,175 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "لدينا تفاحة",
-    "answerExplain": " الكلمة الإنجليزية 'water' تترجم إلى 'ماء' بالعربية",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "لدينا تفاحة",
-    "correctSequence": [0, 2, 3, 6],
+    "questionExplain": "I am a student.",
+    "answerExplain": "'I am a student.' تُترجم إلى 'أنا طالب'. هنا، 'am' هي صيغة المفرد للفعل 'to be' التي تُستخدم مع 'I'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "I am a student.",
+    "correctSequence": [0, 2, 1],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "We" },
-      { "answerText": "men" },
-      { "answerText": "have" },
-      { "answerText": "an" },
-      { "answerText": "you" },
-      { "answerText": "boy" },
-      { "answerText": "apple" }
+      { "answerText": "أنا" },
+      { "answerText": "طالب" },
+      { "answerText": " " }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "They ____ children",
-    "answerExplain": " الكلمة الإنجليزية 'What's' تترجم إلى 'ما هو' بالعربية وتستخدم في سؤال الاسم.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "They ____ children",
-    "correctSequence": [1],
-    "questionType": "type3",
+    "questionText": "اختر الصورة التي تحتوي على طفل واحد!",
+    "questionExplain": "التعرف على الفاعل المفرد مع الفعل 'to be'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type2",
     "answerOptions": [
-      { "answerText": "is" },
-      { "answerText": "are" },
-      { "answerText": "am" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "He ___ water",
-    "answerExplain": "",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "?Where are ___ from",
-    "correctSequence": [2],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "have" },
-      { "answerText": "had" },
-      { "answerText": "has" }
-    ]
-  },
-  {
-    "questionText": "اختار الأزواج المتطابقة",
-    "questionExplain": "Match the English words with their Arabic translations.",
-    "avatar": "../../assets/cool.png",
-    "questionType": "type5",
-    "matchPairs": [
       {
-        "english": "He",
-        "arabic": "هو"
+        "answerText": "طفل واحد",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/one_child.png"
       },
       {
-        "english": "she",
-        "arabic": "هي"
+        "answerText": "طفلان",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/two_children.png"
       },
       {
-        "english": "they",
-        "arabic": "هم"
-      },
-      {
-        "english": "woman",
-        "arabic": "امراة"
+        "answerText": "ثلاثة أطفال",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/three_children.png"
       }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "انه رجل",
-    "answerExplain": "",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "انه رجل",
-    "correctSequence": [0, 2, 4, 6],
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "هو طبيب.",
+    "answerExplain": "'هو طبيب.' تُترجم إلى 'He is a doctor.' في هذه الجملة، 'is' هي صيغة المفرد للفعل 'to be' التي تُستخدم مع 'He'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "هو طبيب.",
+    "correctSequence": [0, 1, 2, 3],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "he" },
-      { "answerText": "rice" },
+      { "answerText": "He" },
       { "answerText": "is" },
-      { "answerText": "sandwich" },
       { "answerText": "a" },
-      { "answerText": "women" },
-      { "answerText": "man" }
-    ]
-  },
-  {
-    "questionText": "كيف تقول ... بالإنجليزية؟",
-    "questionExplain": "___  old are you?",
-    "answerExplain": " الكلمة الإنجليزية 'How old are you' تترجم إلى 'كم عمرك' بالعربية.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "?old are you ___",
-    "correctSequence": [1],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "What's" },
-      { "answerText": "How " },
-      { "answerText": "Who are" },
-      { "answerText": "Hello" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Hobbies are awesome",
-    "answerExplain": " الكلمة الإنجليزية 'Hobby' تترجم إلى 'هواية' بالعربية",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "Hobbies are awesome",
-    "correctSequence": [3, 0],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "رائعة" },
-      { "answerText": "شجرة" },
-      { "answerText": "مدينة" },
-      { "answerText": "الهوايات" },
-      { "answerText": "بحر" }
+      { "answerText": "doctor" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "I live in a city",
-    "answerExplain": " الكلمة الإنجليزية 'City' تترجم إلى 'مدينة' بالعربية",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "انا اعيش في مدينة",
-    "correctSequence": [1, 2, 0, 3, 4],
+    "questionExplain": "هي معلمة.",
+    "answerExplain": "'هي معلمة.' تُترجم إلى 'She is a teacher.' هنا، 'is' هي صيغة المفرد للفعل 'to be' التي تُستخدم مع 'She'.",
+    "questionSubText": "هي معلمة.",
+    "questionType": "type4",
+    "correctAnswer": "She is a teacher"
+  },
+  {
+    "questionText": "اختار الأزواج المتطابقة",
+    "questionExplain": "طابق الجمل مع ترجماتها.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type5",
+    "matchPairs": [
+      {
+        "english": "I am a student",
+        "arabic": "أنا طالب"
+      },
+      {
+        "english": "He is a doctor",
+        "arabic": "هو طبيب"
+      },
+      {
+        "english": "She is a teacher",
+        "arabic": "هي معلمة"
+      },
+      {
+        "english": "It is a cat",
+        "arabic": "إنها قطة"
+      }
+    ]
+  },
+  {
+    "questionText": "اختر الصورة مع طفل واحد",
+    "questionExplain": "تحديد الصورة الصحيحة بناءً على الوصف.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "طفل واحد",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/one_child.png"
+      },
+      {
+        "answerText": "طفلان",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/two_children.png"
+      },
+      {
+        "answerText": "ثلاثة أطفال",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/three_children.png"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "أنا طبيبة.",
+    "answerExplain": "'أنا طبيبة.' تُترجم إلى 'I am a doctor.' هنا، 'am' هي صيغة المفرد للفعل 'to be' التي تُستخدم مع 'I'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "أنا طبيبة.",
+    "correctSequence": [0, 2, 1],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "in" },
       { "answerText": "I" },
-      { "answerText": "live" },
-      { "answerText": "a" },
-      { "answerText": "City" },
-      { "answerText": "Mountain" }
+      { "answerText": "doctor" },
+      { "answerText": "am a" }
+    ]
+  },
+  {
+    "questionText": "اختر الصورة مع قطة واحدة",
+    "questionExplain": "تحديد الصورة الصحيحة بناءً على الوصف.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "قطة واحدة",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/one_cat.png"
+      },
+      {
+        "answerText": "قطتان",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/two_cats.png"
+      },
+      {
+        "answerText": "ثلاثة قطط",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/three_cats.png"
+      }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "هم يشرب الحليب",
-    "questionExplain": "He drinks milk",
-    "answerExplain": "",
-    "questionType": "type4",
-    "correctAnswer": "He drinks milk"
+    "questionExplain": "إنها قطة.",
+    "answerExplain": "'إنها قطة.' تُترجم إلى 'It is a cat.' هنا، 'is' هي صيغة المفرد للفعل 'to be' التي تُستخدم مع 'It'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "إنها قطة.",
+    "correctSequence": [0, 1, 2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "It" },
+      { "answerText": "is" },
+      { "answerText": "a cat" }
+    ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "انت تشرب الحليب وانا اشرب الماء",
-    "questionExplain": "you drink milk and i drink water",
-    "answerExplain": "",
-    "questionType": "type4",
-    "correctAnswer": "you drink milk and i drink water"
+    "questionExplain": "أنت معلم.",
+    "answerExplain": "'أنت معلم.' تُترجم إلى 'You are a teacher.' هنا، 'are' هي صيغة المفرد للفعل 'to be' التي تُستخدم مع 'You'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "أنت معلم.",
+    "correctSequence": [0, 1, 2, 3],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "You" },
+      { "answerText": "are" },
+      { "answerText": "a" },
+      { "answerText": "teacher" }
+    ]
   }
 ]

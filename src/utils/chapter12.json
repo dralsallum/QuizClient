@@ -1,150 +1,175 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Universe",
-    "answerExplain": " الكلمة الإنجليزية 'Universe' تترجم إلى 'الكون' بالعربية",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "universe",
-    "correctSequence": [2],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "مكان" },
-      { "answerText": "كوكب" },
-      { "answerText": "الكون" },
-      { "answerText": "أرض" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "Philosophy",
-    "answerExplain": " الكلمة العربية 'فلسفة' تترجم إلى 'Philosophy' بالإنجليزية",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "فلسفة",
-    "correctSequence": [1],
-    "questionType": "type3",
-    "answerOptions": [
-      { "answerText": "Physics" },
-      { "answerText": "Philosophy" },
-      { "answerText": "Photo" },
-      { "answerText": "Physiology" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "Democracy",
-    "answerExplain": " الكلمة العربية 'ديمقراطية' تترجم إلى 'Democracy' بالإنجليزية",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "ديمقراطية",
-    "questionType": "type4",
-    "correctAnswer": "democracy"
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Galaxy",
-    "answerExplain": " الكلمة الإنجليزية 'Galaxy' تترجم إلى 'مجرة' بالعربية",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "galaxy",
-    "correctSequence": [3],
+    "questionExplain": "They are diligent students",
+    "answerExplain": "'They are diligent students' تُترجم إلى 'هم طلاب مجتهدون' هنا، 'are' هي صيغة الجمع للفعل 'to be' التي تُستخدم مع 'They' و 'diligent' تعني 'مجتهدون'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "They are diligent students",
+    "correctSequence": [0, 2, 1],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "نجم" },
-      { "answerText": "قمر" },
-      { "answerText": "شمس" },
-      { "answerText": "مجرة" }
+      { "answerText": "هم" },
+      { "answerText": "مجتهدون" },
+      { "answerText": "طلاب" }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Molecule",
-    "answerExplain": " الكلمة الإنجليزية 'Molecule' تترجم إلى 'جزيئة' بالعربية",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "molecule",
-    "correctSequence": [0],
-    "questionType": "type3",
+    "questionText": "اختر الصورة التي تحتوي على مجموعة من الأطفال يلعبون!",
+    "questionExplain": "التعرف على الفاعل الجمع مع الفعل 'to be'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type2",
     "answerOptions": [
-      { "answerText": "جزيئة" },
-      { "answerText": "ذرة" },
-      { "answerText": "نواة" },
-      { "answerText": "خلية" }
-    ]
-  },
-  {
-    "questionText": "اختار الأزواج المتطابقة",
-    "questionExplain": "Match the English words with their Arabic translations.",
-    "avatar": "../../assets/dude.png",
-    "questionType": "type5",
-    "matchPairs": [
       {
-        "english": "Ocean",
-        "arabic": "محيط"
+        "answerText": "أطفال يلعبون",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/children_playing.png"
       },
       {
-        "english": "Mountain",
-        "arabic": "جبل"
+        "answerText": "طفل واحد يلعب",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/one_child_playing.png"
       },
       {
-        "english": "Forest",
-        "arabic": "غابة"
-      },
-      {
-        "english": "Desert",
-        "arabic": "صحراء"
+        "answerText": "قطة",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/one_cat.png"
       }
     ]
   },
   {
-    "questionText": "كيف تقول ... بالإنجليزية؟",
-    "questionExplain": "___  many books do you have?",
-    "answerExplain": " الكلمة الإنجليزية 'How many books do you have' تترجم إلى 'كم عدد الكتب التي لديك؟' بالعربية.",
-    "avatar": "../../assets/cool2.png",
-    "questionSubText": "?many books do ___ have",
-    "correctSequence": [2],
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "هم مهندسون بارعون",
+    "answerExplain": "'هم مهندسون بارعون' تُترجم إلى 'They are skilled engineers' في هذه الجملة، 'are' هي صيغة الجمع للفعل 'to be' التي تُستخدم مع 'They' و 'skilled' تعني 'بارعون'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "هم مهندسون بارعون",
+    "correctSequence": [0, 1, 2, 3],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "does" },
-      { "answerText": "is" },
-      { "answerText": "you" },
-      { "answerText": "he" }
+      { "answerText": "They" },
+      { "answerText": "are" },
+      { "answerText": "skilled" },
+      { "answerText": "engineers" }
     ]
   },
   {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "هم معلمون متفانون",
+    "answerExplain": "'هم معلمون متفانون' تُترجم إلى 'They are dedicated teachers' هنا، 'are' هي صيغة الجمع للفعل 'to be' التي تُستخدم مع 'They' و 'dedicated' تعني 'متفانون'",
+    "questionSubText": "هم معلمون متفانون",
+    "questionType": "type4",
+    "correctAnswer": "They are dedicated teachers"
+  },
+  {
     "questionText": "اختار الأزواج المتطابقة",
-    "questionExplain": "Match the English words with their Arabic translations.",
-    "avatar": "../../assets/dude2.png",
+    "questionExplain": "طابق الجمل مع ترجماتها",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionType": "type5",
     "matchPairs": [
       {
-        "english": "River",
-        "arabic": "نهر"
+        "english": "They are diligent students",
+        "arabic": "هم طلاب مجتهدون"
       },
       {
-        "english": "Sky",
-        "arabic": "سماء"
+        "english": "We are experienced doctors",
+        "arabic": "نحن أطباء ذوو خبرة"
       },
       {
-        "english": "Island",
-        "arabic": "جزيرة"
+        "english": "You are talented teachers",
+        "arabic": "أنتم معلمون موهوبون"
       },
       {
-        "english": "Lake",
-        "arabic": "بحيرة"
+        "english": "They are skilled engineers",
+        "arabic": "هم مهندسون بارعون"
       }
     ]
   },
   {
-    "questionText": "اكتب الجملة التالية بالإنجليزية:",
-    "questionSubText": "أنا أذهب إلى المدرسة كل يوم.",
-    "questionExplain": "I go to school every day.",
-    "answerExplain": " الجملة الإنجليزية 'I go to school every day.' تترجم إلى 'أنا أذهب إلى المدرسة كل يوم.' بالعربية",
-    "questionType": "type4",
-    "correctAnswer": "I go to school every day"
+    "questionText": "اختر الصورة مع مجموعة من الطلاب المجتهدين",
+    "questionExplain": "تحديد الصورة الصحيحة بناءً على الوصف",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "طلاب مجتهدون",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/diligent_students.png"
+      },
+      {
+        "answerText": "طالب واحد مجتهد",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/one_diligent_student.png"
+      },
+      {
+        "answerText": "طبيب",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/one_doctor.png"
+      }
+    ]
   },
   {
-    "questionText": "اكتب الجملة التالية بالإنجليزية:",
-    "questionSubText": "هل يمكنك مساعدتي في الواجب المنزلي؟",
-    "questionExplain": "Can you help me with the homework?",
-    "answerExplain": " الجملة الإنجليزية 'Can you help me with the homework?' تترجم إلى 'هل يمكنك مساعدتي في الواجب المنزلي؟' بالعربية",
-    "questionType": "type4",
-    "correctAnswer": "Can you help me with the homework"
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "نحن طلاب مجتهدون",
+    "answerExplain": "'نحن طلاب مجتهدون' تُترجم إلى 'We are diligent students' هنا، 'are' هي صيغة الجمع للفعل 'to be' التي تُستخدم مع 'We' و 'diligent' تعني 'مجتهدون'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "نحن طلاب مجتهدون",
+    "correctSequence": [0, 1, 2, 3],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "We" },
+      { "answerText": "are" },
+      { "answerText": "diligent" },
+      { "answerText": "students" }
+    ]
+  },
+  {
+    "questionText": "اختر الصورة مع أطباء",
+    "questionExplain": "تحديد الصورة الصحيحة بناءً على الوصف",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "أطباء",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/doctors.png"
+      },
+      {
+        "answerText": "معلمون",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/teachers.png"
+      },
+      {
+        "answerText": "طلاب",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/students.png"
+      }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "أنتم معلمون",
+    "answerExplain": "'أنتم معلمون' تُترجم إلى 'You are teachers' هنا، 'are' هي صيغة الجمع للفعل 'to be' التي تُستخدم مع 'You'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "أنتم معلمون",
+    "correctSequence": [0, 1, 2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "You" },
+      { "answerText": "are" },
+      { "answerText": "teachers" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "هم مهندسون",
+    "answerExplain": "'هم مهندسون' تُترجم إلى 'They are engineers' هنا، 'are' هي صيغة الجمع للفعل 'to be' التي تُستخدم مع 'They'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
+    "questionSubText": "هم مهندسون",
+    "correctSequence": [0, 2, 1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "They" },
+      { "answerText": "engineers" },
+      { "answerText": "are" }
+    ]
   }
 ]
