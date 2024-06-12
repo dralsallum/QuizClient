@@ -42,7 +42,7 @@
     "questionText": "اكتب ما يلي بالعربي:",
     "questionExplain": "Orbit",
     "answerExplain": "الكلمة الإنجليزية 'Orbit' تترجم إلى 'مدار' بالعربية",
-    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/camel.png",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "orbit",
     "correctSequence": [2],
     "questionType": "type3",
@@ -87,7 +87,7 @@
     "questionText": "اكتب ما يلي بالانجليزي:",
     "questionExplain": "نجمة",
     "answerExplain": "الكلمة العربية 'نجمة' تترجم إلى 'Star' بالإنجليزية",
-    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/camel.png",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "questionSubText": "نجمة",
     "questionType": "type4",
     "correctAnswer": "star"
