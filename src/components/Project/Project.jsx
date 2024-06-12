@@ -328,12 +328,9 @@ const Project = () => {
     const utterance = new SpeechSynthesisUtterance(textToSpeak);
 
     // Determine if the text is Arabic or English
-    const isArabic = /[\u0600-\u06FF]/.test(textToSpeak);
     utterance.voice = speechSynthesis
       .getVoices()
-      .find((voice) =>
-        isArabic ? voice.lang.startsWith("ar") : voice.lang.startsWith("en")
-      );
+      .find((voice) => voice.lang.startsWith("en"));
 
     if (!utterance.voice) {
       utterance.voice = speechSynthesis.getVoices()[0];
@@ -463,30 +460,18 @@ const Project = () => {
       speechSynthesis.cancel(); // Cancel any ongoing speech
 
       const utterance = new SpeechSynthesisUtterance(textToSpeak);
-      const isArabic = /[\u0600-\u06FF]/.test(textToSpeak);
 
-      utterance.lang = isArabic ? "ar" : "en";
+      utterance.lang = "en";
       utterance.voice = speechSynthesis
         .getVoices()
-        .find((voice) =>
-          isArabic
-            ? voice.lang === "ar-SA" || voice.lang.startsWith("ar")
-            : voice.lang.startsWith("en")
-        );
+        .find((voice) => voice.lang.startsWith("en"));
 
-      if (!utterance.voice && isArabic) {
-        utterance.voice = speechSynthesis
-          .getVoices()
-          .find((voice) => voice.lang.startsWith("ar"));
+      if (!utterance.voice) {
+        utterance.voice = speechSynthesis.getVoices()[0];
       }
 
-      if (isArabic) {
-        utterance.pitch = 0.9;
-        utterance.rate = 0.9;
-      } else {
-        utterance.pitch = 1;
-        utterance.rate = 1;
-      }
+      utterance.pitch = 1;
+      utterance.rate = 1;
       utterance.volume = 1;
 
       speechSynthesis.speak(utterance);
