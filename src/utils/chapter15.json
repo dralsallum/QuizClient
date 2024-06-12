@@ -1,145 +1,157 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Pyramid",
-    "answerExplain": " الكلمة الإنجليزية 'Pyramid' تترجم إلى 'هرم' بالعربية",
-    "avatar": "../../assets/pyramid.png",
-    "questionSubText": "pyramid",
+    "questionExplain": "Lion",
+    "answerExplain": " الكلمة الإنجليزية 'Lion' تترجم إلى 'أسد' بالعربية",
+    "avatar": "../../assets/lion.png",
+    "questionSubText": "lion",
     "correctSequence": [1],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "قلعة" },
-      { "answerText": "هرم" },
-      { "answerText": "نصب" },
-      { "answerText": "معبد" },
-      { "answerText": "كنيسة" }
+      { "answerText": "قطة" },
+      { "answerText": "أسد" },
+      { "answerText": "كلب" },
+      { "answerText": "فيل" },
+      { "answerText": "حصان" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Castle",
-    "answerExplain": " الكلمة الإنجليزية 'Castle' تترجم إلى 'قلعة' بالعربية",
-    "avatar": "../../assets/castle.png",
-    "questionSubText": "castle",
-    "correctSequence": [0],
+    "questionExplain": "Elephant",
+    "answerExplain": " الكلمة الإنجليزية 'Elephant' تترجم إلى 'فيل' بالعربية",
+    "avatar": "../../assets/elephant.png",
+    "questionSubText": "elephant",
+    "correctSequence": [3],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "قلعة" },
-      { "answerText": "مسجد" },
-      { "answerText": "كاتدرائية" },
-      { "answerText": "معبد" },
-      { "answerText": "كنيسة" }
+      { "answerText": "قرد" },
+      { "answerText": "نمر" },
+      { "answerText": "أسماك" },
+      { "answerText": "فيل" },
+      { "answerText": "عصفور" }
     ]
   },
   {
-    "questionText": "أي واحدة من هذه قلعة؟",
-    "questionExplain": "Castle",
-    "answerExplain": " الكلمة الإنجليزية 'Castle' تترجم إلى 'قلعة' بالعربية",
+    "questionText": "اي واحدة من هذه ذئب؟",
+    "questionExplain": "Wolf",
+    "answerExplain": " الكلمة الإنجليزية 'Wolf' تترجم إلى 'ذئب' بالعربية",
     "questionType": "type2",
     "answerOptions": [
       {
-        "answerText": "castle",
+        "answerText": "wolf",
         "isCorrect": true,
-        "imgPath": "https://example-url.com/castle-image"
+        "imgPath": "https://example-url.com/wolf-image"
       },
       {
-        "answerText": "temple",
+        "answerText": "cat",
         "isCorrect": false,
-        "imgPath": "https://example-url.com/temple-image"
+        "imgPath": "https://example-url.com/cat-image"
       },
       {
-        "answerText": "church",
+        "answerText": "bird",
         "isCorrect": false,
-        "imgPath": "https://example-url.com/church-image"
+        "imgPath": "https://example-url.com/bird-image"
       }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Temple",
-    "answerExplain": " الكلمة الإنجليزية 'Temple' تترجم إلى 'معبد' بالعربية",
-    "avatar": "../../assets/temple.png",
-    "questionSubText": "temple",
-    "correctSequence": [2],
+    "questionExplain": "Tiger",
+    "answerExplain": " الكلمة الإنجليزية 'Tiger' تترجم إلى 'نمر' بالعربية",
+    "avatar": "../../assets/tiger.png",
+    "questionSubText": "tiger",
+    "correctSequence": [1],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "كاتدرائية" },
-      { "answerText": "هرم" },
-      { "answerText": "معبد" },
-      { "answerText": "قلعة" },
-      { "answerText": "كنيسة" }
-    ]
-  },
-  {
-    "questionText": "اختار الأزواج المتطابقة",
-    "questionExplain": "Match the English words with their Arabic translations.",
-    "avatar": "../../assets/landmark-matching.png",
-    "questionType": "type5",
-    "matchPairs": [
-      {
-        "english": "Monument",
-        "arabic": "نصب"
-      },
-      {
-        "english": "Mosque",
-        "arabic": "مسجد"
-      },
-      {
-        "english": "Cathedral",
-        "arabic": "كاتدرائية"
-      },
-      {
-        "english": "Church",
-        "arabic": "كنيسة"
-      }
+      { "answerText": "قرد" },
+      { "answerText": "نمر" },
+      { "answerText": "خروف" },
+      { "answerText": "بقرة" },
+      { "answerText": "جمل" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Cathedral",
-    "answerExplain": " الكلمة الإنجليزية 'Cathedral' تترجم إلى 'كاتدرائية' بالعربية",
-    "avatar": "../../assets/cathedral.png",
-    "questionSubText": "cathedral",
+    "questionExplain": "Satellite",
+    "answerExplain": "الكلمة الإنجليزية 'Satellite' تترجم إلى 'قمر صناعي' بالعربية",
+    "avatar": "../../assets/dude5.png",
+    "questionSubText": "satellite",
+    "correctSequence": [1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "نجمة" },
+      { "answerText": "قمر صناعي" },
+      { "answerText": "مكان" },
+      { "answerText": "رائد فضاء" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "كوكب",
+    "answerExplain": "الكلمة العربية 'كوكب' تترجم إلى 'Planet' بالإنجليزية",
+    "avatar": "../../assets/indian3.png",
+    "questionSubText": "كوكب",
+    "correctSequence": [3],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Asteroid" },
+      { "answerText": "Comet" },
+      { "answerText": "Meteor" },
+      { "answerText": "Planet" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "نجمة",
+    "answerExplain": "الكلمة العربية 'نجمة' تترجم إلى 'Star' بالإنجليزية",
+    "avatar": "../../assets/cool4.png",
+    "questionSubText": "نجمة",
+    "questionType": "type4",
+    "correctAnswer": "star"
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Meteor",
+    "answerExplain": "الكلمة الإنجليزية 'Meteor' تترجم إلى 'شهب' بالعربية",
+    "avatar": "../../assets/dude6.png",
+    "questionSubText": "meteor",
     "correctSequence": [0],
-    "questionType": "type1",
+    "questionType": "type3",
     "answerOptions": [
-      { "answerText": "كاتدرائية" },
-      { "answerText": "قلعة" },
-      { "answerText": "هرم" },
-      { "answerText": "مسجد" },
-      { "answerText": "معبد" }
+      { "answerText": "شهب" },
+      { "answerText": "قمر" },
+      { "answerText": "مكان" },
+      { "answerText": "كوكب" }
+    ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالعربي:",
+    "questionExplain": "Telescope",
+    "answerExplain": "الكلمة الإنجليزية 'Telescope' تترجم إلى 'تلسكوب' بالعربية",
+    "avatar": "../../assets/dude7.png",
+    "questionSubText": "telescope",
+    "correctSequence": [2],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "ميكروسكوب" },
+      { "answerText": "نظارة" },
+      { "answerText": "تلسكوب" },
+      { "answerText": "كاميرا" }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "مسجد",
-    "questionExplain": "mosque",
-    "answerExplain": " الكلمة الإنجليزية 'Mosque' تترجم إلى 'مسجد' بالعربية",
-    "questionType": "type4",
-    "correctAnswer": "Mosque"
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "نصب",
-    "questionExplain": "monument",
-    "answerExplain": " الكلمة الإنجليزية 'Monument' تترجم إلى 'نصب' بالعربية",
-    "questionType": "type4",
-    "correctAnswer": "Monument"
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "مسجد",
-    "questionExplain": "mosque",
-    "answerExplain": " الكلمة الإنجليزية 'mosque' تترجم إلى 'مسجد' بالعربية",
-    "questionType": "type4",
-    "correctAnswer": "mosque"
-  },
-  {
-    "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionSubText": "معبد",
-    "questionExplain": "Temple",
-    "answerExplain": " الكلمة الإنجليزية 'Temple' تترجم إلى 'معبد' بالعربية",
-    "questionType": "type4",
-    "correctAnswer": "Temple"
+    "questionExplain": "مرصد",
+    "answerExplain": "الكلمة العربية 'مرصد' تترجمإلى 'Observatory' بالإنجليزية",
+    "avatar": "../../assets/cool5.png",
+    "questionSubText": "مرصد",
+    "correctSequence": [1],
+    "questionType": "type3",
+    "answerOptions": [
+      { "answerText": "Telescope" },
+      { "answerText": "Observatory" },
+      { "answerText": "Planetarium" },
+      { "answerText": "Station" }
+    ]
   }
 ]

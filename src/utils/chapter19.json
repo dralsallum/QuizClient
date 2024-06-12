@@ -1,150 +1,168 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Brother",
-    "answerExplain": "الكلمة الإنجليزية 'Brother' تترجم إلى 'أخ' بالعربية.",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "brother",
-    "correctSequence": [0],
+    "questionExplain": "The forest is dense.",
+    "answerExplain": "'The forest is dense.' تُترجم إلى 'الغابة كثيفة'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/forest.png",
+    "questionSubText": "The forest is dense.",
+    "correctSequence": [1, 0, 2],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "أخ" },
-      { "answerText": "أخت" },
-      { "answerText": "أب" },
-      { "answerText": "أم" },
-      { "answerText": "صديق" }
+      { "answerText": "كثيفة" },
+      { "answerText": "الغابة" },
+      { "answerText": "جداً" }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Family",
-    "answerExplain": "الكلمة الإنجليزية 'Family' تترجم إلى 'عائلة' بالعربية.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "family",
-    "correctSequence": [3],
-    "questionType": "type1",
+    "questionText": "اختر الصورة التي تحتوي على أشجار الغابة!",
+    "questionExplain": "Identifying the forest trees in the image.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/forest.png",
+    "questionType": "type2",
     "answerOptions": [
-      { "answerText": "مدرسة" },
-      { "answerText": "شجرة" },
-      { "answerText": "بيت" },
-      { "answerText": "عائلة" },
-      { "answerText": "مكتب" }
+      {
+        "answerText": "أشجار الغابة",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/forest_trees.png"
+      },
+      {
+        "answerText": "نهر",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/river.png"
+      },
+      {
+        "answerText": "جبل",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/mountain.png"
+      }
     ]
   },
   {
-    "questionText": "كيف تقول ... بالإنجليزية؟",
-    "questionExplain": "أخت",
-    "answerExplain": "الكلمة الإنجليزية 'Sister' تترجم إلى 'أخت' بالعربية.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "أخت",
-    "correctSequence": [0],
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "هم يستكشفون الغابة.",
+    "answerExplain": "'هم يستكشفون الغابة.' تُترجم إلى 'They are exploring the forest.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/forest.png",
+    "questionSubText": "هم يستكشفون الغابة.",
+    "correctSequence": [1, 2, 0],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "Sister" },
-      { "answerText": "Mother" },
-      { "answerText": "Father" },
-      { "answerText": "Friend" }
+      { "answerText": "the forest" },
+      { "answerText": "They" },
+      { "answerText": "are exploring" }
     ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "هي تصعد الجبل.",
+    "answerExplain": "'هي تصعد الجبل.' تُترجم إلى 'She is climbing the mountain.'",
+    "questionSubText": "هي تصعد الجبل.",
+    "questionType": "type4",
+    "correctAnswer": "She is climbing the mountain"
   },
   {
     "questionText": "اختار الأزواج المتطابقة",
-    "questionExplain": "Match the English words with their Arabic translations about family relationships.",
-    "avatar": "../../assets/cool.png",
+    "questionExplain": "Match the sentences with their correct translations.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/forest.png",
     "questionType": "type5",
     "matchPairs": [
       {
-        "english": "Father",
-        "arabic": "أب"
+        "english": "He is hiking in the forest",
+        "arabic": "هو يتنزه في الغابة"
       },
       {
-        "english": "Mother",
-        "arabic": "أم"
+        "english": "They are exploring the forest",
+        "arabic": "هم يستكشفون الغابة"
       },
       {
-        "english": "Son",
-        "arabic": "ابن"
+        "english": "She is climbing the mountain",
+        "arabic": "هي تصعد الجبل"
       },
       {
-        "english": "Daughter",
-        "arabic": "ابنة"
+        "english": "We are camping by the river",
+        "arabic": "نحن نخيم بجانب النهر"
+      }
+    ]
+  },
+  {
+    "questionText": "اختر الصورة التي تحتوي على نهر!",
+    "questionExplain": "Identifying the river in the image.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/forest.png",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "نهر",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/river.png"
+      },
+      {
+        "answerText": "جبل",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/mountain.png"
+      },
+      {
+        "answerText": "أشجار الغابة",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/forest_trees.png"
       }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Cousin",
-    "answerExplain": "الكلمة الإنجليزية 'Cousin' تترجم إلى 'ابن العم/الخال' أو 'ابنة العم/الخال' بالعربية.",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "cousin",
-    "correctSequence": [2],
+    "questionExplain": "The campers are setting up their tents.",
+    "answerExplain": "'The campers are setting up their tents.' تُترجم إلى 'المعسكرون ينصبون خيامهم'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/forest.png",
+    "questionSubText": "The campers are setting up their tents.",
+    "correctSequence": [1, 0, 2, 3],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "جار" },
-      { "answerText": "صديق" },
-      { "answerText": "ابن العم/الخال" },
-      { "answerText": "طالب" },
-      { "answerText": "مدرس" }
+      { "answerText": "المعسكرون" },
+      { "answerText": "ينصبون" },
+      { "answerText": "خيامهم" },
+      { "answerText": " " }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Nephew",
-    "answerExplain": "الكلمة الإنجليزية 'Nephew' تترجم إلى 'ابن الأخ/الأخت' بالعربية.",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "nephew",
-    "correctSequence": [1],
-    "questionType": "type1",
+    "questionText": "اختر الصورة التي تحتوي على خيمة!",
+    "questionExplain": "Identifying the tent in the image.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/forest.png",
+    "questionType": "type2",
     "answerOptions": [
-      { "answerText": "جد" },
-      { "answerText": "ابن الأخ/الأخت" },
-      { "answerText": "أب" },
-      { "answerText": "عم" },
-      { "answerText": "خال" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Aunt",
-    "answerExplain": "الكلمة الإنجليزية 'Aunt' تترجم إلى 'عمة/خالة' بالعربية.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "aunt",
-    "correctSequence": [3],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "جدة" },
-      { "answerText": "أم" },
-      { "answerText": "خت" },
-      { "answerText": "عمة/خالة" },
-      { "answerText": "ابنة" }
+      {
+        "answerText": "خيمة",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/tent.png"
+      },
+      {
+        "answerText": "نهر",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/river.png"
+      },
+      {
+        "answerText": "جبل",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/mountain.png"
+      }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "جدة",
-    "answerExplain": "الكلمة الإنجليزية 'Grandmother' تترجم إلى 'جدة' بالعربية.",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "جدة",
-    "correctSequence": [0],
+    "questionExplain": "نحن نحب الطبيعة.",
+    "answerExplain": "'نحن نحب الطبيعة.' تُترجم إلى 'We love nature.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/forest.png",
+    "questionSubText": "نحن نحب الطبيعة.",
+    "correctSequence": [2, 1, 0],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "Grandmother" },
-      { "answerText": "Mother" },
-      { "answerText": "Sister" },
-      { "answerText": "Daughter" }
+      { "answerText": "love" },
+      { "answerText": "We" },
+      { "answerText": "nature" }
     ]
   },
   {
-    "questionText": "من هو مدرسك؟",
-    "questionExplain": "Who is your teacher?",
-    "answerExplain": "سؤال عن الشخص المعلم.",
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "هم يقطفون الزهور.",
+    "answerExplain": "'هم يقطفون الزهور.' تُترجم إلى 'They are picking flowers.'",
+    "questionSubText": "هم يقطفون الزهور.",
     "questionType": "type4",
-    "correctAnswer": "Who is your teacher?"
-  },
-  {
-    "questionText": "ما اسم أختك؟",
-    "questionExplain": "What is your sister's name?",
-    "answerExplain": "سؤال عن اسم الأخت.",
-    "questionType": "type4",
-    "correctAnswer": "What is your sister's name?"
+    "correctAnswer": "They are picking flowers"
   }
 ]

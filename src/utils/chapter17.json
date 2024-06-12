@@ -1,150 +1,169 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Brother",
-    "answerExplain": "الكلمة الإنجليزية 'Brother' تترجم إلى 'أخ' بالعربية.",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "brother",
-    "correctSequence": [0],
+    "questionExplain": "The baker is making bread.",
+    "answerExplain": "'The baker is making bread.' تُترجم إلى 'الخباز يصنع الخبز'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/baker.png",
+    "questionSubText": "The baker is making bread.",
+    "correctSequence": [1, 0, 2],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "أخ" },
-      { "answerText": "أخت" },
-      { "answerText": "أب" },
-      { "answerText": "أم" },
-      { "answerText": "صديق" }
+      { "answerText": "يصنع" },
+      { "answerText": "الخباز" },
+      { "answerText": "الخبز" }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Family",
-    "answerExplain": "الكلمة الإنجليزية 'Family' تترجم إلى 'عائلة' بالعربية.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "family",
-    "correctSequence": [3],
-    "questionType": "type1",
+    "questionText": "اختر الصورة التي تحتوي على خباز!",
+    "questionExplain": "Identifying the baker in the image.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/bakery.png",
+    "questionType": "type2",
     "answerOptions": [
-      { "answerText": "مدرسة" },
-      { "answerText": "شجرة" },
-      { "answerText": "بيت" },
-      { "answerText": "عائلة" },
-      { "answerText": "مكتب" }
+      {
+        "answerText": "خباز",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/baker.png"
+      },
+      {
+        "answerText": "قطة",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/cat.png"
+      },
+      {
+        "answerText": "سيارة",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/car.png"
+      }
     ]
   },
   {
-    "questionText": "كيف تقول ... بالإنجليزية؟",
-    "questionExplain": "أخت",
-    "answerExplain": "الكلمة الإنجليزية 'Sister' تترجم إلى 'أخت' بالعربية.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "أخت",
-    "correctSequence": [0],
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "هو يخبز كعكة.",
+    "answerExplain": "'هو يخبز كعكة.' تُترجم إلى 'He is baking a cake.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/baker.png",
+    "questionSubText": "هو يخبز كعكة.",
+    "correctSequence": [3, 2, 1, 0],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "Sister" },
-      { "answerText": "Mother" },
-      { "answerText": "Father" },
-      { "answerText": "Friend" }
+      { "answerText": "a cake" },
+      { "answerText": "baking" },
+      { "answerText": "is" },
+      { "answerText": "He" }
     ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "هي تحضر الكعك.",
+    "answerExplain": "'هي تحضر الكعك.' تُترجم إلى 'She is preparing cookies.'",
+    "questionSubText": "هي تحضر الكعك.",
+    "questionType": "type4",
+    "correctAnswer": "She is preparing cookies"
   },
   {
     "questionText": "اختار الأزواج المتطابقة",
-    "questionExplain": "Match the English words with their Arabic translations about family relationships.",
-    "avatar": "../../assets/cool.png",
+    "questionExplain": "Match the sentences with their correct translations.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/bakery.png",
     "questionType": "type5",
     "matchPairs": [
       {
-        "english": "Father",
-        "arabic": "أب"
+        "english": "He is baking bread",
+        "arabic": "هو يخبز الخبز"
       },
       {
-        "english": "Mother",
-        "arabic": "أم"
+        "english": "She is making a cake",
+        "arabic": "هي تصنع كعكة"
       },
       {
-        "english": "Son",
-        "arabic": "ابن"
+        "english": "They are preparing cookies",
+        "arabic": "هم يحضرون الكعك"
       },
       {
-        "english": "Daughter",
-        "arabic": "ابنة"
+        "english": "We are selling pastries",
+        "arabic": "نحن نبيع المعجنات"
+      }
+    ]
+  },
+  {
+    "questionText": "اختر الصورة التي تحتوي على كعكة!",
+    "questionExplain": "Identifying the cake in the image.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/bakery.png",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "كعكة",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/cake.png"
+      },
+      {
+        "answerText": "خبز",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/bread.png"
+      },
+      {
+        "answerText": "بسكويت",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/cookies.png"
       }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Cousin",
-    "answerExplain": "الكلمة الإنجليزية 'Cousin' تترجم إلى 'ابن العم/الخال' أو 'ابنة العم/الخال' بالعربية.",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "cousin",
-    "correctSequence": [2],
+    "questionExplain": "The customer is buying pastries.",
+    "answerExplain": "'The customer is buying pastries.' تُترجم إلى 'الزبون يشتري المعجنات'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/customer.png",
+    "questionSubText": "The customer is buying pastries.",
+    "correctSequence": [1, 0, 2],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "جار" },
-      { "answerText": "صديق" },
-      { "answerText": "ابن العم/الخال" },
-      { "answerText": "طالب" },
-      { "answerText": "مدرس" }
+      { "answerText": "الزبون" },
+      { "answerText": "يشتري" },
+      { "answerText": "المعجنات" }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Nephew",
-    "answerExplain": "الكلمة الإنجليزية 'Nephew' تترجم إلى 'ابن الأخ/الأخت' بالعربية.",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "nephew",
-    "correctSequence": [1],
-    "questionType": "type1",
+    "questionText": "اختر الصورة التي تحتوي على معجنات!",
+    "questionExplain": "Identifying the pastries in the image.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/bakery.png",
+    "questionType": "type2",
     "answerOptions": [
-      { "answerText": "جد" },
-      { "answerText": "ابن الأخ/الأخت" },
-      { "answerText": "أب" },
-      { "answerText": "عم" },
-      { "answerText": "خال" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Aunt",
-    "answerExplain": "الكلمة الإنجليزية 'Aunt' تترجم إلى 'عمة/خالة' بالعربية.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "aunt",
-    "correctSequence": [3],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "جدة" },
-      { "answerText": "أم" },
-      { "answerText": "خت" },
-      { "answerText": "عمة/خالة" },
-      { "answerText": "ابنة" }
+      {
+        "answerText": "معجنات",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/pastries.png"
+      },
+      {
+        "answerText": "خبز",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/bread.png"
+      },
+      {
+        "answerText": "كعك",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/cookies.png"
+      }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "جدة",
-    "answerExplain": "الكلمة الإنجليزية 'Grandmother' تترجم إلى 'جدة' بالعربية.",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "جدة",
-    "correctSequence": [0],
+    "questionExplain": "نحن نبيع المعجنات.",
+    "answerExplain": "'نحن نبيع المعجنات.' تُترجم إلى 'We are selling pastries.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/bakery.png",
+    "questionSubText": "نحن نبيع المعجنات.",
+    "correctSequence": [2, 0, 1, 3],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "Grandmother" },
-      { "answerText": "Mother" },
-      { "answerText": "Sister" },
-      { "answerText": "Daughter" }
+      { "answerText": "are" },
+      { "answerText": "selling" },
+      { "answerText": "We" },
+      { "answerText": "pastries" }
     ]
   },
   {
-    "questionText": "من هو مدرسك؟",
-    "questionExplain": "Who is your teacher?",
-    "answerExplain": "سؤال عن الشخص المعلم.",
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "هم يحضرون الكعك.",
+    "answerExplain": "'هم يحضرون الكعك.' تُترجم إلى 'They are preparing cookies.'",
+    "questionSubText": "هم يحضرون الكعك.",
     "questionType": "type4",
-    "correctAnswer": "Who is your teacher?"
-  },
-  {
-    "questionText": "ما اسم أختك؟",
-    "questionExplain": "What is your sister's name?",
-    "answerExplain": "سؤال عن اسم الأخت.",
-    "questionType": "type4",
-    "correctAnswer": "What is your sister's name?"
+    "correctAnswer": "They are preparing cookies"
   }
 ]

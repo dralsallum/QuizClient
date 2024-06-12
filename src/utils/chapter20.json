@@ -1,144 +1,161 @@
 [
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Brother",
-    "answerExplain": "الكلمة الإنجليزية 'Brother' تترجم إلى 'أخ' بالعربية.",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "brother",
-    "correctSequence": [0],
+    "questionExplain": "The forest is dense.",
+    "answerExplain": "'The forest is dense.' تُترجم إلى 'الغابة كثيفة'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/forest.png",
+    "questionSubText": "The forest is dense.",
+    "correctSequence": [1, 0, 2],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "أخ" },
-      { "answerText": "أخت" },
-      { "answerText": "أب" },
-      { "answerText": "أم" },
-      { "answerText": "صديق" }
+      { "answerText": "كثيفة" },
+      { "answerText": "الغابة" },
+      { "answerText": "جداً" }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Family",
-    "answerExplain": "الكلمة الإنجليزية 'Family' تترجم إلى 'عائلة' بالعربية.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "family",
-    "correctSequence": [3],
-    "questionType": "type1",
+    "questionText": "اختر الصورة التي تحتوي على أشجار الغابة!",
+    "questionExplain": "Identifying the forest trees in the image.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/forest.png",
+    "questionType": "type2",
     "answerOptions": [
-      { "answerText": "مدرسة" },
-      { "answerText": "شجرة" },
-      { "answerText": "بيت" },
-      { "answerText": "عائلة" },
-      { "answerText": "مكتب" }
+      {
+        "answerText": "أشجار الغابة",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/forest_trees.png"
+      },
+      {
+        "answerText": "نهر",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/river.png"
+      },
+      {
+        "answerText": "جبل",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/mountain.png"
+      }
     ]
   },
   {
-    "questionText": "كيف تقول ... بالإنجليزية؟",
-    "questionExplain": "أخت",
-    "answerExplain": "الكلمة الإنجليزية 'Sister' تترجم إلى 'أخت' بالعربية.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "أخت",
-    "correctSequence": [0],
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "هم يستكشفون الغابة.",
+    "answerExplain": "'هم يستكشفون الغابة.' تُترجم إلى 'They are exploring the forest.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/forest.png",
+    "questionSubText": "هم يستكشفون الغابة.",
+    "correctSequence": [1, 2, 0],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "Sister" },
-      { "answerText": "Mother" },
-      { "answerText": "Father" },
-      { "answerText": "Friend" }
+      { "answerText": "the forest" },
+      { "answerText": "They" },
+      { "answerText": "are exploring" }
     ]
+  },
+  {
+    "questionText": "اكتب ما يلي بالانجليزي:",
+    "questionExplain": "هي تأكل الفيشار.",
+    "answerExplain": "'هي تأكل الفيشار.' تُترجم إلى 'She is eating popcorn.'",
+    "questionSubText": "هي تأكل الفيشار.",
+    "questionType": "type4",
+    "correctAnswer": "She is eating popcorn"
   },
   {
     "questionText": "اختار الأزواج المتطابقة",
-    "questionExplain": "Match the English words with their Arabic translations about family relationships.",
-    "avatar": "../../assets/cool.png",
+    "questionExplain": "Match the sentences with their correct translations.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cinema.png",
     "questionType": "type5",
     "matchPairs": [
       {
-        "english": "Father",
-        "arabic": "أب"
+        "english": "He is buying a ticket",
+        "arabic": "هو يشتري تذكرة"
       },
       {
-        "english": "Mother",
-        "arabic": "أم"
+        "english": "They are watching a movie",
+        "arabic": "هم يشاهدون فيلماً"
       },
       {
-        "english": "Son",
-        "arabic": "ابن"
+        "english": "She is eating popcorn",
+        "arabic": "هي تأكل الفيشار"
       },
       {
-        "english": "Daughter",
-        "arabic": "ابنة"
+        "english": "We are going to the cinema",
+        "arabic": "نحن ذاهبون إلى السينما"
+      }
+    ]
+  },
+  {
+    "questionText": "اختر الصورة التي تحتوي على الفيشار!",
+    "questionExplain": "Identifying the popcorn in the image.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cinema.png",
+    "questionType": "type2",
+    "answerOptions": [
+      {
+        "answerText": "فيشار",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/popcorn.png"
+      },
+      {
+        "answerText": "تذاكر السينما",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/cinema_tickets.png"
+      },
+      {
+        "answerText": "مشروب",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/drink.png"
       }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Cousin",
-    "answerExplain": "الكلمة الإنجليزية 'Cousin' تترجم إلى 'ابن العم/الخال' أو 'ابنة العم/الخال' بالعربية.",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "cousin",
-    "correctSequence": [2],
+    "questionExplain": "The baker is making bread.",
+    "answerExplain": "'The baker is making bread.' تُترجم إلى 'الخباز يصنع الخبز'.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/baker.png",
+    "questionSubText": "The baker is making bread.",
+    "correctSequence": [1, 0, 2],
     "questionType": "type1",
     "answerOptions": [
-      { "answerText": "جار" },
-      { "answerText": "صديق" },
-      { "answerText": "ابن العم/الخال" },
-      { "answerText": "طالب" },
-      { "answerText": "مدرس" }
+      { "answerText": "يصنع" },
+      { "answerText": "الخباز" },
+      { "answerText": "الخبز" }
     ]
   },
   {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Nephew",
-    "answerExplain": "الكلمة الإنجليزية 'Nephew' تترجم إلى 'ابن الأخ/الأخت' بالعربية.",
-    "avatar": "../../assets/dude.png",
-    "questionSubText": "nephew",
-    "correctSequence": [1],
-    "questionType": "type1",
+    "questionText": "اختر الصورة التي تحتوي على خباز!",
+    "questionExplain": "Identifying the baker in the image.",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/bakery.png",
+    "questionType": "type2",
     "answerOptions": [
-      { "answerText": "جد" },
-      { "answerText": "ابن الأخ/الأخت" },
-      { "answerText": "أب" },
-      { "answerText": "عم" },
-      { "answerText": "خال" }
-    ]
-  },
-  {
-    "questionText": "اكتب ما يلي بالعربي:",
-    "questionExplain": "Aunt",
-    "answerExplain": "الكلمة الإنجليزية 'Aunt' تترجم إلى 'عمة/خالة' بالعربية.",
-    "avatar": "../../assets/cool.png",
-    "questionSubText": "aunt",
-    "correctSequence": [3],
-    "questionType": "type1",
-    "answerOptions": [
-      { "answerText": "جدة" },
-      { "answerText": "أم" },
-      { "answerText": "خت" },
-      { "answerText": "عمة/خالة" },
-      { "answerText": "ابنة" }
+      {
+        "answerText": "خباز",
+        "isCorrect": true,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/baker.png"
+      },
+      {
+        "answerText": "قطة",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/cat.png"
+      },
+      {
+        "answerText": "سيارة",
+        "isCorrect": false,
+        "imgPath": "https://alsallum.s3.eu-north-1.amazonaws.com/car.png"
+      }
     ]
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "جدة",
-    "answerExplain": "الكلمة الإنجليزية 'Grandmother' تترجم إلى 'جدة' بالعربية.",
-    "avatar": "../../assets/indian.png",
-    "questionSubText": "جدة",
-    "correctSequence": [0],
+    "questionExplain": "هو يخبز كعكة.",
+    "answerExplain": "'هو يخبز كعكة.' تُترجم إلى 'He is baking a cake.'",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/baker.png",
+    "questionSubText": "هو يخبز كعكة.",
+    "correctSequence": [3, 2, 1, 0],
     "questionType": "type3",
     "answerOptions": [
-      { "answerText": "Grandmother" },
-      { "answerText": "Mother" },
-      { "answerText": "Sister" },
-      { "answerText": "Daughter" }
+      { "answerText": "a cake" },
+      { "answerText": "baking" },
+      { "answerText": "is" },
+      { "answerText": "He" }
     ]
-  },
-  {
-    "questionText": "من هو مدرسك؟",
-    "questionExplain": "Who is your teacher?",
-    "answerExplain": "سؤال عن الشخص المعلم.",
-    "questionType": "type4",
-    "correctAnswer": "Who is your teacher?"
   },
   {
     "questionText": "ما اسم أختك؟",
