@@ -3,7 +3,7 @@
     "questionText": "اكتب ما يلي بالعربي:",
     "questionExplain": "The baker is making bread.",
     "answerExplain": "'The baker is making bread.' تُترجم إلى 'الخباز يصنع الخبز'.",
-    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/baker.png",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/camel.png",
     "questionSubText": "The baker is making bread.",
     "correctSequence": [1, 0, 2],
     "questionType": "type1",
