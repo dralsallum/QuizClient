@@ -119,7 +119,7 @@ const NavVoc = () => {
               ) : (
                 <NavSubAt to="/login">تسجيل الدخول</NavSubAt>
               )}
-              <NavSubAa to="/signup">اشتراك</NavSubAa>
+              <NavSubAa to="/signup">تسجيل حساب جديد</NavSubAa>
             </NavSubTop>
             <NavTopBut onClick={toggleNotification}>
               <FontAwesomeIcon icon={faBars} style={{ fontSize: "24px" }} />
