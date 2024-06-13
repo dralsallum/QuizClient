@@ -13,6 +13,7 @@ import {
   LoaderContainer,
   Loader,
   StyledLink,
+  LoginSignEx,
 } from "./SignLog.elements";
 import { useDispatch } from "react-redux";
 import { login } from "../../redux/userRedux";
@@ -54,6 +55,7 @@ const SignLog = () => {
             placeholder="اسم المستخدم"
             onChange={handleChange}
           />
+
           <LoginSignSubHeader>الرقم السري</LoginSignSubHeader>
           <LoginSignInput
             type="password"

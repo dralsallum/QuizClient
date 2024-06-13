@@ -80,6 +80,10 @@ export const LoginSignPara = styled.p`
   margin-top: 15px;
   font-size: 12px;
 `;
+export const LoginSignEx = styled.p`
+  font-size: 12px;
+  color: #757575;
+`;
 
 export const SignButton = styled.button`
   background-color: #2946b6;
