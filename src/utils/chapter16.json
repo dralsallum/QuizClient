@@ -160,9 +160,9 @@
   },
   {
     "questionText": "اكتب ما يلي بالانجليزي:",
-    "questionExplain": "هم يحضرون الكعك.",
+    "questionExplain": "هم يحضرون الكعك",
     "answerExplain": "'هم يحضرون الكعك.' تُترجم إلى 'They are preparing cookies.'",
-    "questionSubText": "هم يحضرون الكعك.",
+    "questionSubText": "هم يحضرون الكعك",
     "questionType": "type4",
     "correctAnswer": "They are preparing cookies"
   }

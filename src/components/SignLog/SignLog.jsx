@@ -48,10 +48,12 @@ const SignLog = () => {
         <LoginSignHeader>تسجيل دخول</LoginSignHeader>
         {errorMessage && <ErrorCon>{errorMessage}</ErrorCon>}
         <SignUpForm onSubmit={handleSubmit}>
-          <LoginSignSubHeader>اسم المستخدم</LoginSignSubHeader>
+          <LoginSignSubHeader>
+            اسم المستخدم أو البريد الإلكتروني
+          </LoginSignSubHeader>
           <LoginSignInput
-            name="username"
-            placeholder="اسم المستخدم"
+            name="usernameOrEmail" // Change the name to a more general one
+            placeholder="اسم المستخدم أو البريد الإلكتروني"
             onChange={handleChange}
           />
           <LoginSignSubHeader>الرقم السري</LoginSignSubHeader>
