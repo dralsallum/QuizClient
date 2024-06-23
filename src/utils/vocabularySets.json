@@ -1050,5 +1050,110 @@
         ]
       }
     ]
+  },
+  {
+    "grade": 11,
+    "titWr": {
+      "imgSrc": "https://cdn.vocab.com/units/llpjxc64/feature.svg?width=500&v=18bcb20b400",
+      "imgAlt": "",
+      "title": "مفردات المستوى العاشر",
+      "checkTitle": "تم تنسيق هذا التجميع بواسطة فريقنا في Vocabulary.com!",
+      "description": "ستكون الجغرافيا الفيزيائية سهلة بمجرد إتقانك لهذه المصطلحات المتعلقة بالميزات الفيزيائية للأرض. ستراجع المناخ والطقس، الأشكال الأرضية والهيئات المائية.",
+      "listsCount": 5,
+      "wordsCount": 85,
+      "learnersCount": 506
+    },
+    "sets": [
+      {
+        "title": "المفردات الأساسية",
+        "imgSrc": "https://cdn.vocab.com/units/hvg545lp/feature.svg",
+        "data": [
+          {
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn2.jpg",
+            "link": "/vocabulary/medical1",
+            "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
+          },
+          {
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse.jpg",
+            "link": "/vocabulary/medical2",
+            "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
+          },
+          {
+            "title": "ألفاظ متجانسة صعبة للطلاب",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar.jpg",
+            "link": "/vocabulary/similar10",
+            "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
+          },
+          {
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam.jpg",
+            "link": "/vocabulary/test10",
+            "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
+          }
+        ]
+      },
+      {
+        "title": "القراءة",
+        "imgSrc": "https://cdn.vocab.com/units/r7aruajs/feature.svg",
+        "data": [
+          {
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn1.jpg",
+            "link": "/audio/listen/story10",
+            "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
+          },
+          {
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse2.jpg",
+            "link": "/audio/listen/story10",
+            "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
+          },
+          {
+            "title": "ألفاظ متجانسة صعبة للطلاب",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar2.jpg",
+            "link": "/audio/listen/story10",
+            "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
+          },
+          {
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam1.jpg",
+            "link": "/audio/listen/story10",
+            "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
+          }
+        ]
+      },
+      {
+        "title": "الكتابة",
+        "imgSrc": "https://cdn.vocab.com/units/loq5mshj/feature.svg",
+        "data": [
+          {
+            "title": "الكلمات الجوهرية المعرفية",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/learn3.jpg",
+            "link": "/write/spell10",
+            "description": "من خلال تحليل بيانات الطلاب والنصوص التي يتم تدريسها بشكل شائع."
+          },
+          {
+            "title": "الكلمات المربكة الشائعة",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/confuse3.jpg",
+            "link": "/write/spell10",
+            "description": "الكلمات المربكة الشائعة هي أزواج أو مجموعات من الكلمات التي تشترك في تهجئة أو نطق متشابه..."
+          },
+          {
+            "title": "ألفاظ متجانسة صعبة للطلاب",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/similar3.jpg",
+            "link": "/write/spell10",
+            "description": "الكلمات التي تبدو متشابهة ولكن تختلف في الإملاء (نوع من الألفاظ المتجانسة) يمكن أن تكون عقبات أمام الفهم..."
+          },
+          {
+            "title": "اختبار المستوى",
+            "imgTit": "https://alsallum.s3.eu-north-1.amazonaws.com/exam2.jpg",
+            "link": "/write/spell10",
+            "description": "المفردات هي المفتاح للأداء الجيد في اختبارات اللغة الإنجليزية المتوافقة مع المعايير المشتركة وكذلك لبناء القدرات الأدبية..."
+          }
+        ]
+      }
+    ]
   }
 ]

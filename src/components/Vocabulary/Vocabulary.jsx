@@ -177,6 +177,8 @@ const Vocabulary = () => {
       return vocabOptions.lists;
     } else if (vocabSet.startsWith("test")) {
       return vocabOptions.tests;
+    } else if (vocabSet.startsWith("medical")) {
+      return vocabOptions.medicals;
     } else if (vocabSet.startsWith("similar")) {
       return vocabOptions.similars;
     }

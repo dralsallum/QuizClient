@@ -9,6 +9,7 @@
     { "number": 7, "url": "/level/grade-7" },
     { "number": 8, "url": "/level/grade-8" },
     { "number": 9, "url": "/level/grade-9" },
-    { "number": 10, "url": "/level/grade-10" }
+    { "number": 10, "url": "/level/grade-10" },
+    { "number": "الطبي", "url": "/level/grade-11" }
   ]
 }

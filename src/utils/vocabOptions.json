@@ -35,6 +35,11 @@
     { "value": "list9", "label": "List 9 - Academic Vocabulary" },
     { "value": "list10", "label": "List 10 - Academic Vocabulary" }
   ],
+  "medicals": [
+    { "value": "medical1", "label": "Medical1 1 - Daily Vocabulary" },
+    { "value": "medical2", "label": "Medical1 2 -  - Common Phrases" },
+    { "value": "medical3", "label": "Medical1 3 - Academic Vocabulary" }
+  ],
   "similars": [
     { "value": "similar1", "label": "Similar 1 - Homonyms" },
     { "value": "similar2", "label": "Similar 2 - Synonyms" },
