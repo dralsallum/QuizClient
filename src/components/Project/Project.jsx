@@ -792,7 +792,7 @@ const Project = () => {
                 <TConTop>
                   <TNav>
                     <Link
-                      to="/train/:questionId"
+                      to="/train/question1"
                       style={{
                         textDecoration: "none",
                         color: "inherit",
