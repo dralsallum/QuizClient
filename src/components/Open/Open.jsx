@@ -82,7 +82,7 @@ const zoReData = [
     imgSrc: "https://img.icons8.com/clouds/100/pen.png",
     reSrc: "/home",
     lo: "تحديد المستوى",
-    para: "حدد مستواك باللغة الانجليزية",
+    para: " اختبار لتحديد مستواك ",
     backgroundColor: "#fff3cd",
     hoverColor: "#ffeeba",
     color: "#ff9900",
