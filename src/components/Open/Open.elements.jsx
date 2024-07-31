@@ -438,7 +438,7 @@ export const ZoWr = styled.section`
   text-transform: none;
 
   @media screen and (max-width: 768px) {
-    padding: 54px 24px;
+    padding: 54px 14px;
     padding-top: 35px;
     box-sizing: border-box;
     color: rgb(51, 51, 51);
