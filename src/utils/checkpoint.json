@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+    "title": "واصل التقدم!",
+    "description": "أنت تحقق تقدمًا رائعًا. استمر في المضي قدمًا!"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1517511620798-cec17d428bc0",
+    "title": "ابقى مركزًا!",
+    "description": "ركز على أهدافك وحافظ على عينك على الجائزة. يمكنك فعلها!"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1483058712412-4245e9b90334",
+    "title": "أنت قادر!",
+    "description": "لديك المهارات والعزم على النجاح. استمر في الإيمان بنفسك."
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+    "title": "حافظ على الحافز!",
+    "description": "الحافز هو مفتاح النجاح. حافظ على الحافز واستمر في السعي!"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c",
+    "title": "يمكنك فعل هذا!",
+    "description": "ثق بنفسك وقدراتك. أنت قادر على تحقيق أشياء مذهلة!"
+  }
+]

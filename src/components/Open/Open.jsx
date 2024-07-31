@@ -1,5 +1,6 @@
 /* global ShopifyBuy */
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   AllBot,
   AllEm,
@@ -28,6 +29,16 @@ import {
   HeaderContainer,
   HeaderElements,
   HeaderList,
+  ZoWr,
+  ZoCon,
+  ZoPa,
+  ZoHe,
+  ZoRe,
+  ZoAt,
+  ZoLo,
+  ZoImg,
+  ZoPara,
+  ZoImgg,
 } from "./Open.elements.jsx";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,6 +47,47 @@ import {
   faPenSquare,
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
+
+const zoReData = [
+  {
+    imgSrc: "https://img.icons8.com/clouds/100/rocket.png",
+    reSrc: "/train/question1",
+    lo: "التعليم التفاعلي",
+    para: "تعلم بطريقة تفاعلية مسلية",
+    backgroundColor: "#f8d7da",
+    hoverColor: "#f5c6cb",
+    color: "#ec5362",
+  },
+  {
+    imgSrc: "https://img.icons8.com/clouds/100/graduation-cap.png",
+    reSrc: "/level/grade-1",
+    lo: "المفردات الانجليزية",
+    para: "احفظ المفردات بالبطاقات ",
+
+    backgroundColor: "#d1ecf1",
+    hoverColor: "#c3e6cb",
+    color: "#05af8d",
+    color: "#005dff",
+  },
+  {
+    imgSrc: "https://img.icons8.com/clouds/100/books.png",
+    reSrc: "/audio",
+    lo: "القصص القصيرة",
+    para: "استمتع بالقصص التعليمية",
+    backgroundColor: "#d4edda",
+    hoverColor: "#bee5eb",
+    color: "#05af8d",
+  },
+  {
+    imgSrc: "https://img.icons8.com/clouds/100/pen.png",
+    reSrc: "/home",
+    lo: "اختبار تحديد المستوى",
+    para: "حدد مستواك باللغة الانجليزية",
+    backgroundColor: "#fff3cd",
+    hoverColor: "#ffeeba",
+    color: "#ff9900",
+  },
+];
 
 const Open = () => {
   return (
@@ -78,43 +130,26 @@ const Open = () => {
       <BaWr>
         <BaForm action=""></BaForm>
       </BaWr>
-      <AllBot>
-        <AllSub>
-          <AllEm>اقسام المنصة...</AllEm>
-          <CatUl>
-            <CatLi>
-              <CatAt to="/train">
-                <strong>
-                  تعلم الانجليزي
-                  <br /> بطريقة تفاعلية مسلية <br />
-                </strong>
-              </CatAt>
-            </CatLi>
-            <CatLiTw>
-              <CatAa to="/audio">
-                <CatAaSp>
-                  <strong>
-                    استمع لقصص
-                    <br />
-                    قصيرة بالانجليزي
-                  </strong>
-                  <br />
-                </CatAaSp>
-              </CatAa>
-            </CatLiTw>
-            <CatLiTh>
-              <CatAn to="/level/grade-1">
-                <strong>
-                  احفظ الكلمات الانجليزية
-                  <br />
-                  بالبطاقات التعليمية
-                </strong>
-                <br />
-              </CatAn>
-            </CatLiTh>
-          </CatUl>
-        </AllSub>
-      </AllBot>
+      <ZoWr>
+        <ZoHe>اقسام المنصة...</ZoHe>
+        <ZoCon>
+          {zoReData.map((item, index) => (
+            <ZoRe>
+              <ZoAt
+                to={item.reSrc}
+                backgroundColor={item.backgroundColor}
+                hoverColor={item.hoverColor}
+              >
+                <ZoPa>
+                  <ZoImg src={item.imgSrc} alt="" />
+                </ZoPa>
+                <ZoLo color={item.color}>{item.lo}</ZoLo>
+                <ZoPara>{item.para}</ZoPara>
+              </ZoAt>
+            </ZoRe>
+          ))}
+        </ZoCon>
+      </ZoWr>
     </AllWr>
   );
 };

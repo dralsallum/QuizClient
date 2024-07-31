@@ -30,12 +30,12 @@ const Sections = () => {
       src: "https://img.icons8.com/clouds/100/rocket.png",
       title: "التعلم التفاعلي",
       description: "تعلم القواعد للممارسة",
-      link: "/train",
+      link: "/train/question1",
     },
     {
       src: "https://img.icons8.com/clouds/100/graduation-cap.png",
       title: "المفردات الانجليزية",
-      description: "احفظ الكلمات الانجليزية بمساعدة البطاقات التعليمية",
+      description: "احفظ المفردات بمساعدة البطاقات التعليمية",
       link: "/level/grade-1",
     },
     {

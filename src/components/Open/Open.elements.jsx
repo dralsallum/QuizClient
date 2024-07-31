@@ -1,5 +1,14 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const ScaleUpDown = keyframes`
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+`;
 
 export const AllWr = styled.div`
   background-image: url(//cdn.vocab.com/images/home/dictionary-search-bg-1920-1fyyt3h.svg);
@@ -250,7 +259,7 @@ export const CatLi = styled.li`
   font-size: 18px;
 
   @media screen and (max-width: 768px) {
-    font-size: 12px;
+    font-size: 12.5px;
   }
 `;
 export const CatLiTw = styled.li`
@@ -260,7 +269,7 @@ export const CatLiTw = styled.li`
   font-size: 18px;
 
   @media screen and (max-width: 768px) {
-    font-size: 12px;
+    font-size: 12.5px;
   }
 `;
 export const CatAa = styled(Link)`
@@ -298,7 +307,7 @@ export const CatLiTh = styled.li`
   color: #fff;
 
   @media screen and (max-width: 768px) {
-    font-size: 12px;
+    font-size: 12.5px;
   }
 `;
 export const CatAt = styled(Link)`
@@ -413,4 +422,173 @@ export const HeaderElements = styled.li`
   align-items: center;
   gap: 0.25rem;
   flex-wrap: nowrap;
+`;
+
+export const ZoWr = styled.section`
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  font-family: sharp-sans-semibold, fallback-font, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-transform: none;
+
+  @media screen and (max-width: 768px) {
+    padding: 54px 24px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    font-family: sharp-sans-semibold, fallback-font, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-transform: none;
+  }
+`;
+export const ZoCon = styled.div`
+  display: flex;
+  width: auto;
+  margin: -6px;
+  flex-wrap: nowrap;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+    margin: -6px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+`;
+export const ZoImgg = styled.img`
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+`;
+export const ZoHe = styled.h3`
+  color: #fff;
+  direction: rtl;
+  padding-bottom: 24px;
+
+  @media screen and (max-width: 768px) {
+    font-family: sharp-sans-semibold, fallback-font, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-transform: none;
+    padding-bottom: 14px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+`;
+export const ZoRe = styled.div`
+  padding: 6px;
+
+  @media screen and (max-width: 768px) {
+    flex-basis: 50%;
+    padding: 6px;
+  }
+  @media screen and (min-width: 768px) {
+    flex: 1 1 0px;
+    width: 0px;
+  }
+`;
+export const ZoPa = styled.p`
+  padding: 6px;
+  @media screen and (max-width: 768px) {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+`;
+export const ZoLo = styled.div`
+  color: ${(props) => props.color || "#ec5362"};
+  font-size: 20px;
+  font-weight: 600;
+
+  @media screen and (max-width: 768px) {
+    font-family: sharp-sans-semibold, fallback-font, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-transform: none;
+    white-space: nowrap;
+  }
+  @media screen and (min-width: 768px) {
+    font-family: sharp-sans-semibold, fallback-font, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-transform: none;
+    white-space: nowrap;
+  }
+`;
+export const ZoPara = styled.p`
+  color: #000;
+  font-size: 15px;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+`;
+export const ZoImg = styled.img`
+  background-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (min-width: 768px) {
+    font-family: sharp-sans-semibold, fallback-font, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-transform: none;
+    white-space: nowrap;
+  }
+`;
+export const ZoAt = styled(Link)`
+  display: flex;
+  height: 160px;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+
+  text-decoration: inherit;
+  background-color: ${(props) => props.backgroundColor || "white"};
+  border-radius: 4px;
+  border: 1px solid rgba(58, 47, 31, 0.1);
+  transition: box-shadow 0.1s ease 0s;
+  padding: 23px 0px 13px;
+  padding-top: 5px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid rgba(58, 47, 31, 0.1);
+    transition: box-shadow 0.1s ease 0s;
+    padding: 23px 0px 13px;
+    padding-top: 5px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 16px;
+    padding-top: 17px;
+  }
 `;

@@ -10,7 +10,7 @@ export const ArWrapper = styled.div`
   padding: 0.2rem 1.4rem;
 
   @media screen and (max-width: 700px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 `;
 export const ArContainerF = styled.div`
@@ -26,11 +26,11 @@ export const ArSubContainerF = styled.div`
 `;
 export const ArContainerFCon = styled.div`
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   line-height: 1.125rem;
   color: #666e7e;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 `;
 export const ArContainerFHe = styled.h3`
   font-size: 1.725rem;
@@ -38,7 +38,7 @@ export const ArContainerFHe = styled.h3`
   margin-bottom: 1rem;
   color: #2a46b5;
   @media screen and (max-width: 700px) {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     line-height: 1.625rem;
   }
 `;

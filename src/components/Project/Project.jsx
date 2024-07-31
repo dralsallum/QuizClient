@@ -574,7 +574,7 @@ const Project = () => {
           onClick={() => {
             resetQuiz();
             const nextChapter = incrementLesson(parseInt(chapterId));
-            navigate("/train");
+            navigate("/train/question1");
           }}
         >
           خذ كويز مختلف
@@ -792,7 +792,7 @@ const Project = () => {
                 <TConTop>
                   <TNav>
                     <Link
-                      to="/train"
+                      to="/train/:questionId"
                       style={{
                         textDecoration: "none",
                         color: "inherit",

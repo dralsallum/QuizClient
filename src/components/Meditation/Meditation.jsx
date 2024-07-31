@@ -401,7 +401,7 @@ const Meditation = () => {
           </QmSvg>
           <QmCon>
             <QmHead>اكتشف المزيد من الوعي</QmHead>
-            <QmHeadSpan>جرّب هيدسبيس مجاناً وافتح تأملات لأي مزاج.</QmHeadSpan>
+            <QmHeadSpan>جرّب فلونت فوكس مجاناً واستمع لقصصنا.</QmHeadSpan>
           </QmCon>
           <QmAt href="">
             <QmSpan>ابدا تجربتك المجانية</QmSpan>
@@ -431,7 +431,7 @@ const Meditation = () => {
                 </YsTwoRe>
                 <YsTwoSub>
                   <YsTwoQb>كونك حاضرًا</YsTwoQb>
-                  <YsTwoQd>التامل • ٣-١٠ دقائق</YsTwoQd>
+                  <YsTwoQd>الاستماع • ٣-١٠ دقائق</YsTwoQd>
                 </YsTwoSub>
                 <YsTwoReSvg
                   width="72"
@@ -474,7 +474,7 @@ const Meditation = () => {
         <Gum>
           <GumWrap>
             <GumBi>
-              <GumBiHead>استكشف الهدوء</GumBiHead>
+              <GumBiHead>استكشف اللغة</GumBiHead>
             </GumBi>
             <GumTi>
               <GumTiWrap>
@@ -483,13 +483,13 @@ const Meditation = () => {
                     <GumMeOne>
                       <GumMeSubOne>الجديد والكثر شعبية</GumMeSubOne>
                       <GumMeReOne>
-                        أحدث التأملات وأفضل الاختيارات من فريقنا.
+                        أحدث القصص وأفضل الاختيارات من فريقنا.
                       </GumMeReOne>
                     </GumMeOne>
                     <GumMeTwo>
                       <GumMeTwoCon>
                         <GumMeImg
-                          src="https://api.prod.headspace.com/content/media-items/81511/download-image?width=224"
+                          src="https://img.icons8.com/clouds/100/books.png"
                           alt=""
                         />
                       </GumMeTwoCon>
@@ -501,13 +501,13 @@ const Meditation = () => {
                     <GumMeOne>
                       <GumMeSubOne>الجديد والاكثر شعبية</GumMeSubOne>
                       <GumMeReOne>
-                        أحدث التأملات وأفضل الاختيارات من فريقنا.
+                        أحدث القصص وأفضل الاختيارات من فريقنا.
                       </GumMeReOne>
                     </GumMeOne>
                     <GumMeTwo>
                       <GumMeTwoCon>
                         <GumMeImg
-                          src="https://api.prod.headspace.com/content/media-items/81511/download-image?width=224"
+                          src="https://img.icons8.com/clouds/100/graduation-cap.png"
                           alt=""
                         />
                       </GumMeTwoCon>
@@ -519,13 +519,13 @@ const Meditation = () => {
                     <GumMeOne>
                       <GumMeSubOne>الجديد والاكثر شعبية</GumMeSubOne>
                       <GumMeReOne>
-                        أحدث التأملات وأفضل الاختيارات من فريقنا.
+                        أحدث القصص وأفضل الاختيارات من فريقنا.
                       </GumMeReOne>
                     </GumMeOne>
                     <GumMeTwo>
                       <GumMeTwoCon>
                         <GumMeImg
-                          src="https://api.prod.headspace.com/content/media-items/81511/download-image?width=224"
+                          src="https://img.icons8.com/clouds/100/pen.png"
                           alt=""
                         />
                       </GumMeTwoCon>

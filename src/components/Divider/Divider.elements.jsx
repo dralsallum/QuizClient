@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ArWrapper = styled.div`
-  margin-bottom: 0.625rem;
   display: flex;
+  margin-bottom: 0.625rem;
   justify-content: space-between;
   align-items: center;
   column-gap: 10%;
@@ -10,7 +10,7 @@ export const ArWrapper = styled.div`
   padding: 0.2rem 1.4rem;
 
   @media screen and (max-width: 700px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 `;
 export const ArContainerF = styled.div`

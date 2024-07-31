@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { NavTech, QueFooter, Question, Store } from "../components";
+import { NavTech, QueFooter, Store, Knowledge, FooterMe } from "../components";
 
 const Train = () => {
-  const { questionId } = useParams(); // Get the questionId from the URL
-  const [showComponent, setShowComponent] = useState("question");
+  const { knowledgeId } = useParams();
+  const [showComponent, setShowComponent] = useState("knowledge");
 
   useEffect(() => {
     const viewport = document.querySelector("meta[name=viewport]");
@@ -22,13 +22,8 @@ const Train = () => {
   return (
     <>
       <NavTech />
-      {showComponent === "question" && <Question questionId={questionId} />}
-      {showComponent === "store" && <Store />}
-      <QueFooter
-        showQuestion={() => setShowComponent("question")}
-        showStore={() => setShowComponent("store")}
-        currentComponent={showComponent}
-      />
+      {showComponent === "knowledge" && <Knowledge knowledgeId={knowledgeId} />}
+      <FooterMe />
     </>
   );
 };

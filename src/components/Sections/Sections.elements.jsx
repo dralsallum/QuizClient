@@ -29,7 +29,7 @@ export const SectionsContainer = styled.div`
   @media screen and (max-width: 768px) {
     width: 728px;
     max-width: 100%;
-    padding: 10px 0 38px;
+    padding: 10px 0 18px;
   }
 `;
 export const SectionsMain = styled.section`
@@ -114,7 +114,7 @@ export const SecTab = styled.div`
 export const SecMem = styled.div`
   flex-basis: 49%;
   margin: 7px 0;
-  padding: 16px 8px 12px 0px;
+  padding: 14px 8px 10px 0px;
   background-color: #f7fafc;
   text-decoration: none;
   color: #8a321f;
@@ -130,7 +130,7 @@ export const SecMem = styled.div`
 `;
 export const SecTop = styled.div`
   margin-bottom: 4px;
-  font-size: 31px;
+  font-size: 28px;
   line-height: 35px;
   font-family: alternate-gothic-no-3-d, "Trebuchet MS", Arial, Helvetica,
     sans-serif;
@@ -163,7 +163,7 @@ export const SecBot = styled.div`
 export const SecImg = styled.img`
   max-width: 100%;
   float: right;
-  margin: 0 10px 0 19px;
+  margin: 0 8px 0 10px;
   width: 53px;
   height: 53px;
   vertical-align: middle;

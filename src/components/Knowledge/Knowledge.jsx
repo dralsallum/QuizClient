@@ -52,9 +52,9 @@ import {
   QuestionTitleContainer,
   QuestionWrapper,
   AccessibleContainer,
-} from "./Question.elements";
+} from "./Knowledge.elements";
 import { Link } from "react-router-dom";
-import { useLesson } from "../../redux/LessonContext";
+import { useTeach } from "../../redux/TeachContext";
 import Arrow from "./Arrow";
 
 const groupByChapter = (items) => {
@@ -80,7 +80,7 @@ const ChapterItem = ({
   url,
   isAccessible,
 }) => {
-  const { lessonsCompleted } = useLesson();
+  const { teachCompleted } = useTeach();
   const FinishWidth = `${100}%`;
   const content = (
     <QuestionChapterItemElement>
@@ -134,8 +134,8 @@ const Chapter = ({
   chapterItems,
   isAccessible: isChapterAccessible,
 }) => {
-  const { lessonsCompleted } = useLesson();
-  const lessonsForThisChapter = lessonsCompleted[chapterNumber] || [];
+  const { teachCompleted } = useTeach();
+  const lessonsForThisChapter = teachCompleted[chapterNumber] || [];
   const completedLessonsCount = lessonsForThisChapter.filter(
     (lesson) => lesson === true
   ).length;
@@ -147,7 +147,7 @@ const Chapter = ({
     >
       <QuestionChapterOneHeaderContainer>
         <QuestionChapterOneHeader>
-          الوحدة {chapterNumber}
+          الاسبوع {chapterNumber}
         </QuestionChapterOneHeader>
         <QuestionChapterOnePara>
           الدروس المكتملة {completedLessonsCount}/{totalLessons}
@@ -168,7 +168,7 @@ const Chapter = ({
             key={index}
             isAccessible={isAccessible}
             completed={item.completed}
-            type={item.type} // <-- Pass the type
+            type={item.type}
             imgSrc={item.imgSrc}
             mainText={item.mainText}
             subText={item.subText}
@@ -180,18 +180,18 @@ const Chapter = ({
   );
 };
 
-const Question = ({ questionId }) => {
-  const { lessonsCompleted } = useLesson();
+const Knowledge = ({ knowledgeId }) => {
+  const { teachCompleted } = useTeach();
   const [chapters, setChapters] = useState({});
 
   useEffect(() => {
     const loadChapterItems = async () => {
       let chapterItems;
-      switch (questionId) {
-        case "question1":
-          chapterItems = await import("../../chapterItems");
+      switch (knowledgeId) {
+        case "knowledge1":
+          chapterItems = await import("../../engItems");
           break;
-        case "question2":
+        case "knowledge2":
           chapterItems = await import("../../chapterItems2");
           break;
         default:
@@ -202,7 +202,7 @@ const Question = ({ questionId }) => {
     };
 
     loadChapterItems();
-  }, [questionId]);
+  }, [knowledgeId]);
 
   return (
     <QuestionMain>
@@ -210,7 +210,7 @@ const Question = ({ questionId }) => {
         <QuestionContainer>
           <QuestionSubContainer>
             <QuestionTitleContainer>
-              <QuestionTitle>تعلم الانجليزي</QuestionTitle>
+              <QuestionTitle>دورة الايلتس المكثفة</QuestionTitle>
               <QuestionSubTitleContainer>
                 <QuestionSubTitle>مبتدى أ1</QuestionSubTitle>
                 <QuestionSubIconContainer>
@@ -273,7 +273,7 @@ const Question = ({ questionId }) => {
                 </QuestionTimeBoost>
                 {Object.keys(chapters).map((chapterId, index) => {
                   const currentChapterItems = chapters[chapterId];
-                  const prevChapterLessons = lessonsCompleted[String(index)];
+                  const prevChapterLessons = teachCompleted[String(index)];
                   const isAccessible =
                     index === 0 ||
                     areAllLessonsCompleted(prevChapterLessons || []);
@@ -296,4 +296,4 @@ const Question = ({ questionId }) => {
   );
 };
 
-export default Question;
+export default Knowledge;

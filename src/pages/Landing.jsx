@@ -1,22 +1,12 @@
 import React from "react";
-import styled from "styled-components";
-import {
-  NavbarMe,
-  Header,
-  FooterMe,
-  Article,
-  Divider,
-  Sections,
-  Open,
-  NavVoc,
-} from "../components";
+import { FooterMe, Article, Divider, Open, NavVoc, Phone } from "../components";
 
 const Landing = () => {
   return (
     <>
       <NavVoc />
       <Open />
-      <Sections />
+      <Phone />
       <Article />
       <Divider />
       <Article />

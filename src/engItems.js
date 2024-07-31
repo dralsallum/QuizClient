@@ -1,12 +1,12 @@
-const chapterItems = [
+const engItems = [
   {
     chapterId: 1,
     lessonId: 1,
     imgSrc:
       "https://alsallum.s3.eu-north-1.amazonaws.com/welcomeimage1661254149_256.jpg",
-    mainText: "الترحيب بالاخرين",
-    subText: "تعلم التحية عند مقابلة الأشخاص",
-    url: "/train/1/test/1/chapter1",
+    mainText: "يسنمشت بالاخرين",
+    subText: "تعلم التحية عندdsaf مقابلة الأشخاص",
+    url: "/1/lesson1",
   },
   {
     chapterId: 1,
@@ -15,7 +15,7 @@ const chapterItems = [
       "https://alsallum.s3.eu-north-1.amazonaws.com/davidcover1661254508_256.jpg",
     mainText: "تقديم نفسك",
     subText: "قل اسمك",
-    url: "/train/1/test/1/chapter2",
+    url: "/1/lesson2",
   },
   {
     chapterId: 1,
@@ -24,7 +24,7 @@ const chapterItems = [
       "https://alsallum.s3.eu-north-1.amazonaws.com/sogreat1661259325_256.jpg",
     mainText: "توديع الغير",
     subText: "كيف تودع الاخرين",
-    url: "/train/1/test/1/chapter3",
+    url: "/1/lesson3",
   },
   {
     chapterId: 1,
@@ -33,7 +33,7 @@ const chapterItems = [
       "https://alsallum.s3.eu-north-1.amazonaws.com/european-man-woman-casual-wear-standing-back-back-with-arms-crossed-isolated-colorful-wall_171337-51292.jpg",
     mainText: "طلب القهوة",
     subText: "اطلب قهوتك ببساطة",
-    url: "/train/1/test/1/chapter4",
+    url: "/1/lesson4",
   },
   {
     chapterId: 1,
@@ -42,7 +42,7 @@ const chapterItems = [
     imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/Diamond.png",
     mainText: "نقطة التحقق",
     subText: "اختبر مهاراتك للوصول إلى الفصل التالي",
-    url: "/between",
+    url: "/1/lesson5",
   },
   {
     chapterId: 2,
@@ -51,14 +51,14 @@ const chapterItems = [
     imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/jack.jpeg",
     mainText: "وصف الجنسية",
     subText: "السؤال عن جنسية الآخرين والتعريف بجنسيتك",
-    url: "/train/1/test/1/chapter6",
+    url: "/test/2/chapter6",
   },
   {
     imgSrc:
       "https://alsallum.s3.eu-north-1.amazonaws.com/davidcover1661254508_256.jpg",
     mainText: "قول أين تعيش",
     subText: "تحدث عن المكان الذي تعيش فيه",
-    url: "/train/1/test/1/chapter7",
+    url: "/test/2/chapter7",
     chapterId: 2,
     lessonId: 2,
   },
@@ -86,7 +86,7 @@ const chapterItems = [
     imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/Diamond.png",
     mainText: "نقطة التحقق",
     subText: "اختبر مهاراتك للوصول إلى الفصل التالي",
-    url: "/between",
+    url: "/test/2/chapter10",
     chapterId: 2,
     lessonId: 5,
   },
@@ -127,10 +127,51 @@ const chapterItems = [
     imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/Diamond.png",
     mainText: "نقطة التحقق",
     subText: "اختبر مهاراتك للوصول إلى الفصل التالي",
-    url: "/between",
+    url: "/test/3/chapter15",
     chapterId: 3,
+    lessonId: 5,
+  },
+  {
+    imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/diamond.webp",
+    mainText: "الضغط والتنغيم",
+    subText: "مارس الضغط والتنغيم عند طرح الأسئلة باللغة الإنجليزية",
+    url: "/test/4/chapter16",
+    chapterId: 4,
+    lessonId: 1,
+  },
+  {
+    imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/bakery.webp",
+    mainText: "رحلة في المخبز",
+    subText: "تعلم أسماء المخبوزات المختلفة",
+    url: "/test/4/chapter17",
+    chapterId: 4,
+    lessonId: 2,
+  },
+  {
+    imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/cinema.webp",
+    mainText: "زيارة للسينما",
+    subText: "تعلم مفردات السينما",
+    url: "/test/4/chapter18",
+    chapterId: 4,
+    lessonId: 3,
+  },
+  {
+    imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/forest.webp",
+    mainText: "التخييم في الغابة",
+    subText: "استكشاف أنواع الأشجار والحيوانات",
+    url: "/test/4/chapter19",
+    chapterId: 4,
+    lessonId: 4,
+  },
+  {
+    type: "checkpoint",
+    imgSrc: "https://alsallum.s3.eu-north-1.amazonaws.com/Diamond.png",
+    mainText: "نقطة التحقق",
+    subText: "اختبر مهاراتك للوصول إلى الفصل التالي",
+    url: "/test/4/chapter20",
+    chapterId: 4,
     lessonId: 5,
   },
 ];
 
-export default chapterItems;
+export default engItems;

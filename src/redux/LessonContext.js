@@ -38,7 +38,6 @@ export const LessonProvider = ({ children }) => {
     };
 
     const allLessonsCompleted = updatedChapterLessons.every((lesson) => lesson);
-
     if (allLessonsCompleted) {
       const nextChapterNumber = chapterNumber + 1;
       if (!lessonsCompleted[nextChapterNumber]) {

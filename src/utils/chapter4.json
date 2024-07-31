@@ -126,6 +126,7 @@
     "questionText": "اكتب ما يلي بالانجليزي:",
     "questionSubText": "قهوة باردة",
     "questionExplain": "Iced coffee",
+    "avatar": "https://alsallum.s3.eu-north-1.amazonaws.com/cool.png",
     "answerExplain": "'قهوة باردة' تترجم إلى 'Iced coffee' بالإنجليزية",
     "questionType": "type4",
     "correctAnswer": "iced coffee"
