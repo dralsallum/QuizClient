@@ -7,6 +7,10 @@ export const ForgotContainer = styled.div`
   justify-content: center;
   height: 100vh;
   background-color: #f0f0f0;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 
 export const ForgotFormContainer = styled.div`

@@ -78,7 +78,7 @@ const SignLog = () => {
           على <Link to={"/condition"}>اشعارات الخصوصية الخاص بنا</Link>، وإشعار
           الكوكيز، وإشعار الإعلانات المستندة إلى الاهتمامات.
         </LoginSignPara>
-        <StyledLink to={"/forgotpassword"}>نسيت كلمة المرور</StyledLink>
+        <StyledLink to={"/forgot"}>نسيت كلمة المرور</StyledLink>
         <Link to={"/signup"}>
           <RegistarButton>تسجيل حساب جديد</RegistarButton>
         </Link>
