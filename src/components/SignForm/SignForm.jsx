@@ -1,4 +1,3 @@
-// SignForm.jsx
 import React, { useState } from "react";
 import {
   LoginContainer,
@@ -29,24 +28,14 @@ const SignForm = () => {
   };
 
   const getArabicErrorMessage = (englishMessage) => {
-    console.log("Received error message:", englishMessage); // Log the error message for debugging
-
-    if (!englishMessage) return "حدث خطأ غير معروف. يرجى المحاولة مرة أخرى.";
-
-    if (englishMessage.includes("Username already in use")) {
-      return "هذا الاسم مستخدم من قبل";
+    switch (englishMessage) {
+      case "The email address is already in use by another account.":
+        return "عنوان البريد الإلكتروني مستخدم بالفعل من قبل حساب آخر.";
+      case "Invalid password":
+        return "يجب أن تكون كلمة المرور مكونة من 6 عناصر وتحتوي على أحرف وأرقام.";
+      default:
+        return "حدث خطأ غير معروف. يرجى المحاولة مرة أخرى.";
     }
-    if (englishMessage.includes("Email already in use")) {
-      return "عنوان البريد الإلكتروني مستخدم بالفعل";
-    }
-    if (englishMessage.includes("email address is already in use")) {
-      return "عنوان البريد الإلكتروني مستخدم بالفعل من قبل حساب آخر.";
-    }
-    if (englishMessage.includes("Invalid password")) {
-      return "يجب أن تكون كلمة المرور مكونة من 6 عناصر وتحتوي على أحرف وأرقام.";
-    }
-
-    return "حدث خطأ غير معروف. يرجى المحاولة مرة أخرى.";
   };
 
   const handleSubmit = async (e) => {
@@ -58,12 +47,9 @@ const SignForm = () => {
       await dispatch(register(inputs)).unwrap();
       navigate("/");
     } catch (error) {
-      // Log the entire error object to understand its structure
-      console.log("Error object received:", error);
-
-      // Access the correct error message from the response
-      const errorMessage = error.data?.message || "Registration failed.";
-      setErrorMessage(getArabicErrorMessage(errorMessage));
+      setErrorMessage(
+        getArabicErrorMessage(error.message || "Registration failed.")
+      );
     } finally {
       setIsLoading(false);
     }
