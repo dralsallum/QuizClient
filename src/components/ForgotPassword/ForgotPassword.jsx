@@ -28,9 +28,12 @@ const ForgotPassword = () => {
         "https://quizeng-022517ad949b.herokuapp.com/api/auth/forgot-password",
         { email }
       );
-      setMessage(response.data);
+      setMessage(response.data.message); // Assume backend sends a success message
     } catch (error) {
-      setMessage(error.response.data || "Password reset request failed.");
+      // Use the error message from the backend or a default message
+      setMessage(
+        error.response?.data?.message || "Password reset request failed."
+      );
     } finally {
       setIsLoading(false);
     }
@@ -52,7 +55,9 @@ const ForgotPassword = () => {
             type="email"
             name="email"
             placeholder="Enter your email"
+            value={email}
             onChange={handleChange}
+            required
           />
           <ForgotButton disabled={isLoading}>
             {isLoading ? "Requesting..." : "Request Password Reset"}
