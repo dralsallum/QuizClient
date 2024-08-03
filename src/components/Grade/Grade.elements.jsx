@@ -9,6 +9,14 @@ const ScaleUpDown = keyframes`
     transform: scale(1.2);
   }
 `;
+const ScaleUpDo = keyframes`
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+`;
 
 export const AllWr = styled.div`
   direction: rtl;
@@ -359,6 +367,7 @@ export const EssLiHe = styled.h3`
   padding: 0 0 10px 0;
   margin: 0;
   font-weight: 300;
+  animation: ${ScaleUpDo} 2s ease-in-out infinite;
 
   @media screen and (max-width: 768px) {
   }
