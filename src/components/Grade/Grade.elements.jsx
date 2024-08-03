@@ -350,11 +350,12 @@ export const EssLi = styled.li`
   width: 150px;
 
   @media screen and (max-width: 768px) {
+    padding: 8px;
   }
 `;
 export const EssLiHe = styled.h3`
   color: #00578a;
-  font-size: 0.8125em;
+  font-size: 0.9125em;
   padding: 0 0 10px 0;
   margin: 0;
   font-weight: 300;
