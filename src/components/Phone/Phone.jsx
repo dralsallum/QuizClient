@@ -63,7 +63,7 @@ const Article = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 3000);
+    }, 2500);
 
     return () => clearInterval(interval);
   }, [currentIndex]);
