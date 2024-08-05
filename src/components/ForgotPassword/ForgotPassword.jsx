@@ -16,7 +16,7 @@ const ForgotPassword = () => {
           بالاسفل
           <br />
           <br />
-          <a href="mailto:fluentfox@hotmail.com">fluentfox@hotmail.com</a>.
+          <a href="mailto:fluentfox@outlook.com">fluentfox@outlook.com</a>.
         </ForgotSubHeader>
       </ForgotFormContainer>
     </ForgotContainer>

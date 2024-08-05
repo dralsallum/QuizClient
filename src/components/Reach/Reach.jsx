@@ -23,7 +23,7 @@ const Reach = () => {
         <ContactMethod>
           <h3>البريد الإلكتروني</h3>
           <ContactLink href="fluentfox@hotmail.com">
-            fluentfox@hotmail.com
+            fluentfox@outlook.com
           </ContactLink>
         </ContactMethod>
         <ContactMethod>
