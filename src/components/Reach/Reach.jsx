@@ -5,13 +5,11 @@ import {
   ContactSection,
   ContactMethod,
   ContactLink,
-} from "./Reach.elements";
-import {
-  SocialIconLink,
   SocialIcons,
   SocialMedia,
   SocialMediaWrap,
-} from "../FooterMe/Footer.elements";
+  SocialIconLink,
+} from "./Reach.elements";
 
 import { FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa";
 
@@ -22,7 +20,7 @@ const Reach = () => {
       <ContactSection>
         <ContactMethod>
           <h3>البريد الإلكتروني</h3>
-          <ContactLink href="fluentfox@hotmail.com">
+          <ContactLink href="mailto:fluentfox@outlook.com">
             fluentfox@outlook.com
           </ContactLink>
         </ContactMethod>
@@ -35,7 +33,7 @@ const Reach = () => {
                   <FaInstagram />
                 </SocialIconLink>
                 <SocialIconLink
-                  href={"https://www.youtube.com/@dralsallum"}
+                  href="https://www.youtube.com/@dralsallum"
                   target="_blank"
                   aria-label="Youtube"
                   rel="noopener noreferrer"
@@ -46,7 +44,7 @@ const Reach = () => {
                   <FaTiktok />
                 </SocialIconLink>
                 <SocialIconLink
-                  href={"https://www.twitter.com/@fluent_fox"}
+                  href="https://www.twitter.com/@fluent_fox"
                   target="_blank"
                   aria-label="Twitter"
                   rel="noopener noreferrer"

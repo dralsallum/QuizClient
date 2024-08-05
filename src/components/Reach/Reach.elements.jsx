@@ -25,7 +25,10 @@ export const ContactMethod = styled.div`
 `;
 
 export const ContactLink = styled.a`
+  font-weight: bold;
+  font-size: 20px;
   color: #007bff;
+  margin-top: 10px;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -52,7 +55,7 @@ export const SocialMediaIcon = styled.img`
 export const SocialMedia = styled.section`
   max-width: 1000px;
   width: 100%;
-  background-color: #101522;
+  background-color: #f9f9f9;
 `;
 
 export const SocialMediaWrap = styled.div`
@@ -62,7 +65,7 @@ export const SocialMediaWrap = styled.div`
   width: 90%;
   max-width: 1000px;
   margin: 40px auto 0 auto;
-  background-color: #101522;
+  background-color: #f9f9f9;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -70,7 +73,7 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled(Link)`
-  color: #fff;
+  color: #000;
   justify-content: start;
   cursor: pointer;
   text-decoration: none;
@@ -78,10 +81,24 @@ export const SocialLogo = styled(Link)`
   display: flex;
   align-items: center;
   margin-bottom: 16px;
-  background-color: #101522;
+  background-color: #f9f9f9;
 `;
 
 export const SocialIcon = styled(FaMagento)`
   margin-right: 10px;
-  background-color: #101522;
+  background-color: #f9f9f9;
+`;
+
+export const SocialIcons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  background-color: #f9f9f9;
+`;
+
+export const SocialIconLink = styled.a`
+  color: #000;
+  font-size: 24px;
+  background-color: #f9f9f9;
 `;
