@@ -9,7 +9,7 @@ import Train from "./pages/Train";
 import Test from "./pages/Test";
 import Eng from "./pages/Eng";
 import Audio from "./pages/Audio";
-import { Listen, Products, Sun, Who, Write } from "./components";
+import { Delete, Listen, Products, Sun, Who, Write } from "./components";
 import {
   BrowserRouter as Router,
   Route,
@@ -84,6 +84,7 @@ const App = () => {
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/forgotpassword" element={<ForgotPassword />} />
                 <Route path="/who" element={<Who />} />
+                <Route path="/delete" element={<Delete />} />
                 <Route path="/:chapterId/:lessonId" element={<Class />} />
                 <Route path="/condition" element={<Condition />} />
                 <Route path="/cashout" element={<Cashout />} />
