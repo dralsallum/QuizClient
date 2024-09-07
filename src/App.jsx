@@ -9,7 +9,16 @@ import Train from "./pages/Train";
 import Test from "./pages/Test";
 import Eng from "./pages/Eng";
 import Audio from "./pages/Audio";
-import { Delete, Listen, Products, Sun, Who, Write } from "./components";
+import {
+  Delete,
+  Listen,
+  Products,
+  Reset,
+  Response,
+  Sun,
+  Who,
+  Write,
+} from "./components";
 import {
   BrowserRouter as Router,
   Route,
@@ -85,9 +94,11 @@ const App = () => {
                 <Route path="/forgotpassword" element={<ForgotPassword />} />
                 <Route path="/who" element={<Who />} />
                 <Route path="/delete" element={<Delete />} />
+                <Route path="/response" element={<Response />} />
                 <Route path="/:chapterId/:lessonId" element={<Class />} />
                 <Route path="/condition" element={<Condition />} />
                 <Route path="/cashout" element={<Cashout />} />
+                <Route path="/reset-password" element={<Reset />} />
                 <Route
                   path="/train/:questionId/test/:chapterId/:chapterName"
                   element={
