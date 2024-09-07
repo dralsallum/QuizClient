@@ -9,7 +9,7 @@ import {
   ErrorContainer,
   SuccessContainer,
 } from "./Reset.elements";
-import axios from "axios";
+import { publicRequest } from "../../requestMethods"; // Import publicRequest
 import { useParams } from "react-router-dom";
 
 const ResetPassword = () => {
@@ -17,7 +17,7 @@ const ResetPassword = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState("");
-  const { token } = useParams();
+  const { token } = useParams(); // Get token from URL
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -33,12 +33,15 @@ const ResetPassword = () => {
     }
     setIsLoading(true);
     try {
-      const response = await axios.post(`/api/auth/reset-password/${token}`, {
-        password,
-      });
-      setMessage(response.data);
+      const response = await publicRequest.post(
+        `/users/reset-password/${token}`,
+        {
+          password,
+        }
+      );
+      setMessage(response.data.message || "Password reset successful");
     } catch (error) {
-      setMessage(error.response.data || "Password reset failed.");
+      setMessage(error.response?.data?.message || "Password reset failed.");
     } finally {
       setIsLoading(false);
     }
@@ -61,6 +64,7 @@ const ResetPassword = () => {
             name="password"
             placeholder="كلمة مرور جديدة"
             onChange={handleChange}
+            required
           />
           <ResetSubHeader>تاكيد كلمة المرور</ResetSubHeader>
           <ResetInput
@@ -68,6 +72,7 @@ const ResetPassword = () => {
             name="confirmPassword"
             placeholder="تاكيد كلمة المرور"
             onChange={handleChange}
+            required
           />
           <ResetButton disabled={isLoading}>
             {isLoading ? "قيد التغيير..." : "اعادة تعيين"}
