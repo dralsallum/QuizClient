@@ -98,7 +98,7 @@ const App = () => {
                 <Route path="/:chapterId/:lessonId" element={<Class />} />
                 <Route path="/condition" element={<Condition />} />
                 <Route path="/cashout" element={<Cashout />} />
-                <Route path="/reset-password" element={<Reset />} />
+                <Route path="/reset-password/:token" element={<Reset />} />
                 <Route
                   path="/train/:questionId/test/:chapterId/:chapterName"
                   element={
