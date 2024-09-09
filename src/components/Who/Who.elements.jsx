@@ -7,11 +7,13 @@ export const WhoWrapper = styled.div`
   justify-content: center;
   align-items: center;
   direction: rtl;
-  flex-wrap: wrap;
-  gap: 1rem;
   padding: 0 2rem;
   margin-bottom: 1rem;
+  gap: 2rem;
+  background-color: #f8f9fa;
+  margin-top: 1rem;
 `;
+
 export const WhoMain = styled.div`
   display: flex;
   justify-content: center;
@@ -23,22 +25,27 @@ export const WhoMain = styled.div`
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  color: #0000ed;
-  color: inherit; /* You can customize this color as needed */
+  color: inherit;
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 `;
 
-export const WhoContainer = styled.div``;
+export const WhoContainer = styled.div`
+  max-width: 600px;
+  padding: 1rem;
+`;
+
 export const WhoHeader = styled.h3`
   color: #2946b6;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
 `;
+
 export const WhoPara = styled.p`
-  color: #848484;
-  font-size: 1.1rem;
-  padding: 0 0.8rem;
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.6;
   text-align: center;
 `;
 
@@ -49,21 +56,21 @@ export const WhoButton = styled.button`
   border: none;
   border-radius: 12px;
   font-size: 1.4rem;
-  margin-top: 1rem;
-  width: 100%;
-
+  width: 200px;
+  text-align: center;
   &:hover {
     cursor: pointer;
+    background-color: #1c3a91;
   }
 `;
 
 export const WhoImgContainer = styled.div`
   display: flex;
-
-
-  }
+  justify-content: center;
+  width: 100%;
 `;
+
 export const WhoImg = styled.img`
   object-fit: cover;
-  width: 15rem;
+  width: 200px;
 `;

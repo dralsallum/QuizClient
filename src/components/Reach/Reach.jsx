@@ -20,8 +20,8 @@ const Reach = () => {
       <ContactSection>
         <ContactMethod>
           <h3>البريد الإلكتروني</h3>
-          <ContactLink href="mailto:fluentfox@outlook.com">
-            fluentfox@outlook.com
+          <ContactLink href="mailto:no-reply@fluentfox.net">
+            no-reply@fluentfox.net
           </ContactLink>
         </ContactMethod>
         <ContactMethod>

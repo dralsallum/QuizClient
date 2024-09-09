@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   LoginContainer,
   RegistarButton,
@@ -13,7 +13,6 @@ import {
   LoaderContainer,
   Loader,
   StyledLink,
-  LoginSignEx,
 } from "./SignLog.elements";
 import { useDispatch } from "react-redux";
 import { login } from "../../redux/userRedux";

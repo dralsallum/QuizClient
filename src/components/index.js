@@ -46,6 +46,5 @@ export { default as Knowledge } from "./Knowledge/Knowledge";
 export { default as Elsa } from "./Elsa/Elsa";
 export { default as Phone } from "./Phone/Phone";
 export { default as Checkpoints } from "./Checkpoints/Checkpoints";
-export { default as ForgotPassword } from "./ForgotPassword/ForgotPassword";
 export { default as Delete } from "./Delete/Delete";
 export { default as Response } from "./Response/Response";

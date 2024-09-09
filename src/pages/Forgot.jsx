@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NavAud, FooterMe, ForgotPassword } from "../components";
+import { NavAud, FooterMe, Response } from "../components";
 
 const Forgot = () => {
   useEffect(() => {
@@ -8,7 +8,7 @@ const Forgot = () => {
   return (
     <>
       <NavAud />
-      <ForgotPassword />
+      <Response />
       <FooterMe />
     </>
   );

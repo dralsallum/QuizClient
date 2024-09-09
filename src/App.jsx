@@ -9,16 +9,7 @@ import Train from "./pages/Train";
 import Test from "./pages/Test";
 import Eng from "./pages/Eng";
 import Audio from "./pages/Audio";
-import {
-  Delete,
-  Listen,
-  Products,
-  Reset,
-  Response,
-  Sun,
-  Who,
-  Write,
-} from "./components";
+import { Delete, Listen, Products, Reset, Sun, Who, Write } from "./components";
 import {
   BrowserRouter as Router,
   Route,
@@ -37,13 +28,13 @@ import Cashout from "./pages/Cashout";
 import Condition from "./pages/Condition";
 import Forgot from "./pages/Forgot";
 import Shop from "./pages/Shop";
-import ForgotPassword from "./components/ForgotPassword/ForgotPassword";
 import Contact from "./pages/Contact";
 import Teach from "./pages/Teach";
 import Class from "./pages/Class";
 import { LessonProvider } from "./redux/LessonContext";
 import { TeachProvider } from "./redux/TeachContext";
 import Between from "./pages/Between";
+import Information from "./pages/Information";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -91,10 +82,9 @@ const App = () => {
                 <Route path="/forgot" element={<Forgot />} />
                 <Route path="/teach" element={<Teach />} />
                 <Route path="/shop" element={<Shop />} />
-                <Route path="/forgotpassword" element={<ForgotPassword />} />
-                <Route path="/who" element={<Who />} />
+                <Route path="/who" element={<Information />} />
                 <Route path="/delete" element={<Delete />} />
-                <Route path="/response" element={<Response />} />
+
                 <Route path="/:chapterId/:lessonId" element={<Class />} />
                 <Route path="/condition" element={<Condition />} />
                 <Route path="/cashout" element={<Cashout />} />

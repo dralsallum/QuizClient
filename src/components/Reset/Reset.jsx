@@ -39,9 +39,9 @@ const ResetPassword = () => {
           password,
         }
       );
-      setMessage(response.data.message || "Password reset successful");
+      setMessage(response.data.message || "تم تغيير الرقم السري بنجاح");
     } catch (error) {
-      setMessage(error.response?.data?.message || "Password reset failed.");
+      setMessage(error.response?.data?.message || "تم تغيير الرقم السري بنجاح");
     } finally {
       setIsLoading(false);
     }

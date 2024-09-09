@@ -29,10 +29,10 @@ const Response = () => {
         { email }
       );
       setMessage(
-        response.data.message || "Password reset link sent to your email."
+        response.data.message || "الرقم السري لحسابك تم ارساله الى ايميلك"
       );
     } catch (error) {
-      setMessage(error.response?.data?.message || "Failed to send reset link.");
+      setMessage(error.response?.data?.message || "فشل في اتمام العملية");
     } finally {
       setIsLoading(false);
     }

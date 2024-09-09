@@ -5,7 +5,7 @@ export const ResetContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 100vh;
   background-color: #f5f5f5;
   padding: 2rem;
 `;

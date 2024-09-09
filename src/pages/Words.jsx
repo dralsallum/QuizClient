@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterMe, NavAud, Sections, Vocabulary } from "../components";
+import { FooterMe, NavAud, Vocabulary } from "../components";
 
 const Words = () => {
   return (
