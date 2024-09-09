@@ -65,10 +65,10 @@ export const ResetButton = styled.button`
 `;
 
 export const ErrorContainer = styled.div`
-  background-color: #f8d7da;
-  color: #721c24;
+  background-color: #d3d3d3;
+  color: #383838;
   padding: 1rem;
-  border: 1px solid #f5c6cb;
+  border: 1px solid #a0a0a0;
   border-radius: 5px;
   margin-bottom: 1rem;
 `;

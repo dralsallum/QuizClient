@@ -76,9 +76,7 @@ const Footer = () => {
               }}
             >
               <NavbarContainerImg
-                src={
-                  "https://alsallum.s3.eu-north-1.amazonaws.com/main-english-logo.png"
-                }
+                src={"https://alsallum.s3.eu-north-1.amazonaws.com/foxlogo.png"}
               />
             </Link>
           </NavLogo>
