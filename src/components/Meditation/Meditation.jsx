@@ -122,12 +122,10 @@ import {
 import feature from "../../utils/Feature.json";
 import feature2 from "../../utils/Feature2.json";
 import NavAud from "../NavAud/NavAud";
-import useRequireAuth from "../../useRequireAuth";
 
 const Meditation = () => {
   const [showComponent, setShowComponent] = useState("recent");
   const [focusTab, setFocusTab] = useState("recent");
-  const [isSubscribed, setIsSubscribed] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
