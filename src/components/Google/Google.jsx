@@ -16,7 +16,7 @@ const GoogleAd = () => {
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}
-        data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" // Replace with your AdSense client ID
+        data-ad-client="ca-pub-7167740558520278" // Replace with your AdSense client ID
         data-ad-slot="yyyyyyyyyy" // Replace with your AdSense slot ID
         data-ad-format="auto"
         data-full-width-responsive="true"
