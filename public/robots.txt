@@ -5,6 +5,9 @@ Disallow: /private/
 Disallow: /tmp/
 Disallow: /test/
 
+# Explicitly allow ads.txt
+Allow: /ads.txt
+
 # Allow all other content to be indexed
 Allow: /
 
@@ -16,4 +19,4 @@ User-agent: Bingbot
 Disallow: /no-bing/
 
 # Sitemap location
-Sitemap: https://fluentfox.net/sitemap.xml
+Sitemap: https://www.fluentfox.net/sitemap.xml
