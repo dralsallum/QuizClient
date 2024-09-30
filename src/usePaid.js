@@ -1,44 +1,43 @@
-// src/components/ProtectedRoute.js
-import React, { useState } from "react";
+import React from "react";
 import { Navigate, useParams, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
-import GoogleAd from "./components/Google/GoogleAd"; // Ensure correct path
-import { hasAccess } from "../utils/accessControl"; // Ensure correct path
 
 export const ProtectedRoute = ({ children }) => {
   const user = useSelector((state) => state.user.currentUser);
-  const location = useLocation();
   const { vocabSet, storyUrl, chapterName } = useParams();
+  const location = useLocation();
 
-  // Determine the base route
-  const pathSegments = location.pathname.split("/").filter(Boolean);
-  const baseRoute = pathSegments.length > 0 ? `/${pathSegments[0]}/` : "/";
+  const freeAccessVocabSets = ["set1"];
+  const freeAccessStoryUrls = ["story4"];
+  const freeAccessChapters = ["chapter1"];
 
-  // Extract the parameter based on the base route
-  let param = "";
-  if (baseRoute === "/vocabulary/") {
-    param = vocabSet;
-  } else if (baseRoute === "/audio/listen/") {
-    param = storyUrl;
-  } else if (baseRoute === "/test/") {
-    param = chapterName;
+  if (!user) {
+    return <Navigate to="/signup" />;
   }
 
-  // Determine access
-  const accessResult = hasAccess(user, baseRoute, param);
-
-  // State to track if ad has been skipped
-  const [adSkipped, setAdSkipped] = useState(false);
-
-  if (!accessResult.access) {
-    if (accessResult.redirect === "/signup") {
-      return <Navigate to="/signup" />;
-    } else if (accessResult.redirect === "/checkout" && !adSkipped) {
-      // Render the GoogleAd component and pass the onSkip callback
-      return <GoogleAd onSkip={() => setAdSkipped(true)} />;
-    }
+  if (
+    location.pathname.startsWith("/vocabulary/") &&
+    !user.isPaid &&
+    !freeAccessVocabSets.includes(vocabSet)
+  ) {
+    return <Navigate to="/cashout" />;
   }
 
-  // If access is granted or ad has been skipped, render the children
+  if (
+    location.pathname.startsWith("/audio/listen/") &&
+    !user.isPaid &&
+    !freeAccessStoryUrls.includes(storyUrl)
+  ) {
+    return <Navigate to="/cashout" />;
+  }
+
+  if (
+    location.pathname.startsWith("/train/1/test/1/") &&
+    !user.isPaid &&
+    !freeAccessChapters.includes(chapterName)
+  ) {
+    return <Navigate to="/cashout" />;
+  }
+
   return children;
 };
