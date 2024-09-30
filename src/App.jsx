@@ -35,7 +35,6 @@ import { LessonProvider } from "./redux/LessonContext";
 import { TeachProvider } from "./redux/TeachContext";
 import Between from "./pages/Between";
 import Information from "./pages/Information";
-import PrivacySettings from "./pages/PrivacySettings";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -49,7 +48,6 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<Landing />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/privacy-settings" element={<PrivacySettings />} />
                 <Route path="/home" element={<Home />} />
                 <Route
                   path="/vocabulary/:vocabSet"
