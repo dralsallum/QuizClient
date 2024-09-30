@@ -1,6 +1,8 @@
+// src/components/ProtectedRoute.js
 import React from "react";
 import { Navigate, useParams, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
+import GoogleAd from "./components/Google/GoogleAd"; // Import the GoogleAd component
 
 export const ProtectedRoute = ({ children }) => {
   const user = useSelector((state) => state.user.currentUser);
@@ -15,28 +17,28 @@ export const ProtectedRoute = ({ children }) => {
     return <Navigate to="/signup" />;
   }
 
-  if (
-    location.pathname.startsWith("/vocabulary/") &&
-    !user.isPaid &&
-    !freeAccessVocabSets.includes(vocabSet)
-  ) {
-    return <Navigate to="/cashout" />;
-  }
+  // Function to check access based on the current path
+  const checkAccess = () => {
+    if (location.pathname.startsWith("/vocabulary/")) {
+      return user.isPaid || freeAccessVocabSets.includes(vocabSet);
+    }
 
-  if (
-    location.pathname.startsWith("/audio/listen/") &&
-    !user.isPaid &&
-    !freeAccessStoryUrls.includes(storyUrl)
-  ) {
-    return <Navigate to="/cashout" />;
-  }
+    if (location.pathname.startsWith("/audio/listen/")) {
+      return user.isPaid || freeAccessStoryUrls.includes(storyUrl);
+    }
 
-  if (
-    location.pathname.startsWith("/test/") &&
-    !user.isPaid &&
-    !freeAccessChapters.includes(chapterName)
-  ) {
-    return <Navigate to="/cashout" />;
+    if (location.pathname.startsWith("/test/")) {
+      return user.isPaid || freeAccessChapters.includes(chapterName);
+    }
+
+    // If none of the above, allow access
+    return true;
+  };
+
+  const hasAccess = checkAccess();
+
+  if (!hasAccess) {
+    return <GoogleAd />; // Display Google Ads instead of redirecting
   }
 
   return children;
