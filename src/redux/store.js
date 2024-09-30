@@ -4,7 +4,7 @@ import cartReducer from "./cartRedux";
 import userReducer from "./userRedux";
 import flipReducer from "./flipRedux";
 import basketReducer from "./basketRedux";
-import lessonReducer from "./lessonRedux";
+import consentReducer from "./consentRedux";
 import storage from "redux-persist/lib/storage";
 import {
   persistStore,
@@ -28,6 +28,7 @@ const rootReducer = combineReducers({
   cart: cartReducer,
   basket: basketReducer,
   flip: flipReducer,
+  consent: consentReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
