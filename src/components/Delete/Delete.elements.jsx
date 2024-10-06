@@ -113,3 +113,75 @@ export const CancelButton = styled.button`
     font-size: 14px;
   }
 `;
+
+export const ModalOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+`;
+
+// Modal Content
+export const ModalContent = styled.div`
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 480px) {
+    padding: 20px 20px;
+    max-width: 90%;
+  }
+`;
+
+// Modal Heading
+export const ModalHeading = styled.h3`
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
+`;
+
+// Modal Message
+export const ModalMessage = styled.p`
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #555;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+`;
+
+// Modal Button
+export const ModalButton = styled.button`
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 480px) {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+`;

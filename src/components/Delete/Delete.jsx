@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   ContentWrapper,
@@ -8,6 +8,11 @@ import {
   DeleteButton,
   CancelButton,
   ButtonGroup,
+  ModalOverlay,
+  ModalContent,
+  ModalHeading,
+  ModalMessage,
+  ModalButton,
 } from "./Delete.elements";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -17,8 +22,15 @@ import { FooterMe } from "..";
 
 const Delete = () => {
   const [confirming, setConfirming] = useState(false);
+  const [showSignInPopup, setShowSignInPopup] = useState(false);
   const navigate = useNavigate();
   const user = useSelector((state) => state.user.currentUser);
+
+  useEffect(() => {
+    if (!user) {
+      setShowSignInPopup(true);
+    }
+  }, [user]);
 
   const handleDelete = async () => {
     try {
@@ -28,6 +40,11 @@ const Delete = () => {
       console.error("Error deleting user:", err);
       // Handle the error as needed
     }
+  };
+
+  const handleSignIn = () => {
+    setShowSignInPopup(false);
+    navigate("/login"); // Adjust the route as needed
   };
 
   return (
@@ -61,6 +78,20 @@ const Delete = () => {
         </ContentWrapper>
       </Container>
       <FooterMe />
+
+      {/* Modal Popup for Sign-In Prompt */}
+      {showSignInPopup && (
+        <ModalOverlay>
+          <ModalContent>
+            <ModalHeading>Authentication Required</ModalHeading>
+            <ModalMessage>
+              You need to be signed in to delete your account. Please sign in
+              first.
+            </ModalMessage>
+            <ModalButton onClick={handleSignIn}>Sign In</ModalButton>
+          </ModalContent>
+        </ModalOverlay>
+      )}
     </>
   );
 };
