@@ -35,6 +35,7 @@ import { LessonProvider } from "./redux/LessonContext";
 import { TeachProvider } from "./redux/TeachContext";
 import Between from "./pages/Between";
 import Information from "./pages/Information";
+import Policy from "./pages/Policy";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -86,7 +87,8 @@ const App = () => {
                 <Route path="/delete" element={<Delete />} />
 
                 <Route path="/:chapterId/:lessonId" element={<Class />} />
-                <Route path="/condition" element={<Condition />} />
+                <Route path="/terms-of-use" element={<Condition />} />
+                <Route path="/privacy-policy" element={<Policy />} />
                 <Route path="/cashout" element={<Cashout />} />
                 <Route path="/reset-password/:token" element={<Reset />} />
                 <Route
