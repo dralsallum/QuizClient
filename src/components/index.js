@@ -38,6 +38,7 @@ export { default as NavVoc } from "./NavVoc/NavVoc";
 export { default as Write } from "./Write/Write";
 export { default as Reset } from "./Reset/Reset";
 export { default as Term } from "./Term/Term";
+export { default as Privacies } from "./Privacies/Privacies";
 export { default as Reach } from "./Reach/Reach";
 export { default as Course } from "./Course/Course";
 export { default as Lesson } from "./Lesson/Lesson";

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { FooterMe, NavTech, Term } from "../components";
+import { FooterMe, NavTech, Privacies } from "../components";
 
 const Condition = () => {
   useEffect(() => {
@@ -9,7 +9,7 @@ const Condition = () => {
   return (
     <>
       <NavTech />
-      <Term />
+      <Privacies />
       <FooterMe />
     </>
   );
