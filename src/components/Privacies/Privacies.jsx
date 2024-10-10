@@ -16,7 +16,6 @@ const PrivacySection = ({ title, children }) => (
 const PrivacyPolicy = () => {
   return (
     <div style={{ marginTop: "1em" }}>
-      <h2>سياسة الخصوصية</h2>
       <p>
         <strong>آخر تحديث:</strong> 20 سبتمبر 2024
       </p>
@@ -146,7 +145,7 @@ const PrivacyPolicy = () => {
 const Term = () => {
   return (
     <TermsContainer>
-      <TermsHeader>الشروط والأحكام</TermsHeader>
+      <TermsHeader>سياسة الخصوصية</TermsHeader>
       <TermsContent>
         <p>
           نرحب بكم في موقع فلونت فوكس. باستخدام هذا الموقع، فإنك توافق على
