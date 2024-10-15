@@ -44,7 +44,7 @@ const Footer = () => {
             <FooterLink to="/sign-up">
               <StyledLink to={"/who"}>قصتنا</StyledLink>
             </FooterLink>
-            <FooterLink to="/condition">الشروط والاحكام</FooterLink>
+            <FooterLink to="/terms-of-use">الشروط والاحكام</FooterLink>
           </FooterLinksItems>
           <FooterLinksItems>
             <FooterLinkTitle>تواصل معنا</FooterLinkTitle>

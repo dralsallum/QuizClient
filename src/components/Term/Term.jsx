@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  TermsContainer,
-  TermsHeader,
-  TermsContent,
-} from "./TermsAndPrivacy.elements"; // تأكد من تحديث المسار حسب هيكل المشروع الخاص بك
+import { TermsContainer, TermsHeader, TermsContent } from "./Term.elements"; // تأكد من تحديث المسار حسب هيكل المشروع الخاص بك
 
 // مكون فرعي لقسم من الشروط أو سياسة الخصوصية
 const Section = ({ title, children }) => (
