@@ -17,7 +17,7 @@ const PrivacyPolicy = () => {
   return (
     <div style={{ marginTop: "1em" }}>
       <p>
-        <strong>آخر تحديث:</strong> 20 سبتمبر 2024
+        <strong>آخر تحديث:</strong> 28 سبتمبر 2024
       </p>
 
       <PrivacySection title="مقدمة">
@@ -142,7 +142,7 @@ const PrivacyPolicy = () => {
   );
 };
 
-const Term = () => {
+const Privacies = () => {
   return (
     <TermsContainer>
       <TermsHeader>سياسة الخصوصية</TermsHeader>
@@ -226,4 +226,4 @@ const Term = () => {
   );
 };
 
-export default Term;
+export default Privacies;

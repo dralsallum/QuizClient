@@ -14,13 +14,13 @@ const Section = ({ title, children }) => (
 );
 
 // مكون الشروط وسياسة الخصوصية المدمج
-const TermsAndPrivacy = () => {
+const Term = () => {
   return (
     <TermsContainer>
       <TermsHeader>شروط الاستخدام وسياسة الخصوصية</TermsHeader>
       <TermsContent>
         <p>
-          <strong>آخر تحديث:</strong> 20 سبتمبر 2024
+          <strong>آخر تحديث:</strong> 15 اوكتوبر 2024
         </p>
 
         {/* شروط الاستخدام */}
@@ -464,4 +464,4 @@ const TermsAndPrivacy = () => {
   );
 };
 
-export default TermsAndPrivacy;
+export default Term;
