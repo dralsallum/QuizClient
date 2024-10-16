@@ -17,7 +17,7 @@ const PrivacySection = ({ title, children }) => (
 const PrivacyPolicy = () => {
   return (
     <div style={{ marginTop: "1em", direction: "rtl", textAlign: "right" }}>
-      <h2>سياسة الخصوصية لتطبيق تتبع الوقت Timelines</h2>
+      <h2>سياسة الخصوصية لتطبيق تتبع الوقت fluentfox</h2>
       <p>يقوم هذا التطبيق بجمع بعض البيانات الشخصية من مستخدميه.</p>
       <p>
         يمكن طباعة هذا المستند للرجوع إليه باستخدام أمر الطباعة في إعدادات أي
@@ -98,7 +98,7 @@ const PrivacyPolicy = () => {
           15800، جمهورية التشيك
           <br />
           بريد إلكتروني للاتصال بالمالك:{" "}
-          <a href="mailto:lukas@timelinesapp.io">lukas@timelinesapp.io</a>
+          <a href="mailto:lukas@fluentfoxapp.io">lukas@fluentfoxapp.io</a>
         </p>
       </PrivacySection>
 
@@ -112,7 +112,7 @@ const PrivacyPolicy = () => {
             15800، جمهورية التشيك
             <br />
             بريد إلكتروني للاتصال بالمالك:{" "}
-            <a href="mailto:lukas@timelinesapp.io">lukas@timelinesapp.io</a>
+            <a href="mailto:lukas@fluentfoxapp.io">lukas@fluentfoxapp.io</a>
           </p>
         </PrivacySection>
 
