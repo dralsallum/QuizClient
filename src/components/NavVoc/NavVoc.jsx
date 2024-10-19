@@ -35,6 +35,8 @@ import { persistor } from "../../redux/store";
 import { useDispatch, useSelector } from "react-redux";
 import { signOut } from "../../redux/userRedux";
 
+// ... (rest of your imports)
+
 const iconMap = {
   faClipboardList,
   faBookOpen,
@@ -66,6 +68,26 @@ const NavVoc = () => {
     dispatch(signOut());
     persistor.purge();
   };
+
+  // Function to detect user's device and return the appropriate app store link
+  const getAppStoreLink = () => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Check for iOS devices
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      return "https://apps.apple.com/sa/app/fluentfox-language-lessons/id6673901781"; // Replace with your App Store link
+    }
+
+    // Check for Android devices
+    if (/android/i.test(userAgent)) {
+      return "https://apps.apple.com/sa/app/fluentfox-language-lessons/id6673901781"; // Replace with your Google Play link
+    }
+
+    // Default link for other devices
+    return "https://apps.apple.com/sa/app/fluentfox-language-lessons/id6673901781"; // Replace with your website or fallback link
+  };
+
+  const appStoreLink = getAppStoreLink();
 
   const Notification = () => {
     return (
@@ -119,7 +141,15 @@ const NavVoc = () => {
               ) : (
                 <NavSubAt to="/login">تسجيل الدخول</NavSubAt>
               )}
-              <NavSubAa to="/signup">حساب جديد</NavSubAa>
+              {/* Modify the signup button */}
+              <NavSubAa
+                as="a"
+                href={appStoreLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                حمل التطبيق
+              </NavSubAa>
             </NavSubTop>
             <NavTopBut onClick={toggleNotification}>
               <FontAwesomeIcon icon={faBars} style={{ fontSize: "24px" }} />
