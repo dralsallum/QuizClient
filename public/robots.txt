@@ -7,7 +7,7 @@ Disallow: /test/
 
 # Explicitly allow ads.txt
 Allow: /ads.txt
-
+/app-ads.txt
 # Allow all other content to be indexed
 Allow: /
 
