@@ -75,16 +75,16 @@ const NavVoc = () => {
 
     // Check for iOS devices
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      return "https://apps.apple.com/sa/app/fluentfox-language-lessons/id6673901781"; // Replace with your App Store link
+      return "http://bit.ly/fluentfox"; // Replace with your App Store link
     }
 
     // Check for Android devices
     if (/android/i.test(userAgent)) {
-      return "https://apps.apple.com/sa/app/fluentfox-language-lessons/id6673901781"; // Replace with your Google Play link
+      return "http://bit.ly/fluentfox"; // Replace with your Google Play link
     }
 
     // Default link for other devices
-    return "https://apps.apple.com/sa/app/fluentfox-language-lessons/id6673901781"; // Replace with your website or fallback link
+    return "http://bit.ly/fluentfox"; // Replace with your website or fallback link
   };
 
   const appStoreLink = getAppStoreLink();
