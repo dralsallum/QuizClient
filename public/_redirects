@@ -1,4 +1,8 @@
+# Exclude app-ads.txt and ads.txt from redirection
+/app-ads.txt    /app-ads.txt    200
+/ads.txt        /ads.txt        200
 
+# Redirect all other traffic to index.html
 /*    /index.html   200
-https://fluentfox.net    301!
 
+https://fluentfox.net    301!
