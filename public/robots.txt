@@ -6,8 +6,8 @@ Disallow: /tmp/
 Disallow: /test/
 
 # Explicitly allow ads.txt and app-ads.txt
-Allow: /ads.txt
 Allow: /app-ads.txt
+Allow: /ads.txt
 
 # Allow all other content to be indexed
 Allow: /
