@@ -31,7 +31,7 @@ const Privacies = () => {
   return (
     <TermsContainer>
       <Header>
-        <Title>سياسة الخصوصية لـ Fluentfox لتتبع الوقت</Title>
+        <Title>سياسة الخصوصية لـ Fluentfox </Title>
         <Subtitle>
           خصوصيتك مهمة بالنسبة لنا. هذه هي سياسة Fluentfox لاحترام خصوصيتك فيما
           يتعلق بأي معلومات قد نجمعها منك عبر موقعنا الإلكتروني،
