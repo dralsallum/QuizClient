@@ -1,7 +1,12 @@
-// Privacies.jsx
 import React from "react";
 import styles from "./Privacies.elements";
-import { FaChartBar, FaEnvelope, FaDatabase, FaTools } from "react-icons/fa";
+import {
+  FaChartBar,
+  FaEnvelope,
+  FaDatabase,
+  FaTools,
+  FaChartLine,
+} from "react-icons/fa"; // Imported FaChartLine for AppsFlyer
 
 // Destructure styled-components from the imported styles object
 const {
@@ -56,6 +61,7 @@ const Privacies = () => {
         </p>
 
         <ServiceContainer>
+          {/* Analytics ServiceCard */}
           <ServiceCard>
             <IconWrapper>
               <FaChartBar size={24} color="#4a90e2" />
@@ -68,8 +74,16 @@ const Privacies = () => {
                 الاستخدام؛ بيانات الموقع
               </ServiceDetails>
             </ServiceItem>
+            <ServiceItem>
+              <ServiceSubTitle>AppsFlyer</ServiceSubTitle>
+              <ServiceDetails>
+                <BoldText>البيانات الشخصية:</BoldText> معلومات الجهاز؛ بيانات
+                الاستخدام؛ بيانات الموقع.
+              </ServiceDetails>
+            </ServiceItem>
           </ServiceCard>
 
+          {/* Communication with User ServiceCard */}
           <ServiceCard>
             <IconWrapper>
               <FaEnvelope size={24} color="#50e3c2" />
@@ -87,6 +101,7 @@ const Privacies = () => {
         </ServiceContainer>
 
         <ServiceContainer>
+          {/* Infrastructure Monitoring ServiceCard */}
           <ServiceCard>
             <IconWrapper>
               <FaDatabase size={24} color="#f5a623" />
@@ -102,6 +117,7 @@ const Privacies = () => {
             </ServiceItem>
           </ServiceCard>
 
+          {/* Contact Management and Messaging ServiceCard */}
           <ServiceCard>
             <IconWrapper>
               <FaTools size={24} color="#bd10e0" />
@@ -161,8 +177,8 @@ const Privacies = () => {
             بالتواصل مع المالك.
           </p>
           <p>
-            أي استخدام للكوكيز – أو لأدوات تتبع أخرى – من قبل هذا التطبيق أو من
-            قبل مالكي الخدمات الخارجية المستخدمة من قبل هذا التطبيق يخدم غرض
+            أي استخدام للكوكيز – أو لأدوات التحليل أخرى – من قبل هذا التطبيق أو
+            من قبل مالكي الخدمات الخارجية المستخدمة من قبل هذا التطبيق يخدم غرض
             تقديم الخدمة المطلوبة من قبل المستخدم، بالإضافة إلى أي أغراض أخرى
             موصوفة في هذا المستند.
           </p>
@@ -282,6 +298,43 @@ const Privacies = () => {
                 .
               </p>
             </ListItem>
+
+            {/* AppsFlyer ListItem */}
+            <ListItem>
+              <BoldText>AppsFlyer</BoldText>
+              <p>
+                AppsFlyer هي منصة تحليلات وتحديد نسب تثبيت التطبيقات تقدم خدمات
+                تتبع أداء الحملات التسويقية وتحليل سلوك المستخدمين.
+              </p>
+              <p>
+                تستخدم هذه الخدمة لجمع بيانات تتعلق بتفاعل المستخدمين مع التطبيق
+                وتحسين الحملات التسويقية بناءً على هذه البيانات.
+              </p>
+              <p>
+                <BoldText>البيانات الشخصية المعالجة:</BoldText> معلومات الجهاز؛
+                بيانات الاستخدام؛ بيانات الموقع؛ معلومات التحليل مثل معرف الجهاز
+                ومعرفات الإعلانات.
+              </p>
+              <p>
+                <BoldText>مكان المعالجة:</BoldText> الولايات المتحدة –{" "}
+                <Link
+                  href="https://www.appsflyer.com/privacy-policy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  سياسة الخصوصية
+                </Link>
+                .
+              </p>
+              <p>
+                <BoldText>الأساس القانوني للمعالجة:</BoldText> المصلحة المشروعة
+                للمالك في تحسين خدماته وتحليل فعالية الحملات التسويقية.
+              </p>
+              <p>
+                يمكن للمستخدمين إلغاء تتبعهم عبر AppsFlyer من خلال إعدادات
+                الجهاز أو من خلال روابط الإلغاء المتاحة في الاتصالات التسويقية.
+              </p>
+            </ListItem>
           </List>
         </SubSection>
 
@@ -294,7 +347,7 @@ const Privacies = () => {
           </p>
 
           <List>
-            {/* Removed TikTok Ads, Meta Ads, and AppFlyer sections */}
+            {/* You can add Marketing and Advertising services here if needed */}
           </List>
         </SubSection>
 
@@ -702,11 +755,11 @@ const Privacies = () => {
             صغيرة من البيانات المخزنة في متصفح المستخدم.
           </ListItem>
           <ListItem>
-            <BoldText>أداة التتبع:</BoldText> تشير أدوات التتبع إلى أي تقنية—مثل
-            الكوكيز، المعرفات الفريدة، علامات الويب، السكريبتات المضمنة،
-            العلامات الإلكترونية، والبصمة الرقمية—التي تمكن من تتبع المستخدمين،
-            على سبيل المثال، من خلال الوصول إلى المعلومات أو تخزينها على جهاز
-            المستخدم.
+            <BoldText>أداة التحليل:</BoldText> تشير أدوات التحليل إلى أي
+            تقنية—مثل الكوكيز، المعرفات الفريدة، علامات الويب، السكريبتات
+            المضمنة، العلامات الإلكترونية، والبصمة الرقمية—التي تمكن من تتبع
+            المستخدمين، على سبيل المثال، من خلال الوصول إلى المعلومات أو تخزينها
+            على جهاز المستخدم.
           </ListItem>
           <ListItem>
             <BoldText>المعلومات القانونية:</BoldText> تتعلق سياسة الخصوصية هذه
