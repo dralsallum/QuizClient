@@ -39,7 +39,10 @@ const ResetPassword = () => {
           password,
         }
       );
-      setMessage(response.data.message || "تم تغيير الرقم السري بنجاح");
+      setMessage(
+        response.data.message ||
+          "تم تغيير الرقم السري بنجاح, قد تجد الرسالة بالبريد غير الهام"
+      );
     } catch (error) {
       setMessage(error.response?.data?.message || "تم تغيير الرقم السري بنجاح");
     } finally {
