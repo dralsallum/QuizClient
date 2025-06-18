@@ -129,7 +129,7 @@ const NavVoc = () => {
           <NavTop>
             <NavTopAt href="">
               <NavTopLogo
-                src="https://alsallum.s3.eu-north-1.amazonaws.com/fox-white.png"
+                src="https://alsallum.s3.eu-north-1.amazonaws.com/glivooWhite.png"
                 alt=""
               />
             </NavTopAt>
