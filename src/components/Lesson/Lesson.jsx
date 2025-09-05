@@ -1,4 +1,3 @@
-import React, { useEffect, useState, useRef, useCallback } from "react";
 import {
   FaPlay,
   FaPause,
@@ -15,11 +14,23 @@ import ReactPlayer from "react-player";
 import Countdown from "react-countdown-clock";
 import {
   FaBookOpen,
+  FaRegFileAlt,
+  FaPaperPlane,
   FaCaretDown,
   FaCheckSquare,
-  FaRegFileAlt,
 } from "react-icons/fa";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import React, {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  useCallback,
+} from "react";
+import styled from "styled-components";
+
+/* ========================= Styled Components ========================= */
+
 import {
   AllWr,
   ClOn,
@@ -65,14 +76,6 @@ import {
   InsOl,
   InsSub,
   InsWr,
-  LeMa,
-  LeMi,
-  LeNone,
-  LeSec,
-  LeSecSu,
-  LeSub,
-  LeTop,
-  LeWr,
   LoadingBar,
   LoadingContainer,
   NavAt,
@@ -105,39 +108,13 @@ import {
   QuestionText,
   AnswerSection,
   QuizButton,
-  InputContainer,
-  InputfieldContainer,
-  Inputfield,
   QuizAppHeader,
   QuizAppAudio,
   ScoreSectionImg,
   ScoreSectionbackground,
   ScoreSectionProgress,
   VocFoBut,
-  VocFoBu,
   StyledProgress,
-  AudioPlayerContainer,
-  PlayButton,
-  ColAudConF,
-  ColAud,
-  ColAudCon,
-  ColAudSubCon,
-  ExCon,
-  ExLab,
-  ExReCon,
-  ExSubSpan,
-  ExReInp,
-  ExReSubInpCon,
-  UtCon,
-  UtyCon,
-  KmCon,
-  KmSubCon,
-  OldSpan,
-  ColAudSubBut,
-  ColAudSubSpan,
-  ColAudSubSvg,
-  ExSubCon,
-  TitHe,
   VocFroSu,
   FlipCard,
   FlipCardInner,
@@ -164,9 +141,6 @@ import {
   VocHead,
   VocHeadSpan,
   VocMain,
-  VocOn,
-  VocOnBut,
-  HiddenWr,
   VocTh,
   VocFo,
   VocFoTop,
@@ -189,14 +163,7 @@ import {
   TeBot,
   TeDiv,
   TeBotLi,
-  Card,
   AllaWr,
-  AiSec,
-  AiHe,
-  AiSp,
-  AiPa,
-  NewWr,
-  NewBut,
   InpWr,
   InpCon,
   InpIco,
@@ -303,14 +270,297 @@ import {
   FeedPa3,
   FeedPa4,
   FeedSp,
-  TipWr,
-  TipPr,
   TipNo,
   TipSp,
   VidEx,
 } from "../Lesson/Lesson.elements";
 import { useTeach } from "../../redux/TeachContext";
 
+const LeMa = styled.div`
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  direction: rtl;
+`;
+
+const LeNone = styled.div`
+  height: 16px;
+`;
+
+const LeWr = styled.div`
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px 24px;
+`;
+
+const LeTop = styled.div`
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+`;
+
+const LeSub = styled.div`
+  padding: 20px;
+`;
+
+const LeSec = styled.div`
+  display: grid;
+  gap: 20px;
+`;
+
+const LeSecSu = styled.div`
+  width: 100%;
+`;
+
+const LeMi = styled.div`
+  display: grid;
+  gap: 16px;
+`;
+
+const SectionTitle = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #111827;
+  font-weight: 700;
+  font-size: 18px;
+`;
+
+const SectionTitleText = styled.span`
+  font-size: 18px;
+`;
+
+const Card = styled.div`
+  background: #fff;
+  border: 1px solid #eef0f3;
+  border-radius: 14px;
+  padding: 16px;
+`;
+
+const AiSec = styled(Card)`
+  padding: 0;
+`;
+
+const AiHeader = styled.div`
+  padding: 18px;
+  border-bottom: 1px solid #f0f2f5;
+`;
+
+const AiTitle = styled.h3`
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #111827;
+`;
+
+const AiBadge = styled.span`
+  margin-inline-start: 8px;
+  font-size: 12px;
+  background: #eef2ff;
+  color: #2f4cce;
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-weight: 700;
+`;
+
+const AiSubtitle = styled.p`
+  margin: 8px 0 0 0;
+  color: #6b7280;
+  font-size: 14px;
+`;
+
+const VideoWrap = styled.div`
+  padding: 0 18px 12px;
+  video,
+  iframe {
+    width: 100%;
+    border-radius: 12px;
+  }
+`;
+
+const ChatWrap = styled.div`
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 12px;
+  padding: 0 18px 12px;
+`;
+
+const ChatList = styled.div`
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 12px;
+  max-height: 420px;
+  overflow-y: auto;
+  padding: 8px 0;
+`;
+
+const Row = styled.div`
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 12px;
+
+  &.from-user {
+    grid-template-columns: 1fr 56px;
+    direction: ltr; /* flip the grid to push bubble left while keeping RTL text */
+  }
+`;
+
+const Avatar = styled.img`
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  justify-self: center;
+  align-self: start;
+`;
+
+const Bubble = styled.div`
+  background: ${(p) => (p.$role === "assistant" ? "#f5f7ff" : "#eaf7ef")};
+  border: 1px solid ${(p) => (p.$role === "assistant" ? "#e7ebff" : "#d9f1e1")};
+  color: #111827;
+  padding: 12px 14px;
+  border-radius: 14px;
+  line-height: 1.7;
+  font-size: 15px;
+  direction: rtl;
+`;
+
+const AudioButton = styled.button`
+  border: none;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+
+  &:hover {
+    background: #f9fafb;
+  }
+`;
+
+const Typing = styled.div`
+  font-size: 13px;
+  color: #6b7280;
+  padding: 0 18px 8px;
+`;
+
+const InputWrap = styled.div`
+  padding: 12px 18px 18px;
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  gap: 10px;
+`;
+
+const RoundButton = styled.button`
+  height: 48px;
+  width: 48px;
+  border-radius: 12px;
+  border: none;
+  background: ${(p) => (p.$primary ? "#2f4cce" : "#111827")};
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  opacity: ${(p) => (p.disabled ? 0.6 : 1)};
+`;
+
+const TextInput = styled.input`
+  height: 48px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  padding: 0 14px;
+  outline: none;
+  font-size: 15px;
+  direction: rtl;
+
+  &:focus {
+    border-color: #c7d2fe;
+    box-shadow: 0 0 0 3px #eef2ff;
+  }
+`;
+
+const TipWr = styled.div`
+  padding: 0 18px 16px;
+`;
+
+const TipPr = styled.div`
+  background: #fff7ed;
+  border: 1px solid #ffedd5;
+  color: #7c2d12;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 13px;
+`;
+
+const NewWr = styled.div`
+  padding: 0 18px 18px;
+  display: flex;
+  justify-content: flex-end;
+`;
+
+const NewBut = styled.button`
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #111827;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f9fafb;
+  }
+`;
+
+/* Review + Instructions blocks (kept minimal & pretty) */
+const Block = styled(Card)``;
+
+const BlockHeader = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  color: #111827;
+`;
+
+const BlockBody = styled.div`
+  margin-top: 10px;
+  color: #374151;
+  line-height: 1.9;
+  font-size: 15px;
+`;
+
+const HintToggle = styled.button`
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f9fafb;
+  }
+`;
+
+const HintList = styled.ul`
+  margin: 10px 0 0 0;
+  padding-inline-start: 18px;
+  display: grid;
+  gap: 6px;
+  color: #374151;
+`;
 const lowScoreSVG =
   "https://alsallum.s3.eu-north-1.amazonaws.com/boy_study.webp";
 const mediumScoreSVG =
@@ -465,12 +715,6 @@ const VideoPlayer = ({ src }) => {
   const handleMouseDown = (e) => {
     setIsDragging(true);
     handleDrag(e);
-  };
-
-  const handleMouseMove = (e) => {
-    if (isDragging) {
-      handleDrag(e);
-    }
   };
 
   const handleMouseUp = () => {
@@ -638,12 +882,6 @@ const Lesson = () => {
       };
     }
   }, [currentIndex]);
-
-  const formatTime = (timeInSeconds) => {
-    const minutes = Math.floor(timeInSeconds / 60);
-    const seconds = Math.floor(timeInSeconds % 60);
-    return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
-  };
 
   const handleNavigation = (path) => {
     navigate(path);
@@ -1011,269 +1249,317 @@ const LessonContentType1 = ({ data, isHinVisible, toggleHinVisibility }) => {
 };
 
 const LessonContentType2 = ({ data, isHinVisible, toggleHinVisibility }) => {
+  // Chat state
+  const [messages, setMessages] = useState([]);
+  const [userText, setUserText] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  // Recording state
   const [isRecording, setIsRecording] = useState(false);
-  const [transcript, setTranscript] = useState("");
   const mediaRecorderRef = useRef(null);
   const audioChunksRef = useRef([]);
+  const lastAssistantAudioRef = useRef(null); // optional audio playback slot
 
+  // Seed greeting
+  useEffect(() => {
+    if (!data) return;
+    setMessages([
+      {
+        role: "assistant",
+        text: `أهلًا! أنا Shakespeare AI، مدرب المحادثة الخاص بك لـ IELTS. جاهز نبدأ عن "${data.section}"؟ حدّثني بجملة قصيرة.`,
+        audioUrl: "",
+      },
+    ]);
+  }, [data]);
+
+  const sendToAI = useCallback(
+    async (userMessageText) => {
+      if (!userMessageText?.trim()) return;
+
+      // push user message
+      setMessages((prev) => [...prev, { role: "user", text: userMessageText }]);
+      setLoading(true);
+
+      try {
+        // Send minimal chat history (role/text only)
+        const payload = {
+          messages: [...messages, { role: "user", text: userMessageText }].map(
+            (m) => ({ role: m.role, content: m.text })
+          ),
+          // If your backend expects extra context:
+          meta: { section: data?.section || "", lesson: data?.title || "" },
+        };
+
+        const res = await userRequest.post("/chatgpt/chat", payload);
+        const reply = res?.data?.reply || "تم! تابع.";
+        const tts = res?.data?.audioUrl || ""; // optional if you return TTS
+
+        setMessages((prev) => [
+          ...prev,
+          { role: "assistant", text: reply, audioUrl: tts },
+        ]);
+
+        // optional auto-play last assistant audio
+        if (tts) {
+          try {
+            if (lastAssistantAudioRef.current) {
+              lastAssistantAudioRef.current.pause();
+            }
+            lastAssistantAudioRef.current = new Audio(tts);
+            lastAssistantAudioRef.current.play().catch(() => {});
+          } catch {}
+        }
+      } catch (e) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "assistant",
+            text: "تعذر الحصول على رد الآن. جرّب مرة أخرى لاحقًا أو أعد الصياغة 🙏",
+          },
+        ]);
+      } finally {
+        setLoading(false);
+      }
+    },
+    [messages, data]
+  );
+
+  const onSendText = async () => {
+    const t = userText.trim();
+    setUserText("");
+    await sendToAI(t);
+  };
+
+  /* -------- Recording: start/stop → transcribe → chat -------- */
   const startRecording = () => {
-    if (!isRecording) {
-      navigator.mediaDevices
-        .getUserMedia({ audio: true })
-        .then((stream) => {
-          mediaRecorderRef.current = new MediaRecorder(stream);
-          audioChunksRef.current = [];
-          mediaRecorderRef.current.ondataavailable = (event) => {
-            audioChunksRef.current.push(event.data);
-          };
-          mediaRecorderRef.current.onstop = handleRecordingStop;
-          mediaRecorderRef.current.start();
-          setIsRecording(true);
-        })
-        .catch((error) =>
-          console.error("Error accessing media devices.", error)
-        );
-    }
+    if (isRecording) return;
+    navigator.mediaDevices
+      .getUserMedia({ audio: true })
+      .then((stream) => {
+        mediaRecorderRef.current = new MediaRecorder(stream);
+        audioChunksRef.current = [];
+        mediaRecorderRef.current.ondataavailable = (e) => {
+          audioChunksRef.current.push(e.data);
+        };
+        mediaRecorderRef.current.onstop = handleRecordingStop;
+        mediaRecorderRef.current.start();
+        setIsRecording(true);
+      })
+      .catch((err) => console.error("Mic error:", err));
   };
 
   const stopRecording = () => {
-    if (isRecording && mediaRecorderRef.current) {
-      mediaRecorderRef.current.stop();
-      setIsRecording(false);
+    if (!isRecording || !mediaRecorderRef.current) return;
+    mediaRecorderRef.current.stop();
+    setIsRecording(false);
+  };
+
+  const handleRecordingStop = async () => {
+    try {
+      const audioBlob = new Blob(audioChunksRef.current, {
+        type: "audio/webm",
+      });
+      const formData = new FormData();
+      formData.append("audio", audioBlob);
+
+      const resp = await userRequest.post(
+        "/googleSpeech/transcribe",
+        formData,
+        {
+          headers: { "Content-Type": "multipart/form-data" },
+        }
+      );
+
+      const transcript = resp?.data?.transcript || "";
+      if (transcript) {
+        await sendToAI(transcript);
+      } else {
+        setMessages((p) => [
+          ...p,
+          { role: "assistant", text: "ما سمعت كلام واضح. حاول مرة ثانية 🎙️" },
+        ]);
+      }
+    } catch (e) {
+      setMessages((p) => [
+        ...p,
+        { role: "assistant", text: "تعذر تحويل الصوت إلى نص. أعد المحاولة." },
+      ]);
     }
   };
 
-  const handleRecordingStop = () => {
-    const audioBlob = new Blob(audioChunksRef.current, { type: "audio/wav" });
-    const formData = new FormData();
-    formData.append("audio", audioBlob);
-
-    userRequest
-      .post("/googleSpeech/transcribe", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      })
-      .then((response) => {
-        setTranscript(response.data.transcript);
-      })
-      .catch((error) => {
-        console.error("Error transcribing audio:", error);
-      });
+  const resetChat = () => {
+    setMessages([
+      {
+        role: "assistant",
+        text: "بدأنا محادثة جديدة ✅. عرفني بنفسك بجملة بسيطة (اسمك، عملك، هواية…).",
+        audioUrl: "",
+      },
+    ]);
   };
 
-  if (!data || !data.paragraphs || !data.pregraphs || !data.hints) {
+  // Simple video player (if you pass data.videoUrl)
+  const VideoPlayer = ({ src }) => {
+    if (!src) return null;
+    return <video src={src} controls playsInline style={{ width: "100%" }} />;
+  };
+
+  if (!data || !data.hints) {
     return (
-      <LoadingContainer>
-        <LoadingBar />
-      </LoadingContainer>
+      <LeMa>
+        <LeWr>
+          <Card>جاري التحميل…</Card>
+        </LeWr>
+      </LeMa>
     );
   }
 
   return (
     <LeMa>
-      <LeNone></LeNone>
+      <LeNone />
       <LeWr>
         <LeTop>
           <LeSub>
             <LeSec>
               <LeSecSu>
                 <LeMi>
-                  <ClOn>
-                    <ClOnWr>
-                      <ClOnCon>
-                        <FaBookOpen
-                          style={{
-                            color: "#000",
-                            fontSize: "18px",
-                            marginLeft: "8px",
-                          }}
-                        />
-                        <ClOnMa>{data.section}</ClOnMa>
-                      </ClOnCon>
-                    </ClOnWr>
-                  </ClOn>
+                  {/* Section title */}
+                  <SectionTitle>
+                    <FaBookOpen style={{ color: "#111827" }} />
+                    <SectionTitleText>{data.section}</SectionTitleText>
+                  </SectionTitle>
+
+                  {/* ===== AI Trainer ===== */}
                   <AiSec>
-                    <AiHe>
-                      المدرب شكسبير <AiSp>AI</AiSp>
-                    </AiHe>
-                    <AiPa>
-                      اتدرب وراجع محادثتك فوريا مع شكسبير AI اللي طورته مع فريقي
-                      بالذكاء الاصطناعي
-                    </AiPa>
-                    <VidEx>
-                      <VideoPlayer src={data.videoUrl} />
-                    </VidEx>
-                    <ConvWr>
-                      <ConvLt>
-                        <ConvLtIm
-                          src="https://cdn.dalilkplatform.com/storage/2023/09/28095736/shakespeare-1.png"
-                          alt=""
-                        />
-                        <ConvAi>
-                          <ConvMa>
-                            <ConvAc>
-                              Hello! Good to see you. I'm Shakespeare AI, your
-                              IELTS Speaking trainer. How are you doing today?{" "}
-                            </ConvAc>
-                            <ConvPl>
-                              <ConvPlay>
-                                <audio src=""></audio>
-                                <PlUser>
-                                  <PlAt href="">
-                                    <PlIa>
-                                      <FaPlay
-                                        style={{
-                                          fontSize: "16px",
-                                          color: "#2f4cce",
-                                        }}
-                                      />
-                                    </PlIa>
-                                  </PlAt>
-                                </PlUser>
-                              </ConvPlay>
-                            </ConvPl>
-                          </ConvMa>
-                        </ConvAi>
-                      </ConvLt>
-                      <ConvAll>
-                        <ConvLtIm
-                          src="https://cdn.dalilkplatform.com/storage/2023/09/28095739/user.png"
-                          alt=""
-                        />
-                        <ConvRt>
-                          <ConvRtWr>
-                            <div>
-                              <audio src=""></audio>
-                              <PlUser>
-                                <PlAt href="">
-                                  <PlIa>
-                                    <FaPlay
-                                      style={{
-                                        fontSize: "16px",
-                                        color: "#2f4cce",
-                                      }}
-                                    />
-                                  </PlIa>
-                                </PlAt>
-                              </PlUser>
-                            </div>
-                          </ConvRtWr>
-                          <UseWr>
-                            I don't, uh, I don't know how to finish it.
-                          </UseWr>
-                        </ConvRt>
-                      </ConvAll>
-                    </ConvWr>
-                    <TipWr>
-                      <TipNo>
-                        <TipSp>{/* processing */}</TipSp>
-                      </TipNo>
-                      <TipPr>{transcript}</TipPr>
-                    </TipWr>
-                    <InpWr>
-                      <InpCon>
-                        <InpIco>
-                          <InpIc>
-                            {isRecording ? (
-                              <FaStop
-                                style={{ fontSize: "20px", color: "#fff" }}
-                                onClick={stopRecording}
-                              />
-                            ) : (
-                              <FaMicrophone
-                                style={{ fontSize: "20px", color: "#fff" }}
-                                onClick={startRecording}
+                    <AiHeader>
+                      <AiTitle>
+                        المدرب شكسبير <AiBadge>AI</AiBadge>
+                      </AiTitle>
+                      <AiSubtitle>
+                        تدرّب وراجع محادثتك فورياً — كتابة أو صوت.
+                      </AiSubtitle>
+                    </AiHeader>
+
+                    {data.videoUrl ? (
+                      <VideoWrap>
+                        <VideoPlayer src={data.videoUrl} />
+                      </VideoWrap>
+                    ) : null}
+
+                    {/* Chat list */}
+                    <ChatList>
+                      {messages.map((m, i) => {
+                        const isUser = m.role === "user";
+                        return (
+                          <Row key={i} className={isUser ? "from-user" : ""}>
+                            {!isUser && (
+                              <Avatar
+                                src="https://cdn.dalilkplatform.com/storage/2023/09/28095736/shakespeare-1.png"
+                                alt="AI"
                               />
                             )}
-                          </InpIc>
-                        </InpIco>
-                        <div></div>
-                        <button style={{ display: "none" }}></button>
-                        <button style={{ display: "none" }}></button>
-                        <div></div>
-                      </InpCon>
-                    </InpWr>
-                    <NewWr>
-                      <NewBut>محادثة جديدة</NewBut>
-                    </NewWr>
-                  </AiSec>
-                  <InsWr>
-                    <InsCo>
-                      <InsSub>
-                        <FaCheckSquare
-                          style={{
-                            color: "#000",
-                            fontSize: "18px",
-                            backgroundColor: "#fff",
-                            borderRadius: "2px",
-                            padding: "2px",
-                          }}
-                        />
-                        <InsHe>التعليمات</InsHe>
-                      </InsSub>
-                    </InsCo>
-                  </InsWr>
-                  <InsBo>
-                    <InsBoWr>
-                      <InsOl>
-                        <InsLi>
-                          <InsCon>
-                            <InsConSu>{data.instructions}</InsConSu>
-                            <InsHin>
-                              <InsHinBu onClick={toggleHinVisibility}>
-                                <InsHinSp>
-                                  <InsHinDi>تورطت? خلنا نلمح لك</InsHinDi>
-                                </InsHinSp>
-                                <FaCaretDown
-                                  style={{
-                                    color: "#000",
-                                    fontSize: "24px",
-                                    marginLeft: "8px",
+                            <Bubble $role={m.role}>{m.text}</Bubble>
+                            {isUser && (
+                              <Avatar
+                                src="https://cdn.dalilkplatform.com/storage/2023/09/28095739/user.png"
+                                alt="You"
+                              />
+                            )}
+                            {!isUser && m.audioUrl ? (
+                              <div style={{ gridColumn: "1 / -1" }}>
+                                <AudioButton
+                                  onClick={() => {
+                                    try {
+                                      const a = new Audio(m.audioUrl);
+                                      a.play().catch(() => {});
+                                    } catch {}
                                   }}
-                                />
-                              </InsHinBu>
-                            </InsHin>
-                          </InsCon>
-                        </InsLi>
-                      </InsOl>
-                    </InsBoWr>
-                  </InsBo>
-                  {isHinVisible && (
-                    <HinWr>
-                      <HinCo>
-                        <HinSub>
-                          <HinRe>
-                            {data.hints.map((hint, index) => (
-                              <HinPa key={index}>{hint}</HinPa>
-                            ))}
-                          </HinRe>
-                        </HinSub>
-                      </HinCo>
-                    </HinWr>
-                  )}
-                  <ConWr>
-                    <ConCo>
-                      <ConSu>
-                        <FaRegFileAlt
-                          style={{
-                            color: "#000",
-                            fontSize: "18px",
-                            marginLeft: "8px",
-                          }}
-                        />
-                        <ConHe>مراجعة المفهوم</ConHe>
-                      </ConSu>
-                    </ConCo>
-                  </ConWr>
-                  <RevWr>
-                    <RevCon>
-                      <RevSub>
-                        <RevSu>{data.review}</RevSu>
-                      </RevSub>
-                      <RevSpan>{data.review}</RevSpan>
-                    </RevCon>
-                  </RevWr>
+                                >
+                                  <FaPlay /> استمع للرد
+                                </AudioButton>
+                              </div>
+                            ) : null}
+                          </Row>
+                        );
+                      })}
+                    </ChatList>
+
+                    {loading && <Typing>…المساعد يكتب الآن</Typing>}
+
+                    {/* Input row */}
+                    <InputWrap>
+                      <RoundButton
+                        onClick={isRecording ? stopRecording : startRecording}
+                        title={isRecording ? "إيقاف التسجيل" : "تسجيل صوتي"}
+                        aria-label="mic"
+                        style={{
+                          background: isRecording ? "#e11d48" : "#111827",
+                        }}
+                      >
+                        {isRecording ? <FaStop /> : <FaMicrophone />}
+                      </RoundButton>
+
+                      <TextInput
+                        placeholder="اكتب ردك هنا…"
+                        value={userText}
+                        onChange={(e) => setUserText(e.target.value)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") onSendText();
+                        }}
+                      />
+
+                      <RoundButton
+                        $primary
+                        onClick={onSendText}
+                        disabled={loading || !userText.trim()}
+                        title="إرسال"
+                        aria-label="send"
+                      >
+                        <FaPaperPlane />
+                      </RoundButton>
+                    </InputWrap>
+
+                    {/* Transcript preview (last mic result) */}
+                    {/* Optional helper area; you can remove if not needed */}
+                    {/* Show nothing when empty */}
+                    {/* If you want to show last transcript text, add state for it */}
+                  </AiSec>
+
+                  {/* ===== Instructions ===== */}
+                  <Block>
+                    <BlockHeader>
+                      <FaRegFileAlt />
+                      <span>التعليمات</span>
+                    </BlockHeader>
+                    <BlockBody>
+                      {data.instructions}
+                      <div>
+                        <HintToggle onClick={toggleHinVisibility}>
+                          <span>تورطت؟ عرض تلميحات</span>
+                          <FaCaretDown />
+                        </HintToggle>
+                      </div>
+                      {isHinVisible && (
+                        <HintList>
+                          {data.hints.map((h, idx) => (
+                            <li key={idx}>{h}</li>
+                          ))}
+                        </HintList>
+                      )}
+                    </BlockBody>
+                  </Block>
+
+                  {/* ===== Review ===== */}
+                  <Block>
+                    <BlockHeader>
+                      <FaBookOpen />
+                      <span>مراجعة المفهوم</span>
+                    </BlockHeader>
+                    <BlockBody>{data.review}</BlockBody>
+                  </Block>
+
+                  <NewWr>
+                    <NewBut onClick={resetChat}>محادثة جديدة</NewBut>
+                  </NewWr>
                 </LeMi>
               </LeSecSu>
             </LeSec>
@@ -1332,22 +1618,6 @@ const LessonContentType3 = ({ data, isHinVisible, toggleHinVisibility }) => {
     setIsExpVisible(!isExpVisible);
   };
 
-  const togglePlayPause = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
-
-  const handleMouseDown = (e) => {
-    setIsDragging(true);
-    updateVideoTime(e);
-  };
-
   const handleMouseMove = (e) => {
     if (isDragging) {
       updateVideoTime(e);
@@ -1396,19 +1666,6 @@ const LessonContentType3 = ({ data, isHinVisible, toggleHinVisibility }) => {
       }
     };
   }, []);
-
-  const formatTime = (seconds) => {
-    const minutes = Math.floor(seconds / 60);
-    const secs = Math.floor(seconds % 60);
-    return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
-  };
-
-  const calculateProgress = () => {
-    if (videoRef.current && videoRef.current.duration) {
-      return (currentTime / videoRef.current.duration) * 100;
-    }
-    return 0;
-  };
 
   if (!data || !data.paragraphs || !data.pregraphs || !data.hints) {
     return (

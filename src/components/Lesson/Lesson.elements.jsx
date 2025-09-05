@@ -511,7 +511,13 @@ export const RevSu = styled.div`
 export const RevSpan = styled.span``;
 export const FoWr = styled.footer`
   display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 `;
+
 export const FoCon = styled.div`
   height: 4rem;
   background-color: #10162f;

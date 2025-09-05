@@ -5,9 +5,6 @@ import {
   BotAt,
   BotAtt,
   BotWr,
-  CoBut,
-  CoCon,
-  CoNav,
   CoWr,
   CurBo,
   CurCon,
@@ -42,10 +39,8 @@ import {
   MidPar,
   MidSub,
   MidWr,
-  SecCon,
   SecFl,
   SecFlAll,
-  SecGr,
   SecWr,
   SubCon,
   SubFi,
@@ -53,7 +48,6 @@ import {
   SubFirHe,
   SubFirHea,
   SubFo,
-  SubHe,
   SubNon,
   SubSe,
   SubSeHe,
@@ -65,8 +59,6 @@ import {
   TriWr,
   ViBut,
 } from "./Course.elements";
-
-import { Link } from "react-router-dom";
 
 const Course = () => {
   return (
