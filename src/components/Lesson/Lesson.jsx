@@ -251,274 +251,42 @@ import {
   FeedPa4,
   FeedSp,
   Card1,
+  LeMa,
+  LeNone,
+  LeWr,
+  LeTop,
+  LeSub,
+  LeSec,
+  LeSecSu,
+  LeMi,
+  SectionTitle,
+  SectionTitleText,
+  Card,
+  AiSec,
+  AiHeader,
+  AiTitle,
+  AiBadge,
+  AiSubtitle,
+  VideoWrap,
+  ChatList,
+  Row,
+  Avatar,
+  Bubble,
+  AudioButton,
+  Typing,
+  InputWrap,
+  RoundButton,
+  TextInput,
+  NewWr,
+  NewBut,
+  Block,
+  BlockHeader,
+  BlockBody,
+  HintToggle,
+  HintList,
 } from "../Lesson/Lesson.elements";
 import { useTeach } from "../../redux/TeachContext";
 
-const LeMa = styled.div`
-  width: 100%;
-  min-height: 100vh;
-  background-color: #f8f9fa;
-  direction: rtl;
-`;
-
-const LeNone = styled.div`
-  height: 16px;
-`;
-
-const LeWr = styled.div`
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 16px 24px;
-`;
-
-const LeTop = styled.div`
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-  overflow: hidden;
-`;
-
-const LeSub = styled.div`
-  padding: 20px;
-`;
-
-const LeSec = styled.div`
-  display: grid;
-  gap: 20px;
-`;
-
-const LeSecSu = styled.div`
-  width: 100%;
-`;
-
-const LeMi = styled.div`
-  display: grid;
-  gap: 16px;
-`;
-
-const SectionTitle = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #111827;
-  font-weight: 700;
-  font-size: 18px;
-`;
-
-const SectionTitleText = styled.span`
-  font-size: 18px;
-`;
-
-const Card = styled.div`
-  background: #fff;
-  border: 1px solid #eef0f3;
-  border-radius: 14px;
-  padding: 16px;
-`;
-
-const AiSec = styled(Card)`
-  padding: 0;
-`;
-
-const AiHeader = styled.div`
-  padding: 18px;
-  border-bottom: 1px solid #f0f2f5;
-`;
-
-const AiTitle = styled.h3`
-  margin: 0;
-  font-size: 18px;
-  font-weight: 800;
-  color: #111827;
-`;
-
-const AiBadge = styled.span`
-  margin-inline-start: 8px;
-  font-size: 12px;
-  background: #eef2ff;
-  color: #2f4cce;
-  border-radius: 999px;
-  padding: 3px 10px;
-  font-weight: 700;
-`;
-
-const AiSubtitle = styled.p`
-  margin: 8px 0 0 0;
-  color: #6b7280;
-  font-size: 14px;
-`;
-
-const VideoWrap = styled.div`
-  padding: 0 18px 12px;
-  video,
-  iframe {
-    width: 100%;
-    border-radius: 12px;
-  }
-`;
-
-const ChatList = styled.div`
-  grid-column: 1 / -1;
-  display: grid;
-  gap: 12px;
-  max-height: 420px;
-  overflow-y: auto;
-  padding: 8px 0;
-`;
-
-const Row = styled.div`
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 12px;
-
-  &.from-user {
-    grid-template-columns: 1fr 56px;
-    direction: ltr; /* flip the grid to push bubble left while keeping RTL text */
-  }
-`;
-
-const Avatar = styled.img`
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  object-fit: cover;
-  background: #f3f4f6;
-  border: 1px solid #e5e7eb;
-  justify-self: center;
-  align-self: start;
-`;
-
-const Bubble = styled.div`
-  background: ${(p) => (p.$role === "assistant" ? "#f5f7ff" : "#eaf7ef")};
-  border: 1px solid ${(p) => (p.$role === "assistant" ? "#e7ebff" : "#d9f1e1")};
-  color: #111827;
-  padding: 12px 14px;
-  border-radius: 14px;
-  line-height: 1.7;
-  font-size: 15px;
-  direction: rtl;
-`;
-
-const AudioButton = styled.button`
-  border: none;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  padding: 8px 12px;
-  border-radius: 999px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 6px;
-
-  &:hover {
-    background: #f9fafb;
-  }
-`;
-
-const Typing = styled.div`
-  font-size: 13px;
-  color: #6b7280;
-  padding: 0 18px 8px;
-`;
-
-const InputWrap = styled.div`
-  padding: 12px 18px 18px;
-  display: grid;
-  grid-template-columns: 48px 1fr 48px;
-  gap: 10px;
-`;
-
-const RoundButton = styled.button`
-  height: 48px;
-  width: 48px;
-  border-radius: 12px;
-  border: none;
-  background: ${(p) => (p.$primary ? "#2f4cce" : "#111827")};
-  color: #fff;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  opacity: ${(p) => (p.disabled ? 0.6 : 1)};
-`;
-
-const TextInput = styled.input`
-  height: 48px;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  background: #fff;
-  padding: 0 14px;
-  outline: none;
-  font-size: 15px;
-  direction: rtl;
-
-  &:focus {
-    border-color: #c7d2fe;
-    box-shadow: 0 0 0 3px #eef2ff;
-  }
-`;
-
-const NewWr = styled.div`
-  padding: 0 18px 18px;
-  display: flex;
-  justify-content: flex-end;
-`;
-
-const NewBut = styled.button`
-  border: 1px solid #e5e7eb;
-  background: #fff;
-  color: #111827;
-  padding: 10px 14px;
-  border-radius: 10px;
-  cursor: pointer;
-
-  &:hover {
-    background: #f9fafb;
-  }
-`;
-
-/* Review + Instructions blocks (kept minimal & pretty) */
-const Block = styled(Card)``;
-
-const BlockHeader = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  color: #111827;
-`;
-
-const BlockBody = styled.div`
-  margin-top: 10px;
-  color: #374151;
-  line-height: 1.9;
-  font-size: 15px;
-`;
-
-const HintToggle = styled.button`
-  margin-top: 10px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #fff;
-  color: #111827;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  padding: 8px 10px;
-  cursor: pointer;
-
-  &:hover {
-    background: #f9fafb;
-  }
-`;
-
-const HintList = styled.ul`
-  margin: 10px 0 0 0;
-  padding-inline-start: 18px;
-  display: grid;
-  gap: 6px;
-  color: #374151;
-`;
 const lowScoreSVG =
   "https://alsallum.s3.eu-north-1.amazonaws.com/boy_study.webp";
 const mediumScoreSVG =
