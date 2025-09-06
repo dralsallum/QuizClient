@@ -207,34 +207,34 @@ export const AllWr = styled.div`
   flex-direction: column;
   height: 100vh;
 `;
-export const LeMa = styled.main`
+export const LeMa1 = styled.main`
   overflow: hidden;
   display: block;
   flex-grow: 1;
   height: 100%;
 `;
-export const LeNone = styled.div`
+export const LeNone1 = styled.div`
   margin-top: calc(4rem * -1);
   position: absolute;
 `;
-export const LeWr = styled.div`
+export const LeWr1 = styled.div`
   position: relative;
   height: 100%;
   background-color: #15141f;
 `;
-export const LeTop = styled.div`
+export const LeTop1 = styled.div`
   display: flex;
   max-width: 100vw;
   height: 100%;
   position: relative;
   flex-direction: row;
 `;
-export const LeSub = styled.div`
+export const LeSub1 = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
 `;
-export const LeSec = styled.div`
+export const LeSec1 = styled.div`
   display: flex;
   flex: 1 0 0%;
   overflow-y: auto;
@@ -242,8 +242,8 @@ export const LeSec = styled.div`
   position: relative;
   flex-direction: column;
 `;
-export const LeSecSu = styled.div``;
-export const LeMi = styled.div`
+export const LeSecSu1 = styled.div``;
+export const LeMi1 = styled.div`
   height: 100%;
   background-color: #ffffff;
 `;
@@ -1308,7 +1308,7 @@ export const VocFoTop = styled.div`
   margin-bottom: 30px;
 `;
 
-export const Card = styled.div`
+export const Card1 = styled.div`
   left: ${(props) => `calc(${props.left}% - 300px / 2)`};
   top: calc(50% - 185px / 2);
   z-index: ${(props) => props.zIndex};
@@ -1698,7 +1698,7 @@ export const TeBotLi = styled.li`
   @media screen and (max-width: 768px) {
   }
 `;
-export const AiSec = styled.section`
+export const AiSec1 = styled.section`
   display: block;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1742,7 +1742,7 @@ export const AiPa = styled.p`
   @media screen and (max-width: 768px) {
   }
 `;
-export const NewWr = styled.div`
+export const NewWr1 = styled.div`
   text-align: center;
   box-sizing: border-box;
   border-radius: 0;
@@ -1750,7 +1750,7 @@ export const NewWr = styled.div`
   @media screen and (max-width: 768px) {
   }
 `;
-export const NewBut = styled.button`
+export const NewBut1 = styled.button`
   background: #1f3289;
   color: #fff;
   cursor: pointer;
@@ -3101,4 +3101,269 @@ export const TipSp = styled.span`
 
   @media screen and (max-width: 768px) {
   }
+`;
+
+export const LeMa = styled.div`
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  direction: rtl;
+`;
+
+export const LeNone = styled.div`
+  height: 16px;
+`;
+
+export const LeWr = styled.div`
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px 24px;
+`;
+
+export const LeTop = styled.div`
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+`;
+
+export const LeSub = styled.div`
+  padding: 20px;
+`;
+
+export const LeSec = styled.div`
+  display: grid;
+  gap: 20px;
+`;
+
+export const LeSecSu = styled.div`
+  width: 100%;
+`;
+
+export const LeMi = styled.div`
+  display: grid;
+  gap: 16px;
+`;
+
+export const SectionTitle = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #111827;
+  font-weight: 700;
+  font-size: 18px;
+`;
+
+export const SectionTitleText = styled.span`
+  font-size: 18px;
+`;
+
+export const Card = styled.div`
+  background: #fff;
+  border: 1px solid #eef0f3;
+  border-radius: 14px;
+  padding: 16px;
+`;
+
+export const AiSec = styled(Card)`
+  padding: 0;
+`;
+
+export const AiHeader = styled.div`
+  padding: 18px;
+  border-bottom: 1px solid #f0f2f5;
+`;
+
+export const AiTitle = styled.h3`
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #111827;
+`;
+
+export const AiBadge = styled.span`
+  margin-inline-start: 8px;
+  font-size: 12px;
+  background: #eef2ff;
+  color: #2f4cce;
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-weight: 700;
+`;
+
+export const AiSubtitle = styled.p`
+  margin: 8px 0 0 0;
+  color: #6b7280;
+  font-size: 14px;
+`;
+
+export const VideoWrap = styled.div`
+  padding: 0 18px 12px;
+  video,
+  iframe {
+    width: 100%;
+    border-radius: 12px;
+  }
+`;
+
+export const ChatList = styled.div`
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 12px;
+  max-height: 420px;
+  overflow-y: auto;
+  padding: 8px 0;
+`;
+
+export const Row = styled.div`
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 12px;
+
+  &.from-user {
+    grid-template-columns: 1fr 56px;
+    direction: ltr;
+  }
+`;
+
+export const Avatar = styled.img`
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  justify-self: center;
+  align-self: start;
+`;
+
+export const Bubble = styled.div`
+  background: ${(p) => (p.$role === "assistant" ? "#f5f7ff" : "#eaf7ef")};
+  border: 1px solid ${(p) => (p.$role === "assistant" ? "#e7ebff" : "#d9f1e1")};
+  color: #111827;
+  padding: 12px 14px;
+  border-radius: 14px;
+  line-height: 1.7;
+  font-size: 15px;
+  direction: rtl;
+`;
+
+export const AudioButton = styled.button`
+  border: none;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+
+  &:hover {
+    background: #f9fafb;
+  }
+`;
+
+export const Typing = styled.div`
+  font-size: 13px;
+  color: #6b7280;
+  padding: 0 18px 8px;
+`;
+
+export const InputWrap = styled.div`
+  padding: 12px 18px 18px;
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  gap: 10px;
+`;
+
+export const RoundButton = styled.button`
+  height: 48px;
+  width: 48px;
+  border-radius: 12px;
+  border: none;
+  background: ${(p) => (p.$primary ? "#2f4cce" : "#111827")};
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  opacity: ${(p) => (p.disabled ? 0.6 : 1)};
+`;
+
+export const TextInput = styled.input`
+  height: 48px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  padding: 0 14px;
+  outline: none;
+  font-size: 15px;
+  direction: rtl;
+
+  &:focus {
+    border-color: #c7d2fe;
+    box-shadow: 0 0 0 3px #eef2ff;
+  }
+`;
+
+export const NewWr = styled.div`
+  padding: 0 18px 18px;
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const NewBut = styled.button`
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #111827;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f9fafb;
+  }
+`;
+
+export const Block = styled(Card)``;
+
+export const BlockHeader = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  color: #111827;
+`;
+
+export const BlockBody = styled.div`
+  margin-top: 10px;
+  color: #374151;
+  line-height: 1.9;
+  font-size: 15px;
+`;
+
+export const HintToggle = styled.button`
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f9fafb;
+  }
+`;
+
+export const HintList = styled.ul`
+  margin: 10px 0 0 0;
+  padding-inline-start: 18px;
+  display: grid;
+  gap: 6px;
+  color: #374151;
 `;

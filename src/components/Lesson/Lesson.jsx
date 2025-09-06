@@ -80,7 +80,6 @@ import {
   LoadingContainer,
   NavAt,
   NavBut,
-  NavButton,
   NavCon,
   NavHeader,
   NavIm,
@@ -164,25 +163,6 @@ import {
   TeDiv,
   TeBotLi,
   AllaWr,
-  InpWr,
-  InpCon,
-  InpIco,
-  InpIc,
-  ConvWr,
-  ConvLt,
-  ConvRt,
-  ConvLtIm,
-  ConvAi,
-  ConvMa,
-  ConvPl,
-  ConvAc,
-  ConvPlay,
-  ConvRtWr,
-  UseWr,
-  ConvAll,
-  PlUser,
-  PlAt,
-  PlIa,
   ReaWr,
   ReaPa1,
   ReaHe,
@@ -270,9 +250,7 @@ import {
   FeedPa3,
   FeedPa4,
   FeedSp,
-  TipNo,
-  TipSp,
-  VidEx,
+  Card1,
 } from "../Lesson/Lesson.elements";
 import { useTeach } from "../../redux/TeachContext";
 
@@ -379,13 +357,6 @@ const VideoWrap = styled.div`
   }
 `;
 
-const ChatWrap = styled.div`
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 12px;
-  padding: 0 18px 12px;
-`;
-
 const ChatList = styled.div`
   grid-column: 1 / -1;
   display: grid;
@@ -485,19 +456,6 @@ const TextInput = styled.input`
     border-color: #c7d2fe;
     box-shadow: 0 0 0 3px #eef2ff;
   }
-`;
-
-const TipWr = styled.div`
-  padding: 0 18px 16px;
-`;
-
-const TipPr = styled.div`
-  background: #fff7ed;
-  border: 1px solid #ffedd5;
-  color: #7c2d12;
-  border-radius: 12px;
-  padding: 10px 12px;
-  font-size: 13px;
 `;
 
 const NewWr = styled.div`
@@ -849,17 +807,6 @@ const Lesson = () => {
       setAudioCurrentTime(audioRef.current.currentTime);
     }
   };
-
-  const handlePlayAudio = useCallback(() => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-      } else {
-        audioRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  }, [isPlaying]);
 
   useEffect(() => {
     if (audioRef.current) {
@@ -2400,14 +2347,14 @@ const OutcomeContent = ({ data }) => {
           <VocTh>مجموعة الكلمات</VocTh>
           <VocFo>
             <VocFoTop>
-              <Card
+              <Card1
                 key={currentCard}
                 direction={animationDirection}
                 left={50}
                 zIndex={1}
               >
                 <CardContent {...cardsData[currentCard]} />
-              </Card>
+              </Card1>
             </VocFoTop>
             <VocFoMid>
               <VocMidBut>shuffle</VocMidBut>
